@@ -172,8 +172,7 @@ def generate_schedule_plot(solution_file: str, pdf_name: str | None = None):
         plt.show()
 
 
-def visualize():
+def visualize(location):
     # Parse the command line arguments
-    solution_file = os.path.join(os.path.dirname(__file__), "MILQ.json")
     pdf_output = None
-    generate_schedule_plot(solution_file, pdf_output)
+    generate_schedule_plot(location, pdf_output)
