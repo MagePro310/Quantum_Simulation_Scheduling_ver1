@@ -33,17 +33,20 @@ The **Quantum Simulation Scheduling** tool is designed to help researchers and d
 To install the simulator, follow these steps:
 
 1. Clone the repository:
+
     ```bash
     git clone https://github.com/your-repo/Quantum_Simulation_Scheduling.git
     cd Quantum_Simulation_Scheduling
     ```
 
 2. Install dependencies:
+
     ```bash
     pip install -r requirements.txt
     ```
 
 3. Verify the installation:
+
     ```bash
     python simulator.py --help
     ```
@@ -53,16 +56,19 @@ To install the simulator, follow these steps:
 ## Getting Started
 
 1. Import the simulator into your Python project:
+
     ```python
     from quantum_simulator import QuantumSimulator
     ```
 
 2. Initialize the simulator:
+
     ```python
     simulator = QuantumSimulator(config="default_config.json")
     ```
 
 3. Define your quantum operations and schedule them:
+
     ```python
     simulator.add_operation("H", qubit=0)
     simulator.add_operation("CNOT", control=0, target=1)
@@ -84,9 +90,11 @@ To install the simulator, follow these steps:
 
 1. Prepare your configuration file (e.g., `config.json`).
 2. Run the simulator:
+
     ```bash
     python simulator.py --config config.json
     ```
+
 3. View the results in the output directory.
 
 ---
@@ -94,6 +102,7 @@ To install the simulator, follow these steps:
 ## Examples
 
 ### Example 1: Basic Circuit
+
 ```python
 from quantum_simulator import QuantumSimulator
 
@@ -104,6 +113,7 @@ simulator.run()
 ```
 
 ### Example 2: Custom Schedule
+
 ```python
 simulator.schedule_operations([
      {"gate": "H", "qubit": 0, "time": 0},

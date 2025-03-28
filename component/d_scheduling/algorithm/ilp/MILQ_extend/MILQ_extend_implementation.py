@@ -77,7 +77,7 @@ def generate_schedule(
         NotImplementedError: Unsupported types.
     """
     if isinstance(problem, InfoProblem):
-        print("Run info")
+        # print("Run info")
         return _generate_schedule_info(problem, schedule_type)
     raise NotImplementedError("Unsupported type")
 
@@ -153,8 +153,8 @@ def _define_lp(
     big_m: int,
 ) -> LPInstance:
     jobs = list(job_capacities.keys())
-    print("Jobs in define_lp:")
-    print(jobs)
+    # print("Jobs in define_lp:")
+    # print(jobs)
     machines = list(machine_capacities.keys())
     x_ik = pulp.LpVariable.dicts("x_ik", (jobs, machines), cat="Binary")                # Binary variable indicating whether job job is assigned to machine
     z_ikt = pulp.LpVariable.dicts("z_ikt", (jobs, machines, timesteps), cat="Binary")   # Binary variable indicating whether job job is assigned to machine at timestep t
@@ -235,10 +235,10 @@ def _generate_schedule_info(
     lp_instance = set_up_base_lp(
         problem.base_jobs, problem.accelerators, problem.big_m, problem.timesteps
     )
-    # show jobs 
-    print("Jobs:")
-    for job in problem.base_jobs:
-        print(job.num_qubits)
+    # # show jobs 
+    # print("Jobs:")
+    # for job in problem.base_jobs:
+    #     print(job.num_qubits)
     
     if schedule_type == SchedulerType.EXTENDED:
         lp_instance = set_up_extended_lp(
@@ -371,11 +371,13 @@ def _calculate_example_setup_times(job_i, job_j_, machine_k) -> float:
 
 def _generate_problem(big_m: int, timesteps: int) -> tuple[InfoProblem, dict[str, int]]:
     # Inputs
-    jobs = ["0", "A", "B"]
+    jobs = ["0", "A", "B", "C","D"]
     job_capacities = {
         "0": 0,  # dummy job
         "A": 2,
         "B": 3,
+        "C": 5,
+        "D": 2,
     }
     machines = ["QUITO", "BELEM"]
     machine_capacities = {"QUITO": 5, "BELEM": 5}
@@ -406,11 +408,11 @@ def _generate_problem(big_m: int, timesteps: int) -> tuple[InfoProblem, dict[str
     ]
     del job_capacities["0"]
     # Print the processing and setup times
-    for i in range(len(jobs)):
-        print(f"Processing times for {jobs[i]}: {processing_times[i]}")
-    for i in range(len(jobs)):
-        for j in range(len(jobs)):
-            print(f"Setup times for {jobs[i]} and {jobs[j]}: {setup_times[i][j]}")
+    # for i in range(len(jobs)):
+    #     print(f"Processing times for {jobs[i]}: {processing_times[i]}")
+    # for i in range(len(jobs)):
+    #     for j in range(len(jobs)):
+    #         print(f"Setup times for {jobs[i]} and {jobs[j]}: {setup_times[i][j]}")
     return (
         InfoProblem(
             base_jobs=[QuantumCircuit(cap) for cap in job_capacities.values()],
@@ -445,34 +447,34 @@ def set_up_extended_lp(
     # List of jobs
     # Compare lenght job with machines
     # Print the jobs
-    print("Jobs in set_up_extended_lp:")
-    for job in lp_instance.jobs:
-        print(job)
-    # Print the machines
-    print("Machines in set_up_extended_lp:")
-    for machine in lp_instance.machines:
-        print(machine)
-    # Print the process times
-    print("Process times:")
-    print(process_times)
+    # print("Jobs in set_up_extended_lp:")
+    # for job in lp_instance.jobs:
+    #     print(job)
+    # # Print the machines
+    # print("Machines in set_up_extended_lp:")
+    # for machine in lp_instance.machines:
+    #     print(machine)
+    # # Print the process times
+    # print("Process times:")
+    # print(process_times)
     p_times = pulp.makeDict(
         [lp_instance.jobs[1:], lp_instance.machines],
-        process_times,
+        process_times[1:],
         0,
     )
     # Print the process times
-    print("Process times:")
-    print(p_times)
+    # print("Process times:")
+    # print(p_times)
     s_times = pulp.makeDict(
         [lp_instance.jobs, lp_instance.jobs, lp_instance.machines],
         setup_times,
         0,
     )
     # Print the setup times
-    for job_i in lp_instance.jobs:
-        for job_j in lp_instance.jobs:
-            for machine in lp_instance.machines:
-                print(f"Setup time for job {job_i} on job {job_j} on machine {machine}: {s_times[job_i][job_j][machine]}")
+    # for job_i in lp_instance.jobs:
+    #     for job_j in lp_instance.jobs:
+    #         for machine in lp_instance.machines:
+    #             print(f"Setup time for job {job_i} on job {job_j} on machine {machine}: {s_times[job_i][job_j][machine]}")
     # decision variables
     y_ijk = pulp.LpVariable.dicts(
         "y_ijk",
@@ -677,10 +679,10 @@ def example_problem(big_m: int, timesteps: int, filename: str = "scheduling"):
         filename (str, optional): Filename for .lp, .json and .pdf. Defaults to "scheduling".
     """
     _problem, job_capacities = _generate_problem(big_m, timesteps)
-    print("Problem:")
-    print(_problem.base_jobs)
-    print("Job Capacities:")
-    print(job_capacities)
+    # print("Problem:")
+    # print(_problem.base_jobs)
+    # print("Job Capacities:")
+    # print(job_capacities)
     _, _, lp_instance = generate_schedule(_problem, SchedulerType.EXTENDED)
     
     
