@@ -1,9 +1,11 @@
 from qiskit_aer import AerSimulator
-from qiskit.circuit import QuantumCircuit
+from qiskit.circuit.library import RealAmplitudes
+from qiskit.circuit import QuantumCircuit, QuantumRegister, ClassicalRegister
+from qiskit.quantum_info import SparsePauliOp
 from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
  
 from qiskit_ibm_runtime import Session
-from qiskit_ibm_runtime import SamplerV2
+from qiskit_ibm_runtime import SamplerV2 as Sampler
 from qiskit_ibm_runtime.fake_provider import FakeManilaV2
  
 # Bell Circuit
@@ -16,8 +18,9 @@ qc.measure_all()
 fake_manila = FakeManilaV2()
 pm = generate_preset_pass_manager(backend=fake_manila, optimization_level=1)
 isa_qc = pm.run(qc)
-sampler = SamplerV2(backend=fake_manila)
+sampler = Sampler(mode=fake_manila)
 result = sampler.run([isa_qc]).result()
+print(result)
  
 # Run the sampler job locally using AerSimulator.
 # Session syntax is supported but ignored.
@@ -25,5 +28,6 @@ aer_sim = AerSimulator()
 pm = generate_preset_pass_manager(backend=aer_sim, optimization_level=1)
 isa_qc = pm.run(qc)
 with Session(backend=aer_sim) as session:
-    sampler = SamplerV2(mode=session)
+    sampler = Sampler(mode=session)
     result = sampler.run([isa_qc]).result()
+    print(result)
