@@ -9,7 +9,7 @@ import pulp
 from typing import Callable
 from collections import defaultdict
 from copy import deepcopy
-from src.types.job_result_info import JobResultInfo
+from ....format.result import JobResultInfo
 
 class SchedulerType(Enum):
     """The type of scheduler to use."""
