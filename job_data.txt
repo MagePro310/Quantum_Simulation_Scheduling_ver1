@@ -1,2 +1,2 @@
 {'job': 'A', 'qubits': 2, 'machine': 'BELEM', 'capacity': 5, 'start': 0.0, 'end': 0.0, 'duration': 0.0}
-{'job': 'B', 'qubits': 3, 'machine': 'QUITO', 'capacity': 5, 'start': 0.0, 'end': 8.0, 'duration': 8.0}
+{'job': 'B', 'qubits': 3, 'machine': 'QUITO', 'capacity': 5, 'start': 0.0, 'end': 7.0, 'duration': 7.0}

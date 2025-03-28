@@ -589,7 +589,7 @@ _C523: 2 z_ikt_1_BELEM_63 + 3 z_ikt_2_BELEM_63 <= 5
 _C524: y_ijk_0_1_BELEM + y_ijk_0_1_QUITO + y_ijk_1_1_BELEM + y_ijk_1_1_QUITO
  + y_ijk_2_1_BELEM + y_ijk_2_1_QUITO >= 1
 _C525: c_j_1 - s_j_1 - 50 y_ijk_1_1_BELEM - 50 y_ijk_1_1_QUITO
- - 7 y_ijk_2_1_BELEM - 7 y_ijk_2_1_QUITO >= 0
+ - 6 y_ijk_2_1_BELEM - 8 y_ijk_2_1_QUITO >= 0
 _C526: x_ik_1_QUITO - 0.001 y_ijk_0_1_QUITO - 0.001 y_ijk_1_1_QUITO
  - 0.001 y_ijk_2_1_QUITO >= 0
 _C527: x_ik_1_QUITO - 0.001 y_ijk_1_0_QUITO - 0.001 y_ijk_1_1_QUITO
@@ -606,7 +606,7 @@ _C533: c_j_1 - s_j_1 + 1000 y_ijk_1_1_BELEM + 1000 y_ijk_1_1_QUITO <= 1000
 _C534: c_j_2 - s_j_1 + 1000 y_ijk_2_1_BELEM + 1000 y_ijk_2_1_QUITO <= 1000
 _C535: y_ijk_0_2_BELEM + y_ijk_0_2_QUITO + y_ijk_1_2_BELEM + y_ijk_1_2_QUITO
  + y_ijk_2_2_BELEM + y_ijk_2_2_QUITO >= 1
-_C536: c_j_2 - s_j_2 - 9 x_ik_2_BELEM - 8 x_ik_2_QUITO - 6 y_ijk_1_2_BELEM
+_C536: c_j_2 - s_j_2 - 9 x_ik_2_BELEM - 7 x_ik_2_QUITO - 6 y_ijk_1_2_BELEM
  - 9 y_ijk_1_2_QUITO - 50 y_ijk_2_2_BELEM - 50 y_ijk_2_2_QUITO >= 0
 _C537: x_ik_2_QUITO - 0.001 y_ijk_0_2_QUITO - 0.001 y_ijk_1_2_QUITO
  - 0.001 y_ijk_2_2_QUITO >= 0
