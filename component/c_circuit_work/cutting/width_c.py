@@ -46,9 +46,16 @@ def create_string(num_char, num_dif, position: list):
     return ''.join(result)
 
 # Truyen vao circuit, cat o vi tri nao
-def gate_to_reduce_width(qc: QuantumCircuit, cut_position: list(list(int))) -> dict[QuantumCircuit]:
-
-    pass
+def gate_to_reduce_width(qc: QuantumCircuit, cut_name: str) -> dict[QuantumCircuit]:
+    observable = SparsePauliOp(["ZZII", "IZZI", "-IIZZ", "XIXI", "ZIZZ", "IXIX"])
+    partitioned_problem = partition_problem(
+        circuit=qc, partition_labels= cut_name, observables= observable
+    )
+    subcircuits = partitioned_problem.subcircuits
+    subobservables = partitioned_problem.subobservables
+    bases = partitioned_problem.bases
+    
+    return subcircuits
 
 def wire_to_reduce_width():
     # Devide the circuit into many parts following the depth
