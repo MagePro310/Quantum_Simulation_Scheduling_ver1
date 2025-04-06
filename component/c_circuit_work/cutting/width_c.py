@@ -10,9 +10,16 @@ import numpy as np
 from qiskit.quantum_info import SparsePauliOp
 
 @dataclass
-class Result_of_cutting:
-    sub_circuits: list[QuantumCircuit]
-    overhead: float # The overhead of the circuit cutting
+class subCircuit_info:
+    """
+    Class to store information about subcircuits and their observables.
+    """
+    subcircuits: dict[QuantumCircuit]
+    subobservables: dict[SparsePauliOp]
+    bases: list
+    overhead: float
+    
+    
     
 def has_measurement(circuit: QuantumCircuit) -> bool:
     # Iterate over all instructions in the circuit
@@ -46,16 +53,24 @@ def create_string(num_char, num_dif, position: list):
     return ''.join(result)
 
 # Truyen vao circuit, cat o vi tri nao
-def gate_to_reduce_width(qc: QuantumCircuit, cut_name: str) -> dict[QuantumCircuit]:
+def gate_to_reduce_width(qc: QuantumCircuit, cut_name: str) -> subCircuit_info:
+    result = subCircuit_info({}, {}, [], 0.0)
+    if has_measurement(qc):
+        qc.remove_final_measurements()
+    
     observable = SparsePauliOp(["ZZII", "IZZI", "-IIZZ", "XIXI", "ZIZZ", "IXIX"])
     partitioned_problem = partition_problem(
-        circuit=qc, partition_labels= cut_name, observables= observable
+        circuit=qc, partition_labels= cut_name, observables= observable.paulis
     )
-    subcircuits = partitioned_problem.subcircuits
-    subobservables = partitioned_problem.subobservables
-    bases = partitioned_problem.bases
+    result.subcircuits = partitioned_problem.subcircuits
+    result.subobservables = partitioned_problem.subobservables
+    result.bases = partitioned_problem.bases
+    result.overhead = np.prod([basis.overhead for basis in result.bases])
     
-    return subcircuits
+    # for key, value in result.subcircuits.items():
+    #     result.subcircuits[key].data = [hasChange for hasChange in value.data if hasChange.operation.name != "qpd_1q"]
+            
+    return result
 
 def wire_to_reduce_width():
     # Devide the circuit into many parts following the depth
