@@ -1,29 +1,17 @@
 """A utility script to visualize a solution to the scheduling problem."""
 
-# TODO make usable with example_problem.py
-# - Globals of milp are not available anymore
-# - Need to read the json solution file
-# - Move argparse to main
 import json
-
+import os
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib import ticker
 from matplotlib.patches import Patch
-import os
+
 
 def _read_solution_file(solution_file: str) -> pd.DataFrame:
-    """Reads a solution file and returns a dataframe with job scheduling information.
+    """Reads a solution file and returns a dataframe with job scheduling information."""
 
-    Args:
-        solution_file (str): The solution file to read.
-
-    Returns:
-        pd.DataFrame: A dataframe with the columns job, qubits, machine, capacity,
-        start, end, duration.
-    """
-    # Mở và đọc tệp JSON
     try:
         with open(solution_file, encoding="utf-8") as f:
             data = json.load(f)
@@ -32,24 +20,21 @@ def _read_solution_file(solution_file: str) -> pd.DataFrame:
     except json.JSONDecodeError:
         raise ValueError(f"Error: File '{solution_file}' is not a valid JSON.")
 
-    # Kiểm tra xem JSON có đúng cấu trúc không
     if "params" not in data or "variables" not in data:
         raise KeyError("Error: JSON file structure is incorrect. Missing 'params' or 'variables'.")
 
     params = data["params"]
     variables = data["variables"]
 
-    # Lấy danh sách công việc và máy
     jobs = params.get("jobs", [])
     machines = params.get("machines", [])
     job_capacities = params.get("job_capcities", {})
     machine_capacities = params.get("machine_capacities", {})
 
     rows_list = []
-    
+
     for job in jobs:
-        # Tìm thời gian bắt đầu và kết thúc từ `variables`
-        start_key = f"s_j_{jobs.index(job) + 1}"  # Vì job có index từ 1
+        start_key = f"s_j_{jobs.index(job) + 1}"
         end_key = f"c_j_{jobs.index(job) + 1}"
 
         start = variables.get(start_key, None)
@@ -61,21 +46,19 @@ def _read_solution_file(solution_file: str) -> pd.DataFrame:
 
         duration = end - start
 
-        # Xác định máy được gán từ `variables`
         assigned_machine = None
         for machine in machines:
             machine_key = f"x_ik_{jobs.index(job) + 1}_{machine}"
             if variables.get(machine_key, 0) >= 0.5:
                 assigned_machine = machine
                 break
-        
+
         if assigned_machine is None:
             print(f"Warning: No machine assigned for job {job}. Skipping...")
             continue
 
         capacity = machine_capacities.get(assigned_machine, None)
 
-        # Thêm dữ liệu vào danh sách
         rows_list.append({
             "job": job,
             "qubits": job_capacities.get(job, None),
@@ -86,38 +69,39 @@ def _read_solution_file(solution_file: str) -> pd.DataFrame:
             "duration": duration,
         })
 
-    # Chuyển đổi danh sách thành DataFrame
-    df = pd.DataFrame(rows_list)
-    # Save rows_list to a file
-    with open('job_data.txt', 'w') as f:
+    # Save outputs in the same directory as the solution file
+    output_dir = os.path.dirname(os.path.abspath(solution_file))
+
+    # Save job_data.txt (dict each line)
+    job_data_txt = os.path.join(output_dir, 'job_data.txt')
+    with open(job_data_txt, 'w', encoding='utf-8') as f_txt:
         for item in rows_list:
-            f.write("%s\n" % item)
+            f_txt.write(f"{item}\n")
+    print(f"Saved job data to: {job_data_txt}")
+
+    # Save job_data.json (full JSON)
+    job_json_path = os.path.join(output_dir, 'job_data.json')
+    with open(job_json_path, 'w', encoding='utf-8') as f_json:
+        json.dump(rows_list, f_json, indent=4)
+    print(f"Saved job data as JSON to: {job_json_path}")
+
+    df = pd.DataFrame(rows_list)
     return df
 
 
-def generate_schedule_plot(solution_file: str, pdf_name: str | None = None):
-    """Generates a plot of the schedule in the solution file.
+def generate_schedule_plot(solution_file: str, pdf_name: str | None = None, output_dir: str | None = None) -> None:
+    """Generates a plot of the schedule in the solution file."""
 
-    Args:
-        solution_file (str): The schedule to visualize.
-        pdf_name (str | None, optional): The name of the output PDF to write. If not
-            provided, the plot is instead opened with `plt.show()`. Defaults to None.
-    """
-    # General comment: The completion time of a job is the last time step in which it is processed
-    # Similarily, the start time of a job is the first time step in which it is processed
-    # The duration is the number of time steps in which it is processed
+    if output_dir is None:
+        output_dir = os.path.dirname(os.path.abspath(solution_file))
 
-    # Read the solution
     df = _read_solution_file(solution_file)
     print(df)
 
-    # Create a color mapping for the machines
+    # Color mapping for machines
     machine_colors = ["#154060", "#98c6ea", "#527a9c"]
     color_mapping = dict(zip(df["machine"].unique(), machine_colors))
 
-    # Plot the jobs
-    # The grid lines are at the start of a time step.
-    # Hence, if a job ends in time step 11, the bar ends at 12.
     _, ax = plt.subplots()
 
     for i, row in df.iterrows():
@@ -133,7 +117,6 @@ def generate_schedule_plot(solution_file: str, pdf_name: str | None = None):
             color=color_mapping[row["machine"]],
         )
 
-    # Create patches for the legend
     patches = []
     for color in color_mapping.values():
         p = Patch(color=color)
@@ -141,38 +124,34 @@ def generate_schedule_plot(solution_file: str, pdf_name: str | None = None):
         p.set_linewidth(1)
         patches.append(p)
 
-    # Set the xticks
     ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
 
-    # Set the yticks
     yticks = np.arange(len(df))
     ytick_labels = [f"{job} ({qubits})" for job, qubits in zip(df["job"], df["qubits"])]
     ax.set_yticks(yticks)
     ax.set_yticklabels(ytick_labels)
     ax.invert_yaxis()
 
-    # Set the axis labels
     plt.xlabel("Time")
     plt.grid(axis="x", which="major")
     plt.grid(axis="x", which="minor", alpha=0.4)
 
-    legend_labels = list(color_mapping.keys())
-    # Print the legend labels with name and capacity
     legend_labels = [
         f"{label} ({df[df['machine'] == label]['capacity'].iloc[0]})"
-        for label in legend_labels
+        for label in color_mapping.keys()
     ]
-    
     plt.legend(handles=patches, labels=legend_labels)
 
     if pdf_name:
+        pdf_path = os.path.join(output_dir, pdf_name)
         plt.tight_layout()
-        plt.savefig(pdf_name, format="pdf", bbox_inches="tight")
+        plt.savefig(pdf_path, format="pdf", bbox_inches="tight")
+        print(f"Saved plot to: {pdf_path}")
     else:
         plt.show()
 
 
 def visualize(location):
-    # Parse the command line arguments
-    pdf_output = None
-    generate_schedule_plot(location, pdf_output)
+    base_name = os.path.splitext(os.path.basename(location))[0]
+    pdf_output = f"{base_name}_plot.pdf"
+    generate_schedule_plot(location, pdf_output, output_dir=None)

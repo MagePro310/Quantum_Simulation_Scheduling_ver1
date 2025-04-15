@@ -8,6 +8,7 @@ from qiskit_addon_cutting import (
 )
 import numpy as np
 from qiskit.quantum_info import SparsePauliOp
+import random
 
 @dataclass
 class subCircuit_info:
@@ -19,7 +20,7 @@ class subCircuit_info:
     bases: list
     overhead: float
     
-    
+enumerate_pauli = ["I", "X", "Y", "Z"]
     
 def has_measurement(circuit: QuantumCircuit) -> bool:
     # Iterate over all instructions in the circuit
@@ -58,7 +59,17 @@ def gate_to_reduce_width(qc: QuantumCircuit, cut_name: str) -> subCircuit_info:
     if has_measurement(qc):
         qc.remove_final_measurements()
     
-    observable = SparsePauliOp(["ZZII", "IZZI", "-IIZZ", "XIXI", "ZIZZ", "IXIX"])
+    listPauli = ["ZZII", "IZZI", "IIZZ", "XIXI", "ZIZZ", "IXIX"]
+    # enumerate_pauli = ["I", "Z"]
+    # # Create a list of Pauli strings
+    # for i in range(6):
+    #     string_pauli = ""
+    #     for j in range(qc.num_qubits):
+    #         string_pauli += random.choice(enumerate_pauli)
+    #     listPauli.append(string_pauli)
+    # print(listPauli)
+    observable = SparsePauliOp(listPauli)
+    
     partitioned_problem = partition_problem(
         circuit=qc, partition_labels= cut_name, observables= observable.paulis
     )
