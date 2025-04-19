@@ -1,94 +1,139 @@
 from qiskit import QuantumCircuit
-from dataclasses import dataclass
+from qiskit.transpiler import generate_preset_pass_manager
+from qiskit_ibm_runtime import SamplerV2, Batch
+from qiskit_aer.primitives import EstimatorV2
 from qiskit_addon_cutting import (
     cut_gates,
     partition_problem,
     generate_cutting_experiments,
     reconstruct_expectation_values,
 )
-import numpy as np
 from qiskit.quantum_info import SparsePauliOp
-import random
+from dataclasses import dataclass
+import numpy as np
+# from component.sup_sys.job_info import JobInfo
 
 @dataclass
-class subCircuit_info:
+class SubCircuitInfo:
     """
     Class to store information about subcircuits and their observables.
     """
+    circuit_origin: QuantumCircuit
+    observable: SparsePauliOp
     subcircuits: dict[QuantumCircuit]
     subobservables: dict[SparsePauliOp]
     bases: list
     overhead: float
-    
-enumerate_pauli = ["I", "X", "Y", "Z"]
-    
+    subexperiments: dict
+    coefficients: list
+
+
 def has_measurement(circuit: QuantumCircuit) -> bool:
-    # Iterate over all instructions in the circuit
+    """
+    Check if a quantum circuit contains any measurement operations.
+    """
     for instr in circuit.data:
         if instr.operation.name == 'measure':  # Check if the operation name is 'measure'
             return True
     return False
 
-def create_string(num_char, num_dif, position: list):
-    """
-    """
-    # Initialize the string with the first character 'A'
-    result = ['A'] * num_char
-    print(type(result))
-    print(result)  
-    # Generate the different characters 'A', 'B', 'C', ..., based on num_dif
-    char_list = [chr(ord('A') + i) for i in range(num_dif)]
-    print(char_list)
-    
-    # Modify the positions to introduce new characters
-    count = 0
-    print(len(position))
-    for i in range(len(result)):
-        print(type(i))
-        print(i)
-        if (i) == position[count]:
-            count += 1
-        result[i] = char_list[count]
-    
-    # Convert the list back to a string and return
-    return ''.join(result)
 
-# Truyen vao circuit, cat o vi tri nao
-def gate_to_reduce_width(qc: QuantumCircuit, cut_name: str) -> subCircuit_info:
-    result = subCircuit_info({}, {}, [], 0.0)
+def gate_to_reduce_width(qc: QuantumCircuit, cut_name: str, observable) -> SubCircuitInfo:
+    """
+    Partition a quantum circuit to reduce its width and return subcircuits with observables.
+    """
+    result = SubCircuitInfo(qc, observable, {},{},[],0.0,{},[] )
     if has_measurement(qc):
         qc.remove_final_measurements()
-    
-    listPauli = ["ZZII", "IZZI", "IIZZ", "XIXI", "ZIZZ", "IXIX"]
-    # enumerate_pauli = ["I", "Z"]
-    # # Create a list of Pauli strings
-    # for i in range(6):
-    #     string_pauli = ""
-    #     for j in range(qc.num_qubits):
-    #         string_pauli += random.choice(enumerate_pauli)
-    #     listPauli.append(string_pauli)
-    # print(listPauli)
-    observable = SparsePauliOp(listPauli)
-    
+
+    # Partition the problem
     partitioned_problem = partition_problem(
-        circuit=qc, partition_labels= cut_name, observables= observable.paulis
+        circuit=qc, partition_labels=cut_name, observables=observable.paulis
     )
-    result.subcircuits = partitioned_problem.subcircuits
+    result.subcircuits = partitioned_problem.subcircuits        
     result.subobservables = partitioned_problem.subobservables
     result.bases = partitioned_problem.bases
     result.overhead = np.prod([basis.overhead for basis in result.bases])
+    result.subexperiments, result.coefficients = prepare_subexperiments(
+    result.subcircuits, result.subobservables, num_samples=np.inf)
     
-    # for key, value in result.subcircuits.items():
-    #     result.subcircuits[key].data = [hasChange for hasChange in value.data if hasChange.operation.name != "qpd_1q"]
-            
+    
     return result
 
-def wire_to_reduce_width():
-    # Devide the circuit into many parts following the depth
-    # and then add a cut wire gate to the circuit
-    # After that merge the parts of the circuit
-    # Return the new circuit
-    # Apply the cut move to the circuit
-    # Then cutting as two parts
-    # return new two circuits
-    pass
+
+def prepare_subexperiments(subcircuits, subobservables, num_samples=np.inf):
+    """
+    Generate subexperiments and their coefficients.
+    """
+    return generate_cutting_experiments(
+        circuits=subcircuits, observables=subobservables, num_samples=num_samples
+    )
+
+
+def run_subexperiments(subexperiments, backend, optimization_level=1, shots=4096 * 3):
+    """
+    Execute subexperiments on the backend and retrieve results.
+    """
+    pass_manager = generate_preset_pass_manager(
+        optimization_level=optimization_level, backend=backend
+    )
+
+    isa_subexperiments = {
+        label: pass_manager.run(partition_subexpts)
+        for label, partition_subexpts in subexperiments.items()
+    }
+
+    with Batch(backend=backend) as batch:
+        sampler = SamplerV2(mode=batch)
+        jobs = {
+            label: sampler.run(subsystem_subexpts, shots=shots)
+            for label, subsystem_subexpts in isa_subexperiments.items()
+        }
+
+    # Retrieve results
+    return {label: job.result() for label, job in jobs.items()}
+
+
+def compute_expectation_value(
+    results, coefficients, subobservables, observable, circuit
+):
+    """
+    Reconstruct the expectation value and calculate the error estimation.
+    """
+    # Get expectation values for each observable term
+    reconstructed_expval_terms = reconstruct_expectation_values(
+        results, coefficients, subobservables
+    )
+
+    # Reconstruct final expectation value
+    reconstructed_expval = np.dot(reconstructed_expval_terms, observable.coeffs)
+
+    estimator = EstimatorV2()
+    exact_expval = (
+        estimator.run([(circuit, observable, [0.4] * len(circuit.parameters))])
+        .result()[0]
+        .data.evs
+    )
+
+    error_estimation = np.abs(reconstructed_expval - exact_expval)
+    relative_error_estimation = np.abs(
+        (reconstructed_expval - exact_expval) / exact_expval
+    )
+
+    return reconstructed_expval, exact_expval, error_estimation, relative_error_estimation
+
+
+def print_results(reconstructed_expval, exact_expval, error_estimation, relative_error_estimation):
+    """
+    Print the reconstructed and exact expectation values, along with error estimations.
+    """
+    print(
+        f"Reconstructed expectation value: {np.real(np.round(reconstructed_expval, 8))}"
+    )
+    print(f"Exact expectation value: {np.round(exact_expval, 8)}")
+    print(
+        f"Error in estimation: {np.real(np.round(error_estimation, 8))}"
+    )
+    print(
+        f"Relative error in estimation: {np.real(np.round(relative_error_estimation, 8))}"
+    )

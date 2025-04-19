@@ -1,38 +1,38 @@
 [
     {
-        "job": "A",
+        "job": "1",
         "qubits": 2,
-        "machine": "QUITO",
+        "machine": "fake_manila",
+        "capacity": 5,
+        "start": 0.0,
+        "end": 5.0,
+        "duration": 5.0
+    },
+    {
+        "job": "2",
+        "qubits": 3,
+        "machine": "fake_manila",
+        "capacity": 5,
+        "start": 0.0,
+        "end": 11.0,
+        "duration": 11.0
+    },
+    {
+        "job": "3",
+        "qubits": 5,
+        "machine": "fake_belem",
         "capacity": 5,
         "start": 0.0,
         "end": 14.0,
         "duration": 14.0
     },
     {
-        "job": "B",
-        "qubits": 3,
-        "machine": "QUITO",
-        "capacity": 5,
-        "start": 0.0,
-        "end": 8.0,
-        "duration": 8.0
-    },
-    {
-        "job": "C",
-        "qubits": 5,
-        "machine": "BELEM",
-        "capacity": 5,
-        "start": 0.0,
-        "end": 20.0,
-        "duration": 20.0
-    },
-    {
-        "job": "D",
+        "job": "4",
         "qubits": 2,
-        "machine": "QUITO",
+        "machine": "fake_manila",
         "capacity": 5,
-        "start": 9.0,
-        "end": 21.0,
-        "duration": 12.0
+        "start": 6.0,
+        "end": 17.0,
+        "duration": 11.0
     }
 ]

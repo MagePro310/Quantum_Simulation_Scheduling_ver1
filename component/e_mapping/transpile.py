@@ -48,7 +48,7 @@ def transpile_circuit_trans(circuit, backend):
         The transpiled quantum circuit.
     """
     # Transpile the circuit
-    transpiled_circuit = transpile(circuit, backend)
+    transpiled_circuit = transpile(circuit, backend, scheduling_method='alap', layout_method='trivial')
 
     # Draw and save the circuit visualization
     transpiled_circuit.draw('mpl')

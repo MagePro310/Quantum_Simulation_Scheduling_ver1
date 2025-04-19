@@ -369,18 +369,8 @@ def _calculate_example_setup_times(job_i, job_j_, machine_k) -> float:
         return 0
     return (job_i + job_j_) // 2 + np.random.randint(-2, 3) + machine_k
 
-def _generate_problem(big_m: int, timesteps: int) -> tuple[InfoProblem, dict[str, int]]:
+def _generate_problem(big_m: int, timesteps: int, jobs: list, job_capacities: dict, machines: list, machine_capacities: dict) -> tuple[InfoProblem, dict[str, int]]:
     # Inputs
-    jobs = ["0", "A", "B", "C","D"]
-    job_capacities = {
-        "0": 0,  # dummy job
-        "A": 2,
-        "B": 3,
-        "C": 5,
-        "D": 2,
-    }
-    machines = ["QUITO", "BELEM"]
-    machine_capacities = {"QUITO": 5, "BELEM": 5}
     processing_times = [
         [
             _calculate_exmaple_process_times(
@@ -669,7 +659,7 @@ def _extract_gurobi_results(
     del assigned_jobs["0"]
     return assigned_jobs
 
-def example_problem(big_m: int, timesteps: int, filename: str = "scheduling"):
+def example_problem(big_m: int, timesteps: int, filename: str = "scheduling", jobs: list = None, job_capacities: dict = None, machines: list = None, machine_capacities: dict = None):
     """Runs the example problem and saves the LP file and JSON file.
     TODO should also run the solution explorer and produce the output pdf.
 
@@ -678,11 +668,7 @@ def example_problem(big_m: int, timesteps: int, filename: str = "scheduling"):
         timesteps (int): LP metavariable.
         filename (str, optional): Filename for .lp, .json and .pdf. Defaults to "scheduling".
     """
-    _problem, job_capacities = _generate_problem(big_m, timesteps)
-    # print("Problem:")
-    # print(_problem.base_jobs)
-    # print("Job Capacities:")
-    # print(job_capacities)
+    _problem, job_capacities = _generate_problem(big_m, timesteps, jobs, job_capacities, machines, machine_capacities)
     _, _, lp_instance = generate_schedule(_problem, SchedulerType.EXTENDED)
     
     
