@@ -11,6 +11,7 @@ from qiskit_addon_cutting import (
 from qiskit.quantum_info import SparsePauliOp
 from dataclasses import dataclass
 import numpy as np
+import math
 # from component.sup_sys.job_info import JobInfo
 
 @dataclass
@@ -59,6 +60,29 @@ def gate_to_reduce_width(qc: QuantumCircuit, cut_name: str, observable) -> SubCi
     
     
     return result
+
+def greedy_cut(circuit: QuantumCircuit, max_width: int):
+    num_qubits = circuit.num_qubits
+    num_of_part = math.ceil(num_qubits / max_width)
+    alphabet = [chr(i) for i in range(65, 65 + num_of_part)]
+    cutname = ""
+    for i in range(num_qubits):
+        cutname += alphabet[i // max_width]
+    
+    # Create Observables
+    list_observables = ["I", "Z","X"]
+    observables = []
+    for i in range(num_of_part):
+        for k in range(len(list_observables)):
+            observable_temp = ""
+            for j in range(num_qubits):
+                index = j // max_width + k
+                if (index >= len(list_observables)):
+                    index = 0
+                observable_temp += list_observables[index]
+            observables.append(observable_temp)
+    observable = SparsePauliOp(observables)
+    return cutname, observable
 
 
 def prepare_subexperiments(subcircuits, subobservables, num_samples=np.inf):

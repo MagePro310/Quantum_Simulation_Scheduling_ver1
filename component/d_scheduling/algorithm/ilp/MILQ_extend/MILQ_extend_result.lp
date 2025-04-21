@@ -600,225 +600,184 @@ _C403: - c_j_4 + 31 z_ikt_4_fake_belem_31 + 31 z_ikt_4_fake_manila_31 <= 0
 _C404: z_ikt_4_fake_belem_31 + z_ikt_4_fake_manila_31 <= 1
 _C405: s_j_4 + 999969 z_ikt_4_fake_belem_31 + 999969 z_ikt_4_fake_manila_31
  <= 1000000
-_C406: 2 z_ikt_1_fake_belem_0 + 3 z_ikt_2_fake_belem_0
- + 5 z_ikt_3_fake_belem_0 + 2 z_ikt_4_fake_belem_0 <= 5
-_C407: 2 z_ikt_1_fake_manila_0 + 3 z_ikt_2_fake_manila_0
- + 5 z_ikt_3_fake_manila_0 + 2 z_ikt_4_fake_manila_0 <= 5
-_C408: 2 z_ikt_1_fake_belem_1 + 3 z_ikt_2_fake_belem_1
- + 5 z_ikt_3_fake_belem_1 + 2 z_ikt_4_fake_belem_1 <= 5
-_C409: 2 z_ikt_1_fake_manila_1 + 3 z_ikt_2_fake_manila_1
- + 5 z_ikt_3_fake_manila_1 + 2 z_ikt_4_fake_manila_1 <= 5
+_C406: c_j_5 - makespan <= 0
+_C407: x_ik_5_fake_belem + x_ik_5_fake_manila = 1
+_C408: c_j_5 - s_j_5 - z_ikt_5_fake_belem_0 - z_ikt_5_fake_belem_1
+ - z_ikt_5_fake_belem_10 - z_ikt_5_fake_belem_11 - z_ikt_5_fake_belem_12
+ - z_ikt_5_fake_belem_13 - z_ikt_5_fake_belem_14 - z_ikt_5_fake_belem_15
+ - z_ikt_5_fake_belem_16 - z_ikt_5_fake_belem_17 - z_ikt_5_fake_belem_18
+ - z_ikt_5_fake_belem_19 - z_ikt_5_fake_belem_2 - z_ikt_5_fake_belem_20
+ - z_ikt_5_fake_belem_21 - z_ikt_5_fake_belem_22 - z_ikt_5_fake_belem_23
+ - z_ikt_5_fake_belem_24 - z_ikt_5_fake_belem_25 - z_ikt_5_fake_belem_26
+ - z_ikt_5_fake_belem_27 - z_ikt_5_fake_belem_28 - z_ikt_5_fake_belem_29
+ - z_ikt_5_fake_belem_3 - z_ikt_5_fake_belem_30 - z_ikt_5_fake_belem_31
+ - z_ikt_5_fake_belem_4 - z_ikt_5_fake_belem_5 - z_ikt_5_fake_belem_6
+ - z_ikt_5_fake_belem_7 - z_ikt_5_fake_belem_8 - z_ikt_5_fake_belem_9
+ - z_ikt_5_fake_manila_0 - z_ikt_5_fake_manila_1 - z_ikt_5_fake_manila_10
+ - z_ikt_5_fake_manila_11 - z_ikt_5_fake_manila_12 - z_ikt_5_fake_manila_13
+ - z_ikt_5_fake_manila_14 - z_ikt_5_fake_manila_15 - z_ikt_5_fake_manila_16
+ - z_ikt_5_fake_manila_17 - z_ikt_5_fake_manila_18 - z_ikt_5_fake_manila_19
+ - z_ikt_5_fake_manila_2 - z_ikt_5_fake_manila_20 - z_ikt_5_fake_manila_21
+ - z_ikt_5_fake_manila_22 - z_ikt_5_fake_manila_23 - z_ikt_5_fake_manila_24
+ - z_ikt_5_fake_manila_25 - z_ikt_5_fake_manila_26 - z_ikt_5_fake_manila_27
+ - z_ikt_5_fake_manila_28 - z_ikt_5_fake_manila_29 - z_ikt_5_fake_manila_3
+ - z_ikt_5_fake_manila_30 - z_ikt_5_fake_manila_31 - z_ikt_5_fake_manila_4
+ - z_ikt_5_fake_manila_5 - z_ikt_5_fake_manila_6 - z_ikt_5_fake_manila_7
+ - z_ikt_5_fake_manila_8 - z_ikt_5_fake_manila_9 = -1
+_C409: - 1000000 x_ik_5_fake_belem + z_ikt_5_fake_belem_0
+ + z_ikt_5_fake_belem_1 + z_ikt_5_fake_belem_10 + z_ikt_5_fake_belem_11
+ + z_ikt_5_fake_belem_12 + z_ikt_5_fake_belem_13 + z_ikt_5_fake_belem_14
+ + z_ikt_5_fake_belem_15 + z_ikt_5_fake_belem_16 + z_ikt_5_fake_belem_17
+ + z_ikt_5_fake_belem_18 + z_ikt_5_fake_belem_19 + z_ikt_5_fake_belem_2
+ + z_ikt_5_fake_belem_20 + z_ikt_5_fake_belem_21 + z_ikt_5_fake_belem_22
+ + z_ikt_5_fake_belem_23 + z_ikt_5_fake_belem_24 + z_ikt_5_fake_belem_25
+ + z_ikt_5_fake_belem_26 + z_ikt_5_fake_belem_27 + z_ikt_5_fake_belem_28
+ + z_ikt_5_fake_belem_29 + z_ikt_5_fake_belem_3 + z_ikt_5_fake_belem_30
+ + z_ikt_5_fake_belem_31 + z_ikt_5_fake_belem_4 + z_ikt_5_fake_belem_5
+ + z_ikt_5_fake_belem_6 + z_ikt_5_fake_belem_7 + z_ikt_5_fake_belem_8
+ + z_ikt_5_fake_belem_9 <= 0
 _C41: z_ikt_1_fake_belem_11 + z_ikt_1_fake_manila_11 <= 1
-_C410: 2 z_ikt_1_fake_belem_2 + 3 z_ikt_2_fake_belem_2
- + 5 z_ikt_3_fake_belem_2 + 2 z_ikt_4_fake_belem_2 <= 5
-_C411: 2 z_ikt_1_fake_manila_2 + 3 z_ikt_2_fake_manila_2
- + 5 z_ikt_3_fake_manila_2 + 2 z_ikt_4_fake_manila_2 <= 5
-_C412: 2 z_ikt_1_fake_belem_3 + 3 z_ikt_2_fake_belem_3
- + 5 z_ikt_3_fake_belem_3 + 2 z_ikt_4_fake_belem_3 <= 5
-_C413: 2 z_ikt_1_fake_manila_3 + 3 z_ikt_2_fake_manila_3
- + 5 z_ikt_3_fake_manila_3 + 2 z_ikt_4_fake_manila_3 <= 5
-_C414: 2 z_ikt_1_fake_belem_4 + 3 z_ikt_2_fake_belem_4
- + 5 z_ikt_3_fake_belem_4 + 2 z_ikt_4_fake_belem_4 <= 5
-_C415: 2 z_ikt_1_fake_manila_4 + 3 z_ikt_2_fake_manila_4
- + 5 z_ikt_3_fake_manila_4 + 2 z_ikt_4_fake_manila_4 <= 5
-_C416: 2 z_ikt_1_fake_belem_5 + 3 z_ikt_2_fake_belem_5
- + 5 z_ikt_3_fake_belem_5 + 2 z_ikt_4_fake_belem_5 <= 5
-_C417: 2 z_ikt_1_fake_manila_5 + 3 z_ikt_2_fake_manila_5
- + 5 z_ikt_3_fake_manila_5 + 2 z_ikt_4_fake_manila_5 <= 5
-_C418: 2 z_ikt_1_fake_belem_6 + 3 z_ikt_2_fake_belem_6
- + 5 z_ikt_3_fake_belem_6 + 2 z_ikt_4_fake_belem_6 <= 5
-_C419: 2 z_ikt_1_fake_manila_6 + 3 z_ikt_2_fake_manila_6
- + 5 z_ikt_3_fake_manila_6 + 2 z_ikt_4_fake_manila_6 <= 5
+_C410: - 1000000 x_ik_5_fake_manila + z_ikt_5_fake_manila_0
+ + z_ikt_5_fake_manila_1 + z_ikt_5_fake_manila_10 + z_ikt_5_fake_manila_11
+ + z_ikt_5_fake_manila_12 + z_ikt_5_fake_manila_13 + z_ikt_5_fake_manila_14
+ + z_ikt_5_fake_manila_15 + z_ikt_5_fake_manila_16 + z_ikt_5_fake_manila_17
+ + z_ikt_5_fake_manila_18 + z_ikt_5_fake_manila_19 + z_ikt_5_fake_manila_2
+ + z_ikt_5_fake_manila_20 + z_ikt_5_fake_manila_21 + z_ikt_5_fake_manila_22
+ + z_ikt_5_fake_manila_23 + z_ikt_5_fake_manila_24 + z_ikt_5_fake_manila_25
+ + z_ikt_5_fake_manila_26 + z_ikt_5_fake_manila_27 + z_ikt_5_fake_manila_28
+ + z_ikt_5_fake_manila_29 + z_ikt_5_fake_manila_3 + z_ikt_5_fake_manila_30
+ + z_ikt_5_fake_manila_31 + z_ikt_5_fake_manila_4 + z_ikt_5_fake_manila_5
+ + z_ikt_5_fake_manila_6 + z_ikt_5_fake_manila_7 + z_ikt_5_fake_manila_8
+ + z_ikt_5_fake_manila_9 <= 0
+_C411: - c_j_5 <= 0
+_C412: z_ikt_5_fake_belem_0 + z_ikt_5_fake_manila_0 <= 1
+_C413: s_j_5 + 1000000 z_ikt_5_fake_belem_0 + 1000000 z_ikt_5_fake_manila_0
+ <= 1000000
+_C414: - c_j_5 + z_ikt_5_fake_belem_1 + z_ikt_5_fake_manila_1 <= 0
+_C415: z_ikt_5_fake_belem_1 + z_ikt_5_fake_manila_1 <= 1
+_C416: s_j_5 + 999999 z_ikt_5_fake_belem_1 + 999999 z_ikt_5_fake_manila_1
+ <= 1000000
+_C417: - c_j_5 + 2 z_ikt_5_fake_belem_2 + 2 z_ikt_5_fake_manila_2 <= 0
+_C418: z_ikt_5_fake_belem_2 + z_ikt_5_fake_manila_2 <= 1
+_C419: s_j_5 + 999998 z_ikt_5_fake_belem_2 + 999998 z_ikt_5_fake_manila_2
+ <= 1000000
 _C42: s_j_1 + 999989 z_ikt_1_fake_belem_11 + 999989 z_ikt_1_fake_manila_11
  <= 1000000
-_C420: 2 z_ikt_1_fake_belem_7 + 3 z_ikt_2_fake_belem_7
- + 5 z_ikt_3_fake_belem_7 + 2 z_ikt_4_fake_belem_7 <= 5
-_C421: 2 z_ikt_1_fake_manila_7 + 3 z_ikt_2_fake_manila_7
- + 5 z_ikt_3_fake_manila_7 + 2 z_ikt_4_fake_manila_7 <= 5
-_C422: 2 z_ikt_1_fake_belem_8 + 3 z_ikt_2_fake_belem_8
- + 5 z_ikt_3_fake_belem_8 + 2 z_ikt_4_fake_belem_8 <= 5
-_C423: 2 z_ikt_1_fake_manila_8 + 3 z_ikt_2_fake_manila_8
- + 5 z_ikt_3_fake_manila_8 + 2 z_ikt_4_fake_manila_8 <= 5
-_C424: 2 z_ikt_1_fake_belem_9 + 3 z_ikt_2_fake_belem_9
- + 5 z_ikt_3_fake_belem_9 + 2 z_ikt_4_fake_belem_9 <= 5
-_C425: 2 z_ikt_1_fake_manila_9 + 3 z_ikt_2_fake_manila_9
- + 5 z_ikt_3_fake_manila_9 + 2 z_ikt_4_fake_manila_9 <= 5
-_C426: 2 z_ikt_1_fake_belem_10 + 3 z_ikt_2_fake_belem_10
- + 5 z_ikt_3_fake_belem_10 + 2 z_ikt_4_fake_belem_10 <= 5
-_C427: 2 z_ikt_1_fake_manila_10 + 3 z_ikt_2_fake_manila_10
- + 5 z_ikt_3_fake_manila_10 + 2 z_ikt_4_fake_manila_10 <= 5
-_C428: 2 z_ikt_1_fake_belem_11 + 3 z_ikt_2_fake_belem_11
- + 5 z_ikt_3_fake_belem_11 + 2 z_ikt_4_fake_belem_11 <= 5
-_C429: 2 z_ikt_1_fake_manila_11 + 3 z_ikt_2_fake_manila_11
- + 5 z_ikt_3_fake_manila_11 + 2 z_ikt_4_fake_manila_11 <= 5
+_C420: - c_j_5 + 3 z_ikt_5_fake_belem_3 + 3 z_ikt_5_fake_manila_3 <= 0
+_C421: z_ikt_5_fake_belem_3 + z_ikt_5_fake_manila_3 <= 1
+_C422: s_j_5 + 999997 z_ikt_5_fake_belem_3 + 999997 z_ikt_5_fake_manila_3
+ <= 1000000
+_C423: - c_j_5 + 4 z_ikt_5_fake_belem_4 + 4 z_ikt_5_fake_manila_4 <= 0
+_C424: z_ikt_5_fake_belem_4 + z_ikt_5_fake_manila_4 <= 1
+_C425: s_j_5 + 999996 z_ikt_5_fake_belem_4 + 999996 z_ikt_5_fake_manila_4
+ <= 1000000
+_C426: - c_j_5 + 5 z_ikt_5_fake_belem_5 + 5 z_ikt_5_fake_manila_5 <= 0
+_C427: z_ikt_5_fake_belem_5 + z_ikt_5_fake_manila_5 <= 1
+_C428: s_j_5 + 999995 z_ikt_5_fake_belem_5 + 999995 z_ikt_5_fake_manila_5
+ <= 1000000
+_C429: - c_j_5 + 6 z_ikt_5_fake_belem_6 + 6 z_ikt_5_fake_manila_6 <= 0
 _C43: - c_j_1 + 12 z_ikt_1_fake_belem_12 + 12 z_ikt_1_fake_manila_12 <= 0
-_C430: 2 z_ikt_1_fake_belem_12 + 3 z_ikt_2_fake_belem_12
- + 5 z_ikt_3_fake_belem_12 + 2 z_ikt_4_fake_belem_12 <= 5
-_C431: 2 z_ikt_1_fake_manila_12 + 3 z_ikt_2_fake_manila_12
- + 5 z_ikt_3_fake_manila_12 + 2 z_ikt_4_fake_manila_12 <= 5
-_C432: 2 z_ikt_1_fake_belem_13 + 3 z_ikt_2_fake_belem_13
- + 5 z_ikt_3_fake_belem_13 + 2 z_ikt_4_fake_belem_13 <= 5
-_C433: 2 z_ikt_1_fake_manila_13 + 3 z_ikt_2_fake_manila_13
- + 5 z_ikt_3_fake_manila_13 + 2 z_ikt_4_fake_manila_13 <= 5
-_C434: 2 z_ikt_1_fake_belem_14 + 3 z_ikt_2_fake_belem_14
- + 5 z_ikt_3_fake_belem_14 + 2 z_ikt_4_fake_belem_14 <= 5
-_C435: 2 z_ikt_1_fake_manila_14 + 3 z_ikt_2_fake_manila_14
- + 5 z_ikt_3_fake_manila_14 + 2 z_ikt_4_fake_manila_14 <= 5
-_C436: 2 z_ikt_1_fake_belem_15 + 3 z_ikt_2_fake_belem_15
- + 5 z_ikt_3_fake_belem_15 + 2 z_ikt_4_fake_belem_15 <= 5
-_C437: 2 z_ikt_1_fake_manila_15 + 3 z_ikt_2_fake_manila_15
- + 5 z_ikt_3_fake_manila_15 + 2 z_ikt_4_fake_manila_15 <= 5
-_C438: 2 z_ikt_1_fake_belem_16 + 3 z_ikt_2_fake_belem_16
- + 5 z_ikt_3_fake_belem_16 + 2 z_ikt_4_fake_belem_16 <= 5
-_C439: 2 z_ikt_1_fake_manila_16 + 3 z_ikt_2_fake_manila_16
- + 5 z_ikt_3_fake_manila_16 + 2 z_ikt_4_fake_manila_16 <= 5
+_C430: z_ikt_5_fake_belem_6 + z_ikt_5_fake_manila_6 <= 1
+_C431: s_j_5 + 999994 z_ikt_5_fake_belem_6 + 999994 z_ikt_5_fake_manila_6
+ <= 1000000
+_C432: - c_j_5 + 7 z_ikt_5_fake_belem_7 + 7 z_ikt_5_fake_manila_7 <= 0
+_C433: z_ikt_5_fake_belem_7 + z_ikt_5_fake_manila_7 <= 1
+_C434: s_j_5 + 999993 z_ikt_5_fake_belem_7 + 999993 z_ikt_5_fake_manila_7
+ <= 1000000
+_C435: - c_j_5 + 8 z_ikt_5_fake_belem_8 + 8 z_ikt_5_fake_manila_8 <= 0
+_C436: z_ikt_5_fake_belem_8 + z_ikt_5_fake_manila_8 <= 1
+_C437: s_j_5 + 999992 z_ikt_5_fake_belem_8 + 999992 z_ikt_5_fake_manila_8
+ <= 1000000
+_C438: - c_j_5 + 9 z_ikt_5_fake_belem_9 + 9 z_ikt_5_fake_manila_9 <= 0
+_C439: z_ikt_5_fake_belem_9 + z_ikt_5_fake_manila_9 <= 1
 _C44: z_ikt_1_fake_belem_12 + z_ikt_1_fake_manila_12 <= 1
-_C440: 2 z_ikt_1_fake_belem_17 + 3 z_ikt_2_fake_belem_17
- + 5 z_ikt_3_fake_belem_17 + 2 z_ikt_4_fake_belem_17 <= 5
-_C441: 2 z_ikt_1_fake_manila_17 + 3 z_ikt_2_fake_manila_17
- + 5 z_ikt_3_fake_manila_17 + 2 z_ikt_4_fake_manila_17 <= 5
-_C442: 2 z_ikt_1_fake_belem_18 + 3 z_ikt_2_fake_belem_18
- + 5 z_ikt_3_fake_belem_18 + 2 z_ikt_4_fake_belem_18 <= 5
-_C443: 2 z_ikt_1_fake_manila_18 + 3 z_ikt_2_fake_manila_18
- + 5 z_ikt_3_fake_manila_18 + 2 z_ikt_4_fake_manila_18 <= 5
-_C444: 2 z_ikt_1_fake_belem_19 + 3 z_ikt_2_fake_belem_19
- + 5 z_ikt_3_fake_belem_19 + 2 z_ikt_4_fake_belem_19 <= 5
-_C445: 2 z_ikt_1_fake_manila_19 + 3 z_ikt_2_fake_manila_19
- + 5 z_ikt_3_fake_manila_19 + 2 z_ikt_4_fake_manila_19 <= 5
-_C446: 2 z_ikt_1_fake_belem_20 + 3 z_ikt_2_fake_belem_20
- + 5 z_ikt_3_fake_belem_20 + 2 z_ikt_4_fake_belem_20 <= 5
-_C447: 2 z_ikt_1_fake_manila_20 + 3 z_ikt_2_fake_manila_20
- + 5 z_ikt_3_fake_manila_20 + 2 z_ikt_4_fake_manila_20 <= 5
-_C448: 2 z_ikt_1_fake_belem_21 + 3 z_ikt_2_fake_belem_21
- + 5 z_ikt_3_fake_belem_21 + 2 z_ikt_4_fake_belem_21 <= 5
-_C449: 2 z_ikt_1_fake_manila_21 + 3 z_ikt_2_fake_manila_21
- + 5 z_ikt_3_fake_manila_21 + 2 z_ikt_4_fake_manila_21 <= 5
+_C440: s_j_5 + 999991 z_ikt_5_fake_belem_9 + 999991 z_ikt_5_fake_manila_9
+ <= 1000000
+_C441: - c_j_5 + 10 z_ikt_5_fake_belem_10 + 10 z_ikt_5_fake_manila_10 <= 0
+_C442: z_ikt_5_fake_belem_10 + z_ikt_5_fake_manila_10 <= 1
+_C443: s_j_5 + 999990 z_ikt_5_fake_belem_10 + 999990 z_ikt_5_fake_manila_10
+ <= 1000000
+_C444: - c_j_5 + 11 z_ikt_5_fake_belem_11 + 11 z_ikt_5_fake_manila_11 <= 0
+_C445: z_ikt_5_fake_belem_11 + z_ikt_5_fake_manila_11 <= 1
+_C446: s_j_5 + 999989 z_ikt_5_fake_belem_11 + 999989 z_ikt_5_fake_manila_11
+ <= 1000000
+_C447: - c_j_5 + 12 z_ikt_5_fake_belem_12 + 12 z_ikt_5_fake_manila_12 <= 0
+_C448: z_ikt_5_fake_belem_12 + z_ikt_5_fake_manila_12 <= 1
+_C449: s_j_5 + 999988 z_ikt_5_fake_belem_12 + 999988 z_ikt_5_fake_manila_12
+ <= 1000000
 _C45: s_j_1 + 999988 z_ikt_1_fake_belem_12 + 999988 z_ikt_1_fake_manila_12
  <= 1000000
-_C450: 2 z_ikt_1_fake_belem_22 + 3 z_ikt_2_fake_belem_22
- + 5 z_ikt_3_fake_belem_22 + 2 z_ikt_4_fake_belem_22 <= 5
-_C451: 2 z_ikt_1_fake_manila_22 + 3 z_ikt_2_fake_manila_22
- + 5 z_ikt_3_fake_manila_22 + 2 z_ikt_4_fake_manila_22 <= 5
-_C452: 2 z_ikt_1_fake_belem_23 + 3 z_ikt_2_fake_belem_23
- + 5 z_ikt_3_fake_belem_23 + 2 z_ikt_4_fake_belem_23 <= 5
-_C453: 2 z_ikt_1_fake_manila_23 + 3 z_ikt_2_fake_manila_23
- + 5 z_ikt_3_fake_manila_23 + 2 z_ikt_4_fake_manila_23 <= 5
-_C454: 2 z_ikt_1_fake_belem_24 + 3 z_ikt_2_fake_belem_24
- + 5 z_ikt_3_fake_belem_24 + 2 z_ikt_4_fake_belem_24 <= 5
-_C455: 2 z_ikt_1_fake_manila_24 + 3 z_ikt_2_fake_manila_24
- + 5 z_ikt_3_fake_manila_24 + 2 z_ikt_4_fake_manila_24 <= 5
-_C456: 2 z_ikt_1_fake_belem_25 + 3 z_ikt_2_fake_belem_25
- + 5 z_ikt_3_fake_belem_25 + 2 z_ikt_4_fake_belem_25 <= 5
-_C457: 2 z_ikt_1_fake_manila_25 + 3 z_ikt_2_fake_manila_25
- + 5 z_ikt_3_fake_manila_25 + 2 z_ikt_4_fake_manila_25 <= 5
-_C458: 2 z_ikt_1_fake_belem_26 + 3 z_ikt_2_fake_belem_26
- + 5 z_ikt_3_fake_belem_26 + 2 z_ikt_4_fake_belem_26 <= 5
-_C459: 2 z_ikt_1_fake_manila_26 + 3 z_ikt_2_fake_manila_26
- + 5 z_ikt_3_fake_manila_26 + 2 z_ikt_4_fake_manila_26 <= 5
+_C450: - c_j_5 + 13 z_ikt_5_fake_belem_13 + 13 z_ikt_5_fake_manila_13 <= 0
+_C451: z_ikt_5_fake_belem_13 + z_ikt_5_fake_manila_13 <= 1
+_C452: s_j_5 + 999987 z_ikt_5_fake_belem_13 + 999987 z_ikt_5_fake_manila_13
+ <= 1000000
+_C453: - c_j_5 + 14 z_ikt_5_fake_belem_14 + 14 z_ikt_5_fake_manila_14 <= 0
+_C454: z_ikt_5_fake_belem_14 + z_ikt_5_fake_manila_14 <= 1
+_C455: s_j_5 + 999986 z_ikt_5_fake_belem_14 + 999986 z_ikt_5_fake_manila_14
+ <= 1000000
+_C456: - c_j_5 + 15 z_ikt_5_fake_belem_15 + 15 z_ikt_5_fake_manila_15 <= 0
+_C457: z_ikt_5_fake_belem_15 + z_ikt_5_fake_manila_15 <= 1
+_C458: s_j_5 + 999985 z_ikt_5_fake_belem_15 + 999985 z_ikt_5_fake_manila_15
+ <= 1000000
+_C459: - c_j_5 + 16 z_ikt_5_fake_belem_16 + 16 z_ikt_5_fake_manila_16 <= 0
 _C46: - c_j_1 + 13 z_ikt_1_fake_belem_13 + 13 z_ikt_1_fake_manila_13 <= 0
-_C460: 2 z_ikt_1_fake_belem_27 + 3 z_ikt_2_fake_belem_27
- + 5 z_ikt_3_fake_belem_27 + 2 z_ikt_4_fake_belem_27 <= 5
-_C461: 2 z_ikt_1_fake_manila_27 + 3 z_ikt_2_fake_manila_27
- + 5 z_ikt_3_fake_manila_27 + 2 z_ikt_4_fake_manila_27 <= 5
-_C462: 2 z_ikt_1_fake_belem_28 + 3 z_ikt_2_fake_belem_28
- + 5 z_ikt_3_fake_belem_28 + 2 z_ikt_4_fake_belem_28 <= 5
-_C463: 2 z_ikt_1_fake_manila_28 + 3 z_ikt_2_fake_manila_28
- + 5 z_ikt_3_fake_manila_28 + 2 z_ikt_4_fake_manila_28 <= 5
-_C464: 2 z_ikt_1_fake_belem_29 + 3 z_ikt_2_fake_belem_29
- + 5 z_ikt_3_fake_belem_29 + 2 z_ikt_4_fake_belem_29 <= 5
-_C465: 2 z_ikt_1_fake_manila_29 + 3 z_ikt_2_fake_manila_29
- + 5 z_ikt_3_fake_manila_29 + 2 z_ikt_4_fake_manila_29 <= 5
-_C466: 2 z_ikt_1_fake_belem_30 + 3 z_ikt_2_fake_belem_30
- + 5 z_ikt_3_fake_belem_30 + 2 z_ikt_4_fake_belem_30 <= 5
-_C467: 2 z_ikt_1_fake_manila_30 + 3 z_ikt_2_fake_manila_30
- + 5 z_ikt_3_fake_manila_30 + 2 z_ikt_4_fake_manila_30 <= 5
-_C468: 2 z_ikt_1_fake_belem_31 + 3 z_ikt_2_fake_belem_31
- + 5 z_ikt_3_fake_belem_31 + 2 z_ikt_4_fake_belem_31 <= 5
-_C469: 2 z_ikt_1_fake_manila_31 + 3 z_ikt_2_fake_manila_31
- + 5 z_ikt_3_fake_manila_31 + 2 z_ikt_4_fake_manila_31 <= 5
+_C460: z_ikt_5_fake_belem_16 + z_ikt_5_fake_manila_16 <= 1
+_C461: s_j_5 + 999984 z_ikt_5_fake_belem_16 + 999984 z_ikt_5_fake_manila_16
+ <= 1000000
+_C462: - c_j_5 + 17 z_ikt_5_fake_belem_17 + 17 z_ikt_5_fake_manila_17 <= 0
+_C463: z_ikt_5_fake_belem_17 + z_ikt_5_fake_manila_17 <= 1
+_C464: s_j_5 + 999983 z_ikt_5_fake_belem_17 + 999983 z_ikt_5_fake_manila_17
+ <= 1000000
+_C465: - c_j_5 + 18 z_ikt_5_fake_belem_18 + 18 z_ikt_5_fake_manila_18 <= 0
+_C466: z_ikt_5_fake_belem_18 + z_ikt_5_fake_manila_18 <= 1
+_C467: s_j_5 + 999982 z_ikt_5_fake_belem_18 + 999982 z_ikt_5_fake_manila_18
+ <= 1000000
+_C468: - c_j_5 + 19 z_ikt_5_fake_belem_19 + 19 z_ikt_5_fake_manila_19 <= 0
+_C469: z_ikt_5_fake_belem_19 + z_ikt_5_fake_manila_19 <= 1
 _C47: z_ikt_1_fake_belem_13 + z_ikt_1_fake_manila_13 <= 1
-_C470: y_ijk_0_1_fake_belem + y_ijk_0_1_fake_manila + y_ijk_1_1_fake_belem
- + y_ijk_1_1_fake_manila + y_ijk_2_1_fake_belem + y_ijk_2_1_fake_manila
- + y_ijk_3_1_fake_belem + y_ijk_3_1_fake_manila + y_ijk_4_1_fake_belem
- + y_ijk_4_1_fake_manila >= 1
-_C471: c_j_1 - s_j_1 - 8 x_ik_1_fake_belem - 5 x_ik_1_fake_manila
- - 50 y_ijk_1_1_fake_belem - 50 y_ijk_1_1_fake_manila - 6 y_ijk_2_1_fake_belem
- - 9 y_ijk_2_1_fake_manila - 9 y_ijk_3_1_fake_belem - 10 y_ijk_3_1_fake_manila
- - 8 y_ijk_4_1_fake_belem - 6 y_ijk_4_1_fake_manila >= 0
-_C472: x_ik_1_fake_belem - 0.001 y_ijk_0_1_fake_belem
- - 0.001 y_ijk_1_1_fake_belem - 0.001 y_ijk_2_1_fake_belem
- - 0.001 y_ijk_3_1_fake_belem - 0.001 y_ijk_4_1_fake_belem >= 0
-_C473: x_ik_1_fake_belem - 0.001 y_ijk_1_0_fake_belem
- - 0.001 y_ijk_1_1_fake_belem - 0.001 y_ijk_1_2_fake_belem
- - 0.001 y_ijk_1_3_fake_belem - 0.001 y_ijk_1_4_fake_belem >= 0
-_C474: - y_ijk_0_1_fake_belem + z_ikt_1_fake_belem_0 = 0
-_C475: x_ik_1_fake_manila - 0.001 y_ijk_0_1_fake_manila
- - 0.001 y_ijk_1_1_fake_manila - 0.001 y_ijk_2_1_fake_manila
- - 0.001 y_ijk_3_1_fake_manila - 0.001 y_ijk_4_1_fake_manila >= 0
-_C476: x_ik_1_fake_manila - 0.001 y_ijk_1_0_fake_manila
- - 0.001 y_ijk_1_1_fake_manila - 0.001 y_ijk_1_2_fake_manila
- - 0.001 y_ijk_1_3_fake_manila - 0.001 y_ijk_1_4_fake_manila >= 0
-_C477: - y_ijk_0_1_fake_manila + z_ikt_1_fake_manila_0 = 0
-_C478: c_j_0 - s_j_1 + 1000 y_ijk_0_1_fake_belem + 1000 y_ijk_0_1_fake_manila
- <= 1000
-_C479: c_j_1 - s_j_1 + 1000 y_ijk_1_1_fake_belem + 1000 y_ijk_1_1_fake_manila
- <= 1000
+_C470: s_j_5 + 999981 z_ikt_5_fake_belem_19 + 999981 z_ikt_5_fake_manila_19
+ <= 1000000
+_C471: - c_j_5 + 20 z_ikt_5_fake_belem_20 + 20 z_ikt_5_fake_manila_20 <= 0
+_C472: z_ikt_5_fake_belem_20 + z_ikt_5_fake_manila_20 <= 1
+_C473: s_j_5 + 999980 z_ikt_5_fake_belem_20 + 999980 z_ikt_5_fake_manila_20
+ <= 1000000
+_C474: - c_j_5 + 21 z_ikt_5_fake_belem_21 + 21 z_ikt_5_fake_manila_21 <= 0
+_C475: z_ikt_5_fake_belem_21 + z_ikt_5_fake_manila_21 <= 1
+_C476: s_j_5 + 999979 z_ikt_5_fake_belem_21 + 999979 z_ikt_5_fake_manila_21
+ <= 1000000
+_C477: - c_j_5 + 22 z_ikt_5_fake_belem_22 + 22 z_ikt_5_fake_manila_22 <= 0
+_C478: z_ikt_5_fake_belem_22 + z_ikt_5_fake_manila_22 <= 1
+_C479: s_j_5 + 999978 z_ikt_5_fake_belem_22 + 999978 z_ikt_5_fake_manila_22
+ <= 1000000
 _C48: s_j_1 + 999987 z_ikt_1_fake_belem_13 + 999987 z_ikt_1_fake_manila_13
  <= 1000000
-_C480: c_j_2 - s_j_1 + 1000 y_ijk_2_1_fake_belem + 1000 y_ijk_2_1_fake_manila
- <= 1000
-_C481: c_j_3 - s_j_1 + 1000 y_ijk_3_1_fake_belem + 1000 y_ijk_3_1_fake_manila
- <= 1000
-_C482: c_j_4 - s_j_1 + 1000 y_ijk_4_1_fake_belem + 1000 y_ijk_4_1_fake_manila
- <= 1000
-_C483: y_ijk_0_2_fake_belem + y_ijk_0_2_fake_manila + y_ijk_1_2_fake_belem
- + y_ijk_1_2_fake_manila + y_ijk_2_2_fake_belem + y_ijk_2_2_fake_manila
- + y_ijk_3_2_fake_belem + y_ijk_3_2_fake_manila + y_ijk_4_2_fake_belem
- + y_ijk_4_2_fake_manila >= 1
-_C484: c_j_2 - s_j_2 - 8 x_ik_2_fake_belem - 10 x_ik_2_fake_manila
- - 8 y_ijk_1_2_fake_belem - 5 y_ijk_1_2_fake_manila - 50 y_ijk_2_2_fake_belem
- - 50 y_ijk_2_2_fake_manila - 9 y_ijk_3_2_fake_belem - 7 y_ijk_3_2_fake_manila
- - 6 y_ijk_4_2_fake_belem - 8 y_ijk_4_2_fake_manila >= 0
-_C485: x_ik_2_fake_belem - 0.001 y_ijk_0_2_fake_belem
- - 0.001 y_ijk_1_2_fake_belem - 0.001 y_ijk_2_2_fake_belem
- - 0.001 y_ijk_3_2_fake_belem - 0.001 y_ijk_4_2_fake_belem >= 0
-_C486: x_ik_2_fake_belem - 0.001 y_ijk_2_0_fake_belem
- - 0.001 y_ijk_2_1_fake_belem - 0.001 y_ijk_2_2_fake_belem
- - 0.001 y_ijk_2_3_fake_belem - 0.001 y_ijk_2_4_fake_belem >= 0
-_C487: - y_ijk_0_2_fake_belem + z_ikt_2_fake_belem_0 = 0
-_C488: x_ik_2_fake_manila - 0.001 y_ijk_0_2_fake_manila
- - 0.001 y_ijk_1_2_fake_manila - 0.001 y_ijk_2_2_fake_manila
- - 0.001 y_ijk_3_2_fake_manila - 0.001 y_ijk_4_2_fake_manila >= 0
-_C489: x_ik_2_fake_manila - 0.001 y_ijk_2_0_fake_manila
- - 0.001 y_ijk_2_1_fake_manila - 0.001 y_ijk_2_2_fake_manila
- - 0.001 y_ijk_2_3_fake_manila - 0.001 y_ijk_2_4_fake_manila >= 0
+_C480: - c_j_5 + 23 z_ikt_5_fake_belem_23 + 23 z_ikt_5_fake_manila_23 <= 0
+_C481: z_ikt_5_fake_belem_23 + z_ikt_5_fake_manila_23 <= 1
+_C482: s_j_5 + 999977 z_ikt_5_fake_belem_23 + 999977 z_ikt_5_fake_manila_23
+ <= 1000000
+_C483: - c_j_5 + 24 z_ikt_5_fake_belem_24 + 24 z_ikt_5_fake_manila_24 <= 0
+_C484: z_ikt_5_fake_belem_24 + z_ikt_5_fake_manila_24 <= 1
+_C485: s_j_5 + 999976 z_ikt_5_fake_belem_24 + 999976 z_ikt_5_fake_manila_24
+ <= 1000000
+_C486: - c_j_5 + 25 z_ikt_5_fake_belem_25 + 25 z_ikt_5_fake_manila_25 <= 0
+_C487: z_ikt_5_fake_belem_25 + z_ikt_5_fake_manila_25 <= 1
+_C488: s_j_5 + 999975 z_ikt_5_fake_belem_25 + 999975 z_ikt_5_fake_manila_25
+ <= 1000000
+_C489: - c_j_5 + 26 z_ikt_5_fake_belem_26 + 26 z_ikt_5_fake_manila_26 <= 0
 _C49: - c_j_1 + 14 z_ikt_1_fake_belem_14 + 14 z_ikt_1_fake_manila_14 <= 0
-_C490: - y_ijk_0_2_fake_manila + z_ikt_2_fake_manila_0 = 0
-_C491: c_j_0 - s_j_2 + 1000 y_ijk_0_2_fake_belem + 1000 y_ijk_0_2_fake_manila
- <= 1000
-_C492: c_j_1 - s_j_2 + 1000 y_ijk_1_2_fake_belem + 1000 y_ijk_1_2_fake_manila
- <= 1000
-_C493: c_j_2 - s_j_2 + 1000 y_ijk_2_2_fake_belem + 1000 y_ijk_2_2_fake_manila
- <= 1000
-_C494: c_j_3 - s_j_2 + 1000 y_ijk_3_2_fake_belem + 1000 y_ijk_3_2_fake_manila
- <= 1000
-_C495: c_j_4 - s_j_2 + 1000 y_ijk_4_2_fake_belem + 1000 y_ijk_4_2_fake_manila
- <= 1000
-_C496: y_ijk_0_3_fake_belem + y_ijk_0_3_fake_manila + y_ijk_1_3_fake_belem
- + y_ijk_1_3_fake_manila + y_ijk_2_3_fake_belem + y_ijk_2_3_fake_manila
- + y_ijk_3_3_fake_belem + y_ijk_3_3_fake_manila + y_ijk_4_3_fake_belem
- + y_ijk_4_3_fake_manila >= 1
-_C497: c_j_3 - s_j_3 - 10 x_ik_3_fake_belem - 12 x_ik_3_fake_manila
- - 9 y_ijk_1_3_fake_belem - 7 y_ijk_1_3_fake_manila - 8 y_ijk_2_3_fake_belem
- - 10 y_ijk_2_3_fake_manila - 50 y_ijk_3_3_fake_belem
- - 50 y_ijk_3_3_fake_manila - 10 y_ijk_4_3_fake_belem
- - 7 y_ijk_4_3_fake_manila >= 0
-_C498: x_ik_3_fake_belem - 0.001 y_ijk_0_3_fake_belem
- - 0.001 y_ijk_1_3_fake_belem - 0.001 y_ijk_2_3_fake_belem
- - 0.001 y_ijk_3_3_fake_belem - 0.001 y_ijk_4_3_fake_belem >= 0
-_C499: x_ik_3_fake_belem - 0.001 y_ijk_3_0_fake_belem
- - 0.001 y_ijk_3_1_fake_belem - 0.001 y_ijk_3_2_fake_belem
- - 0.001 y_ijk_3_3_fake_belem - 0.001 y_ijk_3_4_fake_belem >= 0
+_C490: z_ikt_5_fake_belem_26 + z_ikt_5_fake_manila_26 <= 1
+_C491: s_j_5 + 999974 z_ikt_5_fake_belem_26 + 999974 z_ikt_5_fake_manila_26
+ <= 1000000
+_C492: - c_j_5 + 27 z_ikt_5_fake_belem_27 + 27 z_ikt_5_fake_manila_27 <= 0
+_C493: z_ikt_5_fake_belem_27 + z_ikt_5_fake_manila_27 <= 1
+_C494: s_j_5 + 999973 z_ikt_5_fake_belem_27 + 999973 z_ikt_5_fake_manila_27
+ <= 1000000
+_C495: - c_j_5 + 28 z_ikt_5_fake_belem_28 + 28 z_ikt_5_fake_manila_28 <= 0
+_C496: z_ikt_5_fake_belem_28 + z_ikt_5_fake_manila_28 <= 1
+_C497: s_j_5 + 999972 z_ikt_5_fake_belem_28 + 999972 z_ikt_5_fake_manila_28
+ <= 1000000
+_C498: - c_j_5 + 29 z_ikt_5_fake_belem_29 + 29 z_ikt_5_fake_manila_29 <= 0
+_C499: z_ikt_5_fake_belem_29 + z_ikt_5_fake_manila_29 <= 1
 _C5: - 1000000 x_ik_1_fake_belem + z_ikt_1_fake_belem_0 + z_ikt_1_fake_belem_1
  + z_ikt_1_fake_belem_10 + z_ikt_1_fake_belem_11 + z_ikt_1_fake_belem_12
  + z_ikt_1_fake_belem_13 + z_ikt_1_fake_belem_14 + z_ikt_1_fake_belem_15
@@ -831,194 +790,303 @@ _C5: - 1000000 x_ik_1_fake_belem + z_ikt_1_fake_belem_0 + z_ikt_1_fake_belem_1
  + z_ikt_1_fake_belem_4 + z_ikt_1_fake_belem_5 + z_ikt_1_fake_belem_6
  + z_ikt_1_fake_belem_7 + z_ikt_1_fake_belem_8 + z_ikt_1_fake_belem_9 <= 0
 _C50: z_ikt_1_fake_belem_14 + z_ikt_1_fake_manila_14 <= 1
-_C500: - y_ijk_0_3_fake_belem + z_ikt_3_fake_belem_0 = 0
-_C501: x_ik_3_fake_manila - 0.001 y_ijk_0_3_fake_manila
- - 0.001 y_ijk_1_3_fake_manila - 0.001 y_ijk_2_3_fake_manila
- - 0.001 y_ijk_3_3_fake_manila - 0.001 y_ijk_4_3_fake_manila >= 0
-_C502: x_ik_3_fake_manila - 0.001 y_ijk_3_0_fake_manila
- - 0.001 y_ijk_3_1_fake_manila - 0.001 y_ijk_3_2_fake_manila
- - 0.001 y_ijk_3_3_fake_manila - 0.001 y_ijk_3_4_fake_manila >= 0
-_C503: - y_ijk_0_3_fake_manila + z_ikt_3_fake_manila_0 = 0
-_C504: c_j_0 - s_j_3 + 1000 y_ijk_0_3_fake_belem + 1000 y_ijk_0_3_fake_manila
- <= 1000
-_C505: c_j_1 - s_j_3 + 1000 y_ijk_1_3_fake_belem + 1000 y_ijk_1_3_fake_manila
- <= 1000
-_C506: c_j_2 - s_j_3 + 1000 y_ijk_2_3_fake_belem + 1000 y_ijk_2_3_fake_manila
- <= 1000
-_C507: c_j_3 - s_j_3 + 1000 y_ijk_3_3_fake_belem + 1000 y_ijk_3_3_fake_manila
- <= 1000
-_C508: c_j_4 - s_j_3 + 1000 y_ijk_4_3_fake_belem + 1000 y_ijk_4_3_fake_manila
- <= 1000
-_C509: y_ijk_0_4_fake_belem + y_ijk_0_4_fake_manila + y_ijk_1_4_fake_belem
- + y_ijk_1_4_fake_manila + y_ijk_2_4_fake_belem + y_ijk_2_4_fake_manila
- + y_ijk_3_4_fake_belem + y_ijk_3_4_fake_manila + y_ijk_4_4_fake_belem
- + y_ijk_4_4_fake_manila >= 1
+_C500: s_j_5 + 999971 z_ikt_5_fake_belem_29 + 999971 z_ikt_5_fake_manila_29
+ <= 1000000
+_C501: - c_j_5 + 30 z_ikt_5_fake_belem_30 + 30 z_ikt_5_fake_manila_30 <= 0
+_C502: z_ikt_5_fake_belem_30 + z_ikt_5_fake_manila_30 <= 1
+_C503: s_j_5 + 999970 z_ikt_5_fake_belem_30 + 999970 z_ikt_5_fake_manila_30
+ <= 1000000
+_C504: - c_j_5 + 31 z_ikt_5_fake_belem_31 + 31 z_ikt_5_fake_manila_31 <= 0
+_C505: z_ikt_5_fake_belem_31 + z_ikt_5_fake_manila_31 <= 1
+_C506: s_j_5 + 999969 z_ikt_5_fake_belem_31 + 999969 z_ikt_5_fake_manila_31
+ <= 1000000
+_C507: 2 z_ikt_1_fake_belem_0 + 3 z_ikt_2_fake_belem_0
+ + 5 z_ikt_3_fake_belem_0 + 3 z_ikt_4_fake_belem_0 + 2 z_ikt_5_fake_belem_0
+ <= 5
+_C508: 2 z_ikt_1_fake_manila_0 + 3 z_ikt_2_fake_manila_0
+ + 5 z_ikt_3_fake_manila_0 + 3 z_ikt_4_fake_manila_0 + 2 z_ikt_5_fake_manila_0
+ <= 5
+_C509: 2 z_ikt_1_fake_belem_1 + 3 z_ikt_2_fake_belem_1
+ + 5 z_ikt_3_fake_belem_1 + 3 z_ikt_4_fake_belem_1 + 2 z_ikt_5_fake_belem_1
+ <= 5
 _C51: s_j_1 + 999986 z_ikt_1_fake_belem_14 + 999986 z_ikt_1_fake_manila_14
  <= 1000000
-_C510: c_j_4 - s_j_4 - 5 x_ik_4_fake_belem - 6 x_ik_4_fake_manila
- - 6 y_ijk_1_4_fake_belem - 5 y_ijk_1_4_fake_manila - 8 y_ijk_2_4_fake_belem
- - 8 y_ijk_2_4_fake_manila - 9 y_ijk_3_4_fake_belem - 7 y_ijk_3_4_fake_manila
- - 50 y_ijk_4_4_fake_belem - 50 y_ijk_4_4_fake_manila >= 0
-_C511: x_ik_4_fake_belem - 0.001 y_ijk_0_4_fake_belem
- - 0.001 y_ijk_1_4_fake_belem - 0.001 y_ijk_2_4_fake_belem
- - 0.001 y_ijk_3_4_fake_belem - 0.001 y_ijk_4_4_fake_belem >= 0
-_C512: x_ik_4_fake_belem - 0.001 y_ijk_4_0_fake_belem
- - 0.001 y_ijk_4_1_fake_belem - 0.001 y_ijk_4_2_fake_belem
- - 0.001 y_ijk_4_3_fake_belem - 0.001 y_ijk_4_4_fake_belem >= 0
-_C513: - y_ijk_0_4_fake_belem + z_ikt_4_fake_belem_0 = 0
-_C514: x_ik_4_fake_manila - 0.001 y_ijk_0_4_fake_manila
- - 0.001 y_ijk_1_4_fake_manila - 0.001 y_ijk_2_4_fake_manila
- - 0.001 y_ijk_3_4_fake_manila - 0.001 y_ijk_4_4_fake_manila >= 0
-_C515: x_ik_4_fake_manila - 0.001 y_ijk_4_0_fake_manila
- - 0.001 y_ijk_4_1_fake_manila - 0.001 y_ijk_4_2_fake_manila
- - 0.001 y_ijk_4_3_fake_manila - 0.001 y_ijk_4_4_fake_manila >= 0
-_C516: - y_ijk_0_4_fake_manila + z_ikt_4_fake_manila_0 = 0
-_C517: c_j_0 - s_j_4 + 1000 y_ijk_0_4_fake_belem + 1000 y_ijk_0_4_fake_manila
- <= 1000
-_C518: c_j_1 - s_j_4 + 1000 y_ijk_1_4_fake_belem + 1000 y_ijk_1_4_fake_manila
- <= 1000
-_C519: c_j_2 - s_j_4 + 1000 y_ijk_2_4_fake_belem + 1000 y_ijk_2_4_fake_manila
- <= 1000
+_C510: 2 z_ikt_1_fake_manila_1 + 3 z_ikt_2_fake_manila_1
+ + 5 z_ikt_3_fake_manila_1 + 3 z_ikt_4_fake_manila_1 + 2 z_ikt_5_fake_manila_1
+ <= 5
+_C511: 2 z_ikt_1_fake_belem_2 + 3 z_ikt_2_fake_belem_2
+ + 5 z_ikt_3_fake_belem_2 + 3 z_ikt_4_fake_belem_2 + 2 z_ikt_5_fake_belem_2
+ <= 5
+_C512: 2 z_ikt_1_fake_manila_2 + 3 z_ikt_2_fake_manila_2
+ + 5 z_ikt_3_fake_manila_2 + 3 z_ikt_4_fake_manila_2 + 2 z_ikt_5_fake_manila_2
+ <= 5
+_C513: 2 z_ikt_1_fake_belem_3 + 3 z_ikt_2_fake_belem_3
+ + 5 z_ikt_3_fake_belem_3 + 3 z_ikt_4_fake_belem_3 + 2 z_ikt_5_fake_belem_3
+ <= 5
+_C514: 2 z_ikt_1_fake_manila_3 + 3 z_ikt_2_fake_manila_3
+ + 5 z_ikt_3_fake_manila_3 + 3 z_ikt_4_fake_manila_3 + 2 z_ikt_5_fake_manila_3
+ <= 5
+_C515: 2 z_ikt_1_fake_belem_4 + 3 z_ikt_2_fake_belem_4
+ + 5 z_ikt_3_fake_belem_4 + 3 z_ikt_4_fake_belem_4 + 2 z_ikt_5_fake_belem_4
+ <= 5
+_C516: 2 z_ikt_1_fake_manila_4 + 3 z_ikt_2_fake_manila_4
+ + 5 z_ikt_3_fake_manila_4 + 3 z_ikt_4_fake_manila_4 + 2 z_ikt_5_fake_manila_4
+ <= 5
+_C517: 2 z_ikt_1_fake_belem_5 + 3 z_ikt_2_fake_belem_5
+ + 5 z_ikt_3_fake_belem_5 + 3 z_ikt_4_fake_belem_5 + 2 z_ikt_5_fake_belem_5
+ <= 5
+_C518: 2 z_ikt_1_fake_manila_5 + 3 z_ikt_2_fake_manila_5
+ + 5 z_ikt_3_fake_manila_5 + 3 z_ikt_4_fake_manila_5 + 2 z_ikt_5_fake_manila_5
+ <= 5
+_C519: 2 z_ikt_1_fake_belem_6 + 3 z_ikt_2_fake_belem_6
+ + 5 z_ikt_3_fake_belem_6 + 3 z_ikt_4_fake_belem_6 + 2 z_ikt_5_fake_belem_6
+ <= 5
 _C52: - c_j_1 + 15 z_ikt_1_fake_belem_15 + 15 z_ikt_1_fake_manila_15 <= 0
-_C520: c_j_3 - s_j_4 + 1000 y_ijk_3_4_fake_belem + 1000 y_ijk_3_4_fake_manila
- <= 1000
-_C521: c_j_4 - s_j_4 + 1000 y_ijk_4_4_fake_belem + 1000 y_ijk_4_4_fake_manila
- <= 1000
-_C522: a_ij_1_1 = 0
-_C523: b_ij_1_1 = 0
-_C524: a_ij_1_2 + 0.001 c_j_1 - 0.001 s_j_2 >= 0
-_C525: b_ij_1_2 + 0.001 c_j_1 - 0.001 c_j_2 >= 0
-_C526: d_ijk_1_2_fake_belem - x_ik_1_fake_belem - x_ik_2_fake_belem >= -1
-_C527: - a_ij_1_2 - b_ij_1_1 - d_ijk_1_1_fake_belem - d_ijk_1_2_fake_belem
- + e_ijlk_1_2_1_fake_belem >= -3
-_C528: - a_ij_2_2 - b_ij_1_2 - 2 d_ijk_1_2_fake_belem
- + e_ijlk_1_2_2_fake_belem >= -3
-_C529: - a_ij_3_2 - b_ij_1_3 - d_ijk_1_2_fake_belem - d_ijk_1_3_fake_belem
- + e_ijlk_1_2_3_fake_belem >= -3
+_C520: 2 z_ikt_1_fake_manila_6 + 3 z_ikt_2_fake_manila_6
+ + 5 z_ikt_3_fake_manila_6 + 3 z_ikt_4_fake_manila_6 + 2 z_ikt_5_fake_manila_6
+ <= 5
+_C521: 2 z_ikt_1_fake_belem_7 + 3 z_ikt_2_fake_belem_7
+ + 5 z_ikt_3_fake_belem_7 + 3 z_ikt_4_fake_belem_7 + 2 z_ikt_5_fake_belem_7
+ <= 5
+_C522: 2 z_ikt_1_fake_manila_7 + 3 z_ikt_2_fake_manila_7
+ + 5 z_ikt_3_fake_manila_7 + 3 z_ikt_4_fake_manila_7 + 2 z_ikt_5_fake_manila_7
+ <= 5
+_C523: 2 z_ikt_1_fake_belem_8 + 3 z_ikt_2_fake_belem_8
+ + 5 z_ikt_3_fake_belem_8 + 3 z_ikt_4_fake_belem_8 + 2 z_ikt_5_fake_belem_8
+ <= 5
+_C524: 2 z_ikt_1_fake_manila_8 + 3 z_ikt_2_fake_manila_8
+ + 5 z_ikt_3_fake_manila_8 + 3 z_ikt_4_fake_manila_8 + 2 z_ikt_5_fake_manila_8
+ <= 5
+_C525: 2 z_ikt_1_fake_belem_9 + 3 z_ikt_2_fake_belem_9
+ + 5 z_ikt_3_fake_belem_9 + 3 z_ikt_4_fake_belem_9 + 2 z_ikt_5_fake_belem_9
+ <= 5
+_C526: 2 z_ikt_1_fake_manila_9 + 3 z_ikt_2_fake_manila_9
+ + 5 z_ikt_3_fake_manila_9 + 3 z_ikt_4_fake_manila_9 + 2 z_ikt_5_fake_manila_9
+ <= 5
+_C527: 2 z_ikt_1_fake_belem_10 + 3 z_ikt_2_fake_belem_10
+ + 5 z_ikt_3_fake_belem_10 + 3 z_ikt_4_fake_belem_10 + 2 z_ikt_5_fake_belem_10
+ <= 5
+_C528: 2 z_ikt_1_fake_manila_10 + 3 z_ikt_2_fake_manila_10
+ + 5 z_ikt_3_fake_manila_10 + 3 z_ikt_4_fake_manila_10
+ + 2 z_ikt_5_fake_manila_10 <= 5
+_C529: 2 z_ikt_1_fake_belem_11 + 3 z_ikt_2_fake_belem_11
+ + 5 z_ikt_3_fake_belem_11 + 3 z_ikt_4_fake_belem_11 + 2 z_ikt_5_fake_belem_11
+ <= 5
 _C53: z_ikt_1_fake_belem_15 + z_ikt_1_fake_manila_15 <= 1
-_C530: - a_ij_4_2 - b_ij_1_4 - d_ijk_1_2_fake_belem - d_ijk_1_4_fake_belem
- + e_ijlk_1_2_4_fake_belem >= -3
-_C531: d_ijk_1_2_fake_manila - x_ik_1_fake_manila - x_ik_2_fake_manila >= -1
-_C532: - a_ij_1_2 - b_ij_1_1 - d_ijk_1_1_fake_manila - d_ijk_1_2_fake_manila
- + e_ijlk_1_2_1_fake_manila >= -3
-_C533: - a_ij_2_2 - b_ij_1_2 - 2 d_ijk_1_2_fake_manila
- + e_ijlk_1_2_2_fake_manila >= -3
-_C534: - a_ij_3_2 - b_ij_1_3 - d_ijk_1_2_fake_manila - d_ijk_1_3_fake_manila
- + e_ijlk_1_2_3_fake_manila >= -3
-_C535: - a_ij_4_2 - b_ij_1_4 - d_ijk_1_2_fake_manila - d_ijk_1_4_fake_manila
- + e_ijlk_1_2_4_fake_manila >= -3
-_C536: a_ij_1_3 + 0.001 c_j_1 - 0.001 s_j_3 >= 0
-_C537: b_ij_1_3 + 0.001 c_j_1 - 0.001 c_j_3 >= 0
-_C538: d_ijk_1_3_fake_belem - x_ik_1_fake_belem - x_ik_3_fake_belem >= -1
-_C539: - a_ij_1_3 - b_ij_1_1 - d_ijk_1_1_fake_belem - d_ijk_1_3_fake_belem
- + e_ijlk_1_3_1_fake_belem >= -3
+_C530: 2 z_ikt_1_fake_manila_11 + 3 z_ikt_2_fake_manila_11
+ + 5 z_ikt_3_fake_manila_11 + 3 z_ikt_4_fake_manila_11
+ + 2 z_ikt_5_fake_manila_11 <= 5
+_C531: 2 z_ikt_1_fake_belem_12 + 3 z_ikt_2_fake_belem_12
+ + 5 z_ikt_3_fake_belem_12 + 3 z_ikt_4_fake_belem_12 + 2 z_ikt_5_fake_belem_12
+ <= 5
+_C532: 2 z_ikt_1_fake_manila_12 + 3 z_ikt_2_fake_manila_12
+ + 5 z_ikt_3_fake_manila_12 + 3 z_ikt_4_fake_manila_12
+ + 2 z_ikt_5_fake_manila_12 <= 5
+_C533: 2 z_ikt_1_fake_belem_13 + 3 z_ikt_2_fake_belem_13
+ + 5 z_ikt_3_fake_belem_13 + 3 z_ikt_4_fake_belem_13 + 2 z_ikt_5_fake_belem_13
+ <= 5
+_C534: 2 z_ikt_1_fake_manila_13 + 3 z_ikt_2_fake_manila_13
+ + 5 z_ikt_3_fake_manila_13 + 3 z_ikt_4_fake_manila_13
+ + 2 z_ikt_5_fake_manila_13 <= 5
+_C535: 2 z_ikt_1_fake_belem_14 + 3 z_ikt_2_fake_belem_14
+ + 5 z_ikt_3_fake_belem_14 + 3 z_ikt_4_fake_belem_14 + 2 z_ikt_5_fake_belem_14
+ <= 5
+_C536: 2 z_ikt_1_fake_manila_14 + 3 z_ikt_2_fake_manila_14
+ + 5 z_ikt_3_fake_manila_14 + 3 z_ikt_4_fake_manila_14
+ + 2 z_ikt_5_fake_manila_14 <= 5
+_C537: 2 z_ikt_1_fake_belem_15 + 3 z_ikt_2_fake_belem_15
+ + 5 z_ikt_3_fake_belem_15 + 3 z_ikt_4_fake_belem_15 + 2 z_ikt_5_fake_belem_15
+ <= 5
+_C538: 2 z_ikt_1_fake_manila_15 + 3 z_ikt_2_fake_manila_15
+ + 5 z_ikt_3_fake_manila_15 + 3 z_ikt_4_fake_manila_15
+ + 2 z_ikt_5_fake_manila_15 <= 5
+_C539: 2 z_ikt_1_fake_belem_16 + 3 z_ikt_2_fake_belem_16
+ + 5 z_ikt_3_fake_belem_16 + 3 z_ikt_4_fake_belem_16 + 2 z_ikt_5_fake_belem_16
+ <= 5
 _C54: s_j_1 + 999985 z_ikt_1_fake_belem_15 + 999985 z_ikt_1_fake_manila_15
  <= 1000000
-_C540: - a_ij_2_3 - b_ij_1_2 - d_ijk_1_2_fake_belem - d_ijk_1_3_fake_belem
- + e_ijlk_1_3_2_fake_belem >= -3
-_C541: - a_ij_3_3 - b_ij_1_3 - 2 d_ijk_1_3_fake_belem
- + e_ijlk_1_3_3_fake_belem >= -3
-_C542: - a_ij_4_3 - b_ij_1_4 - d_ijk_1_3_fake_belem - d_ijk_1_4_fake_belem
- + e_ijlk_1_3_4_fake_belem >= -3
-_C543: d_ijk_1_3_fake_manila - x_ik_1_fake_manila - x_ik_3_fake_manila >= -1
-_C544: - a_ij_1_3 - b_ij_1_1 - d_ijk_1_1_fake_manila - d_ijk_1_3_fake_manila
- + e_ijlk_1_3_1_fake_manila >= -3
-_C545: - a_ij_2_3 - b_ij_1_2 - d_ijk_1_2_fake_manila - d_ijk_1_3_fake_manila
- + e_ijlk_1_3_2_fake_manila >= -3
-_C546: - a_ij_3_3 - b_ij_1_3 - 2 d_ijk_1_3_fake_manila
- + e_ijlk_1_3_3_fake_manila >= -3
-_C547: - a_ij_4_3 - b_ij_1_4 - d_ijk_1_3_fake_manila - d_ijk_1_4_fake_manila
- + e_ijlk_1_3_4_fake_manila >= -3
-_C548: a_ij_1_4 + 0.001 c_j_1 - 0.001 s_j_4 >= 0
-_C549: b_ij_1_4 + 0.001 c_j_1 - 0.001 c_j_4 >= 0
+_C540: 2 z_ikt_1_fake_manila_16 + 3 z_ikt_2_fake_manila_16
+ + 5 z_ikt_3_fake_manila_16 + 3 z_ikt_4_fake_manila_16
+ + 2 z_ikt_5_fake_manila_16 <= 5
+_C541: 2 z_ikt_1_fake_belem_17 + 3 z_ikt_2_fake_belem_17
+ + 5 z_ikt_3_fake_belem_17 + 3 z_ikt_4_fake_belem_17 + 2 z_ikt_5_fake_belem_17
+ <= 5
+_C542: 2 z_ikt_1_fake_manila_17 + 3 z_ikt_2_fake_manila_17
+ + 5 z_ikt_3_fake_manila_17 + 3 z_ikt_4_fake_manila_17
+ + 2 z_ikt_5_fake_manila_17 <= 5
+_C543: 2 z_ikt_1_fake_belem_18 + 3 z_ikt_2_fake_belem_18
+ + 5 z_ikt_3_fake_belem_18 + 3 z_ikt_4_fake_belem_18 + 2 z_ikt_5_fake_belem_18
+ <= 5
+_C544: 2 z_ikt_1_fake_manila_18 + 3 z_ikt_2_fake_manila_18
+ + 5 z_ikt_3_fake_manila_18 + 3 z_ikt_4_fake_manila_18
+ + 2 z_ikt_5_fake_manila_18 <= 5
+_C545: 2 z_ikt_1_fake_belem_19 + 3 z_ikt_2_fake_belem_19
+ + 5 z_ikt_3_fake_belem_19 + 3 z_ikt_4_fake_belem_19 + 2 z_ikt_5_fake_belem_19
+ <= 5
+_C546: 2 z_ikt_1_fake_manila_19 + 3 z_ikt_2_fake_manila_19
+ + 5 z_ikt_3_fake_manila_19 + 3 z_ikt_4_fake_manila_19
+ + 2 z_ikt_5_fake_manila_19 <= 5
+_C547: 2 z_ikt_1_fake_belem_20 + 3 z_ikt_2_fake_belem_20
+ + 5 z_ikt_3_fake_belem_20 + 3 z_ikt_4_fake_belem_20 + 2 z_ikt_5_fake_belem_20
+ <= 5
+_C548: 2 z_ikt_1_fake_manila_20 + 3 z_ikt_2_fake_manila_20
+ + 5 z_ikt_3_fake_manila_20 + 3 z_ikt_4_fake_manila_20
+ + 2 z_ikt_5_fake_manila_20 <= 5
+_C549: 2 z_ikt_1_fake_belem_21 + 3 z_ikt_2_fake_belem_21
+ + 5 z_ikt_3_fake_belem_21 + 3 z_ikt_4_fake_belem_21 + 2 z_ikt_5_fake_belem_21
+ <= 5
 _C55: - c_j_1 + 16 z_ikt_1_fake_belem_16 + 16 z_ikt_1_fake_manila_16 <= 0
-_C550: d_ijk_1_4_fake_belem - x_ik_1_fake_belem - x_ik_4_fake_belem >= -1
-_C551: - a_ij_1_4 - b_ij_1_1 - d_ijk_1_1_fake_belem - d_ijk_1_4_fake_belem
- + e_ijlk_1_4_1_fake_belem >= -3
-_C552: - a_ij_2_4 - b_ij_1_2 - d_ijk_1_2_fake_belem - d_ijk_1_4_fake_belem
- + e_ijlk_1_4_2_fake_belem >= -3
-_C553: - a_ij_3_4 - b_ij_1_3 - d_ijk_1_3_fake_belem - d_ijk_1_4_fake_belem
- + e_ijlk_1_4_3_fake_belem >= -3
-_C554: - a_ij_4_4 - b_ij_1_4 - 2 d_ijk_1_4_fake_belem
- + e_ijlk_1_4_4_fake_belem >= -3
-_C555: d_ijk_1_4_fake_manila - x_ik_1_fake_manila - x_ik_4_fake_manila >= -1
-_C556: - a_ij_1_4 - b_ij_1_1 - d_ijk_1_1_fake_manila - d_ijk_1_4_fake_manila
- + e_ijlk_1_4_1_fake_manila >= -3
-_C557: - a_ij_2_4 - b_ij_1_2 - d_ijk_1_2_fake_manila - d_ijk_1_4_fake_manila
- + e_ijlk_1_4_2_fake_manila >= -3
-_C558: - a_ij_3_4 - b_ij_1_3 - d_ijk_1_3_fake_manila - d_ijk_1_4_fake_manila
- + e_ijlk_1_4_3_fake_manila >= -3
-_C559: - a_ij_4_4 - b_ij_1_4 - 2 d_ijk_1_4_fake_manila
- + e_ijlk_1_4_4_fake_manila >= -3
+_C550: 2 z_ikt_1_fake_manila_21 + 3 z_ikt_2_fake_manila_21
+ + 5 z_ikt_3_fake_manila_21 + 3 z_ikt_4_fake_manila_21
+ + 2 z_ikt_5_fake_manila_21 <= 5
+_C551: 2 z_ikt_1_fake_belem_22 + 3 z_ikt_2_fake_belem_22
+ + 5 z_ikt_3_fake_belem_22 + 3 z_ikt_4_fake_belem_22 + 2 z_ikt_5_fake_belem_22
+ <= 5
+_C552: 2 z_ikt_1_fake_manila_22 + 3 z_ikt_2_fake_manila_22
+ + 5 z_ikt_3_fake_manila_22 + 3 z_ikt_4_fake_manila_22
+ + 2 z_ikt_5_fake_manila_22 <= 5
+_C553: 2 z_ikt_1_fake_belem_23 + 3 z_ikt_2_fake_belem_23
+ + 5 z_ikt_3_fake_belem_23 + 3 z_ikt_4_fake_belem_23 + 2 z_ikt_5_fake_belem_23
+ <= 5
+_C554: 2 z_ikt_1_fake_manila_23 + 3 z_ikt_2_fake_manila_23
+ + 5 z_ikt_3_fake_manila_23 + 3 z_ikt_4_fake_manila_23
+ + 2 z_ikt_5_fake_manila_23 <= 5
+_C555: 2 z_ikt_1_fake_belem_24 + 3 z_ikt_2_fake_belem_24
+ + 5 z_ikt_3_fake_belem_24 + 3 z_ikt_4_fake_belem_24 + 2 z_ikt_5_fake_belem_24
+ <= 5
+_C556: 2 z_ikt_1_fake_manila_24 + 3 z_ikt_2_fake_manila_24
+ + 5 z_ikt_3_fake_manila_24 + 3 z_ikt_4_fake_manila_24
+ + 2 z_ikt_5_fake_manila_24 <= 5
+_C557: 2 z_ikt_1_fake_belem_25 + 3 z_ikt_2_fake_belem_25
+ + 5 z_ikt_3_fake_belem_25 + 3 z_ikt_4_fake_belem_25 + 2 z_ikt_5_fake_belem_25
+ <= 5
+_C558: 2 z_ikt_1_fake_manila_25 + 3 z_ikt_2_fake_manila_25
+ + 5 z_ikt_3_fake_manila_25 + 3 z_ikt_4_fake_manila_25
+ + 2 z_ikt_5_fake_manila_25 <= 5
+_C559: 2 z_ikt_1_fake_belem_26 + 3 z_ikt_2_fake_belem_26
+ + 5 z_ikt_3_fake_belem_26 + 3 z_ikt_4_fake_belem_26 + 2 z_ikt_5_fake_belem_26
+ <= 5
 _C56: z_ikt_1_fake_belem_16 + z_ikt_1_fake_manila_16 <= 1
-_C560: a_ij_2_1 + 0.001 c_j_2 - 0.001 s_j_1 >= 0
-_C561: b_ij_2_1 - 0.001 c_j_1 + 0.001 c_j_2 >= 0
-_C562: d_ijk_2_1_fake_belem - x_ik_1_fake_belem - x_ik_2_fake_belem >= -1
-_C563: - a_ij_1_1 - b_ij_2_1 - 2 d_ijk_2_1_fake_belem
- + e_ijlk_2_1_1_fake_belem >= -3
-_C564: - a_ij_2_1 - b_ij_2_2 - d_ijk_2_1_fake_belem - d_ijk_2_2_fake_belem
- + e_ijlk_2_1_2_fake_belem >= -3
-_C565: - a_ij_3_1 - b_ij_2_3 - d_ijk_2_1_fake_belem - d_ijk_2_3_fake_belem
- + e_ijlk_2_1_3_fake_belem >= -3
-_C566: - a_ij_4_1 - b_ij_2_4 - d_ijk_2_1_fake_belem - d_ijk_2_4_fake_belem
- + e_ijlk_2_1_4_fake_belem >= -3
-_C567: d_ijk_2_1_fake_manila - x_ik_1_fake_manila - x_ik_2_fake_manila >= -1
-_C568: - a_ij_1_1 - b_ij_2_1 - 2 d_ijk_2_1_fake_manila
- + e_ijlk_2_1_1_fake_manila >= -3
-_C569: - a_ij_2_1 - b_ij_2_2 - d_ijk_2_1_fake_manila - d_ijk_2_2_fake_manila
- + e_ijlk_2_1_2_fake_manila >= -3
+_C560: 2 z_ikt_1_fake_manila_26 + 3 z_ikt_2_fake_manila_26
+ + 5 z_ikt_3_fake_manila_26 + 3 z_ikt_4_fake_manila_26
+ + 2 z_ikt_5_fake_manila_26 <= 5
+_C561: 2 z_ikt_1_fake_belem_27 + 3 z_ikt_2_fake_belem_27
+ + 5 z_ikt_3_fake_belem_27 + 3 z_ikt_4_fake_belem_27 + 2 z_ikt_5_fake_belem_27
+ <= 5
+_C562: 2 z_ikt_1_fake_manila_27 + 3 z_ikt_2_fake_manila_27
+ + 5 z_ikt_3_fake_manila_27 + 3 z_ikt_4_fake_manila_27
+ + 2 z_ikt_5_fake_manila_27 <= 5
+_C563: 2 z_ikt_1_fake_belem_28 + 3 z_ikt_2_fake_belem_28
+ + 5 z_ikt_3_fake_belem_28 + 3 z_ikt_4_fake_belem_28 + 2 z_ikt_5_fake_belem_28
+ <= 5
+_C564: 2 z_ikt_1_fake_manila_28 + 3 z_ikt_2_fake_manila_28
+ + 5 z_ikt_3_fake_manila_28 + 3 z_ikt_4_fake_manila_28
+ + 2 z_ikt_5_fake_manila_28 <= 5
+_C565: 2 z_ikt_1_fake_belem_29 + 3 z_ikt_2_fake_belem_29
+ + 5 z_ikt_3_fake_belem_29 + 3 z_ikt_4_fake_belem_29 + 2 z_ikt_5_fake_belem_29
+ <= 5
+_C566: 2 z_ikt_1_fake_manila_29 + 3 z_ikt_2_fake_manila_29
+ + 5 z_ikt_3_fake_manila_29 + 3 z_ikt_4_fake_manila_29
+ + 2 z_ikt_5_fake_manila_29 <= 5
+_C567: 2 z_ikt_1_fake_belem_30 + 3 z_ikt_2_fake_belem_30
+ + 5 z_ikt_3_fake_belem_30 + 3 z_ikt_4_fake_belem_30 + 2 z_ikt_5_fake_belem_30
+ <= 5
+_C568: 2 z_ikt_1_fake_manila_30 + 3 z_ikt_2_fake_manila_30
+ + 5 z_ikt_3_fake_manila_30 + 3 z_ikt_4_fake_manila_30
+ + 2 z_ikt_5_fake_manila_30 <= 5
+_C569: 2 z_ikt_1_fake_belem_31 + 3 z_ikt_2_fake_belem_31
+ + 5 z_ikt_3_fake_belem_31 + 3 z_ikt_4_fake_belem_31 + 2 z_ikt_5_fake_belem_31
+ <= 5
 _C57: s_j_1 + 999984 z_ikt_1_fake_belem_16 + 999984 z_ikt_1_fake_manila_16
  <= 1000000
-_C570: - a_ij_3_1 - b_ij_2_3 - d_ijk_2_1_fake_manila - d_ijk_2_3_fake_manila
- + e_ijlk_2_1_3_fake_manila >= -3
-_C571: - a_ij_4_1 - b_ij_2_4 - d_ijk_2_1_fake_manila - d_ijk_2_4_fake_manila
- + e_ijlk_2_1_4_fake_manila >= -3
-_C572: a_ij_2_2 = 0
-_C573: b_ij_2_2 = 0
-_C574: a_ij_2_3 + 0.001 c_j_2 - 0.001 s_j_3 >= 0
-_C575: b_ij_2_3 + 0.001 c_j_2 - 0.001 c_j_3 >= 0
-_C576: d_ijk_2_3_fake_belem - x_ik_2_fake_belem - x_ik_3_fake_belem >= -1
-_C577: - a_ij_1_3 - b_ij_2_1 - d_ijk_2_1_fake_belem - d_ijk_2_3_fake_belem
- + e_ijlk_2_3_1_fake_belem >= -3
-_C578: - a_ij_2_3 - b_ij_2_2 - d_ijk_2_2_fake_belem - d_ijk_2_3_fake_belem
- + e_ijlk_2_3_2_fake_belem >= -3
-_C579: - a_ij_3_3 - b_ij_2_3 - 2 d_ijk_2_3_fake_belem
- + e_ijlk_2_3_3_fake_belem >= -3
+_C570: 2 z_ikt_1_fake_manila_31 + 3 z_ikt_2_fake_manila_31
+ + 5 z_ikt_3_fake_manila_31 + 3 z_ikt_4_fake_manila_31
+ + 2 z_ikt_5_fake_manila_31 <= 5
+_C571: y_ijk_0_1_fake_belem + y_ijk_0_1_fake_manila + y_ijk_1_1_fake_belem
+ + y_ijk_1_1_fake_manila + y_ijk_2_1_fake_belem + y_ijk_2_1_fake_manila
+ + y_ijk_3_1_fake_belem + y_ijk_3_1_fake_manila + y_ijk_4_1_fake_belem
+ + y_ijk_4_1_fake_manila + y_ijk_5_1_fake_belem + y_ijk_5_1_fake_manila >= 1
+_C572: c_j_1 - s_j_1 - 5 x_ik_1_fake_belem - 5 x_ik_1_fake_manila
+ - 50 y_ijk_1_1_fake_belem - 50 y_ijk_1_1_fake_manila - 5 y_ijk_2_1_fake_belem
+ - 9 y_ijk_2_1_fake_manila - 10 y_ijk_3_1_fake_belem - 8 y_ijk_3_1_fake_manila
+ - 6 y_ijk_4_1_fake_belem - 8 y_ijk_4_1_fake_manila - 9 y_ijk_5_1_fake_belem
+ - 9 y_ijk_5_1_fake_manila >= 0
+_C573: x_ik_1_fake_belem - 0.001 y_ijk_0_1_fake_belem
+ - 0.001 y_ijk_1_1_fake_belem - 0.001 y_ijk_2_1_fake_belem
+ - 0.001 y_ijk_3_1_fake_belem - 0.001 y_ijk_4_1_fake_belem
+ - 0.001 y_ijk_5_1_fake_belem >= 0
+_C574: x_ik_1_fake_belem - 0.001 y_ijk_1_0_fake_belem
+ - 0.001 y_ijk_1_1_fake_belem - 0.001 y_ijk_1_2_fake_belem
+ - 0.001 y_ijk_1_3_fake_belem - 0.001 y_ijk_1_4_fake_belem
+ - 0.001 y_ijk_1_5_fake_belem >= 0
+_C575: - y_ijk_0_1_fake_belem + z_ikt_1_fake_belem_0 = 0
+_C576: x_ik_1_fake_manila - 0.001 y_ijk_0_1_fake_manila
+ - 0.001 y_ijk_1_1_fake_manila - 0.001 y_ijk_2_1_fake_manila
+ - 0.001 y_ijk_3_1_fake_manila - 0.001 y_ijk_4_1_fake_manila
+ - 0.001 y_ijk_5_1_fake_manila >= 0
+_C577: x_ik_1_fake_manila - 0.001 y_ijk_1_0_fake_manila
+ - 0.001 y_ijk_1_1_fake_manila - 0.001 y_ijk_1_2_fake_manila
+ - 0.001 y_ijk_1_3_fake_manila - 0.001 y_ijk_1_4_fake_manila
+ - 0.001 y_ijk_1_5_fake_manila >= 0
+_C578: - y_ijk_0_1_fake_manila + z_ikt_1_fake_manila_0 = 0
+_C579: c_j_0 - s_j_1 + 1000 y_ijk_0_1_fake_belem + 1000 y_ijk_0_1_fake_manila
+ <= 1000
 _C58: - c_j_1 + 17 z_ikt_1_fake_belem_17 + 17 z_ikt_1_fake_manila_17 <= 0
-_C580: - a_ij_4_3 - b_ij_2_4 - d_ijk_2_3_fake_belem - d_ijk_2_4_fake_belem
- + e_ijlk_2_3_4_fake_belem >= -3
-_C581: d_ijk_2_3_fake_manila - x_ik_2_fake_manila - x_ik_3_fake_manila >= -1
-_C582: - a_ij_1_3 - b_ij_2_1 - d_ijk_2_1_fake_manila - d_ijk_2_3_fake_manila
- + e_ijlk_2_3_1_fake_manila >= -3
-_C583: - a_ij_2_3 - b_ij_2_2 - d_ijk_2_2_fake_manila - d_ijk_2_3_fake_manila
- + e_ijlk_2_3_2_fake_manila >= -3
-_C584: - a_ij_3_3 - b_ij_2_3 - 2 d_ijk_2_3_fake_manila
- + e_ijlk_2_3_3_fake_manila >= -3
-_C585: - a_ij_4_3 - b_ij_2_4 - d_ijk_2_3_fake_manila - d_ijk_2_4_fake_manila
- + e_ijlk_2_3_4_fake_manila >= -3
-_C586: a_ij_2_4 + 0.001 c_j_2 - 0.001 s_j_4 >= 0
-_C587: b_ij_2_4 + 0.001 c_j_2 - 0.001 c_j_4 >= 0
-_C588: d_ijk_2_4_fake_belem - x_ik_2_fake_belem - x_ik_4_fake_belem >= -1
-_C589: - a_ij_1_4 - b_ij_2_1 - d_ijk_2_1_fake_belem - d_ijk_2_4_fake_belem
- + e_ijlk_2_4_1_fake_belem >= -3
+_C580: c_j_1 - s_j_1 + 1000 y_ijk_1_1_fake_belem + 1000 y_ijk_1_1_fake_manila
+ <= 1000
+_C581: c_j_2 - s_j_1 + 1000 y_ijk_2_1_fake_belem + 1000 y_ijk_2_1_fake_manila
+ <= 1000
+_C582: c_j_3 - s_j_1 + 1000 y_ijk_3_1_fake_belem + 1000 y_ijk_3_1_fake_manila
+ <= 1000
+_C583: c_j_4 - s_j_1 + 1000 y_ijk_4_1_fake_belem + 1000 y_ijk_4_1_fake_manila
+ <= 1000
+_C584: c_j_5 - s_j_1 + 1000 y_ijk_5_1_fake_belem + 1000 y_ijk_5_1_fake_manila
+ <= 1000
+_C585: y_ijk_0_2_fake_belem + y_ijk_0_2_fake_manila + y_ijk_1_2_fake_belem
+ + y_ijk_1_2_fake_manila + y_ijk_2_2_fake_belem + y_ijk_2_2_fake_manila
+ + y_ijk_3_2_fake_belem + y_ijk_3_2_fake_manila + y_ijk_4_2_fake_belem
+ + y_ijk_4_2_fake_manila + y_ijk_5_2_fake_belem + y_ijk_5_2_fake_manila >= 1
+_C586: c_j_2 - s_j_2 - 9 x_ik_2_fake_belem - 8 x_ik_2_fake_manila
+ - 9 y_ijk_1_2_fake_belem - 6 y_ijk_1_2_fake_manila - 50 y_ijk_2_2_fake_belem
+ - 50 y_ijk_2_2_fake_manila - 7 y_ijk_3_2_fake_belem
+ - 11 y_ijk_3_2_fake_manila - 10 y_ijk_4_2_fake_belem
+ - 8 y_ijk_4_2_fake_manila - 7 y_ijk_5_2_fake_belem - 9 y_ijk_5_2_fake_manila
+ >= 0
+_C587: x_ik_2_fake_belem - 0.001 y_ijk_0_2_fake_belem
+ - 0.001 y_ijk_1_2_fake_belem - 0.001 y_ijk_2_2_fake_belem
+ - 0.001 y_ijk_3_2_fake_belem - 0.001 y_ijk_4_2_fake_belem
+ - 0.001 y_ijk_5_2_fake_belem >= 0
+_C588: x_ik_2_fake_belem - 0.001 y_ijk_2_0_fake_belem
+ - 0.001 y_ijk_2_1_fake_belem - 0.001 y_ijk_2_2_fake_belem
+ - 0.001 y_ijk_2_3_fake_belem - 0.001 y_ijk_2_4_fake_belem
+ - 0.001 y_ijk_2_5_fake_belem >= 0
+_C589: - y_ijk_0_2_fake_belem + z_ikt_2_fake_belem_0 = 0
 _C59: z_ikt_1_fake_belem_17 + z_ikt_1_fake_manila_17 <= 1
-_C590: - a_ij_2_4 - b_ij_2_2 - d_ijk_2_2_fake_belem - d_ijk_2_4_fake_belem
- + e_ijlk_2_4_2_fake_belem >= -3
-_C591: - a_ij_3_4 - b_ij_2_3 - d_ijk_2_3_fake_belem - d_ijk_2_4_fake_belem
- + e_ijlk_2_4_3_fake_belem >= -3
-_C592: - a_ij_4_4 - b_ij_2_4 - 2 d_ijk_2_4_fake_belem
- + e_ijlk_2_4_4_fake_belem >= -3
-_C593: d_ijk_2_4_fake_manila - x_ik_2_fake_manila - x_ik_4_fake_manila >= -1
-_C594: - a_ij_1_4 - b_ij_2_1 - d_ijk_2_1_fake_manila - d_ijk_2_4_fake_manila
- + e_ijlk_2_4_1_fake_manila >= -3
-_C595: - a_ij_2_4 - b_ij_2_2 - d_ijk_2_2_fake_manila - d_ijk_2_4_fake_manila
- + e_ijlk_2_4_2_fake_manila >= -3
-_C596: - a_ij_3_4 - b_ij_2_3 - d_ijk_2_3_fake_manila - d_ijk_2_4_fake_manila
- + e_ijlk_2_4_3_fake_manila >= -3
-_C597: - a_ij_4_4 - b_ij_2_4 - 2 d_ijk_2_4_fake_manila
- + e_ijlk_2_4_4_fake_manila >= -3
-_C598: a_ij_3_1 + 0.001 c_j_3 - 0.001 s_j_1 >= 0
-_C599: b_ij_3_1 - 0.001 c_j_1 + 0.001 c_j_3 >= 0
+_C590: x_ik_2_fake_manila - 0.001 y_ijk_0_2_fake_manila
+ - 0.001 y_ijk_1_2_fake_manila - 0.001 y_ijk_2_2_fake_manila
+ - 0.001 y_ijk_3_2_fake_manila - 0.001 y_ijk_4_2_fake_manila
+ - 0.001 y_ijk_5_2_fake_manila >= 0
+_C591: x_ik_2_fake_manila - 0.001 y_ijk_2_0_fake_manila
+ - 0.001 y_ijk_2_1_fake_manila - 0.001 y_ijk_2_2_fake_manila
+ - 0.001 y_ijk_2_3_fake_manila - 0.001 y_ijk_2_4_fake_manila
+ - 0.001 y_ijk_2_5_fake_manila >= 0
+_C592: - y_ijk_0_2_fake_manila + z_ikt_2_fake_manila_0 = 0
+_C593: c_j_0 - s_j_2 + 1000 y_ijk_0_2_fake_belem + 1000 y_ijk_0_2_fake_manila
+ <= 1000
+_C594: c_j_1 - s_j_2 + 1000 y_ijk_1_2_fake_belem + 1000 y_ijk_1_2_fake_manila
+ <= 1000
+_C595: c_j_2 - s_j_2 + 1000 y_ijk_2_2_fake_belem + 1000 y_ijk_2_2_fake_manila
+ <= 1000
+_C596: c_j_3 - s_j_2 + 1000 y_ijk_3_2_fake_belem + 1000 y_ijk_3_2_fake_manila
+ <= 1000
+_C597: c_j_4 - s_j_2 + 1000 y_ijk_4_2_fake_belem + 1000 y_ijk_4_2_fake_manila
+ <= 1000
+_C598: c_j_5 - s_j_2 + 1000 y_ijk_5_2_fake_belem + 1000 y_ijk_5_2_fake_manila
+ <= 1000
+_C599: y_ijk_0_3_fake_belem + y_ijk_0_3_fake_manila + y_ijk_1_3_fake_belem
+ + y_ijk_1_3_fake_manila + y_ijk_2_3_fake_belem + y_ijk_2_3_fake_manila
+ + y_ijk_3_3_fake_belem + y_ijk_3_3_fake_manila + y_ijk_4_3_fake_belem
+ + y_ijk_4_3_fake_manila + y_ijk_5_3_fake_belem + y_ijk_5_3_fake_manila >= 1
 _C6: - 1000000 x_ik_1_fake_manila + z_ikt_1_fake_manila_0
  + z_ikt_1_fake_manila_1 + z_ikt_1_fake_manila_10 + z_ikt_1_fake_manila_11
  + z_ikt_1_fake_manila_12 + z_ikt_1_fake_manila_13 + z_ikt_1_fake_manila_14
@@ -1033,278 +1101,864 @@ _C6: - 1000000 x_ik_1_fake_manila + z_ikt_1_fake_manila_0
  + z_ikt_1_fake_manila_9 <= 0
 _C60: s_j_1 + 999983 z_ikt_1_fake_belem_17 + 999983 z_ikt_1_fake_manila_17
  <= 1000000
-_C600: d_ijk_3_1_fake_belem - x_ik_1_fake_belem - x_ik_3_fake_belem >= -1
-_C601: - a_ij_1_1 - b_ij_3_1 - 2 d_ijk_3_1_fake_belem
- + e_ijlk_3_1_1_fake_belem >= -3
-_C602: - a_ij_2_1 - b_ij_3_2 - d_ijk_3_1_fake_belem - d_ijk_3_2_fake_belem
- + e_ijlk_3_1_2_fake_belem >= -3
-_C603: - a_ij_3_1 - b_ij_3_3 - d_ijk_3_1_fake_belem - d_ijk_3_3_fake_belem
- + e_ijlk_3_1_3_fake_belem >= -3
-_C604: - a_ij_4_1 - b_ij_3_4 - d_ijk_3_1_fake_belem - d_ijk_3_4_fake_belem
- + e_ijlk_3_1_4_fake_belem >= -3
-_C605: d_ijk_3_1_fake_manila - x_ik_1_fake_manila - x_ik_3_fake_manila >= -1
-_C606: - a_ij_1_1 - b_ij_3_1 - 2 d_ijk_3_1_fake_manila
- + e_ijlk_3_1_1_fake_manila >= -3
-_C607: - a_ij_2_1 - b_ij_3_2 - d_ijk_3_1_fake_manila - d_ijk_3_2_fake_manila
- + e_ijlk_3_1_2_fake_manila >= -3
-_C608: - a_ij_3_1 - b_ij_3_3 - d_ijk_3_1_fake_manila - d_ijk_3_3_fake_manila
- + e_ijlk_3_1_3_fake_manila >= -3
-_C609: - a_ij_4_1 - b_ij_3_4 - d_ijk_3_1_fake_manila - d_ijk_3_4_fake_manila
- + e_ijlk_3_1_4_fake_manila >= -3
+_C600: c_j_3 - s_j_3 - 10 x_ik_3_fake_belem - 8 x_ik_3_fake_manila
+ - 7 y_ijk_1_3_fake_belem - 6 y_ijk_1_3_fake_manila - 9 y_ijk_2_3_fake_belem
+ - 10 y_ijk_2_3_fake_manila - 50 y_ijk_3_3_fake_belem
+ - 50 y_ijk_3_3_fake_manila - 7 y_ijk_4_3_fake_belem
+ - 10 y_ijk_4_3_fake_manila - 9 y_ijk_5_3_fake_belem
+ - 10 y_ijk_5_3_fake_manila >= 0
+_C601: x_ik_3_fake_belem - 0.001 y_ijk_0_3_fake_belem
+ - 0.001 y_ijk_1_3_fake_belem - 0.001 y_ijk_2_3_fake_belem
+ - 0.001 y_ijk_3_3_fake_belem - 0.001 y_ijk_4_3_fake_belem
+ - 0.001 y_ijk_5_3_fake_belem >= 0
+_C602: x_ik_3_fake_belem - 0.001 y_ijk_3_0_fake_belem
+ - 0.001 y_ijk_3_1_fake_belem - 0.001 y_ijk_3_2_fake_belem
+ - 0.001 y_ijk_3_3_fake_belem - 0.001 y_ijk_3_4_fake_belem
+ - 0.001 y_ijk_3_5_fake_belem >= 0
+_C603: - y_ijk_0_3_fake_belem + z_ikt_3_fake_belem_0 = 0
+_C604: x_ik_3_fake_manila - 0.001 y_ijk_0_3_fake_manila
+ - 0.001 y_ijk_1_3_fake_manila - 0.001 y_ijk_2_3_fake_manila
+ - 0.001 y_ijk_3_3_fake_manila - 0.001 y_ijk_4_3_fake_manila
+ - 0.001 y_ijk_5_3_fake_manila >= 0
+_C605: x_ik_3_fake_manila - 0.001 y_ijk_3_0_fake_manila
+ - 0.001 y_ijk_3_1_fake_manila - 0.001 y_ijk_3_2_fake_manila
+ - 0.001 y_ijk_3_3_fake_manila - 0.001 y_ijk_3_4_fake_manila
+ - 0.001 y_ijk_3_5_fake_manila >= 0
+_C606: - y_ijk_0_3_fake_manila + z_ikt_3_fake_manila_0 = 0
+_C607: c_j_0 - s_j_3 + 1000 y_ijk_0_3_fake_belem + 1000 y_ijk_0_3_fake_manila
+ <= 1000
+_C608: c_j_1 - s_j_3 + 1000 y_ijk_1_3_fake_belem + 1000 y_ijk_1_3_fake_manila
+ <= 1000
+_C609: c_j_2 - s_j_3 + 1000 y_ijk_2_3_fake_belem + 1000 y_ijk_2_3_fake_manila
+ <= 1000
 _C61: - c_j_1 + 18 z_ikt_1_fake_belem_18 + 18 z_ikt_1_fake_manila_18 <= 0
-_C610: a_ij_3_2 + 0.001 c_j_3 - 0.001 s_j_2 >= 0
-_C611: b_ij_3_2 - 0.001 c_j_2 + 0.001 c_j_3 >= 0
-_C612: d_ijk_3_2_fake_belem - x_ik_2_fake_belem - x_ik_3_fake_belem >= -1
-_C613: - a_ij_1_2 - b_ij_3_1 - d_ijk_3_1_fake_belem - d_ijk_3_2_fake_belem
- + e_ijlk_3_2_1_fake_belem >= -3
-_C614: - a_ij_2_2 - b_ij_3_2 - 2 d_ijk_3_2_fake_belem
- + e_ijlk_3_2_2_fake_belem >= -3
-_C615: - a_ij_3_2 - b_ij_3_3 - d_ijk_3_2_fake_belem - d_ijk_3_3_fake_belem
- + e_ijlk_3_2_3_fake_belem >= -3
-_C616: - a_ij_4_2 - b_ij_3_4 - d_ijk_3_2_fake_belem - d_ijk_3_4_fake_belem
- + e_ijlk_3_2_4_fake_belem >= -3
-_C617: d_ijk_3_2_fake_manila - x_ik_2_fake_manila - x_ik_3_fake_manila >= -1
-_C618: - a_ij_1_2 - b_ij_3_1 - d_ijk_3_1_fake_manila - d_ijk_3_2_fake_manila
- + e_ijlk_3_2_1_fake_manila >= -3
-_C619: - a_ij_2_2 - b_ij_3_2 - 2 d_ijk_3_2_fake_manila
- + e_ijlk_3_2_2_fake_manila >= -3
+_C610: c_j_3 - s_j_3 + 1000 y_ijk_3_3_fake_belem + 1000 y_ijk_3_3_fake_manila
+ <= 1000
+_C611: c_j_4 - s_j_3 + 1000 y_ijk_4_3_fake_belem + 1000 y_ijk_4_3_fake_manila
+ <= 1000
+_C612: c_j_5 - s_j_3 + 1000 y_ijk_5_3_fake_belem + 1000 y_ijk_5_3_fake_manila
+ <= 1000
+_C613: y_ijk_0_4_fake_belem + y_ijk_0_4_fake_manila + y_ijk_1_4_fake_belem
+ + y_ijk_1_4_fake_manila + y_ijk_2_4_fake_belem + y_ijk_2_4_fake_manila
+ + y_ijk_3_4_fake_belem + y_ijk_3_4_fake_manila + y_ijk_4_4_fake_belem
+ + y_ijk_4_4_fake_manila + y_ijk_5_4_fake_belem + y_ijk_5_4_fake_manila >= 1
+_C614: c_j_4 - s_j_4 - 8 x_ik_4_fake_belem - 8 x_ik_4_fake_manila
+ - 8 y_ijk_1_4_fake_belem - 5 y_ijk_1_4_fake_manila - 8 y_ijk_2_4_fake_belem
+ - 8 y_ijk_2_4_fake_manila - 8 y_ijk_3_4_fake_belem - 9 y_ijk_3_4_fake_manila
+ - 50 y_ijk_4_4_fake_belem - 50 y_ijk_4_4_fake_manila - 7 y_ijk_5_4_fake_belem
+ - 7 y_ijk_5_4_fake_manila >= 0
+_C615: x_ik_4_fake_belem - 0.001 y_ijk_0_4_fake_belem
+ - 0.001 y_ijk_1_4_fake_belem - 0.001 y_ijk_2_4_fake_belem
+ - 0.001 y_ijk_3_4_fake_belem - 0.001 y_ijk_4_4_fake_belem
+ - 0.001 y_ijk_5_4_fake_belem >= 0
+_C616: x_ik_4_fake_belem - 0.001 y_ijk_4_0_fake_belem
+ - 0.001 y_ijk_4_1_fake_belem - 0.001 y_ijk_4_2_fake_belem
+ - 0.001 y_ijk_4_3_fake_belem - 0.001 y_ijk_4_4_fake_belem
+ - 0.001 y_ijk_4_5_fake_belem >= 0
+_C617: - y_ijk_0_4_fake_belem + z_ikt_4_fake_belem_0 = 0
+_C618: x_ik_4_fake_manila - 0.001 y_ijk_0_4_fake_manila
+ - 0.001 y_ijk_1_4_fake_manila - 0.001 y_ijk_2_4_fake_manila
+ - 0.001 y_ijk_3_4_fake_manila - 0.001 y_ijk_4_4_fake_manila
+ - 0.001 y_ijk_5_4_fake_manila >= 0
+_C619: x_ik_4_fake_manila - 0.001 y_ijk_4_0_fake_manila
+ - 0.001 y_ijk_4_1_fake_manila - 0.001 y_ijk_4_2_fake_manila
+ - 0.001 y_ijk_4_3_fake_manila - 0.001 y_ijk_4_4_fake_manila
+ - 0.001 y_ijk_4_5_fake_manila >= 0
 _C62: z_ikt_1_fake_belem_18 + z_ikt_1_fake_manila_18 <= 1
-_C620: - a_ij_3_2 - b_ij_3_3 - d_ijk_3_2_fake_manila - d_ijk_3_3_fake_manila
- + e_ijlk_3_2_3_fake_manila >= -3
-_C621: - a_ij_4_2 - b_ij_3_4 - d_ijk_3_2_fake_manila - d_ijk_3_4_fake_manila
- + e_ijlk_3_2_4_fake_manila >= -3
-_C622: a_ij_3_3 = 0
-_C623: b_ij_3_3 = 0
-_C624: a_ij_3_4 + 0.001 c_j_3 - 0.001 s_j_4 >= 0
-_C625: b_ij_3_4 + 0.001 c_j_3 - 0.001 c_j_4 >= 0
-_C626: d_ijk_3_4_fake_belem - x_ik_3_fake_belem - x_ik_4_fake_belem >= -1
-_C627: - a_ij_1_4 - b_ij_3_1 - d_ijk_3_1_fake_belem - d_ijk_3_4_fake_belem
- + e_ijlk_3_4_1_fake_belem >= -3
-_C628: - a_ij_2_4 - b_ij_3_2 - d_ijk_3_2_fake_belem - d_ijk_3_4_fake_belem
- + e_ijlk_3_4_2_fake_belem >= -3
-_C629: - a_ij_3_4 - b_ij_3_3 - d_ijk_3_3_fake_belem - d_ijk_3_4_fake_belem
- + e_ijlk_3_4_3_fake_belem >= -3
+_C620: - y_ijk_0_4_fake_manila + z_ikt_4_fake_manila_0 = 0
+_C621: c_j_0 - s_j_4 + 1000 y_ijk_0_4_fake_belem + 1000 y_ijk_0_4_fake_manila
+ <= 1000
+_C622: c_j_1 - s_j_4 + 1000 y_ijk_1_4_fake_belem + 1000 y_ijk_1_4_fake_manila
+ <= 1000
+_C623: c_j_2 - s_j_4 + 1000 y_ijk_2_4_fake_belem + 1000 y_ijk_2_4_fake_manila
+ <= 1000
+_C624: c_j_3 - s_j_4 + 1000 y_ijk_3_4_fake_belem + 1000 y_ijk_3_4_fake_manila
+ <= 1000
+_C625: c_j_4 - s_j_4 + 1000 y_ijk_4_4_fake_belem + 1000 y_ijk_4_4_fake_manila
+ <= 1000
+_C626: c_j_5 - s_j_4 + 1000 y_ijk_5_4_fake_belem + 1000 y_ijk_5_4_fake_manila
+ <= 1000
+_C627: y_ijk_0_5_fake_belem + y_ijk_0_5_fake_manila + y_ijk_1_5_fake_belem
+ + y_ijk_1_5_fake_manila + y_ijk_2_5_fake_belem + y_ijk_2_5_fake_manila
+ + y_ijk_3_5_fake_belem + y_ijk_3_5_fake_manila + y_ijk_4_5_fake_belem
+ + y_ijk_4_5_fake_manila + y_ijk_5_5_fake_belem + y_ijk_5_5_fake_manila >= 1
+_C628: c_j_5 - s_j_5 - 5 x_ik_5_fake_belem - 7 x_ik_5_fake_manila
+ - 8 y_ijk_1_5_fake_belem - 6 y_ijk_1_5_fake_manila - 5 y_ijk_2_5_fake_belem
+ - 7 y_ijk_2_5_fake_manila - 6 y_ijk_3_5_fake_belem - 7 y_ijk_3_5_fake_manila
+ - 9 y_ijk_4_5_fake_belem - 8 y_ijk_4_5_fake_manila - 50 y_ijk_5_5_fake_belem
+ - 50 y_ijk_5_5_fake_manila >= 0
+_C629: x_ik_5_fake_belem - 0.001 y_ijk_0_5_fake_belem
+ - 0.001 y_ijk_1_5_fake_belem - 0.001 y_ijk_2_5_fake_belem
+ - 0.001 y_ijk_3_5_fake_belem - 0.001 y_ijk_4_5_fake_belem
+ - 0.001 y_ijk_5_5_fake_belem >= 0
 _C63: s_j_1 + 999982 z_ikt_1_fake_belem_18 + 999982 z_ikt_1_fake_manila_18
  <= 1000000
-_C630: - a_ij_4_4 - b_ij_3_4 - 2 d_ijk_3_4_fake_belem
- + e_ijlk_3_4_4_fake_belem >= -3
-_C631: d_ijk_3_4_fake_manila - x_ik_3_fake_manila - x_ik_4_fake_manila >= -1
-_C632: - a_ij_1_4 - b_ij_3_1 - d_ijk_3_1_fake_manila - d_ijk_3_4_fake_manila
- + e_ijlk_3_4_1_fake_manila >= -3
-_C633: - a_ij_2_4 - b_ij_3_2 - d_ijk_3_2_fake_manila - d_ijk_3_4_fake_manila
- + e_ijlk_3_4_2_fake_manila >= -3
-_C634: - a_ij_3_4 - b_ij_3_3 - d_ijk_3_3_fake_manila - d_ijk_3_4_fake_manila
- + e_ijlk_3_4_3_fake_manila >= -3
-_C635: - a_ij_4_4 - b_ij_3_4 - 2 d_ijk_3_4_fake_manila
- + e_ijlk_3_4_4_fake_manila >= -3
-_C636: a_ij_4_1 + 0.001 c_j_4 - 0.001 s_j_1 >= 0
-_C637: b_ij_4_1 - 0.001 c_j_1 + 0.001 c_j_4 >= 0
-_C638: d_ijk_4_1_fake_belem - x_ik_1_fake_belem - x_ik_4_fake_belem >= -1
-_C639: - a_ij_1_1 - b_ij_4_1 - 2 d_ijk_4_1_fake_belem
- + e_ijlk_4_1_1_fake_belem >= -3
+_C630: x_ik_5_fake_belem - 0.001 y_ijk_5_0_fake_belem
+ - 0.001 y_ijk_5_1_fake_belem - 0.001 y_ijk_5_2_fake_belem
+ - 0.001 y_ijk_5_3_fake_belem - 0.001 y_ijk_5_4_fake_belem
+ - 0.001 y_ijk_5_5_fake_belem >= 0
+_C631: - y_ijk_0_5_fake_belem + z_ikt_5_fake_belem_0 = 0
+_C632: x_ik_5_fake_manila - 0.001 y_ijk_0_5_fake_manila
+ - 0.001 y_ijk_1_5_fake_manila - 0.001 y_ijk_2_5_fake_manila
+ - 0.001 y_ijk_3_5_fake_manila - 0.001 y_ijk_4_5_fake_manila
+ - 0.001 y_ijk_5_5_fake_manila >= 0
+_C633: x_ik_5_fake_manila - 0.001 y_ijk_5_0_fake_manila
+ - 0.001 y_ijk_5_1_fake_manila - 0.001 y_ijk_5_2_fake_manila
+ - 0.001 y_ijk_5_3_fake_manila - 0.001 y_ijk_5_4_fake_manila
+ - 0.001 y_ijk_5_5_fake_manila >= 0
+_C634: - y_ijk_0_5_fake_manila + z_ikt_5_fake_manila_0 = 0
+_C635: c_j_0 - s_j_5 + 1000 y_ijk_0_5_fake_belem + 1000 y_ijk_0_5_fake_manila
+ <= 1000
+_C636: c_j_1 - s_j_5 + 1000 y_ijk_1_5_fake_belem + 1000 y_ijk_1_5_fake_manila
+ <= 1000
+_C637: c_j_2 - s_j_5 + 1000 y_ijk_2_5_fake_belem + 1000 y_ijk_2_5_fake_manila
+ <= 1000
+_C638: c_j_3 - s_j_5 + 1000 y_ijk_3_5_fake_belem + 1000 y_ijk_3_5_fake_manila
+ <= 1000
+_C639: c_j_4 - s_j_5 + 1000 y_ijk_4_5_fake_belem + 1000 y_ijk_4_5_fake_manila
+ <= 1000
 _C64: - c_j_1 + 19 z_ikt_1_fake_belem_19 + 19 z_ikt_1_fake_manila_19 <= 0
-_C640: - a_ij_2_1 - b_ij_4_2 - d_ijk_4_1_fake_belem - d_ijk_4_2_fake_belem
- + e_ijlk_4_1_2_fake_belem >= -3
-_C641: - a_ij_3_1 - b_ij_4_3 - d_ijk_4_1_fake_belem - d_ijk_4_3_fake_belem
- + e_ijlk_4_1_3_fake_belem >= -3
-_C642: - a_ij_4_1 - b_ij_4_4 - d_ijk_4_1_fake_belem - d_ijk_4_4_fake_belem
- + e_ijlk_4_1_4_fake_belem >= -3
-_C643: d_ijk_4_1_fake_manila - x_ik_1_fake_manila - x_ik_4_fake_manila >= -1
-_C644: - a_ij_1_1 - b_ij_4_1 - 2 d_ijk_4_1_fake_manila
- + e_ijlk_4_1_1_fake_manila >= -3
-_C645: - a_ij_2_1 - b_ij_4_2 - d_ijk_4_1_fake_manila - d_ijk_4_2_fake_manila
- + e_ijlk_4_1_2_fake_manila >= -3
-_C646: - a_ij_3_1 - b_ij_4_3 - d_ijk_4_1_fake_manila - d_ijk_4_3_fake_manila
- + e_ijlk_4_1_3_fake_manila >= -3
-_C647: - a_ij_4_1 - b_ij_4_4 - d_ijk_4_1_fake_manila - d_ijk_4_4_fake_manila
- + e_ijlk_4_1_4_fake_manila >= -3
-_C648: a_ij_4_2 + 0.001 c_j_4 - 0.001 s_j_2 >= 0
-_C649: b_ij_4_2 - 0.001 c_j_2 + 0.001 c_j_4 >= 0
+_C640: c_j_5 - s_j_5 + 1000 y_ijk_5_5_fake_belem + 1000 y_ijk_5_5_fake_manila
+ <= 1000
+_C641: a_ij_1_1 = 0
+_C642: b_ij_1_1 = 0
+_C643: a_ij_1_2 + 0.001 c_j_1 - 0.001 s_j_2 >= 0
+_C644: b_ij_1_2 + 0.001 c_j_1 - 0.001 c_j_2 >= 0
+_C645: d_ijk_1_2_fake_belem - x_ik_1_fake_belem - x_ik_2_fake_belem >= -1
+_C646: - a_ij_1_2 - b_ij_1_1 - d_ijk_1_1_fake_belem - d_ijk_1_2_fake_belem
+ + e_ijlk_1_2_1_fake_belem >= -3
+_C647: - a_ij_2_2 - b_ij_1_2 - 2 d_ijk_1_2_fake_belem
+ + e_ijlk_1_2_2_fake_belem >= -3
+_C648: - a_ij_3_2 - b_ij_1_3 - d_ijk_1_2_fake_belem - d_ijk_1_3_fake_belem
+ + e_ijlk_1_2_3_fake_belem >= -3
+_C649: - a_ij_4_2 - b_ij_1_4 - d_ijk_1_2_fake_belem - d_ijk_1_4_fake_belem
+ + e_ijlk_1_2_4_fake_belem >= -3
 _C65: z_ikt_1_fake_belem_19 + z_ikt_1_fake_manila_19 <= 1
-_C650: d_ijk_4_2_fake_belem - x_ik_2_fake_belem - x_ik_4_fake_belem >= -1
-_C651: - a_ij_1_2 - b_ij_4_1 - d_ijk_4_1_fake_belem - d_ijk_4_2_fake_belem
- + e_ijlk_4_2_1_fake_belem >= -3
-_C652: - a_ij_2_2 - b_ij_4_2 - 2 d_ijk_4_2_fake_belem
- + e_ijlk_4_2_2_fake_belem >= -3
-_C653: - a_ij_3_2 - b_ij_4_3 - d_ijk_4_2_fake_belem - d_ijk_4_3_fake_belem
- + e_ijlk_4_2_3_fake_belem >= -3
-_C654: - a_ij_4_2 - b_ij_4_4 - d_ijk_4_2_fake_belem - d_ijk_4_4_fake_belem
- + e_ijlk_4_2_4_fake_belem >= -3
-_C655: d_ijk_4_2_fake_manila - x_ik_2_fake_manila - x_ik_4_fake_manila >= -1
-_C656: - a_ij_1_2 - b_ij_4_1 - d_ijk_4_1_fake_manila - d_ijk_4_2_fake_manila
- + e_ijlk_4_2_1_fake_manila >= -3
-_C657: - a_ij_2_2 - b_ij_4_2 - 2 d_ijk_4_2_fake_manila
- + e_ijlk_4_2_2_fake_manila >= -3
-_C658: - a_ij_3_2 - b_ij_4_3 - d_ijk_4_2_fake_manila - d_ijk_4_3_fake_manila
- + e_ijlk_4_2_3_fake_manila >= -3
-_C659: - a_ij_4_2 - b_ij_4_4 - d_ijk_4_2_fake_manila - d_ijk_4_4_fake_manila
- + e_ijlk_4_2_4_fake_manila >= -3
+_C650: - a_ij_5_2 - b_ij_1_5 - d_ijk_1_2_fake_belem - d_ijk_1_5_fake_belem
+ + e_ijlk_1_2_5_fake_belem >= -3
+_C651: d_ijk_1_2_fake_manila - x_ik_1_fake_manila - x_ik_2_fake_manila >= -1
+_C652: - a_ij_1_2 - b_ij_1_1 - d_ijk_1_1_fake_manila - d_ijk_1_2_fake_manila
+ + e_ijlk_1_2_1_fake_manila >= -3
+_C653: - a_ij_2_2 - b_ij_1_2 - 2 d_ijk_1_2_fake_manila
+ + e_ijlk_1_2_2_fake_manila >= -3
+_C654: - a_ij_3_2 - b_ij_1_3 - d_ijk_1_2_fake_manila - d_ijk_1_3_fake_manila
+ + e_ijlk_1_2_3_fake_manila >= -3
+_C655: - a_ij_4_2 - b_ij_1_4 - d_ijk_1_2_fake_manila - d_ijk_1_4_fake_manila
+ + e_ijlk_1_2_4_fake_manila >= -3
+_C656: - a_ij_5_2 - b_ij_1_5 - d_ijk_1_2_fake_manila - d_ijk_1_5_fake_manila
+ + e_ijlk_1_2_5_fake_manila >= -3
+_C657: a_ij_1_3 + 0.001 c_j_1 - 0.001 s_j_3 >= 0
+_C658: b_ij_1_3 + 0.001 c_j_1 - 0.001 c_j_3 >= 0
+_C659: d_ijk_1_3_fake_belem - x_ik_1_fake_belem - x_ik_3_fake_belem >= -1
 _C66: s_j_1 + 999981 z_ikt_1_fake_belem_19 + 999981 z_ikt_1_fake_manila_19
  <= 1000000
-_C660: a_ij_4_3 + 0.001 c_j_4 - 0.001 s_j_3 >= 0
-_C661: b_ij_4_3 - 0.001 c_j_3 + 0.001 c_j_4 >= 0
-_C662: d_ijk_4_3_fake_belem - x_ik_3_fake_belem - x_ik_4_fake_belem >= -1
-_C663: - a_ij_1_3 - b_ij_4_1 - d_ijk_4_1_fake_belem - d_ijk_4_3_fake_belem
- + e_ijlk_4_3_1_fake_belem >= -3
-_C664: - a_ij_2_3 - b_ij_4_2 - d_ijk_4_2_fake_belem - d_ijk_4_3_fake_belem
- + e_ijlk_4_3_2_fake_belem >= -3
-_C665: - a_ij_3_3 - b_ij_4_3 - 2 d_ijk_4_3_fake_belem
- + e_ijlk_4_3_3_fake_belem >= -3
-_C666: - a_ij_4_3 - b_ij_4_4 - d_ijk_4_3_fake_belem - d_ijk_4_4_fake_belem
- + e_ijlk_4_3_4_fake_belem >= -3
-_C667: d_ijk_4_3_fake_manila - x_ik_3_fake_manila - x_ik_4_fake_manila >= -1
-_C668: - a_ij_1_3 - b_ij_4_1 - d_ijk_4_1_fake_manila - d_ijk_4_3_fake_manila
- + e_ijlk_4_3_1_fake_manila >= -3
-_C669: - a_ij_2_3 - b_ij_4_2 - d_ijk_4_2_fake_manila - d_ijk_4_3_fake_manila
- + e_ijlk_4_3_2_fake_manila >= -3
+_C660: - a_ij_1_3 - b_ij_1_1 - d_ijk_1_1_fake_belem - d_ijk_1_3_fake_belem
+ + e_ijlk_1_3_1_fake_belem >= -3
+_C661: - a_ij_2_3 - b_ij_1_2 - d_ijk_1_2_fake_belem - d_ijk_1_3_fake_belem
+ + e_ijlk_1_3_2_fake_belem >= -3
+_C662: - a_ij_3_3 - b_ij_1_3 - 2 d_ijk_1_3_fake_belem
+ + e_ijlk_1_3_3_fake_belem >= -3
+_C663: - a_ij_4_3 - b_ij_1_4 - d_ijk_1_3_fake_belem - d_ijk_1_4_fake_belem
+ + e_ijlk_1_3_4_fake_belem >= -3
+_C664: - a_ij_5_3 - b_ij_1_5 - d_ijk_1_3_fake_belem - d_ijk_1_5_fake_belem
+ + e_ijlk_1_3_5_fake_belem >= -3
+_C665: d_ijk_1_3_fake_manila - x_ik_1_fake_manila - x_ik_3_fake_manila >= -1
+_C666: - a_ij_1_3 - b_ij_1_1 - d_ijk_1_1_fake_manila - d_ijk_1_3_fake_manila
+ + e_ijlk_1_3_1_fake_manila >= -3
+_C667: - a_ij_2_3 - b_ij_1_2 - d_ijk_1_2_fake_manila - d_ijk_1_3_fake_manila
+ + e_ijlk_1_3_2_fake_manila >= -3
+_C668: - a_ij_3_3 - b_ij_1_3 - 2 d_ijk_1_3_fake_manila
+ + e_ijlk_1_3_3_fake_manila >= -3
+_C669: - a_ij_4_3 - b_ij_1_4 - d_ijk_1_3_fake_manila - d_ijk_1_4_fake_manila
+ + e_ijlk_1_3_4_fake_manila >= -3
 _C67: - c_j_1 + 20 z_ikt_1_fake_belem_20 + 20 z_ikt_1_fake_manila_20 <= 0
-_C670: - a_ij_3_3 - b_ij_4_3 - 2 d_ijk_4_3_fake_manila
- + e_ijlk_4_3_3_fake_manila >= -3
-_C671: - a_ij_4_3 - b_ij_4_4 - d_ijk_4_3_fake_manila - d_ijk_4_4_fake_manila
- + e_ijlk_4_3_4_fake_manila >= -3
-_C672: a_ij_4_4 = 0
-_C673: b_ij_4_4 = 0
-_C674: - a_ij_1_1 - d_ijk_1_1_fake_belem - 0.001 e_ijlk_1_1_1_fake_belem
- - 0.001 e_ijlk_1_1_2_fake_belem - 0.001 e_ijlk_1_1_3_fake_belem
- - 0.001 e_ijlk_1_1_4_fake_belem + y_ijk_1_1_fake_belem >= -2
-_C675: - a_ij_1_1 - d_ijk_1_1_fake_manila - 0.001 e_ijlk_1_1_1_fake_manila
- - 0.001 e_ijlk_1_1_2_fake_manila - 0.001 e_ijlk_1_1_3_fake_manila
- - 0.001 e_ijlk_1_1_4_fake_manila + y_ijk_1_1_fake_manila >= -2
-_C676: - a_ij_1_2 - d_ijk_1_2_fake_belem - 0.001 e_ijlk_1_2_1_fake_belem
- - 0.001 e_ijlk_1_2_2_fake_belem - 0.001 e_ijlk_1_2_3_fake_belem
- - 0.001 e_ijlk_1_2_4_fake_belem + y_ijk_1_2_fake_belem >= -2
-_C677: - a_ij_1_2 - d_ijk_1_2_fake_manila - 0.001 e_ijlk_1_2_1_fake_manila
- - 0.001 e_ijlk_1_2_2_fake_manila - 0.001 e_ijlk_1_2_3_fake_manila
- - 0.001 e_ijlk_1_2_4_fake_manila + y_ijk_1_2_fake_manila >= -2
-_C678: - a_ij_1_3 - d_ijk_1_3_fake_belem - 0.001 e_ijlk_1_3_1_fake_belem
- - 0.001 e_ijlk_1_3_2_fake_belem - 0.001 e_ijlk_1_3_3_fake_belem
- - 0.001 e_ijlk_1_3_4_fake_belem + y_ijk_1_3_fake_belem >= -2
-_C679: - a_ij_1_3 - d_ijk_1_3_fake_manila - 0.001 e_ijlk_1_3_1_fake_manila
- - 0.001 e_ijlk_1_3_2_fake_manila - 0.001 e_ijlk_1_3_3_fake_manila
- - 0.001 e_ijlk_1_3_4_fake_manila + y_ijk_1_3_fake_manila >= -2
+_C670: - a_ij_5_3 - b_ij_1_5 - d_ijk_1_3_fake_manila - d_ijk_1_5_fake_manila
+ + e_ijlk_1_3_5_fake_manila >= -3
+_C671: a_ij_1_4 + 0.001 c_j_1 - 0.001 s_j_4 >= 0
+_C672: b_ij_1_4 + 0.001 c_j_1 - 0.001 c_j_4 >= 0
+_C673: d_ijk_1_4_fake_belem - x_ik_1_fake_belem - x_ik_4_fake_belem >= -1
+_C674: - a_ij_1_4 - b_ij_1_1 - d_ijk_1_1_fake_belem - d_ijk_1_4_fake_belem
+ + e_ijlk_1_4_1_fake_belem >= -3
+_C675: - a_ij_2_4 - b_ij_1_2 - d_ijk_1_2_fake_belem - d_ijk_1_4_fake_belem
+ + e_ijlk_1_4_2_fake_belem >= -3
+_C676: - a_ij_3_4 - b_ij_1_3 - d_ijk_1_3_fake_belem - d_ijk_1_4_fake_belem
+ + e_ijlk_1_4_3_fake_belem >= -3
+_C677: - a_ij_4_4 - b_ij_1_4 - 2 d_ijk_1_4_fake_belem
+ + e_ijlk_1_4_4_fake_belem >= -3
+_C678: - a_ij_5_4 - b_ij_1_5 - d_ijk_1_4_fake_belem - d_ijk_1_5_fake_belem
+ + e_ijlk_1_4_5_fake_belem >= -3
+_C679: d_ijk_1_4_fake_manila - x_ik_1_fake_manila - x_ik_4_fake_manila >= -1
 _C68: z_ikt_1_fake_belem_20 + z_ikt_1_fake_manila_20 <= 1
-_C680: - a_ij_1_4 - d_ijk_1_4_fake_belem - 0.001 e_ijlk_1_4_1_fake_belem
- - 0.001 e_ijlk_1_4_2_fake_belem - 0.001 e_ijlk_1_4_3_fake_belem
- - 0.001 e_ijlk_1_4_4_fake_belem + y_ijk_1_4_fake_belem >= -2
-_C681: - a_ij_1_4 - d_ijk_1_4_fake_manila - 0.001 e_ijlk_1_4_1_fake_manila
- - 0.001 e_ijlk_1_4_2_fake_manila - 0.001 e_ijlk_1_4_3_fake_manila
- - 0.001 e_ijlk_1_4_4_fake_manila + y_ijk_1_4_fake_manila >= -2
-_C682: - a_ij_2_1 - d_ijk_2_1_fake_belem - 0.001 e_ijlk_2_1_1_fake_belem
- - 0.001 e_ijlk_2_1_2_fake_belem - 0.001 e_ijlk_2_1_3_fake_belem
- - 0.001 e_ijlk_2_1_4_fake_belem + y_ijk_2_1_fake_belem >= -2
-_C683: - a_ij_2_1 - d_ijk_2_1_fake_manila - 0.001 e_ijlk_2_1_1_fake_manila
- - 0.001 e_ijlk_2_1_2_fake_manila - 0.001 e_ijlk_2_1_3_fake_manila
- - 0.001 e_ijlk_2_1_4_fake_manila + y_ijk_2_1_fake_manila >= -2
-_C684: - a_ij_2_2 - d_ijk_2_2_fake_belem - 0.001 e_ijlk_2_2_1_fake_belem
- - 0.001 e_ijlk_2_2_2_fake_belem - 0.001 e_ijlk_2_2_3_fake_belem
- - 0.001 e_ijlk_2_2_4_fake_belem + y_ijk_2_2_fake_belem >= -2
-_C685: - a_ij_2_2 - d_ijk_2_2_fake_manila - 0.001 e_ijlk_2_2_1_fake_manila
- - 0.001 e_ijlk_2_2_2_fake_manila - 0.001 e_ijlk_2_2_3_fake_manila
- - 0.001 e_ijlk_2_2_4_fake_manila + y_ijk_2_2_fake_manila >= -2
-_C686: - a_ij_2_3 - d_ijk_2_3_fake_belem - 0.001 e_ijlk_2_3_1_fake_belem
- - 0.001 e_ijlk_2_3_2_fake_belem - 0.001 e_ijlk_2_3_3_fake_belem
- - 0.001 e_ijlk_2_3_4_fake_belem + y_ijk_2_3_fake_belem >= -2
-_C687: - a_ij_2_3 - d_ijk_2_3_fake_manila - 0.001 e_ijlk_2_3_1_fake_manila
- - 0.001 e_ijlk_2_3_2_fake_manila - 0.001 e_ijlk_2_3_3_fake_manila
- - 0.001 e_ijlk_2_3_4_fake_manila + y_ijk_2_3_fake_manila >= -2
-_C688: - a_ij_2_4 - d_ijk_2_4_fake_belem - 0.001 e_ijlk_2_4_1_fake_belem
- - 0.001 e_ijlk_2_4_2_fake_belem - 0.001 e_ijlk_2_4_3_fake_belem
- - 0.001 e_ijlk_2_4_4_fake_belem + y_ijk_2_4_fake_belem >= -2
-_C689: - a_ij_2_4 - d_ijk_2_4_fake_manila - 0.001 e_ijlk_2_4_1_fake_manila
- - 0.001 e_ijlk_2_4_2_fake_manila - 0.001 e_ijlk_2_4_3_fake_manila
- - 0.001 e_ijlk_2_4_4_fake_manila + y_ijk_2_4_fake_manila >= -2
+_C680: - a_ij_1_4 - b_ij_1_1 - d_ijk_1_1_fake_manila - d_ijk_1_4_fake_manila
+ + e_ijlk_1_4_1_fake_manila >= -3
+_C681: - a_ij_2_4 - b_ij_1_2 - d_ijk_1_2_fake_manila - d_ijk_1_4_fake_manila
+ + e_ijlk_1_4_2_fake_manila >= -3
+_C682: - a_ij_3_4 - b_ij_1_3 - d_ijk_1_3_fake_manila - d_ijk_1_4_fake_manila
+ + e_ijlk_1_4_3_fake_manila >= -3
+_C683: - a_ij_4_4 - b_ij_1_4 - 2 d_ijk_1_4_fake_manila
+ + e_ijlk_1_4_4_fake_manila >= -3
+_C684: - a_ij_5_4 - b_ij_1_5 - d_ijk_1_4_fake_manila - d_ijk_1_5_fake_manila
+ + e_ijlk_1_4_5_fake_manila >= -3
+_C685: a_ij_1_5 + 0.001 c_j_1 - 0.001 s_j_5 >= 0
+_C686: b_ij_1_5 + 0.001 c_j_1 - 0.001 c_j_5 >= 0
+_C687: d_ijk_1_5_fake_belem - x_ik_1_fake_belem - x_ik_5_fake_belem >= -1
+_C688: - a_ij_1_5 - b_ij_1_1 - d_ijk_1_1_fake_belem - d_ijk_1_5_fake_belem
+ + e_ijlk_1_5_1_fake_belem >= -3
+_C689: - a_ij_2_5 - b_ij_1_2 - d_ijk_1_2_fake_belem - d_ijk_1_5_fake_belem
+ + e_ijlk_1_5_2_fake_belem >= -3
 _C69: s_j_1 + 999980 z_ikt_1_fake_belem_20 + 999980 z_ikt_1_fake_manila_20
  <= 1000000
-_C690: - a_ij_3_1 - d_ijk_3_1_fake_belem - 0.001 e_ijlk_3_1_1_fake_belem
- - 0.001 e_ijlk_3_1_2_fake_belem - 0.001 e_ijlk_3_1_3_fake_belem
- - 0.001 e_ijlk_3_1_4_fake_belem + y_ijk_3_1_fake_belem >= -2
-_C691: - a_ij_3_1 - d_ijk_3_1_fake_manila - 0.001 e_ijlk_3_1_1_fake_manila
- - 0.001 e_ijlk_3_1_2_fake_manila - 0.001 e_ijlk_3_1_3_fake_manila
- - 0.001 e_ijlk_3_1_4_fake_manila + y_ijk_3_1_fake_manila >= -2
-_C692: - a_ij_3_2 - d_ijk_3_2_fake_belem - 0.001 e_ijlk_3_2_1_fake_belem
- - 0.001 e_ijlk_3_2_2_fake_belem - 0.001 e_ijlk_3_2_3_fake_belem
- - 0.001 e_ijlk_3_2_4_fake_belem + y_ijk_3_2_fake_belem >= -2
-_C693: - a_ij_3_2 - d_ijk_3_2_fake_manila - 0.001 e_ijlk_3_2_1_fake_manila
- - 0.001 e_ijlk_3_2_2_fake_manila - 0.001 e_ijlk_3_2_3_fake_manila
- - 0.001 e_ijlk_3_2_4_fake_manila + y_ijk_3_2_fake_manila >= -2
-_C694: - a_ij_3_3 - d_ijk_3_3_fake_belem - 0.001 e_ijlk_3_3_1_fake_belem
- - 0.001 e_ijlk_3_3_2_fake_belem - 0.001 e_ijlk_3_3_3_fake_belem
- - 0.001 e_ijlk_3_3_4_fake_belem + y_ijk_3_3_fake_belem >= -2
-_C695: - a_ij_3_3 - d_ijk_3_3_fake_manila - 0.001 e_ijlk_3_3_1_fake_manila
- - 0.001 e_ijlk_3_3_2_fake_manila - 0.001 e_ijlk_3_3_3_fake_manila
- - 0.001 e_ijlk_3_3_4_fake_manila + y_ijk_3_3_fake_manila >= -2
-_C696: - a_ij_3_4 - d_ijk_3_4_fake_belem - 0.001 e_ijlk_3_4_1_fake_belem
- - 0.001 e_ijlk_3_4_2_fake_belem - 0.001 e_ijlk_3_4_3_fake_belem
- - 0.001 e_ijlk_3_4_4_fake_belem + y_ijk_3_4_fake_belem >= -2
-_C697: - a_ij_3_4 - d_ijk_3_4_fake_manila - 0.001 e_ijlk_3_4_1_fake_manila
- - 0.001 e_ijlk_3_4_2_fake_manila - 0.001 e_ijlk_3_4_3_fake_manila
- - 0.001 e_ijlk_3_4_4_fake_manila + y_ijk_3_4_fake_manila >= -2
-_C698: - a_ij_4_1 - d_ijk_4_1_fake_belem - 0.001 e_ijlk_4_1_1_fake_belem
- - 0.001 e_ijlk_4_1_2_fake_belem - 0.001 e_ijlk_4_1_3_fake_belem
- - 0.001 e_ijlk_4_1_4_fake_belem + y_ijk_4_1_fake_belem >= -2
-_C699: - a_ij_4_1 - d_ijk_4_1_fake_manila - 0.001 e_ijlk_4_1_1_fake_manila
- - 0.001 e_ijlk_4_1_2_fake_manila - 0.001 e_ijlk_4_1_3_fake_manila
- - 0.001 e_ijlk_4_1_4_fake_manila + y_ijk_4_1_fake_manila >= -2
+_C690: - a_ij_3_5 - b_ij_1_3 - d_ijk_1_3_fake_belem - d_ijk_1_5_fake_belem
+ + e_ijlk_1_5_3_fake_belem >= -3
+_C691: - a_ij_4_5 - b_ij_1_4 - d_ijk_1_4_fake_belem - d_ijk_1_5_fake_belem
+ + e_ijlk_1_5_4_fake_belem >= -3
+_C692: - a_ij_5_5 - b_ij_1_5 - 2 d_ijk_1_5_fake_belem
+ + e_ijlk_1_5_5_fake_belem >= -3
+_C693: d_ijk_1_5_fake_manila - x_ik_1_fake_manila - x_ik_5_fake_manila >= -1
+_C694: - a_ij_1_5 - b_ij_1_1 - d_ijk_1_1_fake_manila - d_ijk_1_5_fake_manila
+ + e_ijlk_1_5_1_fake_manila >= -3
+_C695: - a_ij_2_5 - b_ij_1_2 - d_ijk_1_2_fake_manila - d_ijk_1_5_fake_manila
+ + e_ijlk_1_5_2_fake_manila >= -3
+_C696: - a_ij_3_5 - b_ij_1_3 - d_ijk_1_3_fake_manila - d_ijk_1_5_fake_manila
+ + e_ijlk_1_5_3_fake_manila >= -3
+_C697: - a_ij_4_5 - b_ij_1_4 - d_ijk_1_4_fake_manila - d_ijk_1_5_fake_manila
+ + e_ijlk_1_5_4_fake_manila >= -3
+_C698: - a_ij_5_5 - b_ij_1_5 - 2 d_ijk_1_5_fake_manila
+ + e_ijlk_1_5_5_fake_manila >= -3
+_C699: a_ij_2_1 + 0.001 c_j_2 - 0.001 s_j_1 >= 0
 _C7: - c_j_1 <= 0
 _C70: - c_j_1 + 21 z_ikt_1_fake_belem_21 + 21 z_ikt_1_fake_manila_21 <= 0
-_C700: - a_ij_4_2 - d_ijk_4_2_fake_belem - 0.001 e_ijlk_4_2_1_fake_belem
- - 0.001 e_ijlk_4_2_2_fake_belem - 0.001 e_ijlk_4_2_3_fake_belem
- - 0.001 e_ijlk_4_2_4_fake_belem + y_ijk_4_2_fake_belem >= -2
-_C701: - a_ij_4_2 - d_ijk_4_2_fake_manila - 0.001 e_ijlk_4_2_1_fake_manila
- - 0.001 e_ijlk_4_2_2_fake_manila - 0.001 e_ijlk_4_2_3_fake_manila
- - 0.001 e_ijlk_4_2_4_fake_manila + y_ijk_4_2_fake_manila >= -2
-_C702: - a_ij_4_3 - d_ijk_4_3_fake_belem - 0.001 e_ijlk_4_3_1_fake_belem
- - 0.001 e_ijlk_4_3_2_fake_belem - 0.001 e_ijlk_4_3_3_fake_belem
- - 0.001 e_ijlk_4_3_4_fake_belem + y_ijk_4_3_fake_belem >= -2
-_C703: - a_ij_4_3 - d_ijk_4_3_fake_manila - 0.001 e_ijlk_4_3_1_fake_manila
- - 0.001 e_ijlk_4_3_2_fake_manila - 0.001 e_ijlk_4_3_3_fake_manila
- - 0.001 e_ijlk_4_3_4_fake_manila + y_ijk_4_3_fake_manila >= -2
-_C704: - a_ij_4_4 - d_ijk_4_4_fake_belem - 0.001 e_ijlk_4_4_1_fake_belem
- - 0.001 e_ijlk_4_4_2_fake_belem - 0.001 e_ijlk_4_4_3_fake_belem
- - 0.001 e_ijlk_4_4_4_fake_belem + y_ijk_4_4_fake_belem >= -2
-_C705: - a_ij_4_4 - d_ijk_4_4_fake_manila - 0.001 e_ijlk_4_4_1_fake_manila
- - 0.001 e_ijlk_4_4_2_fake_manila - 0.001 e_ijlk_4_4_3_fake_manila
- - 0.001 e_ijlk_4_4_4_fake_manila + y_ijk_4_4_fake_manila >= -2
+_C700: b_ij_2_1 - 0.001 c_j_1 + 0.001 c_j_2 >= 0
+_C701: d_ijk_2_1_fake_belem - x_ik_1_fake_belem - x_ik_2_fake_belem >= -1
+_C702: - a_ij_1_1 - b_ij_2_1 - 2 d_ijk_2_1_fake_belem
+ + e_ijlk_2_1_1_fake_belem >= -3
+_C703: - a_ij_2_1 - b_ij_2_2 - d_ijk_2_1_fake_belem - d_ijk_2_2_fake_belem
+ + e_ijlk_2_1_2_fake_belem >= -3
+_C704: - a_ij_3_1 - b_ij_2_3 - d_ijk_2_1_fake_belem - d_ijk_2_3_fake_belem
+ + e_ijlk_2_1_3_fake_belem >= -3
+_C705: - a_ij_4_1 - b_ij_2_4 - d_ijk_2_1_fake_belem - d_ijk_2_4_fake_belem
+ + e_ijlk_2_1_4_fake_belem >= -3
+_C706: - a_ij_5_1 - b_ij_2_5 - d_ijk_2_1_fake_belem - d_ijk_2_5_fake_belem
+ + e_ijlk_2_1_5_fake_belem >= -3
+_C707: d_ijk_2_1_fake_manila - x_ik_1_fake_manila - x_ik_2_fake_manila >= -1
+_C708: - a_ij_1_1 - b_ij_2_1 - 2 d_ijk_2_1_fake_manila
+ + e_ijlk_2_1_1_fake_manila >= -3
+_C709: - a_ij_2_1 - b_ij_2_2 - d_ijk_2_1_fake_manila - d_ijk_2_2_fake_manila
+ + e_ijlk_2_1_2_fake_manila >= -3
 _C71: z_ikt_1_fake_belem_21 + z_ikt_1_fake_manila_21 <= 1
+_C710: - a_ij_3_1 - b_ij_2_3 - d_ijk_2_1_fake_manila - d_ijk_2_3_fake_manila
+ + e_ijlk_2_1_3_fake_manila >= -3
+_C711: - a_ij_4_1 - b_ij_2_4 - d_ijk_2_1_fake_manila - d_ijk_2_4_fake_manila
+ + e_ijlk_2_1_4_fake_manila >= -3
+_C712: - a_ij_5_1 - b_ij_2_5 - d_ijk_2_1_fake_manila - d_ijk_2_5_fake_manila
+ + e_ijlk_2_1_5_fake_manila >= -3
+_C713: a_ij_2_2 = 0
+_C714: b_ij_2_2 = 0
+_C715: a_ij_2_3 + 0.001 c_j_2 - 0.001 s_j_3 >= 0
+_C716: b_ij_2_3 + 0.001 c_j_2 - 0.001 c_j_3 >= 0
+_C717: d_ijk_2_3_fake_belem - x_ik_2_fake_belem - x_ik_3_fake_belem >= -1
+_C718: - a_ij_1_3 - b_ij_2_1 - d_ijk_2_1_fake_belem - d_ijk_2_3_fake_belem
+ + e_ijlk_2_3_1_fake_belem >= -3
+_C719: - a_ij_2_3 - b_ij_2_2 - d_ijk_2_2_fake_belem - d_ijk_2_3_fake_belem
+ + e_ijlk_2_3_2_fake_belem >= -3
 _C72: s_j_1 + 999979 z_ikt_1_fake_belem_21 + 999979 z_ikt_1_fake_manila_21
  <= 1000000
+_C720: - a_ij_3_3 - b_ij_2_3 - 2 d_ijk_2_3_fake_belem
+ + e_ijlk_2_3_3_fake_belem >= -3
+_C721: - a_ij_4_3 - b_ij_2_4 - d_ijk_2_3_fake_belem - d_ijk_2_4_fake_belem
+ + e_ijlk_2_3_4_fake_belem >= -3
+_C722: - a_ij_5_3 - b_ij_2_5 - d_ijk_2_3_fake_belem - d_ijk_2_5_fake_belem
+ + e_ijlk_2_3_5_fake_belem >= -3
+_C723: d_ijk_2_3_fake_manila - x_ik_2_fake_manila - x_ik_3_fake_manila >= -1
+_C724: - a_ij_1_3 - b_ij_2_1 - d_ijk_2_1_fake_manila - d_ijk_2_3_fake_manila
+ + e_ijlk_2_3_1_fake_manila >= -3
+_C725: - a_ij_2_3 - b_ij_2_2 - d_ijk_2_2_fake_manila - d_ijk_2_3_fake_manila
+ + e_ijlk_2_3_2_fake_manila >= -3
+_C726: - a_ij_3_3 - b_ij_2_3 - 2 d_ijk_2_3_fake_manila
+ + e_ijlk_2_3_3_fake_manila >= -3
+_C727: - a_ij_4_3 - b_ij_2_4 - d_ijk_2_3_fake_manila - d_ijk_2_4_fake_manila
+ + e_ijlk_2_3_4_fake_manila >= -3
+_C728: - a_ij_5_3 - b_ij_2_5 - d_ijk_2_3_fake_manila - d_ijk_2_5_fake_manila
+ + e_ijlk_2_3_5_fake_manila >= -3
+_C729: a_ij_2_4 + 0.001 c_j_2 - 0.001 s_j_4 >= 0
 _C73: - c_j_1 + 22 z_ikt_1_fake_belem_22 + 22 z_ikt_1_fake_manila_22 <= 0
+_C730: b_ij_2_4 + 0.001 c_j_2 - 0.001 c_j_4 >= 0
+_C731: d_ijk_2_4_fake_belem - x_ik_2_fake_belem - x_ik_4_fake_belem >= -1
+_C732: - a_ij_1_4 - b_ij_2_1 - d_ijk_2_1_fake_belem - d_ijk_2_4_fake_belem
+ + e_ijlk_2_4_1_fake_belem >= -3
+_C733: - a_ij_2_4 - b_ij_2_2 - d_ijk_2_2_fake_belem - d_ijk_2_4_fake_belem
+ + e_ijlk_2_4_2_fake_belem >= -3
+_C734: - a_ij_3_4 - b_ij_2_3 - d_ijk_2_3_fake_belem - d_ijk_2_4_fake_belem
+ + e_ijlk_2_4_3_fake_belem >= -3
+_C735: - a_ij_4_4 - b_ij_2_4 - 2 d_ijk_2_4_fake_belem
+ + e_ijlk_2_4_4_fake_belem >= -3
+_C736: - a_ij_5_4 - b_ij_2_5 - d_ijk_2_4_fake_belem - d_ijk_2_5_fake_belem
+ + e_ijlk_2_4_5_fake_belem >= -3
+_C737: d_ijk_2_4_fake_manila - x_ik_2_fake_manila - x_ik_4_fake_manila >= -1
+_C738: - a_ij_1_4 - b_ij_2_1 - d_ijk_2_1_fake_manila - d_ijk_2_4_fake_manila
+ + e_ijlk_2_4_1_fake_manila >= -3
+_C739: - a_ij_2_4 - b_ij_2_2 - d_ijk_2_2_fake_manila - d_ijk_2_4_fake_manila
+ + e_ijlk_2_4_2_fake_manila >= -3
 _C74: z_ikt_1_fake_belem_22 + z_ikt_1_fake_manila_22 <= 1
+_C740: - a_ij_3_4 - b_ij_2_3 - d_ijk_2_3_fake_manila - d_ijk_2_4_fake_manila
+ + e_ijlk_2_4_3_fake_manila >= -3
+_C741: - a_ij_4_4 - b_ij_2_4 - 2 d_ijk_2_4_fake_manila
+ + e_ijlk_2_4_4_fake_manila >= -3
+_C742: - a_ij_5_4 - b_ij_2_5 - d_ijk_2_4_fake_manila - d_ijk_2_5_fake_manila
+ + e_ijlk_2_4_5_fake_manila >= -3
+_C743: a_ij_2_5 + 0.001 c_j_2 - 0.001 s_j_5 >= 0
+_C744: b_ij_2_5 + 0.001 c_j_2 - 0.001 c_j_5 >= 0
+_C745: d_ijk_2_5_fake_belem - x_ik_2_fake_belem - x_ik_5_fake_belem >= -1
+_C746: - a_ij_1_5 - b_ij_2_1 - d_ijk_2_1_fake_belem - d_ijk_2_5_fake_belem
+ + e_ijlk_2_5_1_fake_belem >= -3
+_C747: - a_ij_2_5 - b_ij_2_2 - d_ijk_2_2_fake_belem - d_ijk_2_5_fake_belem
+ + e_ijlk_2_5_2_fake_belem >= -3
+_C748: - a_ij_3_5 - b_ij_2_3 - d_ijk_2_3_fake_belem - d_ijk_2_5_fake_belem
+ + e_ijlk_2_5_3_fake_belem >= -3
+_C749: - a_ij_4_5 - b_ij_2_4 - d_ijk_2_4_fake_belem - d_ijk_2_5_fake_belem
+ + e_ijlk_2_5_4_fake_belem >= -3
 _C75: s_j_1 + 999978 z_ikt_1_fake_belem_22 + 999978 z_ikt_1_fake_manila_22
  <= 1000000
+_C750: - a_ij_5_5 - b_ij_2_5 - 2 d_ijk_2_5_fake_belem
+ + e_ijlk_2_5_5_fake_belem >= -3
+_C751: d_ijk_2_5_fake_manila - x_ik_2_fake_manila - x_ik_5_fake_manila >= -1
+_C752: - a_ij_1_5 - b_ij_2_1 - d_ijk_2_1_fake_manila - d_ijk_2_5_fake_manila
+ + e_ijlk_2_5_1_fake_manila >= -3
+_C753: - a_ij_2_5 - b_ij_2_2 - d_ijk_2_2_fake_manila - d_ijk_2_5_fake_manila
+ + e_ijlk_2_5_2_fake_manila >= -3
+_C754: - a_ij_3_5 - b_ij_2_3 - d_ijk_2_3_fake_manila - d_ijk_2_5_fake_manila
+ + e_ijlk_2_5_3_fake_manila >= -3
+_C755: - a_ij_4_5 - b_ij_2_4 - d_ijk_2_4_fake_manila - d_ijk_2_5_fake_manila
+ + e_ijlk_2_5_4_fake_manila >= -3
+_C756: - a_ij_5_5 - b_ij_2_5 - 2 d_ijk_2_5_fake_manila
+ + e_ijlk_2_5_5_fake_manila >= -3
+_C757: a_ij_3_1 + 0.001 c_j_3 - 0.001 s_j_1 >= 0
+_C758: b_ij_3_1 - 0.001 c_j_1 + 0.001 c_j_3 >= 0
+_C759: d_ijk_3_1_fake_belem - x_ik_1_fake_belem - x_ik_3_fake_belem >= -1
 _C76: - c_j_1 + 23 z_ikt_1_fake_belem_23 + 23 z_ikt_1_fake_manila_23 <= 0
+_C760: - a_ij_1_1 - b_ij_3_1 - 2 d_ijk_3_1_fake_belem
+ + e_ijlk_3_1_1_fake_belem >= -3
+_C761: - a_ij_2_1 - b_ij_3_2 - d_ijk_3_1_fake_belem - d_ijk_3_2_fake_belem
+ + e_ijlk_3_1_2_fake_belem >= -3
+_C762: - a_ij_3_1 - b_ij_3_3 - d_ijk_3_1_fake_belem - d_ijk_3_3_fake_belem
+ + e_ijlk_3_1_3_fake_belem >= -3
+_C763: - a_ij_4_1 - b_ij_3_4 - d_ijk_3_1_fake_belem - d_ijk_3_4_fake_belem
+ + e_ijlk_3_1_4_fake_belem >= -3
+_C764: - a_ij_5_1 - b_ij_3_5 - d_ijk_3_1_fake_belem - d_ijk_3_5_fake_belem
+ + e_ijlk_3_1_5_fake_belem >= -3
+_C765: d_ijk_3_1_fake_manila - x_ik_1_fake_manila - x_ik_3_fake_manila >= -1
+_C766: - a_ij_1_1 - b_ij_3_1 - 2 d_ijk_3_1_fake_manila
+ + e_ijlk_3_1_1_fake_manila >= -3
+_C767: - a_ij_2_1 - b_ij_3_2 - d_ijk_3_1_fake_manila - d_ijk_3_2_fake_manila
+ + e_ijlk_3_1_2_fake_manila >= -3
+_C768: - a_ij_3_1 - b_ij_3_3 - d_ijk_3_1_fake_manila - d_ijk_3_3_fake_manila
+ + e_ijlk_3_1_3_fake_manila >= -3
+_C769: - a_ij_4_1 - b_ij_3_4 - d_ijk_3_1_fake_manila - d_ijk_3_4_fake_manila
+ + e_ijlk_3_1_4_fake_manila >= -3
 _C77: z_ikt_1_fake_belem_23 + z_ikt_1_fake_manila_23 <= 1
+_C770: - a_ij_5_1 - b_ij_3_5 - d_ijk_3_1_fake_manila - d_ijk_3_5_fake_manila
+ + e_ijlk_3_1_5_fake_manila >= -3
+_C771: a_ij_3_2 + 0.001 c_j_3 - 0.001 s_j_2 >= 0
+_C772: b_ij_3_2 - 0.001 c_j_2 + 0.001 c_j_3 >= 0
+_C773: d_ijk_3_2_fake_belem - x_ik_2_fake_belem - x_ik_3_fake_belem >= -1
+_C774: - a_ij_1_2 - b_ij_3_1 - d_ijk_3_1_fake_belem - d_ijk_3_2_fake_belem
+ + e_ijlk_3_2_1_fake_belem >= -3
+_C775: - a_ij_2_2 - b_ij_3_2 - 2 d_ijk_3_2_fake_belem
+ + e_ijlk_3_2_2_fake_belem >= -3
+_C776: - a_ij_3_2 - b_ij_3_3 - d_ijk_3_2_fake_belem - d_ijk_3_3_fake_belem
+ + e_ijlk_3_2_3_fake_belem >= -3
+_C777: - a_ij_4_2 - b_ij_3_4 - d_ijk_3_2_fake_belem - d_ijk_3_4_fake_belem
+ + e_ijlk_3_2_4_fake_belem >= -3
+_C778: - a_ij_5_2 - b_ij_3_5 - d_ijk_3_2_fake_belem - d_ijk_3_5_fake_belem
+ + e_ijlk_3_2_5_fake_belem >= -3
+_C779: d_ijk_3_2_fake_manila - x_ik_2_fake_manila - x_ik_3_fake_manila >= -1
 _C78: s_j_1 + 999977 z_ikt_1_fake_belem_23 + 999977 z_ikt_1_fake_manila_23
  <= 1000000
+_C780: - a_ij_1_2 - b_ij_3_1 - d_ijk_3_1_fake_manila - d_ijk_3_2_fake_manila
+ + e_ijlk_3_2_1_fake_manila >= -3
+_C781: - a_ij_2_2 - b_ij_3_2 - 2 d_ijk_3_2_fake_manila
+ + e_ijlk_3_2_2_fake_manila >= -3
+_C782: - a_ij_3_2 - b_ij_3_3 - d_ijk_3_2_fake_manila - d_ijk_3_3_fake_manila
+ + e_ijlk_3_2_3_fake_manila >= -3
+_C783: - a_ij_4_2 - b_ij_3_4 - d_ijk_3_2_fake_manila - d_ijk_3_4_fake_manila
+ + e_ijlk_3_2_4_fake_manila >= -3
+_C784: - a_ij_5_2 - b_ij_3_5 - d_ijk_3_2_fake_manila - d_ijk_3_5_fake_manila
+ + e_ijlk_3_2_5_fake_manila >= -3
+_C785: a_ij_3_3 = 0
+_C786: b_ij_3_3 = 0
+_C787: a_ij_3_4 + 0.001 c_j_3 - 0.001 s_j_4 >= 0
+_C788: b_ij_3_4 + 0.001 c_j_3 - 0.001 c_j_4 >= 0
+_C789: d_ijk_3_4_fake_belem - x_ik_3_fake_belem - x_ik_4_fake_belem >= -1
 _C79: - c_j_1 + 24 z_ikt_1_fake_belem_24 + 24 z_ikt_1_fake_manila_24 <= 0
+_C790: - a_ij_1_4 - b_ij_3_1 - d_ijk_3_1_fake_belem - d_ijk_3_4_fake_belem
+ + e_ijlk_3_4_1_fake_belem >= -3
+_C791: - a_ij_2_4 - b_ij_3_2 - d_ijk_3_2_fake_belem - d_ijk_3_4_fake_belem
+ + e_ijlk_3_4_2_fake_belem >= -3
+_C792: - a_ij_3_4 - b_ij_3_3 - d_ijk_3_3_fake_belem - d_ijk_3_4_fake_belem
+ + e_ijlk_3_4_3_fake_belem >= -3
+_C793: - a_ij_4_4 - b_ij_3_4 - 2 d_ijk_3_4_fake_belem
+ + e_ijlk_3_4_4_fake_belem >= -3
+_C794: - a_ij_5_4 - b_ij_3_5 - d_ijk_3_4_fake_belem - d_ijk_3_5_fake_belem
+ + e_ijlk_3_4_5_fake_belem >= -3
+_C795: d_ijk_3_4_fake_manila - x_ik_3_fake_manila - x_ik_4_fake_manila >= -1
+_C796: - a_ij_1_4 - b_ij_3_1 - d_ijk_3_1_fake_manila - d_ijk_3_4_fake_manila
+ + e_ijlk_3_4_1_fake_manila >= -3
+_C797: - a_ij_2_4 - b_ij_3_2 - d_ijk_3_2_fake_manila - d_ijk_3_4_fake_manila
+ + e_ijlk_3_4_2_fake_manila >= -3
+_C798: - a_ij_3_4 - b_ij_3_3 - d_ijk_3_3_fake_manila - d_ijk_3_4_fake_manila
+ + e_ijlk_3_4_3_fake_manila >= -3
+_C799: - a_ij_4_4 - b_ij_3_4 - 2 d_ijk_3_4_fake_manila
+ + e_ijlk_3_4_4_fake_manila >= -3
 _C8: z_ikt_1_fake_belem_0 + z_ikt_1_fake_manila_0 <= 1
 _C80: z_ikt_1_fake_belem_24 + z_ikt_1_fake_manila_24 <= 1
+_C800: - a_ij_5_4 - b_ij_3_5 - d_ijk_3_4_fake_manila - d_ijk_3_5_fake_manila
+ + e_ijlk_3_4_5_fake_manila >= -3
+_C801: a_ij_3_5 + 0.001 c_j_3 - 0.001 s_j_5 >= 0
+_C802: b_ij_3_5 + 0.001 c_j_3 - 0.001 c_j_5 >= 0
+_C803: d_ijk_3_5_fake_belem - x_ik_3_fake_belem - x_ik_5_fake_belem >= -1
+_C804: - a_ij_1_5 - b_ij_3_1 - d_ijk_3_1_fake_belem - d_ijk_3_5_fake_belem
+ + e_ijlk_3_5_1_fake_belem >= -3
+_C805: - a_ij_2_5 - b_ij_3_2 - d_ijk_3_2_fake_belem - d_ijk_3_5_fake_belem
+ + e_ijlk_3_5_2_fake_belem >= -3
+_C806: - a_ij_3_5 - b_ij_3_3 - d_ijk_3_3_fake_belem - d_ijk_3_5_fake_belem
+ + e_ijlk_3_5_3_fake_belem >= -3
+_C807: - a_ij_4_5 - b_ij_3_4 - d_ijk_3_4_fake_belem - d_ijk_3_5_fake_belem
+ + e_ijlk_3_5_4_fake_belem >= -3
+_C808: - a_ij_5_5 - b_ij_3_5 - 2 d_ijk_3_5_fake_belem
+ + e_ijlk_3_5_5_fake_belem >= -3
+_C809: d_ijk_3_5_fake_manila - x_ik_3_fake_manila - x_ik_5_fake_manila >= -1
 _C81: s_j_1 + 999976 z_ikt_1_fake_belem_24 + 999976 z_ikt_1_fake_manila_24
  <= 1000000
+_C810: - a_ij_1_5 - b_ij_3_1 - d_ijk_3_1_fake_manila - d_ijk_3_5_fake_manila
+ + e_ijlk_3_5_1_fake_manila >= -3
+_C811: - a_ij_2_5 - b_ij_3_2 - d_ijk_3_2_fake_manila - d_ijk_3_5_fake_manila
+ + e_ijlk_3_5_2_fake_manila >= -3
+_C812: - a_ij_3_5 - b_ij_3_3 - d_ijk_3_3_fake_manila - d_ijk_3_5_fake_manila
+ + e_ijlk_3_5_3_fake_manila >= -3
+_C813: - a_ij_4_5 - b_ij_3_4 - d_ijk_3_4_fake_manila - d_ijk_3_5_fake_manila
+ + e_ijlk_3_5_4_fake_manila >= -3
+_C814: - a_ij_5_5 - b_ij_3_5 - 2 d_ijk_3_5_fake_manila
+ + e_ijlk_3_5_5_fake_manila >= -3
+_C815: a_ij_4_1 + 0.001 c_j_4 - 0.001 s_j_1 >= 0
+_C816: b_ij_4_1 - 0.001 c_j_1 + 0.001 c_j_4 >= 0
+_C817: d_ijk_4_1_fake_belem - x_ik_1_fake_belem - x_ik_4_fake_belem >= -1
+_C818: - a_ij_1_1 - b_ij_4_1 - 2 d_ijk_4_1_fake_belem
+ + e_ijlk_4_1_1_fake_belem >= -3
+_C819: - a_ij_2_1 - b_ij_4_2 - d_ijk_4_1_fake_belem - d_ijk_4_2_fake_belem
+ + e_ijlk_4_1_2_fake_belem >= -3
 _C82: - c_j_1 + 25 z_ikt_1_fake_belem_25 + 25 z_ikt_1_fake_manila_25 <= 0
+_C820: - a_ij_3_1 - b_ij_4_3 - d_ijk_4_1_fake_belem - d_ijk_4_3_fake_belem
+ + e_ijlk_4_1_3_fake_belem >= -3
+_C821: - a_ij_4_1 - b_ij_4_4 - d_ijk_4_1_fake_belem - d_ijk_4_4_fake_belem
+ + e_ijlk_4_1_4_fake_belem >= -3
+_C822: - a_ij_5_1 - b_ij_4_5 - d_ijk_4_1_fake_belem - d_ijk_4_5_fake_belem
+ + e_ijlk_4_1_5_fake_belem >= -3
+_C823: d_ijk_4_1_fake_manila - x_ik_1_fake_manila - x_ik_4_fake_manila >= -1
+_C824: - a_ij_1_1 - b_ij_4_1 - 2 d_ijk_4_1_fake_manila
+ + e_ijlk_4_1_1_fake_manila >= -3
+_C825: - a_ij_2_1 - b_ij_4_2 - d_ijk_4_1_fake_manila - d_ijk_4_2_fake_manila
+ + e_ijlk_4_1_2_fake_manila >= -3
+_C826: - a_ij_3_1 - b_ij_4_3 - d_ijk_4_1_fake_manila - d_ijk_4_3_fake_manila
+ + e_ijlk_4_1_3_fake_manila >= -3
+_C827: - a_ij_4_1 - b_ij_4_4 - d_ijk_4_1_fake_manila - d_ijk_4_4_fake_manila
+ + e_ijlk_4_1_4_fake_manila >= -3
+_C828: - a_ij_5_1 - b_ij_4_5 - d_ijk_4_1_fake_manila - d_ijk_4_5_fake_manila
+ + e_ijlk_4_1_5_fake_manila >= -3
+_C829: a_ij_4_2 + 0.001 c_j_4 - 0.001 s_j_2 >= 0
 _C83: z_ikt_1_fake_belem_25 + z_ikt_1_fake_manila_25 <= 1
+_C830: b_ij_4_2 - 0.001 c_j_2 + 0.001 c_j_4 >= 0
+_C831: d_ijk_4_2_fake_belem - x_ik_2_fake_belem - x_ik_4_fake_belem >= -1
+_C832: - a_ij_1_2 - b_ij_4_1 - d_ijk_4_1_fake_belem - d_ijk_4_2_fake_belem
+ + e_ijlk_4_2_1_fake_belem >= -3
+_C833: - a_ij_2_2 - b_ij_4_2 - 2 d_ijk_4_2_fake_belem
+ + e_ijlk_4_2_2_fake_belem >= -3
+_C834: - a_ij_3_2 - b_ij_4_3 - d_ijk_4_2_fake_belem - d_ijk_4_3_fake_belem
+ + e_ijlk_4_2_3_fake_belem >= -3
+_C835: - a_ij_4_2 - b_ij_4_4 - d_ijk_4_2_fake_belem - d_ijk_4_4_fake_belem
+ + e_ijlk_4_2_4_fake_belem >= -3
+_C836: - a_ij_5_2 - b_ij_4_5 - d_ijk_4_2_fake_belem - d_ijk_4_5_fake_belem
+ + e_ijlk_4_2_5_fake_belem >= -3
+_C837: d_ijk_4_2_fake_manila - x_ik_2_fake_manila - x_ik_4_fake_manila >= -1
+_C838: - a_ij_1_2 - b_ij_4_1 - d_ijk_4_1_fake_manila - d_ijk_4_2_fake_manila
+ + e_ijlk_4_2_1_fake_manila >= -3
+_C839: - a_ij_2_2 - b_ij_4_2 - 2 d_ijk_4_2_fake_manila
+ + e_ijlk_4_2_2_fake_manila >= -3
 _C84: s_j_1 + 999975 z_ikt_1_fake_belem_25 + 999975 z_ikt_1_fake_manila_25
  <= 1000000
+_C840: - a_ij_3_2 - b_ij_4_3 - d_ijk_4_2_fake_manila - d_ijk_4_3_fake_manila
+ + e_ijlk_4_2_3_fake_manila >= -3
+_C841: - a_ij_4_2 - b_ij_4_4 - d_ijk_4_2_fake_manila - d_ijk_4_4_fake_manila
+ + e_ijlk_4_2_4_fake_manila >= -3
+_C842: - a_ij_5_2 - b_ij_4_5 - d_ijk_4_2_fake_manila - d_ijk_4_5_fake_manila
+ + e_ijlk_4_2_5_fake_manila >= -3
+_C843: a_ij_4_3 + 0.001 c_j_4 - 0.001 s_j_3 >= 0
+_C844: b_ij_4_3 - 0.001 c_j_3 + 0.001 c_j_4 >= 0
+_C845: d_ijk_4_3_fake_belem - x_ik_3_fake_belem - x_ik_4_fake_belem >= -1
+_C846: - a_ij_1_3 - b_ij_4_1 - d_ijk_4_1_fake_belem - d_ijk_4_3_fake_belem
+ + e_ijlk_4_3_1_fake_belem >= -3
+_C847: - a_ij_2_3 - b_ij_4_2 - d_ijk_4_2_fake_belem - d_ijk_4_3_fake_belem
+ + e_ijlk_4_3_2_fake_belem >= -3
+_C848: - a_ij_3_3 - b_ij_4_3 - 2 d_ijk_4_3_fake_belem
+ + e_ijlk_4_3_3_fake_belem >= -3
+_C849: - a_ij_4_3 - b_ij_4_4 - d_ijk_4_3_fake_belem - d_ijk_4_4_fake_belem
+ + e_ijlk_4_3_4_fake_belem >= -3
 _C85: - c_j_1 + 26 z_ikt_1_fake_belem_26 + 26 z_ikt_1_fake_manila_26 <= 0
+_C850: - a_ij_5_3 - b_ij_4_5 - d_ijk_4_3_fake_belem - d_ijk_4_5_fake_belem
+ + e_ijlk_4_3_5_fake_belem >= -3
+_C851: d_ijk_4_3_fake_manila - x_ik_3_fake_manila - x_ik_4_fake_manila >= -1
+_C852: - a_ij_1_3 - b_ij_4_1 - d_ijk_4_1_fake_manila - d_ijk_4_3_fake_manila
+ + e_ijlk_4_3_1_fake_manila >= -3
+_C853: - a_ij_2_3 - b_ij_4_2 - d_ijk_4_2_fake_manila - d_ijk_4_3_fake_manila
+ + e_ijlk_4_3_2_fake_manila >= -3
+_C854: - a_ij_3_3 - b_ij_4_3 - 2 d_ijk_4_3_fake_manila
+ + e_ijlk_4_3_3_fake_manila >= -3
+_C855: - a_ij_4_3 - b_ij_4_4 - d_ijk_4_3_fake_manila - d_ijk_4_4_fake_manila
+ + e_ijlk_4_3_4_fake_manila >= -3
+_C856: - a_ij_5_3 - b_ij_4_5 - d_ijk_4_3_fake_manila - d_ijk_4_5_fake_manila
+ + e_ijlk_4_3_5_fake_manila >= -3
+_C857: a_ij_4_4 = 0
+_C858: b_ij_4_4 = 0
+_C859: a_ij_4_5 + 0.001 c_j_4 - 0.001 s_j_5 >= 0
 _C86: z_ikt_1_fake_belem_26 + z_ikt_1_fake_manila_26 <= 1
+_C860: b_ij_4_5 + 0.001 c_j_4 - 0.001 c_j_5 >= 0
+_C861: d_ijk_4_5_fake_belem - x_ik_4_fake_belem - x_ik_5_fake_belem >= -1
+_C862: - a_ij_1_5 - b_ij_4_1 - d_ijk_4_1_fake_belem - d_ijk_4_5_fake_belem
+ + e_ijlk_4_5_1_fake_belem >= -3
+_C863: - a_ij_2_5 - b_ij_4_2 - d_ijk_4_2_fake_belem - d_ijk_4_5_fake_belem
+ + e_ijlk_4_5_2_fake_belem >= -3
+_C864: - a_ij_3_5 - b_ij_4_3 - d_ijk_4_3_fake_belem - d_ijk_4_5_fake_belem
+ + e_ijlk_4_5_3_fake_belem >= -3
+_C865: - a_ij_4_5 - b_ij_4_4 - d_ijk_4_4_fake_belem - d_ijk_4_5_fake_belem
+ + e_ijlk_4_5_4_fake_belem >= -3
+_C866: - a_ij_5_5 - b_ij_4_5 - 2 d_ijk_4_5_fake_belem
+ + e_ijlk_4_5_5_fake_belem >= -3
+_C867: d_ijk_4_5_fake_manila - x_ik_4_fake_manila - x_ik_5_fake_manila >= -1
+_C868: - a_ij_1_5 - b_ij_4_1 - d_ijk_4_1_fake_manila - d_ijk_4_5_fake_manila
+ + e_ijlk_4_5_1_fake_manila >= -3
+_C869: - a_ij_2_5 - b_ij_4_2 - d_ijk_4_2_fake_manila - d_ijk_4_5_fake_manila
+ + e_ijlk_4_5_2_fake_manila >= -3
 _C87: s_j_1 + 999974 z_ikt_1_fake_belem_26 + 999974 z_ikt_1_fake_manila_26
  <= 1000000
+_C870: - a_ij_3_5 - b_ij_4_3 - d_ijk_4_3_fake_manila - d_ijk_4_5_fake_manila
+ + e_ijlk_4_5_3_fake_manila >= -3
+_C871: - a_ij_4_5 - b_ij_4_4 - d_ijk_4_4_fake_manila - d_ijk_4_5_fake_manila
+ + e_ijlk_4_5_4_fake_manila >= -3
+_C872: - a_ij_5_5 - b_ij_4_5 - 2 d_ijk_4_5_fake_manila
+ + e_ijlk_4_5_5_fake_manila >= -3
+_C873: a_ij_5_1 + 0.001 c_j_5 - 0.001 s_j_1 >= 0
+_C874: b_ij_5_1 - 0.001 c_j_1 + 0.001 c_j_5 >= 0
+_C875: d_ijk_5_1_fake_belem - x_ik_1_fake_belem - x_ik_5_fake_belem >= -1
+_C876: - a_ij_1_1 - b_ij_5_1 - 2 d_ijk_5_1_fake_belem
+ + e_ijlk_5_1_1_fake_belem >= -3
+_C877: - a_ij_2_1 - b_ij_5_2 - d_ijk_5_1_fake_belem - d_ijk_5_2_fake_belem
+ + e_ijlk_5_1_2_fake_belem >= -3
+_C878: - a_ij_3_1 - b_ij_5_3 - d_ijk_5_1_fake_belem - d_ijk_5_3_fake_belem
+ + e_ijlk_5_1_3_fake_belem >= -3
+_C879: - a_ij_4_1 - b_ij_5_4 - d_ijk_5_1_fake_belem - d_ijk_5_4_fake_belem
+ + e_ijlk_5_1_4_fake_belem >= -3
 _C88: - c_j_1 + 27 z_ikt_1_fake_belem_27 + 27 z_ikt_1_fake_manila_27 <= 0
+_C880: - a_ij_5_1 - b_ij_5_5 - d_ijk_5_1_fake_belem - d_ijk_5_5_fake_belem
+ + e_ijlk_5_1_5_fake_belem >= -3
+_C881: d_ijk_5_1_fake_manila - x_ik_1_fake_manila - x_ik_5_fake_manila >= -1
+_C882: - a_ij_1_1 - b_ij_5_1 - 2 d_ijk_5_1_fake_manila
+ + e_ijlk_5_1_1_fake_manila >= -3
+_C883: - a_ij_2_1 - b_ij_5_2 - d_ijk_5_1_fake_manila - d_ijk_5_2_fake_manila
+ + e_ijlk_5_1_2_fake_manila >= -3
+_C884: - a_ij_3_1 - b_ij_5_3 - d_ijk_5_1_fake_manila - d_ijk_5_3_fake_manila
+ + e_ijlk_5_1_3_fake_manila >= -3
+_C885: - a_ij_4_1 - b_ij_5_4 - d_ijk_5_1_fake_manila - d_ijk_5_4_fake_manila
+ + e_ijlk_5_1_4_fake_manila >= -3
+_C886: - a_ij_5_1 - b_ij_5_5 - d_ijk_5_1_fake_manila - d_ijk_5_5_fake_manila
+ + e_ijlk_5_1_5_fake_manila >= -3
+_C887: a_ij_5_2 + 0.001 c_j_5 - 0.001 s_j_2 >= 0
+_C888: b_ij_5_2 - 0.001 c_j_2 + 0.001 c_j_5 >= 0
+_C889: d_ijk_5_2_fake_belem - x_ik_2_fake_belem - x_ik_5_fake_belem >= -1
 _C89: z_ikt_1_fake_belem_27 + z_ikt_1_fake_manila_27 <= 1
+_C890: - a_ij_1_2 - b_ij_5_1 - d_ijk_5_1_fake_belem - d_ijk_5_2_fake_belem
+ + e_ijlk_5_2_1_fake_belem >= -3
+_C891: - a_ij_2_2 - b_ij_5_2 - 2 d_ijk_5_2_fake_belem
+ + e_ijlk_5_2_2_fake_belem >= -3
+_C892: - a_ij_3_2 - b_ij_5_3 - d_ijk_5_2_fake_belem - d_ijk_5_3_fake_belem
+ + e_ijlk_5_2_3_fake_belem >= -3
+_C893: - a_ij_4_2 - b_ij_5_4 - d_ijk_5_2_fake_belem - d_ijk_5_4_fake_belem
+ + e_ijlk_5_2_4_fake_belem >= -3
+_C894: - a_ij_5_2 - b_ij_5_5 - d_ijk_5_2_fake_belem - d_ijk_5_5_fake_belem
+ + e_ijlk_5_2_5_fake_belem >= -3
+_C895: d_ijk_5_2_fake_manila - x_ik_2_fake_manila - x_ik_5_fake_manila >= -1
+_C896: - a_ij_1_2 - b_ij_5_1 - d_ijk_5_1_fake_manila - d_ijk_5_2_fake_manila
+ + e_ijlk_5_2_1_fake_manila >= -3
+_C897: - a_ij_2_2 - b_ij_5_2 - 2 d_ijk_5_2_fake_manila
+ + e_ijlk_5_2_2_fake_manila >= -3
+_C898: - a_ij_3_2 - b_ij_5_3 - d_ijk_5_2_fake_manila - d_ijk_5_3_fake_manila
+ + e_ijlk_5_2_3_fake_manila >= -3
+_C899: - a_ij_4_2 - b_ij_5_4 - d_ijk_5_2_fake_manila - d_ijk_5_4_fake_manila
+ + e_ijlk_5_2_4_fake_manila >= -3
 _C9: s_j_1 + 1000000 z_ikt_1_fake_belem_0 + 1000000 z_ikt_1_fake_manila_0
  <= 1000000
 _C90: s_j_1 + 999973 z_ikt_1_fake_belem_27 + 999973 z_ikt_1_fake_manila_27
  <= 1000000
+_C900: - a_ij_5_2 - b_ij_5_5 - d_ijk_5_2_fake_manila - d_ijk_5_5_fake_manila
+ + e_ijlk_5_2_5_fake_manila >= -3
+_C901: a_ij_5_3 + 0.001 c_j_5 - 0.001 s_j_3 >= 0
+_C902: b_ij_5_3 - 0.001 c_j_3 + 0.001 c_j_5 >= 0
+_C903: d_ijk_5_3_fake_belem - x_ik_3_fake_belem - x_ik_5_fake_belem >= -1
+_C904: - a_ij_1_3 - b_ij_5_1 - d_ijk_5_1_fake_belem - d_ijk_5_3_fake_belem
+ + e_ijlk_5_3_1_fake_belem >= -3
+_C905: - a_ij_2_3 - b_ij_5_2 - d_ijk_5_2_fake_belem - d_ijk_5_3_fake_belem
+ + e_ijlk_5_3_2_fake_belem >= -3
+_C906: - a_ij_3_3 - b_ij_5_3 - 2 d_ijk_5_3_fake_belem
+ + e_ijlk_5_3_3_fake_belem >= -3
+_C907: - a_ij_4_3 - b_ij_5_4 - d_ijk_5_3_fake_belem - d_ijk_5_4_fake_belem
+ + e_ijlk_5_3_4_fake_belem >= -3
+_C908: - a_ij_5_3 - b_ij_5_5 - d_ijk_5_3_fake_belem - d_ijk_5_5_fake_belem
+ + e_ijlk_5_3_5_fake_belem >= -3
+_C909: d_ijk_5_3_fake_manila - x_ik_3_fake_manila - x_ik_5_fake_manila >= -1
 _C91: - c_j_1 + 28 z_ikt_1_fake_belem_28 + 28 z_ikt_1_fake_manila_28 <= 0
+_C910: - a_ij_1_3 - b_ij_5_1 - d_ijk_5_1_fake_manila - d_ijk_5_3_fake_manila
+ + e_ijlk_5_3_1_fake_manila >= -3
+_C911: - a_ij_2_3 - b_ij_5_2 - d_ijk_5_2_fake_manila - d_ijk_5_3_fake_manila
+ + e_ijlk_5_3_2_fake_manila >= -3
+_C912: - a_ij_3_3 - b_ij_5_3 - 2 d_ijk_5_3_fake_manila
+ + e_ijlk_5_3_3_fake_manila >= -3
+_C913: - a_ij_4_3 - b_ij_5_4 - d_ijk_5_3_fake_manila - d_ijk_5_4_fake_manila
+ + e_ijlk_5_3_4_fake_manila >= -3
+_C914: - a_ij_5_3 - b_ij_5_5 - d_ijk_5_3_fake_manila - d_ijk_5_5_fake_manila
+ + e_ijlk_5_3_5_fake_manila >= -3
+_C915: a_ij_5_4 + 0.001 c_j_5 - 0.001 s_j_4 >= 0
+_C916: b_ij_5_4 - 0.001 c_j_4 + 0.001 c_j_5 >= 0
+_C917: d_ijk_5_4_fake_belem - x_ik_4_fake_belem - x_ik_5_fake_belem >= -1
+_C918: - a_ij_1_4 - b_ij_5_1 - d_ijk_5_1_fake_belem - d_ijk_5_4_fake_belem
+ + e_ijlk_5_4_1_fake_belem >= -3
+_C919: - a_ij_2_4 - b_ij_5_2 - d_ijk_5_2_fake_belem - d_ijk_5_4_fake_belem
+ + e_ijlk_5_4_2_fake_belem >= -3
 _C92: z_ikt_1_fake_belem_28 + z_ikt_1_fake_manila_28 <= 1
+_C920: - a_ij_3_4 - b_ij_5_3 - d_ijk_5_3_fake_belem - d_ijk_5_4_fake_belem
+ + e_ijlk_5_4_3_fake_belem >= -3
+_C921: - a_ij_4_4 - b_ij_5_4 - 2 d_ijk_5_4_fake_belem
+ + e_ijlk_5_4_4_fake_belem >= -3
+_C922: - a_ij_5_4 - b_ij_5_5 - d_ijk_5_4_fake_belem - d_ijk_5_5_fake_belem
+ + e_ijlk_5_4_5_fake_belem >= -3
+_C923: d_ijk_5_4_fake_manila - x_ik_4_fake_manila - x_ik_5_fake_manila >= -1
+_C924: - a_ij_1_4 - b_ij_5_1 - d_ijk_5_1_fake_manila - d_ijk_5_4_fake_manila
+ + e_ijlk_5_4_1_fake_manila >= -3
+_C925: - a_ij_2_4 - b_ij_5_2 - d_ijk_5_2_fake_manila - d_ijk_5_4_fake_manila
+ + e_ijlk_5_4_2_fake_manila >= -3
+_C926: - a_ij_3_4 - b_ij_5_3 - d_ijk_5_3_fake_manila - d_ijk_5_4_fake_manila
+ + e_ijlk_5_4_3_fake_manila >= -3
+_C927: - a_ij_4_4 - b_ij_5_4 - 2 d_ijk_5_4_fake_manila
+ + e_ijlk_5_4_4_fake_manila >= -3
+_C928: - a_ij_5_4 - b_ij_5_5 - d_ijk_5_4_fake_manila - d_ijk_5_5_fake_manila
+ + e_ijlk_5_4_5_fake_manila >= -3
+_C929: a_ij_5_5 = 0
 _C93: s_j_1 + 999972 z_ikt_1_fake_belem_28 + 999972 z_ikt_1_fake_manila_28
  <= 1000000
+_C930: b_ij_5_5 = 0
+_C931: - a_ij_1_1 - d_ijk_1_1_fake_belem - 0.001 e_ijlk_1_1_1_fake_belem
+ - 0.001 e_ijlk_1_1_2_fake_belem - 0.001 e_ijlk_1_1_3_fake_belem
+ - 0.001 e_ijlk_1_1_4_fake_belem - 0.001 e_ijlk_1_1_5_fake_belem
+ + y_ijk_1_1_fake_belem >= -2
+_C932: - a_ij_1_1 - d_ijk_1_1_fake_manila - 0.001 e_ijlk_1_1_1_fake_manila
+ - 0.001 e_ijlk_1_1_2_fake_manila - 0.001 e_ijlk_1_1_3_fake_manila
+ - 0.001 e_ijlk_1_1_4_fake_manila - 0.001 e_ijlk_1_1_5_fake_manila
+ + y_ijk_1_1_fake_manila >= -2
+_C933: - a_ij_1_2 - d_ijk_1_2_fake_belem - 0.001 e_ijlk_1_2_1_fake_belem
+ - 0.001 e_ijlk_1_2_2_fake_belem - 0.001 e_ijlk_1_2_3_fake_belem
+ - 0.001 e_ijlk_1_2_4_fake_belem - 0.001 e_ijlk_1_2_5_fake_belem
+ + y_ijk_1_2_fake_belem >= -2
+_C934: - a_ij_1_2 - d_ijk_1_2_fake_manila - 0.001 e_ijlk_1_2_1_fake_manila
+ - 0.001 e_ijlk_1_2_2_fake_manila - 0.001 e_ijlk_1_2_3_fake_manila
+ - 0.001 e_ijlk_1_2_4_fake_manila - 0.001 e_ijlk_1_2_5_fake_manila
+ + y_ijk_1_2_fake_manila >= -2
+_C935: - a_ij_1_3 - d_ijk_1_3_fake_belem - 0.001 e_ijlk_1_3_1_fake_belem
+ - 0.001 e_ijlk_1_3_2_fake_belem - 0.001 e_ijlk_1_3_3_fake_belem
+ - 0.001 e_ijlk_1_3_4_fake_belem - 0.001 e_ijlk_1_3_5_fake_belem
+ + y_ijk_1_3_fake_belem >= -2
+_C936: - a_ij_1_3 - d_ijk_1_3_fake_manila - 0.001 e_ijlk_1_3_1_fake_manila
+ - 0.001 e_ijlk_1_3_2_fake_manila - 0.001 e_ijlk_1_3_3_fake_manila
+ - 0.001 e_ijlk_1_3_4_fake_manila - 0.001 e_ijlk_1_3_5_fake_manila
+ + y_ijk_1_3_fake_manila >= -2
+_C937: - a_ij_1_4 - d_ijk_1_4_fake_belem - 0.001 e_ijlk_1_4_1_fake_belem
+ - 0.001 e_ijlk_1_4_2_fake_belem - 0.001 e_ijlk_1_4_3_fake_belem
+ - 0.001 e_ijlk_1_4_4_fake_belem - 0.001 e_ijlk_1_4_5_fake_belem
+ + y_ijk_1_4_fake_belem >= -2
+_C938: - a_ij_1_4 - d_ijk_1_4_fake_manila - 0.001 e_ijlk_1_4_1_fake_manila
+ - 0.001 e_ijlk_1_4_2_fake_manila - 0.001 e_ijlk_1_4_3_fake_manila
+ - 0.001 e_ijlk_1_4_4_fake_manila - 0.001 e_ijlk_1_4_5_fake_manila
+ + y_ijk_1_4_fake_manila >= -2
+_C939: - a_ij_1_5 - d_ijk_1_5_fake_belem - 0.001 e_ijlk_1_5_1_fake_belem
+ - 0.001 e_ijlk_1_5_2_fake_belem - 0.001 e_ijlk_1_5_3_fake_belem
+ - 0.001 e_ijlk_1_5_4_fake_belem - 0.001 e_ijlk_1_5_5_fake_belem
+ + y_ijk_1_5_fake_belem >= -2
 _C94: - c_j_1 + 29 z_ikt_1_fake_belem_29 + 29 z_ikt_1_fake_manila_29 <= 0
+_C940: - a_ij_1_5 - d_ijk_1_5_fake_manila - 0.001 e_ijlk_1_5_1_fake_manila
+ - 0.001 e_ijlk_1_5_2_fake_manila - 0.001 e_ijlk_1_5_3_fake_manila
+ - 0.001 e_ijlk_1_5_4_fake_manila - 0.001 e_ijlk_1_5_5_fake_manila
+ + y_ijk_1_5_fake_manila >= -2
+_C941: - a_ij_2_1 - d_ijk_2_1_fake_belem - 0.001 e_ijlk_2_1_1_fake_belem
+ - 0.001 e_ijlk_2_1_2_fake_belem - 0.001 e_ijlk_2_1_3_fake_belem
+ - 0.001 e_ijlk_2_1_4_fake_belem - 0.001 e_ijlk_2_1_5_fake_belem
+ + y_ijk_2_1_fake_belem >= -2
+_C942: - a_ij_2_1 - d_ijk_2_1_fake_manila - 0.001 e_ijlk_2_1_1_fake_manila
+ - 0.001 e_ijlk_2_1_2_fake_manila - 0.001 e_ijlk_2_1_3_fake_manila
+ - 0.001 e_ijlk_2_1_4_fake_manila - 0.001 e_ijlk_2_1_5_fake_manila
+ + y_ijk_2_1_fake_manila >= -2
+_C943: - a_ij_2_2 - d_ijk_2_2_fake_belem - 0.001 e_ijlk_2_2_1_fake_belem
+ - 0.001 e_ijlk_2_2_2_fake_belem - 0.001 e_ijlk_2_2_3_fake_belem
+ - 0.001 e_ijlk_2_2_4_fake_belem - 0.001 e_ijlk_2_2_5_fake_belem
+ + y_ijk_2_2_fake_belem >= -2
+_C944: - a_ij_2_2 - d_ijk_2_2_fake_manila - 0.001 e_ijlk_2_2_1_fake_manila
+ - 0.001 e_ijlk_2_2_2_fake_manila - 0.001 e_ijlk_2_2_3_fake_manila
+ - 0.001 e_ijlk_2_2_4_fake_manila - 0.001 e_ijlk_2_2_5_fake_manila
+ + y_ijk_2_2_fake_manila >= -2
+_C945: - a_ij_2_3 - d_ijk_2_3_fake_belem - 0.001 e_ijlk_2_3_1_fake_belem
+ - 0.001 e_ijlk_2_3_2_fake_belem - 0.001 e_ijlk_2_3_3_fake_belem
+ - 0.001 e_ijlk_2_3_4_fake_belem - 0.001 e_ijlk_2_3_5_fake_belem
+ + y_ijk_2_3_fake_belem >= -2
+_C946: - a_ij_2_3 - d_ijk_2_3_fake_manila - 0.001 e_ijlk_2_3_1_fake_manila
+ - 0.001 e_ijlk_2_3_2_fake_manila - 0.001 e_ijlk_2_3_3_fake_manila
+ - 0.001 e_ijlk_2_3_4_fake_manila - 0.001 e_ijlk_2_3_5_fake_manila
+ + y_ijk_2_3_fake_manila >= -2
+_C947: - a_ij_2_4 - d_ijk_2_4_fake_belem - 0.001 e_ijlk_2_4_1_fake_belem
+ - 0.001 e_ijlk_2_4_2_fake_belem - 0.001 e_ijlk_2_4_3_fake_belem
+ - 0.001 e_ijlk_2_4_4_fake_belem - 0.001 e_ijlk_2_4_5_fake_belem
+ + y_ijk_2_4_fake_belem >= -2
+_C948: - a_ij_2_4 - d_ijk_2_4_fake_manila - 0.001 e_ijlk_2_4_1_fake_manila
+ - 0.001 e_ijlk_2_4_2_fake_manila - 0.001 e_ijlk_2_4_3_fake_manila
+ - 0.001 e_ijlk_2_4_4_fake_manila - 0.001 e_ijlk_2_4_5_fake_manila
+ + y_ijk_2_4_fake_manila >= -2
+_C949: - a_ij_2_5 - d_ijk_2_5_fake_belem - 0.001 e_ijlk_2_5_1_fake_belem
+ - 0.001 e_ijlk_2_5_2_fake_belem - 0.001 e_ijlk_2_5_3_fake_belem
+ - 0.001 e_ijlk_2_5_4_fake_belem - 0.001 e_ijlk_2_5_5_fake_belem
+ + y_ijk_2_5_fake_belem >= -2
 _C95: z_ikt_1_fake_belem_29 + z_ikt_1_fake_manila_29 <= 1
+_C950: - a_ij_2_5 - d_ijk_2_5_fake_manila - 0.001 e_ijlk_2_5_1_fake_manila
+ - 0.001 e_ijlk_2_5_2_fake_manila - 0.001 e_ijlk_2_5_3_fake_manila
+ - 0.001 e_ijlk_2_5_4_fake_manila - 0.001 e_ijlk_2_5_5_fake_manila
+ + y_ijk_2_5_fake_manila >= -2
+_C951: - a_ij_3_1 - d_ijk_3_1_fake_belem - 0.001 e_ijlk_3_1_1_fake_belem
+ - 0.001 e_ijlk_3_1_2_fake_belem - 0.001 e_ijlk_3_1_3_fake_belem
+ - 0.001 e_ijlk_3_1_4_fake_belem - 0.001 e_ijlk_3_1_5_fake_belem
+ + y_ijk_3_1_fake_belem >= -2
+_C952: - a_ij_3_1 - d_ijk_3_1_fake_manila - 0.001 e_ijlk_3_1_1_fake_manila
+ - 0.001 e_ijlk_3_1_2_fake_manila - 0.001 e_ijlk_3_1_3_fake_manila
+ - 0.001 e_ijlk_3_1_4_fake_manila - 0.001 e_ijlk_3_1_5_fake_manila
+ + y_ijk_3_1_fake_manila >= -2
+_C953: - a_ij_3_2 - d_ijk_3_2_fake_belem - 0.001 e_ijlk_3_2_1_fake_belem
+ - 0.001 e_ijlk_3_2_2_fake_belem - 0.001 e_ijlk_3_2_3_fake_belem
+ - 0.001 e_ijlk_3_2_4_fake_belem - 0.001 e_ijlk_3_2_5_fake_belem
+ + y_ijk_3_2_fake_belem >= -2
+_C954: - a_ij_3_2 - d_ijk_3_2_fake_manila - 0.001 e_ijlk_3_2_1_fake_manila
+ - 0.001 e_ijlk_3_2_2_fake_manila - 0.001 e_ijlk_3_2_3_fake_manila
+ - 0.001 e_ijlk_3_2_4_fake_manila - 0.001 e_ijlk_3_2_5_fake_manila
+ + y_ijk_3_2_fake_manila >= -2
+_C955: - a_ij_3_3 - d_ijk_3_3_fake_belem - 0.001 e_ijlk_3_3_1_fake_belem
+ - 0.001 e_ijlk_3_3_2_fake_belem - 0.001 e_ijlk_3_3_3_fake_belem
+ - 0.001 e_ijlk_3_3_4_fake_belem - 0.001 e_ijlk_3_3_5_fake_belem
+ + y_ijk_3_3_fake_belem >= -2
+_C956: - a_ij_3_3 - d_ijk_3_3_fake_manila - 0.001 e_ijlk_3_3_1_fake_manila
+ - 0.001 e_ijlk_3_3_2_fake_manila - 0.001 e_ijlk_3_3_3_fake_manila
+ - 0.001 e_ijlk_3_3_4_fake_manila - 0.001 e_ijlk_3_3_5_fake_manila
+ + y_ijk_3_3_fake_manila >= -2
+_C957: - a_ij_3_4 - d_ijk_3_4_fake_belem - 0.001 e_ijlk_3_4_1_fake_belem
+ - 0.001 e_ijlk_3_4_2_fake_belem - 0.001 e_ijlk_3_4_3_fake_belem
+ - 0.001 e_ijlk_3_4_4_fake_belem - 0.001 e_ijlk_3_4_5_fake_belem
+ + y_ijk_3_4_fake_belem >= -2
+_C958: - a_ij_3_4 - d_ijk_3_4_fake_manila - 0.001 e_ijlk_3_4_1_fake_manila
+ - 0.001 e_ijlk_3_4_2_fake_manila - 0.001 e_ijlk_3_4_3_fake_manila
+ - 0.001 e_ijlk_3_4_4_fake_manila - 0.001 e_ijlk_3_4_5_fake_manila
+ + y_ijk_3_4_fake_manila >= -2
+_C959: - a_ij_3_5 - d_ijk_3_5_fake_belem - 0.001 e_ijlk_3_5_1_fake_belem
+ - 0.001 e_ijlk_3_5_2_fake_belem - 0.001 e_ijlk_3_5_3_fake_belem
+ - 0.001 e_ijlk_3_5_4_fake_belem - 0.001 e_ijlk_3_5_5_fake_belem
+ + y_ijk_3_5_fake_belem >= -2
 _C96: s_j_1 + 999971 z_ikt_1_fake_belem_29 + 999971 z_ikt_1_fake_manila_29
  <= 1000000
+_C960: - a_ij_3_5 - d_ijk_3_5_fake_manila - 0.001 e_ijlk_3_5_1_fake_manila
+ - 0.001 e_ijlk_3_5_2_fake_manila - 0.001 e_ijlk_3_5_3_fake_manila
+ - 0.001 e_ijlk_3_5_4_fake_manila - 0.001 e_ijlk_3_5_5_fake_manila
+ + y_ijk_3_5_fake_manila >= -2
+_C961: - a_ij_4_1 - d_ijk_4_1_fake_belem - 0.001 e_ijlk_4_1_1_fake_belem
+ - 0.001 e_ijlk_4_1_2_fake_belem - 0.001 e_ijlk_4_1_3_fake_belem
+ - 0.001 e_ijlk_4_1_4_fake_belem - 0.001 e_ijlk_4_1_5_fake_belem
+ + y_ijk_4_1_fake_belem >= -2
+_C962: - a_ij_4_1 - d_ijk_4_1_fake_manila - 0.001 e_ijlk_4_1_1_fake_manila
+ - 0.001 e_ijlk_4_1_2_fake_manila - 0.001 e_ijlk_4_1_3_fake_manila
+ - 0.001 e_ijlk_4_1_4_fake_manila - 0.001 e_ijlk_4_1_5_fake_manila
+ + y_ijk_4_1_fake_manila >= -2
+_C963: - a_ij_4_2 - d_ijk_4_2_fake_belem - 0.001 e_ijlk_4_2_1_fake_belem
+ - 0.001 e_ijlk_4_2_2_fake_belem - 0.001 e_ijlk_4_2_3_fake_belem
+ - 0.001 e_ijlk_4_2_4_fake_belem - 0.001 e_ijlk_4_2_5_fake_belem
+ + y_ijk_4_2_fake_belem >= -2
+_C964: - a_ij_4_2 - d_ijk_4_2_fake_manila - 0.001 e_ijlk_4_2_1_fake_manila
+ - 0.001 e_ijlk_4_2_2_fake_manila - 0.001 e_ijlk_4_2_3_fake_manila
+ - 0.001 e_ijlk_4_2_4_fake_manila - 0.001 e_ijlk_4_2_5_fake_manila
+ + y_ijk_4_2_fake_manila >= -2
+_C965: - a_ij_4_3 - d_ijk_4_3_fake_belem - 0.001 e_ijlk_4_3_1_fake_belem
+ - 0.001 e_ijlk_4_3_2_fake_belem - 0.001 e_ijlk_4_3_3_fake_belem
+ - 0.001 e_ijlk_4_3_4_fake_belem - 0.001 e_ijlk_4_3_5_fake_belem
+ + y_ijk_4_3_fake_belem >= -2
+_C966: - a_ij_4_3 - d_ijk_4_3_fake_manila - 0.001 e_ijlk_4_3_1_fake_manila
+ - 0.001 e_ijlk_4_3_2_fake_manila - 0.001 e_ijlk_4_3_3_fake_manila
+ - 0.001 e_ijlk_4_3_4_fake_manila - 0.001 e_ijlk_4_3_5_fake_manila
+ + y_ijk_4_3_fake_manila >= -2
+_C967: - a_ij_4_4 - d_ijk_4_4_fake_belem - 0.001 e_ijlk_4_4_1_fake_belem
+ - 0.001 e_ijlk_4_4_2_fake_belem - 0.001 e_ijlk_4_4_3_fake_belem
+ - 0.001 e_ijlk_4_4_4_fake_belem - 0.001 e_ijlk_4_4_5_fake_belem
+ + y_ijk_4_4_fake_belem >= -2
+_C968: - a_ij_4_4 - d_ijk_4_4_fake_manila - 0.001 e_ijlk_4_4_1_fake_manila
+ - 0.001 e_ijlk_4_4_2_fake_manila - 0.001 e_ijlk_4_4_3_fake_manila
+ - 0.001 e_ijlk_4_4_4_fake_manila - 0.001 e_ijlk_4_4_5_fake_manila
+ + y_ijk_4_4_fake_manila >= -2
+_C969: - a_ij_4_5 - d_ijk_4_5_fake_belem - 0.001 e_ijlk_4_5_1_fake_belem
+ - 0.001 e_ijlk_4_5_2_fake_belem - 0.001 e_ijlk_4_5_3_fake_belem
+ - 0.001 e_ijlk_4_5_4_fake_belem - 0.001 e_ijlk_4_5_5_fake_belem
+ + y_ijk_4_5_fake_belem >= -2
 _C97: - c_j_1 + 30 z_ikt_1_fake_belem_30 + 30 z_ikt_1_fake_manila_30 <= 0
+_C970: - a_ij_4_5 - d_ijk_4_5_fake_manila - 0.001 e_ijlk_4_5_1_fake_manila
+ - 0.001 e_ijlk_4_5_2_fake_manila - 0.001 e_ijlk_4_5_3_fake_manila
+ - 0.001 e_ijlk_4_5_4_fake_manila - 0.001 e_ijlk_4_5_5_fake_manila
+ + y_ijk_4_5_fake_manila >= -2
+_C971: - a_ij_5_1 - d_ijk_5_1_fake_belem - 0.001 e_ijlk_5_1_1_fake_belem
+ - 0.001 e_ijlk_5_1_2_fake_belem - 0.001 e_ijlk_5_1_3_fake_belem
+ - 0.001 e_ijlk_5_1_4_fake_belem - 0.001 e_ijlk_5_1_5_fake_belem
+ + y_ijk_5_1_fake_belem >= -2
+_C972: - a_ij_5_1 - d_ijk_5_1_fake_manila - 0.001 e_ijlk_5_1_1_fake_manila
+ - 0.001 e_ijlk_5_1_2_fake_manila - 0.001 e_ijlk_5_1_3_fake_manila
+ - 0.001 e_ijlk_5_1_4_fake_manila - 0.001 e_ijlk_5_1_5_fake_manila
+ + y_ijk_5_1_fake_manila >= -2
+_C973: - a_ij_5_2 - d_ijk_5_2_fake_belem - 0.001 e_ijlk_5_2_1_fake_belem
+ - 0.001 e_ijlk_5_2_2_fake_belem - 0.001 e_ijlk_5_2_3_fake_belem
+ - 0.001 e_ijlk_5_2_4_fake_belem - 0.001 e_ijlk_5_2_5_fake_belem
+ + y_ijk_5_2_fake_belem >= -2
+_C974: - a_ij_5_2 - d_ijk_5_2_fake_manila - 0.001 e_ijlk_5_2_1_fake_manila
+ - 0.001 e_ijlk_5_2_2_fake_manila - 0.001 e_ijlk_5_2_3_fake_manila
+ - 0.001 e_ijlk_5_2_4_fake_manila - 0.001 e_ijlk_5_2_5_fake_manila
+ + y_ijk_5_2_fake_manila >= -2
+_C975: - a_ij_5_3 - d_ijk_5_3_fake_belem - 0.001 e_ijlk_5_3_1_fake_belem
+ - 0.001 e_ijlk_5_3_2_fake_belem - 0.001 e_ijlk_5_3_3_fake_belem
+ - 0.001 e_ijlk_5_3_4_fake_belem - 0.001 e_ijlk_5_3_5_fake_belem
+ + y_ijk_5_3_fake_belem >= -2
+_C976: - a_ij_5_3 - d_ijk_5_3_fake_manila - 0.001 e_ijlk_5_3_1_fake_manila
+ - 0.001 e_ijlk_5_3_2_fake_manila - 0.001 e_ijlk_5_3_3_fake_manila
+ - 0.001 e_ijlk_5_3_4_fake_manila - 0.001 e_ijlk_5_3_5_fake_manila
+ + y_ijk_5_3_fake_manila >= -2
+_C977: - a_ij_5_4 - d_ijk_5_4_fake_belem - 0.001 e_ijlk_5_4_1_fake_belem
+ - 0.001 e_ijlk_5_4_2_fake_belem - 0.001 e_ijlk_5_4_3_fake_belem
+ - 0.001 e_ijlk_5_4_4_fake_belem - 0.001 e_ijlk_5_4_5_fake_belem
+ + y_ijk_5_4_fake_belem >= -2
+_C978: - a_ij_5_4 - d_ijk_5_4_fake_manila - 0.001 e_ijlk_5_4_1_fake_manila
+ - 0.001 e_ijlk_5_4_2_fake_manila - 0.001 e_ijlk_5_4_3_fake_manila
+ - 0.001 e_ijlk_5_4_4_fake_manila - 0.001 e_ijlk_5_4_5_fake_manila
+ + y_ijk_5_4_fake_manila >= -2
+_C979: - a_ij_5_5 - d_ijk_5_5_fake_belem - 0.001 e_ijlk_5_5_1_fake_belem
+ - 0.001 e_ijlk_5_5_2_fake_belem - 0.001 e_ijlk_5_5_3_fake_belem
+ - 0.001 e_ijlk_5_5_4_fake_belem - 0.001 e_ijlk_5_5_5_fake_belem
+ + y_ijk_5_5_fake_belem >= -2
 _C98: z_ikt_1_fake_belem_30 + z_ikt_1_fake_manila_30 <= 1
+_C980: - a_ij_5_5 - d_ijk_5_5_fake_manila - 0.001 e_ijlk_5_5_1_fake_manila
+ - 0.001 e_ijlk_5_5_2_fake_manila - 0.001 e_ijlk_5_5_3_fake_manila
+ - 0.001 e_ijlk_5_5_4_fake_manila - 0.001 e_ijlk_5_5_5_fake_manila
+ + y_ijk_5_5_fake_manila >= -2
 _C99: s_j_1 + 999970 z_ikt_1_fake_belem_30 + 999970 z_ikt_1_fake_manila_30
  <= 1000000
 Binaries
@@ -1312,34 +1966,52 @@ a_ij_1_1
 a_ij_1_2
 a_ij_1_3
 a_ij_1_4
+a_ij_1_5
 a_ij_2_1
 a_ij_2_2
 a_ij_2_3
 a_ij_2_4
+a_ij_2_5
 a_ij_3_1
 a_ij_3_2
 a_ij_3_3
 a_ij_3_4
+a_ij_3_5
 a_ij_4_1
 a_ij_4_2
 a_ij_4_3
 a_ij_4_4
+a_ij_4_5
+a_ij_5_1
+a_ij_5_2
+a_ij_5_3
+a_ij_5_4
+a_ij_5_5
 b_ij_1_1
 b_ij_1_2
 b_ij_1_3
 b_ij_1_4
+b_ij_1_5
 b_ij_2_1
 b_ij_2_2
 b_ij_2_3
 b_ij_2_4
+b_ij_2_5
 b_ij_3_1
 b_ij_3_2
 b_ij_3_3
 b_ij_3_4
+b_ij_3_5
 b_ij_4_1
 b_ij_4_2
 b_ij_4_3
 b_ij_4_4
+b_ij_4_5
+b_ij_5_1
+b_ij_5_2
+b_ij_5_3
+b_ij_5_4
+b_ij_5_5
 d_ijk_1_1_fake_belem
 d_ijk_1_1_fake_manila
 d_ijk_1_2_fake_belem
@@ -1348,6 +2020,8 @@ d_ijk_1_3_fake_belem
 d_ijk_1_3_fake_manila
 d_ijk_1_4_fake_belem
 d_ijk_1_4_fake_manila
+d_ijk_1_5_fake_belem
+d_ijk_1_5_fake_manila
 d_ijk_2_1_fake_belem
 d_ijk_2_1_fake_manila
 d_ijk_2_2_fake_belem
@@ -1356,6 +2030,8 @@ d_ijk_2_3_fake_belem
 d_ijk_2_3_fake_manila
 d_ijk_2_4_fake_belem
 d_ijk_2_4_fake_manila
+d_ijk_2_5_fake_belem
+d_ijk_2_5_fake_manila
 d_ijk_3_1_fake_belem
 d_ijk_3_1_fake_manila
 d_ijk_3_2_fake_belem
@@ -1364,6 +2040,8 @@ d_ijk_3_3_fake_belem
 d_ijk_3_3_fake_manila
 d_ijk_3_4_fake_belem
 d_ijk_3_4_fake_manila
+d_ijk_3_5_fake_belem
+d_ijk_3_5_fake_manila
 d_ijk_4_1_fake_belem
 d_ijk_4_1_fake_manila
 d_ijk_4_2_fake_belem
@@ -1372,6 +2050,18 @@ d_ijk_4_3_fake_belem
 d_ijk_4_3_fake_manila
 d_ijk_4_4_fake_belem
 d_ijk_4_4_fake_manila
+d_ijk_4_5_fake_belem
+d_ijk_4_5_fake_manila
+d_ijk_5_1_fake_belem
+d_ijk_5_1_fake_manila
+d_ijk_5_2_fake_belem
+d_ijk_5_2_fake_manila
+d_ijk_5_3_fake_belem
+d_ijk_5_3_fake_manila
+d_ijk_5_4_fake_belem
+d_ijk_5_4_fake_manila
+d_ijk_5_5_fake_belem
+d_ijk_5_5_fake_manila
 e_ijlk_1_1_1_fake_belem
 e_ijlk_1_1_1_fake_manila
 e_ijlk_1_1_2_fake_belem
@@ -1380,6 +2070,8 @@ e_ijlk_1_1_3_fake_belem
 e_ijlk_1_1_3_fake_manila
 e_ijlk_1_1_4_fake_belem
 e_ijlk_1_1_4_fake_manila
+e_ijlk_1_1_5_fake_belem
+e_ijlk_1_1_5_fake_manila
 e_ijlk_1_2_1_fake_belem
 e_ijlk_1_2_1_fake_manila
 e_ijlk_1_2_2_fake_belem
@@ -1388,6 +2080,8 @@ e_ijlk_1_2_3_fake_belem
 e_ijlk_1_2_3_fake_manila
 e_ijlk_1_2_4_fake_belem
 e_ijlk_1_2_4_fake_manila
+e_ijlk_1_2_5_fake_belem
+e_ijlk_1_2_5_fake_manila
 e_ijlk_1_3_1_fake_belem
 e_ijlk_1_3_1_fake_manila
 e_ijlk_1_3_2_fake_belem
@@ -1396,6 +2090,8 @@ e_ijlk_1_3_3_fake_belem
 e_ijlk_1_3_3_fake_manila
 e_ijlk_1_3_4_fake_belem
 e_ijlk_1_3_4_fake_manila
+e_ijlk_1_3_5_fake_belem
+e_ijlk_1_3_5_fake_manila
 e_ijlk_1_4_1_fake_belem
 e_ijlk_1_4_1_fake_manila
 e_ijlk_1_4_2_fake_belem
@@ -1404,6 +2100,18 @@ e_ijlk_1_4_3_fake_belem
 e_ijlk_1_4_3_fake_manila
 e_ijlk_1_4_4_fake_belem
 e_ijlk_1_4_4_fake_manila
+e_ijlk_1_4_5_fake_belem
+e_ijlk_1_4_5_fake_manila
+e_ijlk_1_5_1_fake_belem
+e_ijlk_1_5_1_fake_manila
+e_ijlk_1_5_2_fake_belem
+e_ijlk_1_5_2_fake_manila
+e_ijlk_1_5_3_fake_belem
+e_ijlk_1_5_3_fake_manila
+e_ijlk_1_5_4_fake_belem
+e_ijlk_1_5_4_fake_manila
+e_ijlk_1_5_5_fake_belem
+e_ijlk_1_5_5_fake_manila
 e_ijlk_2_1_1_fake_belem
 e_ijlk_2_1_1_fake_manila
 e_ijlk_2_1_2_fake_belem
@@ -1412,6 +2120,8 @@ e_ijlk_2_1_3_fake_belem
 e_ijlk_2_1_3_fake_manila
 e_ijlk_2_1_4_fake_belem
 e_ijlk_2_1_4_fake_manila
+e_ijlk_2_1_5_fake_belem
+e_ijlk_2_1_5_fake_manila
 e_ijlk_2_2_1_fake_belem
 e_ijlk_2_2_1_fake_manila
 e_ijlk_2_2_2_fake_belem
@@ -1420,6 +2130,8 @@ e_ijlk_2_2_3_fake_belem
 e_ijlk_2_2_3_fake_manila
 e_ijlk_2_2_4_fake_belem
 e_ijlk_2_2_4_fake_manila
+e_ijlk_2_2_5_fake_belem
+e_ijlk_2_2_5_fake_manila
 e_ijlk_2_3_1_fake_belem
 e_ijlk_2_3_1_fake_manila
 e_ijlk_2_3_2_fake_belem
@@ -1428,6 +2140,8 @@ e_ijlk_2_3_3_fake_belem
 e_ijlk_2_3_3_fake_manila
 e_ijlk_2_3_4_fake_belem
 e_ijlk_2_3_4_fake_manila
+e_ijlk_2_3_5_fake_belem
+e_ijlk_2_3_5_fake_manila
 e_ijlk_2_4_1_fake_belem
 e_ijlk_2_4_1_fake_manila
 e_ijlk_2_4_2_fake_belem
@@ -1436,6 +2150,18 @@ e_ijlk_2_4_3_fake_belem
 e_ijlk_2_4_3_fake_manila
 e_ijlk_2_4_4_fake_belem
 e_ijlk_2_4_4_fake_manila
+e_ijlk_2_4_5_fake_belem
+e_ijlk_2_4_5_fake_manila
+e_ijlk_2_5_1_fake_belem
+e_ijlk_2_5_1_fake_manila
+e_ijlk_2_5_2_fake_belem
+e_ijlk_2_5_2_fake_manila
+e_ijlk_2_5_3_fake_belem
+e_ijlk_2_5_3_fake_manila
+e_ijlk_2_5_4_fake_belem
+e_ijlk_2_5_4_fake_manila
+e_ijlk_2_5_5_fake_belem
+e_ijlk_2_5_5_fake_manila
 e_ijlk_3_1_1_fake_belem
 e_ijlk_3_1_1_fake_manila
 e_ijlk_3_1_2_fake_belem
@@ -1444,6 +2170,8 @@ e_ijlk_3_1_3_fake_belem
 e_ijlk_3_1_3_fake_manila
 e_ijlk_3_1_4_fake_belem
 e_ijlk_3_1_4_fake_manila
+e_ijlk_3_1_5_fake_belem
+e_ijlk_3_1_5_fake_manila
 e_ijlk_3_2_1_fake_belem
 e_ijlk_3_2_1_fake_manila
 e_ijlk_3_2_2_fake_belem
@@ -1452,6 +2180,8 @@ e_ijlk_3_2_3_fake_belem
 e_ijlk_3_2_3_fake_manila
 e_ijlk_3_2_4_fake_belem
 e_ijlk_3_2_4_fake_manila
+e_ijlk_3_2_5_fake_belem
+e_ijlk_3_2_5_fake_manila
 e_ijlk_3_3_1_fake_belem
 e_ijlk_3_3_1_fake_manila
 e_ijlk_3_3_2_fake_belem
@@ -1460,6 +2190,8 @@ e_ijlk_3_3_3_fake_belem
 e_ijlk_3_3_3_fake_manila
 e_ijlk_3_3_4_fake_belem
 e_ijlk_3_3_4_fake_manila
+e_ijlk_3_3_5_fake_belem
+e_ijlk_3_3_5_fake_manila
 e_ijlk_3_4_1_fake_belem
 e_ijlk_3_4_1_fake_manila
 e_ijlk_3_4_2_fake_belem
@@ -1468,6 +2200,18 @@ e_ijlk_3_4_3_fake_belem
 e_ijlk_3_4_3_fake_manila
 e_ijlk_3_4_4_fake_belem
 e_ijlk_3_4_4_fake_manila
+e_ijlk_3_4_5_fake_belem
+e_ijlk_3_4_5_fake_manila
+e_ijlk_3_5_1_fake_belem
+e_ijlk_3_5_1_fake_manila
+e_ijlk_3_5_2_fake_belem
+e_ijlk_3_5_2_fake_manila
+e_ijlk_3_5_3_fake_belem
+e_ijlk_3_5_3_fake_manila
+e_ijlk_3_5_4_fake_belem
+e_ijlk_3_5_4_fake_manila
+e_ijlk_3_5_5_fake_belem
+e_ijlk_3_5_5_fake_manila
 e_ijlk_4_1_1_fake_belem
 e_ijlk_4_1_1_fake_manila
 e_ijlk_4_1_2_fake_belem
@@ -1476,6 +2220,8 @@ e_ijlk_4_1_3_fake_belem
 e_ijlk_4_1_3_fake_manila
 e_ijlk_4_1_4_fake_belem
 e_ijlk_4_1_4_fake_manila
+e_ijlk_4_1_5_fake_belem
+e_ijlk_4_1_5_fake_manila
 e_ijlk_4_2_1_fake_belem
 e_ijlk_4_2_1_fake_manila
 e_ijlk_4_2_2_fake_belem
@@ -1484,6 +2230,8 @@ e_ijlk_4_2_3_fake_belem
 e_ijlk_4_2_3_fake_manila
 e_ijlk_4_2_4_fake_belem
 e_ijlk_4_2_4_fake_manila
+e_ijlk_4_2_5_fake_belem
+e_ijlk_4_2_5_fake_manila
 e_ijlk_4_3_1_fake_belem
 e_ijlk_4_3_1_fake_manila
 e_ijlk_4_3_2_fake_belem
@@ -1492,6 +2240,8 @@ e_ijlk_4_3_3_fake_belem
 e_ijlk_4_3_3_fake_manila
 e_ijlk_4_3_4_fake_belem
 e_ijlk_4_3_4_fake_manila
+e_ijlk_4_3_5_fake_belem
+e_ijlk_4_3_5_fake_manila
 e_ijlk_4_4_1_fake_belem
 e_ijlk_4_4_1_fake_manila
 e_ijlk_4_4_2_fake_belem
@@ -1500,6 +2250,68 @@ e_ijlk_4_4_3_fake_belem
 e_ijlk_4_4_3_fake_manila
 e_ijlk_4_4_4_fake_belem
 e_ijlk_4_4_4_fake_manila
+e_ijlk_4_4_5_fake_belem
+e_ijlk_4_4_5_fake_manila
+e_ijlk_4_5_1_fake_belem
+e_ijlk_4_5_1_fake_manila
+e_ijlk_4_5_2_fake_belem
+e_ijlk_4_5_2_fake_manila
+e_ijlk_4_5_3_fake_belem
+e_ijlk_4_5_3_fake_manila
+e_ijlk_4_5_4_fake_belem
+e_ijlk_4_5_4_fake_manila
+e_ijlk_4_5_5_fake_belem
+e_ijlk_4_5_5_fake_manila
+e_ijlk_5_1_1_fake_belem
+e_ijlk_5_1_1_fake_manila
+e_ijlk_5_1_2_fake_belem
+e_ijlk_5_1_2_fake_manila
+e_ijlk_5_1_3_fake_belem
+e_ijlk_5_1_3_fake_manila
+e_ijlk_5_1_4_fake_belem
+e_ijlk_5_1_4_fake_manila
+e_ijlk_5_1_5_fake_belem
+e_ijlk_5_1_5_fake_manila
+e_ijlk_5_2_1_fake_belem
+e_ijlk_5_2_1_fake_manila
+e_ijlk_5_2_2_fake_belem
+e_ijlk_5_2_2_fake_manila
+e_ijlk_5_2_3_fake_belem
+e_ijlk_5_2_3_fake_manila
+e_ijlk_5_2_4_fake_belem
+e_ijlk_5_2_4_fake_manila
+e_ijlk_5_2_5_fake_belem
+e_ijlk_5_2_5_fake_manila
+e_ijlk_5_3_1_fake_belem
+e_ijlk_5_3_1_fake_manila
+e_ijlk_5_3_2_fake_belem
+e_ijlk_5_3_2_fake_manila
+e_ijlk_5_3_3_fake_belem
+e_ijlk_5_3_3_fake_manila
+e_ijlk_5_3_4_fake_belem
+e_ijlk_5_3_4_fake_manila
+e_ijlk_5_3_5_fake_belem
+e_ijlk_5_3_5_fake_manila
+e_ijlk_5_4_1_fake_belem
+e_ijlk_5_4_1_fake_manila
+e_ijlk_5_4_2_fake_belem
+e_ijlk_5_4_2_fake_manila
+e_ijlk_5_4_3_fake_belem
+e_ijlk_5_4_3_fake_manila
+e_ijlk_5_4_4_fake_belem
+e_ijlk_5_4_4_fake_manila
+e_ijlk_5_4_5_fake_belem
+e_ijlk_5_4_5_fake_manila
+e_ijlk_5_5_1_fake_belem
+e_ijlk_5_5_1_fake_manila
+e_ijlk_5_5_2_fake_belem
+e_ijlk_5_5_2_fake_manila
+e_ijlk_5_5_3_fake_belem
+e_ijlk_5_5_3_fake_manila
+e_ijlk_5_5_4_fake_belem
+e_ijlk_5_5_4_fake_manila
+e_ijlk_5_5_5_fake_belem
+e_ijlk_5_5_5_fake_manila
 x_ik_1_fake_belem
 x_ik_1_fake_manila
 x_ik_2_fake_belem
@@ -1508,6 +2320,8 @@ x_ik_3_fake_belem
 x_ik_3_fake_manila
 x_ik_4_fake_belem
 x_ik_4_fake_manila
+x_ik_5_fake_belem
+x_ik_5_fake_manila
 y_ijk_0_1_fake_belem
 y_ijk_0_1_fake_manila
 y_ijk_0_2_fake_belem
@@ -1516,6 +2330,8 @@ y_ijk_0_3_fake_belem
 y_ijk_0_3_fake_manila
 y_ijk_0_4_fake_belem
 y_ijk_0_4_fake_manila
+y_ijk_0_5_fake_belem
+y_ijk_0_5_fake_manila
 y_ijk_1_0_fake_belem
 y_ijk_1_0_fake_manila
 y_ijk_1_1_fake_belem
@@ -1526,6 +2342,8 @@ y_ijk_1_3_fake_belem
 y_ijk_1_3_fake_manila
 y_ijk_1_4_fake_belem
 y_ijk_1_4_fake_manila
+y_ijk_1_5_fake_belem
+y_ijk_1_5_fake_manila
 y_ijk_2_0_fake_belem
 y_ijk_2_0_fake_manila
 y_ijk_2_1_fake_belem
@@ -1536,6 +2354,8 @@ y_ijk_2_3_fake_belem
 y_ijk_2_3_fake_manila
 y_ijk_2_4_fake_belem
 y_ijk_2_4_fake_manila
+y_ijk_2_5_fake_belem
+y_ijk_2_5_fake_manila
 y_ijk_3_0_fake_belem
 y_ijk_3_0_fake_manila
 y_ijk_3_1_fake_belem
@@ -1546,6 +2366,8 @@ y_ijk_3_3_fake_belem
 y_ijk_3_3_fake_manila
 y_ijk_3_4_fake_belem
 y_ijk_3_4_fake_manila
+y_ijk_3_5_fake_belem
+y_ijk_3_5_fake_manila
 y_ijk_4_0_fake_belem
 y_ijk_4_0_fake_manila
 y_ijk_4_1_fake_belem
@@ -1556,6 +2378,20 @@ y_ijk_4_3_fake_belem
 y_ijk_4_3_fake_manila
 y_ijk_4_4_fake_belem
 y_ijk_4_4_fake_manila
+y_ijk_4_5_fake_belem
+y_ijk_4_5_fake_manila
+y_ijk_5_0_fake_belem
+y_ijk_5_0_fake_manila
+y_ijk_5_1_fake_belem
+y_ijk_5_1_fake_manila
+y_ijk_5_2_fake_belem
+y_ijk_5_2_fake_manila
+y_ijk_5_3_fake_belem
+y_ijk_5_3_fake_manila
+y_ijk_5_4_fake_belem
+y_ijk_5_4_fake_manila
+y_ijk_5_5_fake_belem
+y_ijk_5_5_fake_manila
 z_ikt_1_fake_belem_0
 z_ikt_1_fake_belem_1
 z_ikt_1_fake_belem_10
@@ -1812,4 +2648,68 @@ z_ikt_4_fake_manila_6
 z_ikt_4_fake_manila_7
 z_ikt_4_fake_manila_8
 z_ikt_4_fake_manila_9
+z_ikt_5_fake_belem_0
+z_ikt_5_fake_belem_1
+z_ikt_5_fake_belem_10
+z_ikt_5_fake_belem_11
+z_ikt_5_fake_belem_12
+z_ikt_5_fake_belem_13
+z_ikt_5_fake_belem_14
+z_ikt_5_fake_belem_15
+z_ikt_5_fake_belem_16
+z_ikt_5_fake_belem_17
+z_ikt_5_fake_belem_18
+z_ikt_5_fake_belem_19
+z_ikt_5_fake_belem_2
+z_ikt_5_fake_belem_20
+z_ikt_5_fake_belem_21
+z_ikt_5_fake_belem_22
+z_ikt_5_fake_belem_23
+z_ikt_5_fake_belem_24
+z_ikt_5_fake_belem_25
+z_ikt_5_fake_belem_26
+z_ikt_5_fake_belem_27
+z_ikt_5_fake_belem_28
+z_ikt_5_fake_belem_29
+z_ikt_5_fake_belem_3
+z_ikt_5_fake_belem_30
+z_ikt_5_fake_belem_31
+z_ikt_5_fake_belem_4
+z_ikt_5_fake_belem_5
+z_ikt_5_fake_belem_6
+z_ikt_5_fake_belem_7
+z_ikt_5_fake_belem_8
+z_ikt_5_fake_belem_9
+z_ikt_5_fake_manila_0
+z_ikt_5_fake_manila_1
+z_ikt_5_fake_manila_10
+z_ikt_5_fake_manila_11
+z_ikt_5_fake_manila_12
+z_ikt_5_fake_manila_13
+z_ikt_5_fake_manila_14
+z_ikt_5_fake_manila_15
+z_ikt_5_fake_manila_16
+z_ikt_5_fake_manila_17
+z_ikt_5_fake_manila_18
+z_ikt_5_fake_manila_19
+z_ikt_5_fake_manila_2
+z_ikt_5_fake_manila_20
+z_ikt_5_fake_manila_21
+z_ikt_5_fake_manila_22
+z_ikt_5_fake_manila_23
+z_ikt_5_fake_manila_24
+z_ikt_5_fake_manila_25
+z_ikt_5_fake_manila_26
+z_ikt_5_fake_manila_27
+z_ikt_5_fake_manila_28
+z_ikt_5_fake_manila_29
+z_ikt_5_fake_manila_3
+z_ikt_5_fake_manila_30
+z_ikt_5_fake_manila_31
+z_ikt_5_fake_manila_4
+z_ikt_5_fake_manila_5
+z_ikt_5_fake_manila_6
+z_ikt_5_fake_manila_7
+z_ikt_5_fake_manila_8
+z_ikt_5_fake_manila_9
 End

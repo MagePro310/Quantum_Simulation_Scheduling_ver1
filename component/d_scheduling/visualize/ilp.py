@@ -38,7 +38,7 @@ def _read_solution_file(solution_file: str) -> pd.DataFrame:
         end_key = f"c_j_{jobs.index(job) + 1}"
 
         start = variables.get(start_key, None)
-        end = variables.get(end_key, None)
+        end = variables.get(end_key, None) + 1 
 
         if start is None or end is None:
             print(f"Warning: Missing start or end time for job {job}. Skipping...")

@@ -26,6 +26,28 @@ class JobInfo:
     
     # Help for transpile
     transpiled_circuit: QuantumCircuit = None
+    transpiled_circuit_measured: QuantumCircuit = None
     
     # Help for fidelity
     fidelity: float = None
+    
+    # Define function print
+    
+    def print(self):
+        """
+        Print the job information.
+        """
+        print(f"Job ID: {self.job_id}")
+        print(f"Job Name: {self.job_name}")
+        print(f"Circuit: {self.circuit}")
+        print(f"Qubits: {self.qubits}")
+        print(f"Machine: {self.machine}")
+        print(f"Capacity Machine: {self.capacity_machine}")
+        print(f"Start Time: {self.start_time}")
+        print(f"Duration: {self.duration}")
+        print(f"End Time: {self.end_time}")
+        print(f"Children Jobs: {self.childrenJobs}")
+        print(f"Result Cut: {self.result_cut}")
+        print(f"Transpiled Circuit: {self.transpiled_circuit}")
+        print(f"Fidelity: {self.fidelity}")
+        print("=========================================")
