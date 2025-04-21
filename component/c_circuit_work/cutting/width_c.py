@@ -70,18 +70,21 @@ def greedy_cut(circuit: QuantumCircuit, max_width: int):
         cutname += alphabet[i // max_width]
     
     # Create Observables
-    list_observables = ["I", "Z","X"]
+    list_observables = ["I"]
     observables = []
     for i in range(num_of_part):
         for k in range(len(list_observables)):
             observable_temp = ""
             for j in range(num_qubits):
-                index = j // max_width + k
+                index = j // len(list_observables) + k
                 if (index >= len(list_observables)):
                     index = 0
                 observable_temp += list_observables[index]
             observables.append(observable_temp)
-    observable = SparsePauliOp(observables)
+    # Remove duplicates string in observables
+    
+    unique_observables = list(dict.fromkeys(observables))
+    observable = SparsePauliOp(unique_observables)
     return cutname, observable
 
 
