@@ -49,5 +49,6 @@ class JobInfo:
         print(f"Children Jobs: {self.childrenJobs}")
         print(f"Result Cut: {self.result_cut}")
         print(f"Transpiled Circuit: {self.transpiled_circuit}")
+        print(f"Transpiled Circuit Measured: {self.transpiled_circuit_measured}")
         print(f"Fidelity: {self.fidelity}")
         print("=========================================")

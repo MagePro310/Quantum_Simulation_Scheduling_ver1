@@ -92,6 +92,6 @@ def extract_schedule_data(solution_file: str, output_dir: str | None = None) -> 
     print(f"Saved job data as JSON to: {job_json_path}")
 
 
-def visualize(location):
+def extract_data(location):
     base_name = os.path.splitext(os.path.basename(location))[0]
     extract_schedule_data(location, output_dir=None)

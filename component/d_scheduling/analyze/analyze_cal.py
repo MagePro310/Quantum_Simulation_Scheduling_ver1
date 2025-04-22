@@ -1,15 +1,11 @@
 import ast
 from collections import defaultdict
+import json
 
 def load_job_data(filepath):
-    """Load job data from a text file containing one JSON/dict per line."""
-    data = []
+    """Load job data from a JSON file."""
     with open(filepath, 'r') as file:
-        for line in file:
-            line = line.strip()
-            if line:  # skip empty lines
-                job_dict = ast.literal_eval(line)  # convert string to dict
-                data.append(job_dict)
+        data = json.load(file)
     return data
 
 def calculate_metrics(data):
