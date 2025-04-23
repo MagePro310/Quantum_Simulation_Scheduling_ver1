@@ -10,26 +10,22 @@ def load_job_data(filepath):
 
 def calculate_metrics(data):
     """Calculate various job scheduling metrics."""
+    # {'job': '1', 'qubits': 2, 'machine': 'fake_manila', 'capacity': 5, 'start': 0.0, 'end': 1568.0, 'duration': 1568}
+    # {'job': '2', 'qubits': 2, 'machine': 'fake_belem', 'capacity': 5, 'start': 0.0, 'end': 3648.0, 'duration': 3648}
+    # {'job': '3', 'qubits': 2, 'machine': 'fake_belem', 'capacity': 5, 'start': 0.0, 'end': 3648.0, 'duration': 3648}
+
     num_jobs = len(data)
-    waiting_time = sum(job['start'] for job in data)  # assuming ready_time = 0
-    response_time = sum(job['end'] for job in data)
+    turnaround_average = sum(job['end'] for job in data) / num_jobs  # updated variable name
+    responetime_average = sum(job['start'] for job in data) / num_jobs
     makespan = max(job['end'] for job in data)
     throughput = num_jobs / makespan
 
-    # Utilization
-    machine_usage = defaultdict(float)
-    machine_capacity = {}
+    # calculate avg_utilization of each machine
+    utilization_per_machine = defaultdict(float)
     for job in data:
-        machine = job['machine']
-        machine_usage[machine] += job['qubits'] * job['duration']
-        machine_capacity[machine] = job['capacity']
-
-    utilization_per_machine = {}
-    for machine in machine_usage:
-        utilization = machine_usage[machine] / (machine_capacity[machine] * makespan)
-        utilization_per_machine[machine] = utilization
-
-    avg_utilization = sum(utilization_per_machine.values()) / len(utilization_per_machine)
+        utilization_per_machine[job['machine']] += job['qubits'] * job['']
+    
+        
 
     return {
         'waiting_time': waiting_time,
