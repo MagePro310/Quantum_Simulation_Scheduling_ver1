@@ -529,9 +529,9 @@ _C369: y_ijk_0_1_fake_belem + y_ijk_0_1_fake_manila + y_ijk_1_1_fake_belem
  + y_ijk_1_1_fake_manila + y_ijk_2_1_fake_belem + y_ijk_2_1_fake_manila
  + y_ijk_3_1_fake_belem + y_ijk_3_1_fake_manila >= 1
 _C37: - c_j_1 + 10 z_ikt_1_fake_belem_10 + 10 z_ikt_1_fake_manila_10 <= 0
-_C370: c_j_1 - s_j_1 - 9 x_ik_1_fake_belem - 8 x_ik_1_fake_manila
+_C370: c_j_1 - s_j_1 - 7 x_ik_1_fake_belem - 5 x_ik_1_fake_manila
  - 50 y_ijk_1_1_fake_belem - 50 y_ijk_1_1_fake_manila - 6 y_ijk_2_1_fake_belem
- - 5 y_ijk_2_1_fake_manila - 6 y_ijk_3_1_fake_belem - 5 y_ijk_3_1_fake_manila
+ - 8 y_ijk_2_1_fake_manila - 8 y_ijk_3_1_fake_belem - 8 y_ijk_3_1_fake_manila
  >= 0
 _C371: x_ik_1_fake_belem - 0.001 y_ijk_0_1_fake_belem
  - 0.001 y_ijk_1_1_fake_belem - 0.001 y_ijk_2_1_fake_belem
@@ -559,9 +559,9 @@ _C380: c_j_3 - s_j_1 + 1000 y_ijk_3_1_fake_belem + 1000 y_ijk_3_1_fake_manila
 _C381: y_ijk_0_2_fake_belem + y_ijk_0_2_fake_manila + y_ijk_1_2_fake_belem
  + y_ijk_1_2_fake_manila + y_ijk_2_2_fake_belem + y_ijk_2_2_fake_manila
  + y_ijk_3_2_fake_belem + y_ijk_3_2_fake_manila >= 1
-_C382: c_j_2 - s_j_2 - 5 x_ik_2_fake_belem - 8 x_ik_2_fake_manila
- - 5 y_ijk_1_2_fake_belem - 9 y_ijk_1_2_fake_manila - 50 y_ijk_2_2_fake_belem
- - 50 y_ijk_2_2_fake_manila - 9 y_ijk_3_2_fake_belem - 8 y_ijk_3_2_fake_manila
+_C382: c_j_2 - s_j_2 - 8 x_ik_2_fake_belem - 6 x_ik_2_fake_manila
+ - 6 y_ijk_1_2_fake_belem - 8 y_ijk_1_2_fake_manila - 50 y_ijk_2_2_fake_belem
+ - 50 y_ijk_2_2_fake_manila - 5 y_ijk_3_2_fake_belem - 9 y_ijk_3_2_fake_manila
  >= 0
 _C383: x_ik_2_fake_belem - 0.001 y_ijk_0_2_fake_belem
  - 0.001 y_ijk_1_2_fake_belem - 0.001 y_ijk_2_2_fake_belem
@@ -590,9 +590,9 @@ _C392: c_j_3 - s_j_2 + 1000 y_ijk_3_2_fake_belem + 1000 y_ijk_3_2_fake_manila
 _C393: y_ijk_0_3_fake_belem + y_ijk_0_3_fake_manila + y_ijk_1_3_fake_belem
  + y_ijk_1_3_fake_manila + y_ijk_2_3_fake_belem + y_ijk_2_3_fake_manila
  + y_ijk_3_3_fake_belem + y_ijk_3_3_fake_manila >= 1
-_C394: c_j_3 - s_j_3 - 6 x_ik_3_fake_belem - 7 x_ik_3_fake_manila
- - 6 y_ijk_1_3_fake_belem - 8 y_ijk_1_3_fake_manila - 8 y_ijk_2_3_fake_belem
- - 7 y_ijk_2_3_fake_manila - 50 y_ijk_3_3_fake_belem
+_C394: c_j_3 - s_j_3 - 8 x_ik_3_fake_belem - 6 x_ik_3_fake_manila
+ - 9 y_ijk_1_3_fake_belem - 6 y_ijk_1_3_fake_manila - 6 y_ijk_2_3_fake_belem
+ - 6 y_ijk_2_3_fake_manila - 50 y_ijk_3_3_fake_belem
  - 50 y_ijk_3_3_fake_manila >= 0
 _C395: x_ik_3_fake_belem - 0.001 y_ijk_0_3_fake_belem
  - 0.001 y_ijk_1_3_fake_belem - 0.001 y_ijk_2_3_fake_belem

@@ -2,28 +2,28 @@
     {
         "job": "1",
         "qubits": 2,
-        "machine": "fake_manila",
+        "machine": "fake_belem",
         "capacity": 5,
         "start": 0.0,
-        "end": 9.0,
-        "duration": 9.0
+        "end": 8.0,
+        "duration": 8.0
     },
     {
         "job": "2",
         "qubits": 2,
-        "machine": "fake_belem",
+        "machine": "fake_manila",
         "capacity": 5,
         "start": 0.0,
-        "end": 9.0,
-        "duration": 9.0
+        "end": 8.0,
+        "duration": 8.0
     },
     {
         "job": "3",
         "qubits": 2,
-        "machine": "fake_belem",
+        "machine": "fake_manila",
         "capacity": 5,
         "start": 0.0,
-        "end": 9.0,
-        "duration": 9.0
+        "end": 8.0,
+        "duration": 8.0
     }
 ]
