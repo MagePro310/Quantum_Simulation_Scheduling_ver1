@@ -12,10 +12,14 @@ import math
 from dataclasses import dataclass
 from qiskit.visualization import plot_error_map
 from component.a_backend.fake_backend import *
+
 from component.b_benchmark.mqt_tool import benchmark_circuit
 from component.sup_sys.job_info import JobInfo
+
 from component.c_circuit_work.cutting.width_c import *
 
+
+# Define Dataclass for ResultOfSchedule
 @dataclass
 class ResultOfSchedule:
     numcircuit: int
@@ -52,25 +56,27 @@ result_Schedule = ResultOfSchedule(
     makespan=0.0
 )
 
+# Define the machines
 machines = {}
 backend0 = FakeBelemV2()
 backend1 = FakeManilaV2()
-
 machines[backend0.name] = backend0
 machines[backend1.name] = backend1
 
+# Define benchmark
 num_qubits_per_job = 2
-num_jobs = 3
+num_jobs = 5
 jobs = {}
 
 for i in range(num_jobs):
     job_id = str(i + 1)
     jobs[job_id] = num_qubits_per_job
 
-# update numcircuit
+# update info to result_Schedule
 result_Schedule.numcircuit = len(jobs)
 result_Schedule.averageQubits = sum(jobs.values()) / len(jobs)
 
+# Generate circuits
 origin_job_info = {}
 
 for job_name, num_qubits in jobs.items():
@@ -89,9 +95,11 @@ for job_name, num_qubits in jobs.items():
         circuit=circuit,
         result_cut=None,  # Placeholder for result cut
     )
-    
+
+# Process job info
 process_job_info = origin_job_info.copy()
 
+# Cut the circuits if they exceed the maximum width
 max_width = max(list(machines.values()), key=lambda x: x.num_qubits).num_qubits
 
 for job_name, job_info in process_job_info.items():
@@ -118,16 +126,7 @@ for job_name, job_info in process_job_info.items():
             )
         job_info.result_cut = result_cut
         
-for job_name, job_info in process_job_info.items():
-    if job_info.result_cut is not None:
-        result_cut = job_info.result_cut
-        backend = list(machines.values())[0] # Example backend
-        results = run_subexperiments(result_cut.subexperiments, backend)
-        reconstructed_expval, exact_expval, error_estimation, relative_error_estimation = compute_expectation_value(results, result_cut.coefficients, result_cut.subobservables, result_cut.observable, job_info.circuit)
-        print_results(reconstructed_expval, exact_expval, error_estimation, relative_error_estimation)
-        
-# Get the job for run scheduler
-
+# Creatr scheduler jobs
 scheduler_job = {}
 def get_scheduler_jobs(job_info):
     if job_info.childrenJobs is None:
@@ -140,7 +139,9 @@ def get_scheduler_jobs(job_info):
 for job_name, job_info in process_job_info.items():
     scheduler_job.update(get_scheduler_jobs(job_info))
     
-# Setup
+    
+# Change here for each algorithm
+
 bigM = 1000000
 timesteps = 2**5
 jobs = ["0"] + list(scheduler_job.keys())
@@ -162,10 +163,11 @@ MILQ_extend_implementation.example_problem(bigM, timesteps, "component/d_schedul
 runtime = time.time() - start_time
 result_Schedule.time_generation = runtime
 print(f"Runtime for scheduling: {runtime} seconds")
-
+# Read_ilp_result
 from component.d_scheduling.extract import ilp
 ilp.extract_data("component/d_scheduling/algorithm/ilp/MILQ_extend/MILQ_extend_result.json")
 
+# Updade the result_Schedule with the extracted data from json
 from component.d_scheduling.analyze import analyze_cal
 from component.d_scheduling.datawork.visualize import visualize_data
 from component.d_scheduling.datawork.updateToDict import update_scheduler_jobs
@@ -184,3 +186,153 @@ for job_id, job in scheduler_job.items():
         job.transpiled_circuit_measured = transpile(job.circuit, backend, scheduling_method='alap', layout_method='trivial')
     else:
         print(f"No backend found for machine {job.machine}. Skipping job {job_id}.")
+        
+    job.print()
+    
+# Run scheduler jobs with real results with perhaps multithreading
+jobs = data.copy()
+
+# Generate unique execution times
+def get_the_duration_from_transpiled_circuit(circuit):
+    return circuit.duration
+
+# Simulate the scheduling with parallel execution support
+def simulate_scheduling(jobs):
+    machine_schedules = {'fake_belem': [], 'fake_manila': []}  # Track active jobs for each machine
+    jobs = sorted(jobs, key=lambda x: x['start'])  # Sort jobs by start time
+    for job in jobs:
+        machine = job['machine']
+        # base_duration = job['duration']
+        unique_duration = get_the_duration_from_transpiled_circuit(scheduler_job[job['job']].transpiled_circuit)
+
+        # Find the earliest time the job can start
+        current_schedule = machine_schedules[machine]
+        start_time = job['start']
+        
+        # Check for parallel execution
+        while True:
+            # Filter out completed jobs
+            active_jobs = [j for j in current_schedule if j['end'] > start_time]
+            
+            # Calculate total qubits in use
+            total_qubits_in_use = sum(j['qubits'] for j in active_jobs)
+            if total_qubits_in_use + job['qubits'] <= job['capacity']:
+                # Enough resources are available
+                break
+            # Increment start_time to the earliest end time of active jobs
+            start_time = min(j['end'] for j in active_jobs)
+
+        # Update job start, end times, and duration
+        job['start'] = start_time
+        job['end'] = start_time + unique_duration
+        job['duration'] = unique_duration
+
+        # Add job to the machine's schedule
+        current_schedule.append(job)
+
+    return jobs
+
+# Run the simulation
+updated_jobs = simulate_scheduling(jobs)
+
+# calculte metrics fidelity
+from qiskit_aer import AerSimulator
+from qiskit.visualization import plot_distribution
+import qiskit.quantum_info as qi
+from qiskit import transpile
+from qiskit_ibm_runtime import SamplerV2
+from component.f_assemble.assemble_work import fidelity_from_counts
+
+aer_simulator = AerSimulator()
+for job_name, job_info in scheduler_job.items():
+    backend = machines.get(job_info.machine)
+    
+    if backend:
+        transpiled_circuit = job_info.transpiled_circuit_measured
+        
+        # Run the ideal simulation
+        ideal_result = aer_simulator.run(transpiled_circuit, shots=1024).result()
+        ideal_counts = ideal_result.get_counts(transpiled_circuit)
+        
+        # Run circuit on the simulated backend
+        job = SamplerV2(backend).run([transpiled_circuit], shots=1024)
+        sim_result = job.result()[0]
+        sim_counts = sim_result.data.meas.get_counts()
+        
+        # Calculate fidelity
+        fidelity_val, rho_ideal, rho_sim = fidelity_from_counts(ideal_counts, sim_counts)
+        
+        # Store the fidelity values
+        job_info.fidelity = fidelity_val
+        
+utilization_permachine = analyze_cal.calculate_utilization(data)
+print(utilization_permachine)
+
+# update data if have children jobs
+for job_name, job_info in origin_job_info.items():
+    if job_info.childrenJobs is not None:
+        count_fidelity = 0
+        for child_job in job_info.childrenJobs:
+            #updata start time and end time from child job to parent job
+            job_info.start_time = min(job_info.start_time, child_job.start_time)
+            job_info.end_time = max(job_info.end_time, child_job.end_time)
+            job_info.duration = job_info.end_time - job_info.start_time
+            count_fidelity += child_job.fidelity * child_job.qubits
+        job_info.fidelity = count_fidelity / job_info.qubits
+    else:
+        print(f"Job {job_name} has no children jobs.")
+        
+# Update result for to result_Schedule
+metrics = analyze_cal.calculate_metrics(data, utilization_permachine)
+analyze_cal.print_metrics(metrics)
+
+result_Schedule.average_turnaroundTime = metrics['average_turnaroundTime']
+result_Schedule.average_responseTime = metrics['average_responseTime']
+result_Schedule.makespan = metrics['makespan']
+result_Schedule.average_utilization = metrics['average_utilization']
+result_Schedule.average_throughput = metrics['throughput']
+
+sum_fidelity = 0
+for job_name, job_info in origin_job_info.items():
+    sum_fidelity += job_info.fidelity * job_info.qubits
+average_fidelity = sum_fidelity / (result_Schedule.averageQubits * result_Schedule.numcircuit)
+result_Schedule.average_fidelity = average_fidelity
+
+# Save the result_Schedule to a JSON file
+import os
+import json
+from dataclasses import asdict
+
+# Create the directory path
+algorithm_folder_path = os.path.join("component", "finalResult", result_Schedule.nameSchedule)
+os.makedirs(algorithm_folder_path, exist_ok=True)
+
+# Construct the base file name
+numcircuit = result_Schedule.numcircuit
+numqubit = result_Schedule.averageQubits
+base_filename = f"{numcircuit}_{numqubit}"
+
+# Ensure the filename is unique
+existing_files = os.listdir(algorithm_folder_path)
+matching_files = [f for f in existing_files if f.startswith(base_filename) and f.endswith(".json")]
+
+if not matching_files:
+    final_filename = f"{base_filename}_0.json"
+else:
+    suffixes = [
+        int(f.replace(base_filename, "").replace(".json", "").replace("_", ""))
+        for f in matching_files
+        if f.replace(base_filename, "").replace(".json", "").replace("_", "").isdigit()
+    ]
+    next_suffix = max(suffixes, default=0) + 1
+    final_filename = f"{base_filename}_{next_suffix}.json"
+
+# Define the output file path
+output_file_path = os.path.join(algorithm_folder_path, final_filename)
+
+# Save the result to the JSON file
+with open(output_file_path, "w") as f:
+    json.dump(asdict(result_Schedule), f, indent=4)
+
+# Print the result
+print(f"Result saved to {output_file_path}")
