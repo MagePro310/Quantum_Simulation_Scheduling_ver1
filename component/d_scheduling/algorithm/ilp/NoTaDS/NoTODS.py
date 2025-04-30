@@ -220,12 +220,11 @@ class NoTODS():
     
     
     
-    def schedule(self):
-        cuts  = self._cut_circuit()
+    def schedule(self, cuts):
+        # cuts  = self._cut_circuit()
         validlist = self._get_valid_backends(cuts)
         layout = self._get_mm_score(cuts, validlist)
         sortedlist = self._sort_mm_score(cuts,layout)
-        print("sortedlist", sortedlist)
         score, eta_array = self._eta_calculation(cuts,sortedlist)
         model = self._optimization(cuts, score, eta_array)
         return model
