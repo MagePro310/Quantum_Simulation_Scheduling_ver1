@@ -40,7 +40,7 @@ class NoTODS():
     def _set_cut_options(self):
         self.max_cuts = 1
         self.num_subcircuits = [2]
-        self.max_subcircuit_width = math.ceil(self.circuit.num_qubits/2)+1
+        self.max_subcircuit_width = math.ceil(self.circuit.num_qubits/2)
         
         
     def _set_opt_options(self):
@@ -51,6 +51,7 @@ class NoTODS():
     def _cut_circuit(self) -> dict:
         cut_name, observable = greedy_cut(self.circuit, self.max_subcircuit_width)
         result = gate_to_reduce_width(self.circuit, cut_name, observable)
+        overhead = result.overhead
         preresult = {}
         preresult['subcircuits'] = result.subcircuits
         preresult_to_list = list(preresult['subcircuits'].values())
@@ -58,7 +59,7 @@ class NoTODS():
             preresult_to_list[i].data = [hasChange for hasChange in preresult_to_list[i].data if hasChange.operation.name != "qpd_1q"]
         cuts = {}
         cuts['subcircuits'] =preresult_to_list
-        return cuts
+        return cuts, overhead
 
     
     def _get_valid_backends(self, cuts: dict) -> list:
@@ -81,7 +82,10 @@ class NoTODS():
         subcircuits = cuts['subcircuits']
 
         for idx, ckt in enumerate(subcircuits):
-            trans_qc = transpile(ckt, valid_backends['subckt'+str(idx)][0], seed_transpiler=0, optimization_level=3)
+            # print(f"valid_backends: {valid_backends}")
+            # print(f"Index being accessed: subckt{idx}")
+            # print(f"Contents of valid_backends['subckt{idx}']: {valid_backends.get('subckt'+str(idx))}")
+            trans_qc = transpile(ckt, valid_backends['subckt'+str(idx)][0], seed_transpiler=0, optimization_level=1)
             small_qc = mm.deflate_circuit(trans_qc)
             layout = mm.best_overall_layout(small_qc, valid_backends['subckt'+str(idx)], successors=True)
             layouts.append(layout)
