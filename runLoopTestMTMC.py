@@ -26,7 +26,7 @@ from qiskit import transpile
 from qiskit_ibm_runtime import SamplerV2
 import time
 from dataclasses import asdict
-from component.d_scheduling.algorithm.heuristic.FFD import FFD_implement
+from component.d_scheduling.algorithm.heuristic.MTMC import MTMC_implement
 
 
 # Define Dataclass for ResultOfSchedule
@@ -149,42 +149,22 @@ for num_qubits_per_job in range(2, 11):  # Outer loop for num_qubits_per_job
 
     for job_name, job_info in process_job_info.items():
         scheduler_job.update(get_scheduler_jobs(job_info))
-# ============================= MILQ Extend Algorithm ==============================
-    # # MILQ Extend Algorithm
-    # bigM = 1000000
-    # timesteps = 2**5
-    # jobs = ["0"] + list(scheduler_job.keys())
-    # job_capacities = {"0": 0}
-    # job_capacities.update({job_name: job_info.qubits for job_name, job_info in scheduler_job.items()})
-    # machines_ilp = list(machines.keys())
-    # machine_capacities_ilp = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
-    # result_Schedule.typeMachine = machine_capacities_ilp
-    # result_Schedule.nameSchedule = "MILQ_extend"
-    
-    # start_time = time.time()
-    # MILQ_extend_implementation.example_problem(bigM, timesteps, "component/d_scheduling/algorithm/ilp/MILQ_extend/MILQ_extend_result", jobs, job_capacities, machines_ilp, machine_capacities_ilp)
-    # runtime = time.time() - start_time
-    # result_Schedule.time_generation = runtime
-
-    # # Extract ILP results and update scheduler jobs
-    # ilp.extract_data("component/d_scheduling/algorithm/ilp/MILQ_extend/MILQ_extend_result.json")
-# ============================== MILQ Extend Algorithm ==============================
 
 
 # ============================= FFD Algorithm ==============================
-    result_Schedule.nameSchedule = "FFD"
-    job_capacities_FFD = dict()
-    job_capacities_FFD = {job_name: job_info.qubits for job_name, job_info in scheduler_job.items()}
-    machine_capacities_FFD = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
-    result_Schedule.typeMachine = machine_capacities_FFD
+    result_Schedule.nameSchedule = "MTMC"
+    job_capacities_MTMC = dict()
+    job_capacities_MTMC = {job_name: job_info.qubits for job_name, job_info in scheduler_job.items()}
+    machine_capacities_MTMC = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
+    result_Schedule.typeMachine = machine_capacities_MTMC
     start_time = time.time()
-    outputFFD = "component/d_scheduling/scheduleResult/heuristic/FFD"
-    FFD_implement.example_problem(job_capacities_FFD, machine_capacities_FFD, outputFFD)
+    outputMTMC = "component/d_scheduling/scheduleResult/heuristic/MTMC"
+    MTMC_implement.example_problem(job_capacities_MTMC, machine_capacities_MTMC, outputMTMC)
     runtime = time.time() - start_time
     result_Schedule.time_generation = runtime
 # ============================== FFD Algorithm ==============================
 
-    data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/heuristic/FFD/schedule.json")
+    data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/heuristic/MTMC/schedule.json")
     # data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/ilp/MILQ_extend/schedule.json")
     update_scheduler_jobs(data, scheduler_job)
 
