@@ -665,8 +665,7 @@ def example_problem(big_m: int, timesteps: int, filename: str = "scheduling", jo
 
     Args:
         big_m (int): LP metavariable.
-        timesteps (int): LP metavariable.
-        filename (str, optional): Filename for .lp, .json and .pdf. Defaults to "scheduling".
+        timesteps (int): LP metavariable.Defaults to "scheduling".
     """
     _problem, job_capacities = _generate_problem(big_m, timesteps, jobs, job_capacities, machines, machine_capacities)
     _, _, lp_instance = generate_schedule(_problem, SchedulerType.EXTENDED)
