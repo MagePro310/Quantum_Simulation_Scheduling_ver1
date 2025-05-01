@@ -1,0 +1,18 @@
+{
+    "numcircuit": 3,
+    "nameAlgorithm": "ghz",
+    "averageQubits": 5.0,
+    "nameSchedule": "NoTODS",
+    "typeMachine": {
+        "fake_belem": 5,
+        "fake_manila": 5
+    },
+    "average_turnaroundTime": 6304.5,
+    "average_responseTime": 3680.5,
+    "average_fidelity": 0.9150744310563915,
+    "sampling_overhead": 27.0,
+    "average_throughput": 0.0005434782608695652,
+    "average_utilization": 0.7704347826086957,
+    "time_generation": 0.06426692008972168,
+    "makespan": 11040.0
+}

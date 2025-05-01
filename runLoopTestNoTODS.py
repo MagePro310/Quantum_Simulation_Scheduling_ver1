@@ -77,7 +77,7 @@ for num_qubits_per_job in range(2,11):  # Outer loop for num_qubits_per_job
     machines[backend1.name] = backend1
     
     # num_qubits_per_job = 6
-    num_jobs = 5
+    num_jobs = 3
     jobs = {}
 
     for i in range(num_jobs):
