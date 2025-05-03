@@ -1,0 +1,18 @@
+{
+    "numcircuit": 9,
+    "nameAlgorithm": "ghz",
+    "averageQubits": 8.0,
+    "nameSchedule": "MTMC",
+    "typeMachine": {
+        "fake_belem": 5,
+        "fake_manila": 5
+    },
+    "average_turnaroundTime": 20.0,
+    "average_responseTime": 16.0,
+    "average_fidelity": 0.8815935073306402,
+    "sampling_overhead": 81.0,
+    "average_throughput": 2.0555555555555554,
+    "average_utilization": 0.8494208494208493,
+    "time_generation": 0.0005297660827636719,
+    "makespan": 37.0
+}
