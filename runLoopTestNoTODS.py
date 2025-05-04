@@ -49,7 +49,7 @@ class ResultOfSchedule:
 
 aer_simulator = AerSimulator()
 for num_jobs in range(2, 10):
-    for num_qubits_per_job in range(2,11):  # Outer loop for num_qubits_per_job
+    for num_qubits_per_job in range(2, 11):  # Outer loop for num_qubits_per_job
         print(f"Running for num_qubits_per_job = {num_qubits_per_job}")
         result_Schedule = ResultOfSchedule(
         numcircuit=0,
@@ -336,7 +336,7 @@ for num_jobs in range(2, 10):
         result_Schedule.average_fidelity = average_fidelity
 
         # Create the directory path
-        algorithm_folder_path = os.path.join("component", "finalResult", result_Schedule.nameSchedule, result_Schedule.nameAlgorithm)
+        algorithm_folder_path = os.path.join("component", "finalResult","5_5", result_Schedule.nameSchedule, result_Schedule.nameAlgorithm)
         os.makedirs(algorithm_folder_path, exist_ok=True)
 
         # Construct the base file name

@@ -50,9 +50,9 @@ class ResultOfSchedule:
 
 # Main quantum scheduling workflow in a loop
 aer_simulator = AerSimulator()
-for num_jobs in range(5, 10):  # Outer loop for num_jobs
+for num_jobs in range(3,4):  # Outer loop for num_jobs
 # Loop to iterate over num_qubits_per_job from 1 to 10
-    for num_qubits_per_job in range(2, 5):  # Outer loop for num_qubits_per_job
+    for num_qubits_per_job in range(6, 11):  # Outer loop for num_qubits_per_job
         print(f"Running for num_qubits_per_job = {num_qubits_per_job}")
         
         # Nested loop to repeat the process 10 times for each num_qubits_per_job
@@ -195,7 +195,53 @@ for num_jobs in range(5, 10):  # Outer loop for num_jobs
                 job.transpiled_circuit = transpile(job.circuit, backend, scheduling_method='alap', layout_method='trivial')
                 job.circuit.measure_all()
                 job.transpiled_circuit_measured = transpile(job.circuit, backend, scheduling_method='alap', layout_method='trivial')
+
+        # Define the jobs
+        jobs = data.copy()
+
+        # Generate unique execution times
+        def get_the_duration_from_transpiled_circuit(circuit):
+            return circuit.duration
+
+        # Simulate the scheduling with parallel execution support
+        def simulate_scheduling(jobs):
+            machine_schedules = {'fake_belem': [], 'fake_manila': []}  # Track active jobs for each machine
+            jobs = sorted(jobs, key=lambda x: x['start'])  # Sort jobs by start time
+            for job in jobs:
+                machine = job['machine']
+                # base_duration = job['duration']
+                unique_duration = get_the_duration_from_transpiled_circuit(scheduler_job[job['job']].transpiled_circuit)
+
+                # Find the earliest time the job can start
+                current_schedule = machine_schedules[machine]
+                start_time = job['start']
                 
+                # Check for parallel execution
+                while True:
+                    # Filter out completed jobs
+                    active_jobs = [j for j in current_schedule if j['end'] > start_time]
+                    
+                    # Calculate total qubits in use
+                    total_qubits_in_use = sum(j['qubits'] for j in active_jobs)
+                    if total_qubits_in_use + job['qubits'] <= job['capacity']:
+                        # Enough resources are available
+                        break
+                    # Increment start_time to the earliest end time of active jobs
+                    start_time = min(j['end'] for j in active_jobs)
+
+                # Update job start, end times, and duration
+                job['start'] = start_time
+                job['end'] = start_time + unique_duration
+                job['duration'] = unique_duration
+
+                # Add job to the machine's schedule
+                current_schedule.append(job)
+
+            return jobs
+
+        # Run the simulation
+        updated_jobs = simulate_scheduling(jobs)
+              
         for job_name, job_info in scheduler_job.items():
             backend = machines.get(job_info.machine)
             
@@ -249,7 +295,7 @@ for num_jobs in range(5, 10):  # Outer loop for num_jobs
         result_Schedule.average_fidelity = average_fidelity
 
         # Save results to a JSON file
-        algorithm_folder_path = os.path.join("component", "finalResult", result_Schedule.nameSchedule, result_Schedule.nameAlgorithm)
+        algorithm_folder_path = os.path.join("component", "finalResult", "5_5", result_Schedule.nameSchedule, result_Schedule.nameAlgorithm)
         os.makedirs(algorithm_folder_path, exist_ok=True)
         output_file_path = os.path.join(algorithm_folder_path, f"{num_jobs}_{num_qubits_per_job}.0_0.json")
         with open(output_file_path, "w") as f:

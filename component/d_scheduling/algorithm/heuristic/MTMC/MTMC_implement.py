@@ -43,7 +43,8 @@ def MultiTaskMultiChipsPreAlloc(tasklist, chip_status, global_time):
     for task in tasklist:
         possible_chips = [chip_name for chip_name, chip in chip_status.items() if chip['capacity'] >= task['qubits']]
         if possible_chips:
-            selected_chip = random.choice(possible_chips)
+            # Select the chip with the highest remaining capacity
+            selected_chip = max(possible_chips, key=lambda chip_name: chip_status[chip_name]['capacity'])
             chip_status[selected_chip]['capacity'] -= task['qubits']
             task_copy = task.copy()
             task_copy['assigned_chip'] = selected_chip

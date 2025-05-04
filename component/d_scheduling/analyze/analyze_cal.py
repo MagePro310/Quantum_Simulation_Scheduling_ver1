@@ -18,8 +18,10 @@ def calculate_metrics(data, ultilization_per_machine):
     average_turnaroundTime = sum(job['end'] for job in data) / num_jobs  # updated variable name
     average_responeTime = sum(job['start'] for job in data) / num_jobs  # corrected variable name
     makespan = max(job['end'] for job in data)
+    print(makespan)
+    print(num_jobs)
     throughput = makespan / num_jobs  # corrected variable name
-
+    print(throughput)
     # calculate avg_utilization of each machin
     # ulization_per_machine = defaultdict(<class 'float'>, {'fake_belem': 0.8, 'fake_manila': 0.4})
     
