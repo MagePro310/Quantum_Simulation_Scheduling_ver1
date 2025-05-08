@@ -45,7 +45,7 @@ class ResultOfSchedule:
     sampling_overhead: float
     average_throughput: float
     average_utilization: float
-    time_generation: float
+    scheduler_latency: float
     makespan: float
 
 # Main quantum scheduling workflow in a loop
@@ -72,7 +72,7 @@ for num_jobs in range(2, 10):
             sampling_overhead=0.0,
             average_throughput=0.0,
             average_utilization=0.0,
-            time_generation=0.0,
+            scheduler_latency=0.0,
             makespan=0.0
         )
         
@@ -162,7 +162,7 @@ for num_jobs in range(2, 10):
         outputMTMC = "component/d_scheduling/scheduleResult/heuristic/MTMC"
         MTMC_implement.example_problem(job_capacities_MTMC, machine_capacities_MTMC, outputMTMC)
         runtime = time.time() - start_time
-        result_Schedule.time_generation = runtime
+        result_Schedule.scheduler_latency = runtime
     # ============================== FFD Algorithm ==============================
 
         data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/heuristic/MTMC/schedule.json")

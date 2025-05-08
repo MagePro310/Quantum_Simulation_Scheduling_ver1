@@ -44,7 +44,7 @@ class ResultOfSchedule:
     sampling_overhead: float
     average_throughput: float
     average_utilization: float
-    time_generation: float
+    scheduler_latency: float
     makespan: float
 
 aer_simulator = AerSimulator()
@@ -65,7 +65,7 @@ for num_jobs in range(2, 10):
         sampling_overhead=0.0,
         average_throughput=0.0,
         average_utilization=0.0,
-        time_generation=0.0,
+        scheduler_latency=0.0,
         makespan=0.0
         )
         
@@ -171,7 +171,7 @@ for num_jobs in range(2, 10):
         for obj_name, obj in obj_dict.items():
             model[obj_name] = obj.schedule(subcircuit_dict[obj_name])
         run_time = time.time() - start_time
-        result_Schedule.time_generation = run_time
+        result_Schedule.scheduler_latency = run_time
         return_model = {}
         for obj_name, obj in model.items():
             for index, item in enumerate(obj, start=1):

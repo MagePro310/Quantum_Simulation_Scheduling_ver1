@@ -26,6 +26,7 @@ class JobInfo:
     
     # Help for transpile
     transpiled_circuit: QuantumCircuit = None
+    knitted_circuit: QuantumCircuit = None
     transpiled_circuit_measured: QuantumCircuit = None
     
     # Help for fidelity
@@ -49,6 +50,7 @@ class JobInfo:
         print(f"Children Jobs: {self.childrenJobs}")
         print(f"Result Cut: {self.result_cut}")
         print(f"Transpiled Circuit: {self.transpiled_circuit}")
+        print(f"Knitted Circuit: {self.knitted_circuit}")
         print(f"Transpiled Circuit Measured: {self.transpiled_circuit_measured}")
         print(f"Fidelity: {self.fidelity}")
         print("=========================================")

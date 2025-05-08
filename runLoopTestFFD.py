@@ -45,7 +45,7 @@ class ResultOfSchedule:
     sampling_overhead: float
     average_throughput: float
     average_utilization: float
-    time_generation: float
+    scheduler_latency: float
     makespan: float
 
 # Main quantum scheduling workflow in a loop
@@ -71,7 +71,7 @@ for num_jobs in range(2, 10):
             sampling_overhead=0.0,
             average_throughput=0.0,
             average_utilization=0.0,
-            time_generation=0.0,
+            scheduler_latency=0.0,
             makespan=0.0
         )
         
@@ -164,7 +164,7 @@ for num_jobs in range(2, 10):
         # start_time = time.time()
         # MILQ_extend_implementation.example_problem(bigM, timesteps, "component/d_scheduling/algorithm/ilp/MILQ_extend/MILQ_extend_result", jobs, job_capacities, machines_ilp, machine_capacities_ilp)
         # runtime = time.time() - start_time
-        # result_Schedule.time_generation = runtime
+        # result_Schedule.scheduler_latency = runtime
 
         # # Extract ILP results and update scheduler jobs
         # ilp.extract_data("component/d_scheduling/algorithm/ilp/MILQ_extend/MILQ_extend_result.json")
@@ -181,7 +181,7 @@ for num_jobs in range(2, 10):
         outputFFD = "component/d_scheduling/scheduleResult/heuristic/FFD"
         FFD_implement.example_problem(job_capacities_FFD, machine_capacities_FFD, outputFFD)
         runtime = time.time() - start_time
-        result_Schedule.time_generation = runtime
+        result_Schedule.scheduler_latency = runtime
     # ============================== FFD Algorithm ==============================
 
         data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/heuristic/FFD/schedule.json")
