@@ -8,7 +8,7 @@ from dataclasses import dataclass, asdict
 from enum import auto, Enum
 import matplotlib.pyplot as plt
 import math
-from component.d_scheduling.algorithm.ilp.NoTODS.NoTODS import *
+from component.d_scheduling.algorithm.ilp.NoTaDS.NoTaDS import *
 
 from dataclasses import dataclass
 from component.a_backend.fake_backend import *
