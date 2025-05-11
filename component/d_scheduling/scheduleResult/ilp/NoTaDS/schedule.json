@@ -2,7 +2,7 @@
     {
         "job": "1_1",
         "qubits": 1,
-        "machine": "fake_belem",
+        "machine": "fake_manila",
         "capacity": 5,
         "start": 0.0,
         "end": 1.0,
@@ -13,17 +13,17 @@
         "qubits": 1,
         "machine": "fake_manila",
         "capacity": 5,
-        "start": 0.0,
-        "end": 1.0,
+        "start": 1.0,
+        "end": 2.0,
         "duration": 1
     },
     {
         "job": "2_1",
         "qubits": 1,
-        "machine": "fake_belem",
+        "machine": "fake_manila",
         "capacity": 5,
-        "start": 1.0,
-        "end": 2.0,
+        "start": 2.0,
+        "end": 3.0,
         "duration": 1
     },
     {
@@ -31,17 +31,17 @@
         "qubits": 1,
         "machine": "fake_manila",
         "capacity": 5,
-        "start": 1.0,
-        "end": 2.0,
+        "start": 3.0,
+        "end": 4.0,
         "duration": 1
     },
     {
         "job": "3_1",
         "qubits": 1,
-        "machine": "fake_belem",
+        "machine": "fake_manila",
         "capacity": 5,
-        "start": 2.0,
-        "end": 3.0,
+        "start": 4.0,
+        "end": 5.0,
         "duration": 1
     },
     {
@@ -49,17 +49,17 @@
         "qubits": 1,
         "machine": "fake_manila",
         "capacity": 5,
-        "start": 2.0,
-        "end": 3.0,
+        "start": 5.0,
+        "end": 6.0,
         "duration": 1
     },
     {
         "job": "4_1",
         "qubits": 1,
-        "machine": "fake_belem",
+        "machine": "fake_manila",
         "capacity": 5,
-        "start": 3.0,
-        "end": 4.0,
+        "start": 6.0,
+        "end": 7.0,
         "duration": 1
     },
     {
@@ -67,17 +67,17 @@
         "qubits": 1,
         "machine": "fake_manila",
         "capacity": 5,
-        "start": 3.0,
-        "end": 4.0,
+        "start": 7.0,
+        "end": 8.0,
         "duration": 1
     },
     {
         "job": "5_1",
         "qubits": 1,
-        "machine": "fake_belem",
+        "machine": "fake_manila",
         "capacity": 5,
-        "start": 4.0,
-        "end": 5.0,
+        "start": 8.0,
+        "end": 9.0,
         "duration": 1
     },
     {
@@ -85,8 +85,8 @@
         "qubits": 1,
         "machine": "fake_manila",
         "capacity": 5,
-        "start": 4.0,
-        "end": 5.0,
+        "start": 9.0,
+        "end": 10.0,
         "duration": 1
     }
 ]
