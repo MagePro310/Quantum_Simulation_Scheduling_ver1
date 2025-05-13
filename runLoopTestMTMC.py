@@ -178,7 +178,7 @@ for num_jobs in range(2, 3):
             backend = machines.get(job.machine)
             if backend:
                 # Perform transpilation
-                # job.circuit.data = [hasChange for hasChange in job.circuit.data if hasChange.operation.name != "qpd_1q"]
+                job.circuit.data = [hasChange for hasChange in job.circuit.data if hasChange.operation.name != "qpd_1q"]
                 job.transpiled_circuit = transpile(job.circuit, backend, scheduling_method='alap', layout_method='trivial')
                 # job.circuit.measure_all()
                 # job.transpiled_circuit_measured = transpile(job.circuit, backend, scheduling_method='alap', layout_method='trivial')
