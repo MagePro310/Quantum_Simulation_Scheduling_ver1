@@ -55,8 +55,8 @@ class ResultOfSchedule:
 aer_simulator = AerSimulator()
 
 # Loop to iterate over num_qubits_per_job from 1 to 10
-for num_jobs in range(2, 3):
-    for num_qubits_per_job in range(6, 7):  # Outer loop for num_qubits_per_job
+for num_jobs in range(18, 21):
+    for num_qubits_per_job in range(2, 11):  # Outer loop for num_qubits_per_job
         print(f"num_jobs: {num_jobs}, num_qubits_per_job: {num_qubits_per_job}")
         
         # Nested loop to repeat the process 10 times for each num_qubits_per_job
@@ -184,7 +184,7 @@ for num_jobs in range(2, 3):
 
         data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/ilp/MILQ_extend/schedule.json")
         update_scheduler_jobs(data, scheduler_job)
-    # ============================== MTMC Algorithm ==============================
+    # # ============================== MTMC Algorithm ==============================
 
         for job_id, job in scheduler_job.items():
             backend = machines.get(job.machine)

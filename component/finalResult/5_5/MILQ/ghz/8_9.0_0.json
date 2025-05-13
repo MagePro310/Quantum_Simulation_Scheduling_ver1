@@ -1,0 +1,18 @@
+{
+    "numcircuit": 8,
+    "nameAlgorithm": "ghz",
+    "averageQubits": 9.0,
+    "nameSchedule": "MILQ",
+    "typeMachine": {
+        "fake_belem": 5,
+        "fake_manila": 5
+    },
+    "average_turnaroundTime": -5725378.706875001,
+    "average_responseTime": -5737892.706875001,
+    "average_fidelity": 0.8564230649837705,
+    "sampling_overhead": 72.0,
+    "average_throughput": 142269.975,
+    "average_utilization": 0.040711115178522925,
+    "scheduler_latency": 1.6702921390533447,
+    "makespan": 2276319.6
+}

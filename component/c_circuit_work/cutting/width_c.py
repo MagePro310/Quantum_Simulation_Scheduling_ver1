@@ -25,8 +25,8 @@ class SubCircuitInfo:
     subobservables: dict[SparsePauliOp]
     bases: list
     overhead: float
-    subexperiments: dict
-    coefficients: list
+    # subexperiments: dict
+    # coefficients: list
 
 
 def has_measurement(circuit: QuantumCircuit) -> bool:
@@ -43,7 +43,7 @@ def gate_to_reduce_width(qc: QuantumCircuit, cut_name: str, observable) -> SubCi
     """
     Partition a quantum circuit to reduce its width and return subcircuits with observables.
     """
-    result = SubCircuitInfo(qc, observable, {},{},[],0.0,{},[] )
+    result = SubCircuitInfo(qc, observable, {},{},[],0.0)
     if has_measurement(qc):
         qc.remove_final_measurements()
 
@@ -55,8 +55,8 @@ def gate_to_reduce_width(qc: QuantumCircuit, cut_name: str, observable) -> SubCi
     result.subobservables = partitioned_problem.subobservables
     result.bases = partitioned_problem.bases
     result.overhead = np.prod([basis.overhead for basis in result.bases])
-    result.subexperiments, result.coefficients = prepare_subexperiments(
-    result.subcircuits, result.subobservables, num_samples=np.inf)
+    # result.subexperiments, result.coefficients = prepare_subexperiments(
+    # result.subcircuits, result.subobservables, num_samples=np.inf)
     
     
     return result
