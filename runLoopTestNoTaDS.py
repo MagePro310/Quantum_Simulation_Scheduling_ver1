@@ -55,8 +55,8 @@ class ResultOfSchedule:
 aer_simulator = AerSimulator()
 
 # Loop to iterate over num_qubits_per_job from 1 to 10
-for num_jobs in range(2, 3):
-    for num_qubits_per_job in range(2, 4):  # Outer loop for num_qubits_per_job
+for num_jobs in range(2, 21):
+    for num_qubits_per_job in range(2, 11):  # Outer loop for num_qubits_per_job
         print(f"num_jobs: {num_jobs}, num_qubits_per_job: {num_qubits_per_job}")
         
         # Nested loop to repeat the process 10 times for each num_qubits_per_job

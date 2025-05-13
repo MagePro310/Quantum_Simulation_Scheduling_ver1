@@ -1,0 +1,18 @@
+{
+    "numcircuit": 7,
+    "nameAlgorithm": "ghz",
+    "averageQubits": 9.0,
+    "nameSchedule": "FFD",
+    "typeMachine": {
+        "fake_belem": 5,
+        "fake_manila": 5
+    },
+    "average_turnaroundTime": 47606.857142857145,
+    "average_responseTime": 35956.57142857143,
+    "average_fidelity": 0.8579576219429085,
+    "sampling_overhead": 63.0,
+    "average_throughput": 8596.57142857143,
+    "average_utilization": 0.909715931073243,
+    "scheduler_latency": 0.008173465728759766,
+    "makespan": 120352.0
+}
