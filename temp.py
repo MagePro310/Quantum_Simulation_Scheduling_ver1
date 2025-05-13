@@ -22,8 +22,8 @@ from component.sup_sys.job_info import JobInfo
 from component.c_circuit_work.cutting.width_c import *
 from component.c_circuit_work.knitting.width_k import merge_multiple_circuits
 from component.d_scheduling.algorithm.ilp.MILQ_extend import MILQ_extend_implementation
-from component.d_scheduling.algorithm.heuristic.FFD import FFD_implement
-from component.d_scheduling.algorithm.heuristic.MTMC import MTMC_implement
+# from component.d_scheduling.algorithm.heuristic.FFD import FFD_implement
+# from component.d_scheduling.algorithm.heuristic.MTMC import MTMC_implement
 from component.d_scheduling.extract import ilp
 from component.d_scheduling.simulation.scheduling_multithread import simulate_scheduling as simulate_multithread
 from component.d_scheduling.analyze import analyze_cal
@@ -79,7 +79,7 @@ for num_jobs in range(2, 3):
         scheduler_latency=0.0,
         makespan=0.0
         )
-        result_Schedule.nameSchedule = "MTMC"
+        result_Schedule.nameSchedule = "MILQ"
         
         # Define the machines
         machines = {}
@@ -160,17 +160,29 @@ for num_jobs in range(2, 3):
             scheduler_job.update(get_scheduler_jobs(job_info))
 
     # ============================= MTMC Algorithm ==============================
-        job_capacities_MTMC = dict()
-        job_capacities_MTMC = {job_name: job_info.qubits for job_name, job_info in scheduler_job.items()}
-        machine_capacities_MTMC = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
-        result_Schedule.typeMachine = machine_capacities_MTMC
-        outputMTMC = "component/d_scheduling/scheduleResult/heuristic/MTMC"
+        bigM = 1000000
+        timesteps = 2**5
+        jobs = ["0"] + list(scheduler_job.keys())
+        job_capacities = {"0": 0}
+        job_capacities.update({job_name: job_info.qubits for job_name, job_info in scheduler_job.items()})
+        machines_ilp = list(machines.keys())  # Keep machines as a list of keys
+        machine_capacities_ilp = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
+        result_Schedule.typeMachine = machine_capacities_ilp
+        print("Jobs:", jobs)
+        print("Job Capacities:", job_capacities)
+        print("Machines:", machines_ilp)
+        print("Machine Capacities:", machine_capacities_ilp)
+        # Measure runtime
         start_time = time.time()
-        MTMC_implement.example_problem(job_capacities_MTMC, machine_capacities_MTMC, outputMTMC)
+        outputMILQ = "component/d_scheduling/algorithm/ilp/MILQ_extend/MILQ_extend_result"
+        MILQ_extend_implementation.example_problem(bigM, timesteps,outputMILQ, jobs, job_capacities, machines_ilp, machine_capacities_ilp)
         runtime = time.time() - start_time
         result_Schedule.scheduler_latency = runtime
+        print(f"Runtime for scheduling: {runtime} seconds")
+        # Read_ilp_result
+        ilp.extract_data("component/d_scheduling/algorithm/ilp/MILQ_extend/MILQ_extend_result.json")
 
-        data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/heuristic/MTMC/schedule.json")
+        data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/ilp/MILQ_extend/schedule.json")
         update_scheduler_jobs(data, scheduler_job)
     # ============================== MTMC Algorithm ==============================
 
