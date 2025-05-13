@@ -10,6 +10,7 @@ from typing import Callable
 from collections import defaultdict
 from copy import deepcopy
 from .....h_analyze.analyze_ilp.implement import JobResultInfo
+from pulp import LpProblem, LpMinimize, PULP_CBC_CMD
 
 class SchedulerType(Enum):
     """The type of scheduler to use."""
@@ -594,13 +595,14 @@ def solve_lp(lp_instance: LPInstance) -> LPInstance:
     Returns:
         lp_instance (LPInstance): The LP instance with the solved problem object..
     """
-    solver_list = pulp.listSolvers(onlyAvailable=True)
-    gurobi = "GUROBI_CMD"
-    if gurobi in solver_list:
-        solver = pulp.getSolver(gurobi)
-        lp_instance.problem.solve(solver)
-    else:
-        lp_instance.problem.solve()
+    # solver_list = pulp.listSolvers(onlyAvailable=True)
+    # gurobi = "GUROBI_CMD"
+    # if gurobi in solver_list:
+    #     solver = pulp.getSolver(gurobi)
+    #     lp_instance.problem.solve(solver)
+    # else:
+    time_limit_in_seconds = 10
+    lp_instance.problem.solve(PULP_CBC_CMD(msg=1, timeLimit=time_limit_in_seconds))
     return lp_instance
 
 def extract_info_schedule(

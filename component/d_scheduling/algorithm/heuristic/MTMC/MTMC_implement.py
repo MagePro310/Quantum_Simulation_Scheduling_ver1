@@ -1,6 +1,8 @@
 import random
 import json
 import os
+import threading
+from concurrent.futures import ThreadPoolExecutor
 
 def multi_task_multi_chip_scheduling(chiplist, tasks):
     task_remaining = tasks.copy()
@@ -40,23 +42,30 @@ def multi_task_multi_chip_scheduling(chiplist, tasks):
 def MultiTaskMultiChipsPreAlloc(tasklist, chip_status, global_time):
     allocated = []
     no_execute = []
-    for task in tasklist:
-        possible_chips = [chip_name for chip_name, chip in chip_status.items() if chip['capacity'] >= task['qubits']]
-        if possible_chips:
-            # Select the chip with the highest remaining capacity
-            selected_chip = max(possible_chips, key=lambda chip_name: chip_status[chip_name]['capacity'])
-            chip_status[selected_chip]['capacity'] -= task['qubits']
-            task_copy = task.copy()
-            task_copy['assigned_chip'] = selected_chip
-            task_copy['capacity'] = chip_status[selected_chip]['capacity'] + task['qubits']
-            task_copy['time_left'] = task_copy['qubits']
-            task_copy['start_time'] = global_time
-            task_copy['end_time'] = global_time + task_copy['qubits']
-            task_copy['duration'] = task_copy['end_time'] - task_copy['start_time']
-            chip_status[selected_chip]['running_tasks'].append(task_copy)
-            allocated.append(task_copy)
-        else:
-            no_execute.append(task)
+    lock = threading.Lock()
+
+    def allocate_task(task):
+        nonlocal allocated, no_execute
+        with lock:
+            possible_chips = [chip_name for chip_name, chip in chip_status.items() if chip['capacity'] >= task['qubits']]
+            if possible_chips:
+                selected_chip = max(possible_chips, key=lambda chip_name: chip_status[chip_name]['capacity'])
+                chip_status[selected_chip]['capacity'] -= task['qubits']
+                task_copy = task.copy()
+                task_copy['assigned_chip'] = selected_chip
+                task_copy['capacity'] = chip_status[selected_chip]['capacity'] + task['qubits']
+                task_copy['time_left'] = task_copy['qubits']
+                task_copy['start_time'] = global_time
+                task_copy['end_time'] = global_time + task_copy['qubits']
+                task_copy['duration'] = task_copy['end_time'] - task_copy['start_time']
+                chip_status[selected_chip]['running_tasks'].append(task_copy)
+                allocated.append(task_copy)
+            else:
+                no_execute.append(task)
+
+    with ThreadPoolExecutor() as executor:
+        executor.map(allocate_task, tasklist)
+
     return allocated, no_execute
 
 
