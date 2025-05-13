@@ -23,6 +23,7 @@ from component.c_circuit_work.cutting.width_c import *
 from component.c_circuit_work.knitting.width_k import merge_multiple_circuits
 from component.d_scheduling.algorithm.ilp.MILQ_extend import MILQ_extend_implementation
 from component.d_scheduling.algorithm.heuristic.FFD import FFD_implement
+from component.d_scheduling.algorithm.heuristic.MTMC import MTMC_implement
 from component.d_scheduling.extract import ilp
 from component.d_scheduling.simulation.scheduling_multithread import simulate_scheduling as simulate_multithread
 from component.d_scheduling.analyze import analyze_cal
@@ -78,7 +79,7 @@ for num_jobs in range(2, 3):
         scheduler_latency=0.0,
         makespan=0.0
         )
-        result_Schedule.nameSchedule = "FFD"
+        result_Schedule.nameSchedule = "MTMC"
         
         # Define the machines
         machines = {}
@@ -158,20 +159,20 @@ for num_jobs in range(2, 3):
         for job_name, job_info in process_job_info.items():
             scheduler_job.update(get_scheduler_jobs(job_info))
 
-    # ============================= FFD Algorithm ==============================
-        job_capacities_FFD = dict()
-        job_capacities_FFD = {job_name: job_info.qubits for job_name, job_info in scheduler_job.items()}
-        machine_capacities_FFD = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
-        result_Schedule.typeMachine = machine_capacities_FFD
-        outputFFD = "component/d_scheduling/scheduleResult/heuristic/FFD"
+    # ============================= MTMC Algorithm ==============================
+        job_capacities_MTMC = dict()
+        job_capacities_MTMC = {job_name: job_info.qubits for job_name, job_info in scheduler_job.items()}
+        machine_capacities_MTMC = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
+        result_Schedule.typeMachine = machine_capacities_MTMC
+        outputMTMC = "component/d_scheduling/scheduleResult/heuristic/MTMC"
         start_time = time.time()
-        FFD_implement.example_problem(job_capacities_FFD, machine_capacities_FFD, outputFFD)
+        MTMC_implement.example_problem(job_capacities_MTMC, machine_capacities_MTMC, outputMTMC)
         runtime = time.time() - start_time
         result_Schedule.scheduler_latency = runtime
 
-        data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/heuristic/FFD/schedule.json")
+        data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/heuristic/MTMC/schedule.json")
         update_scheduler_jobs(data, scheduler_job)
-    # ============================== FFD Algorithm ==============================
+    # ============================== MTMC Algorithm ==============================
 
         for job_id, job in scheduler_job.items():
             backend = machines.get(job.machine)
