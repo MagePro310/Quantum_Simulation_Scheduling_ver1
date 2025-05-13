@@ -56,7 +56,7 @@ aer_simulator = AerSimulator()
 
 # Loop to iterate over num_qubits_per_job from 1 to 10
 for num_jobs in range(2, 3):
-    for num_qubits_per_job in range(2, 4):  # Outer loop for num_qubits_per_job
+    for num_qubits_per_job in range(6, 7):  # Outer loop for num_qubits_per_job
         print(f"num_jobs: {num_jobs}, num_qubits_per_job: {num_qubits_per_job}")
         
         # Nested loop to repeat the process 10 times for each num_qubits_per_job
@@ -190,7 +190,7 @@ for num_jobs in range(2, 3):
             backend = machines.get(job.machine)
             if backend:
                 # Perform transpilation
-                # job.circuit.data = [hasChange for hasChange in job.circuit.data if hasChange.operation.name != "qpd_1q"]
+                job.circuit.data = [hasChange for hasChange in job.circuit.data if hasChange.operation.name != "qpd_1q"]
                 job.transpiled_circuit = transpile(job.circuit, backend, scheduling_method='alap', layout_method='trivial')
                 # job.circuit.measure_all()
                 # job.transpiled_circuit_measured = transpile(job.circuit, backend, scheduling_method='alap', layout_method='trivial')

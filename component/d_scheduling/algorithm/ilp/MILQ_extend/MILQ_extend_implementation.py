@@ -601,7 +601,7 @@ def solve_lp(lp_instance: LPInstance) -> LPInstance:
     #     solver = pulp.getSolver(gurobi)
     #     lp_instance.problem.solve(solver)
     # else:
-    time_limit_in_seconds = 10
+    time_limit_in_seconds = 300
     lp_instance.problem.solve(PULP_CBC_CMD(msg=1, timeLimit=time_limit_in_seconds))
     return lp_instance
 
