@@ -79,7 +79,7 @@ for num_jobs in range(2, 3):
         scheduler_latency=0.0,
         makespan=0.0
         )
-        result_Schedule.nameSchedule = "MILQ"
+        result_Schedule.nameSchedule = "NoTaDS"
         
         # Define the machines
         machines = {}
@@ -94,13 +94,13 @@ for num_jobs in range(2, 3):
             job_id = str(i + 1)
             jobs[job_id] = num_qubits_per_job
 
-        # Update info to result_Schedule
+        # update to result_Schedule
         result_Schedule.numcircuit = len(jobs)
         result_Schedule.averageQubits = sum(jobs.values()) / len(jobs)
 
-        # Generate circuits
+        # generate circuits and job information
         origin_job_info = {}
-        
+
         for job_name, num_qubits in jobs.items():
             circuit = create_circuit(num_qubits, job_name)
             result_Schedule.nameAlgorithm = "ghz"
@@ -117,36 +117,56 @@ for num_jobs in range(2, 3):
                 circuit=circuit,
                 result_cut=None,  # Placeholder for result cut
             )
-    
-        # Process job info and cut the circuits if needed
-        process_job_info = origin_job_info.copy()
-        
-        max_width = max(list(machines.values()), key=lambda x: x.num_qubits).num_qubits
-        for job_name, job_info in process_job_info.items():
-            if job_info.qubits > max_width:
-                job_info.childrenJobs = []
-                cut_name, observable = greedy_cut(job_info.circuit, max_width)
-                # print(observable)
-                result_cut = gate_to_reduce_width(job_info.circuit, cut_name, observable)
-                result_Schedule.sampling_overhead += result_cut.overhead
-                for i, (subcircuit_name, subcircuit) in enumerate(result_cut.subcircuits.items()):
-                    job_info.childrenJobs.append(
-                        JobInfo(
-                            job_name=f"{job_name}_{i+1}",
-                            qubits=subcircuit.num_qubits,
-                            machine=None,
-                            capacity_machine=0,
-                            start_time=0.0,
-                            duration=0.0,
-                            end_time=0.0,
-                            childrenJobs=None,
-                            circuit=subcircuit,
-                            result_cut=None,
-                        )
-                    )
-                job_info.result_cut = result_cut
 
-        # Prepare scheduler jobs
+        for job in origin_job_info.values():
+            job.print()
+            
+        process_job_info = origin_job_info.copy()
+        # Create list obj for each job
+        from component.d_scheduling.algorithm.ilp.NoTaDS.NoTaDS import *
+        backendlist = list(machines.values())
+        Tau = [200]*len(backendlist)
+        print("Tau: ", Tau) 
+        print(backendlist)
+        obj_dict = {}
+        for job_name, job in process_job_info.items():
+            obj_dict[job_name] = NoTODS(job.circuit, backendlist, Tau)
+
+        machine_capacity = {}
+        machine_capacity = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
+        result_Schedule.typeMachine = machine_capacity
+        print(obj_dict)
+        
+        subcircuit_dict = {}
+        sum_overhead = 0
+        for obj_name, obj in obj_dict.items():
+            subcircuit_dict[obj_name], overhead_item  = obj_dict[obj_name]._cut_circuit()
+            sum_overhead += overhead_item
+            process_job_info[obj_name].childrenJobs = []
+            for i, subcircuit_item in enumerate(subcircuit_dict[obj_name]['subcircuits']):
+                process_job_info[obj_name].childrenJobs.append(
+                    JobInfo(
+                        job_name=f"{obj_name}_{i+1}",
+                        qubits=subcircuit_item.num_qubits,
+                        machine=None,
+                        capacity_machine=0,
+                        start_time=0.0,
+                        duration=0.0,
+                        end_time=0.0,
+                        childrenJobs=None,
+                        circuit=subcircuit_item,
+                        result_cut=None,
+                    )
+                )
+
+        print(subcircuit_dict)
+        print()
+        # for job in process_job_info.values():
+        #     job.print()
+        # result_Schedule.sampling_overhead = sum_overhead
+
+        # Get the job for run scheduler
+
         scheduler_job = {}
         def get_scheduler_jobs(job_info):
             if job_info.childrenJobs is None:
@@ -158,31 +178,77 @@ for num_jobs in range(2, 3):
 
         for job_name, job_info in process_job_info.items():
             scheduler_job.update(get_scheduler_jobs(job_info))
+            
+        print("Scheduler Jobs:")
+        for job_name, job_info in scheduler_job.items():
+            job_info.print()
+            
+        machine_dict_NoTaDS = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
+        result_Schedule.typeMachine = machine_dict_NoTaDS
 
     # ============================= MTMC Algorithm ==============================
-        bigM = 1000000
-        timesteps = 2**5
-        jobs = ["0"] + list(scheduler_job.keys())
-        job_capacities = {"0": 0}
-        job_capacities.update({job_name: job_info.qubits for job_name, job_info in scheduler_job.items()})
-        machines_ilp = list(machines.keys())  # Keep machines as a list of keys
-        machine_capacities_ilp = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
-        result_Schedule.typeMachine = machine_capacities_ilp
-        print("Jobs:", jobs)
-        print("Job Capacities:", job_capacities)
-        print("Machines:", machines_ilp)
-        print("Machine Capacities:", machine_capacities_ilp)
-        # Measure runtime
         start_time = time.time()
-        outputMILQ = "component/d_scheduling/algorithm/ilp/MILQ_extend/MILQ_extend_result"
-        MILQ_extend_implementation.example_problem(bigM, timesteps,outputMILQ, jobs, job_capacities, machines_ilp, machine_capacities_ilp)
-        runtime = time.time() - start_time
-        result_Schedule.scheduler_latency = runtime
-        print(f"Runtime for scheduling: {runtime} seconds")
-        # Read_ilp_result
-        ilp.extract_data("component/d_scheduling/algorithm/ilp/MILQ_extend/MILQ_extend_result.json")
 
-        data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/ilp/MILQ_extend/schedule.json")
+        model = {}
+        for obj_name, obj in obj_dict.items():
+            model[obj_name] = obj.schedule(subcircuit_dict[obj_name])
+        run_time = time.time() - start_time
+        result_Schedule.scheduler_latency = run_time
+        return_model = {}
+        for obj_name, obj in model.items():
+            for index, item in enumerate(obj, start=1):
+                return_key = f"{obj_name}_{index}"
+                return_model[return_key] = item
+                
+        print(return_model)
+        # update to scheduler_job
+        for job_name, job_info in scheduler_job.items():
+            if job_name in return_model:
+                job_info.machine = return_model[job_name]
+                
+        for job_name, job_info in scheduler_job.items():
+            job_info.print()
+            
+        machine_dict_NoTaDS = {machine_name: machines[machine_name].num_qubits for machine_name in machines}
+        result_Schedule.typeMachine = machine_dict_NoTaDS
+
+        import json
+
+        # Initialize machine available time
+        machine_times = {machine: 0.0 for machine in machine_dict_NoTaDS}
+
+        # Result list
+        job_json = []
+
+        # Scheduling
+        for job_name, job_info in scheduler_job.items():
+            # Select machine that is available earliest
+            start_time = machine_times[job_info.machine]
+            duration = job_info.qubits  # duration = number of qubits
+            end_time = start_time + duration
+            
+            
+            # Create job record
+            job_record = {
+                "job": job_info.job_name,
+                "qubits": job_info.qubits,
+                "machine": job_info.machine,
+                "capacity": machine_dict_NoTaDS[job_info.machine],
+                "start": start_time,
+                "end": end_time,
+                "duration": duration
+            }
+            
+            job_json.append(job_record)
+            
+            # Update machine's available time
+            machine_times[job_info.machine] = end_time
+
+        # Save result to JSON file
+        with open('component/d_scheduling/scheduleResult/ilp/NoTaDS/schedule.json', 'w') as f:
+            json.dump(job_json, f, indent=4)
+
+        data = analyze_cal.load_job_data("component/d_scheduling/scheduleResult/ilp/NoTaDS/schedule.json")
         update_scheduler_jobs(data, scheduler_job)
     # ============================== MTMC Algorithm ==============================
 
