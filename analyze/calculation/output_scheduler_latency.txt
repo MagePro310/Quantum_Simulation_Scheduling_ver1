@@ -1,0 +1,1001 @@
+Điểm cho nhóm 2 mạch, 2 qubit:
+  dataset  scheduler_latency  rank  points
+0     FFD           0.005770   1.0     4.0
+1    MILQ           0.335092   4.0     1.0
+2    MTMC           0.006055   2.0     3.0
+3  NoTaDS           0.307896   3.0     2.0
+Điểm cho nhóm 2 mạch, 3 qubit:
+  dataset  scheduler_latency  rank  points
+4     FFD           0.003534   2.0     3.0
+5    MILQ           0.199117   4.0     1.0
+6    MTMC           0.002637   1.0     4.0
+7  NoTaDS           0.113714   3.0     2.0
+Điểm cho nhóm 2 mạch, 4 qubit:
+   dataset  scheduler_latency  rank  points
+8      FFD           0.002872   1.0     4.0
+9     MILQ           0.562459   4.0     1.0
+10    MTMC           0.003596   2.0     3.0
+11  NoTaDS           0.141054   3.0     2.0
+Điểm cho nhóm 2 mạch, 5 qubit:
+   dataset  scheduler_latency  rank  points
+12     FFD           0.003881   2.0     3.0
+13    MILQ           0.203838   4.0     1.0
+14    MTMC           0.003489   1.0     4.0
+15  NoTaDS           0.146624   3.0     2.0
+Điểm cho nhóm 2 mạch, 6 qubit:
+   dataset  scheduler_latency  rank  points
+16     FFD           0.003447   1.0     4.0
+17    MILQ          28.664041   4.0     1.0
+18    MTMC           0.004849   2.0     3.0
+19  NoTaDS           0.117851   3.0     2.0
+Điểm cho nhóm 2 mạch, 7 qubit:
+   dataset  scheduler_latency  rank  points
+20     FFD           0.003536   1.0     4.0
+21    MILQ          17.296197   4.0     1.0
+22    MTMC           0.004877   2.0     3.0
+23  NoTaDS           0.111124   3.0     2.0
+Điểm cho nhóm 2 mạch, 8 qubit:
+   dataset  scheduler_latency  rank  points
+24     FFD           0.005129   1.0     4.0
+25    MILQ          17.502954   4.0     1.0
+26    MTMC           0.005768   2.0     3.0
+27  NoTaDS           0.149189   3.0     2.0
+Điểm cho nhóm 2 mạch, 9 qubit:
+   dataset  scheduler_latency  rank  points
+28     FFD           0.004671   1.0     4.0
+29    MILQ          17.110837   4.0     1.0
+30    MTMC           0.005906   2.0     3.0
+31  NoTaDS           0.145674   3.0     2.0
+Điểm cho nhóm 2 mạch, 10 qubit:
+   dataset  scheduler_latency  rank  points
+32     FFD           0.005340   2.0     3.0
+33    MILQ          16.067952   4.0     1.0
+34    MTMC           0.005214   1.0     4.0
+35  NoTaDS           0.148055   3.0     2.0
+Điểm cho nhóm 3 mạch, 2 qubit:
+   dataset  scheduler_latency  rank  points
+36     FFD           0.005079   1.0     4.0
+37    MILQ           1.012201   4.0     1.0
+38    MTMC           0.006245   2.0     3.0
+39  NoTaDS           0.165013   3.0     2.0
+Điểm cho nhóm 3 mạch, 3 qubit:
+   dataset  scheduler_latency  rank  points
+40     FFD           0.001546   1.0     4.0
+41    MILQ           5.937629   4.0     1.0
+42    MTMC           0.003425   2.0     3.0
+43  NoTaDS           0.215342   3.0     2.0
+Điểm cho nhóm 3 mạch, 4 qubit:
+   dataset  scheduler_latency  rank  points
+44     FFD           0.003197   1.0     4.0
+45    MILQ           4.763926   4.0     1.0
+46    MTMC           0.003411   2.0     3.0
+47  NoTaDS           0.286002   3.0     2.0
+Điểm cho nhóm 3 mạch, 5 qubit:
+   dataset  scheduler_latency  rank  points
+48     FFD           0.004596   1.0     4.0
+49    MILQ           3.005306   4.0     1.0
+50    MTMC           0.006450   2.0     3.0
+51  NoTaDS           0.237714   3.0     2.0
+Điểm cho nhóm 3 mạch, 6 qubit:
+   dataset  scheduler_latency  rank  points
+52     FFD           0.003980   2.0     3.0
+53    MILQ         300.128237   4.0     1.0
+54    MTMC           0.003681   1.0     4.0
+55  NoTaDS           0.209444   3.0     2.0
+Điểm cho nhóm 3 mạch, 7 qubit:
+   dataset  scheduler_latency  rank  points
+56     FFD           0.006814   2.0     3.0
+57    MILQ         300.024341   4.0     1.0
+58    MTMC           0.006399   1.0     4.0
+59  NoTaDS           0.324765   3.0     2.0
+Điểm cho nhóm 3 mạch, 8 qubit:
+   dataset  scheduler_latency  rank  points
+60     FFD           0.004928   1.0     4.0
+61    MILQ           0.160809   3.0     2.0
+62    MTMC           0.008005   2.0     3.0
+63  NoTaDS           0.213564   4.0     1.0
+Điểm cho nhóm 3 mạch, 9 qubit:
+   dataset  scheduler_latency  rank  points
+64     FFD           0.006734   1.0     4.0
+65    MILQ           0.162168   3.0     2.0
+66    MTMC           0.007292   2.0     3.0
+67  NoTaDS           0.210785   4.0     1.0
+Điểm cho nhóm 3 mạch, 10 qubit:
+   dataset  scheduler_latency  rank  points
+68     FFD           0.006671   2.0     3.0
+69    MILQ           0.142563   3.0     2.0
+70    MTMC           0.005840   1.0     4.0
+71  NoTaDS           0.231600   4.0     1.0
+Điểm cho nhóm 4 mạch, 2 qubit:
+   dataset  scheduler_latency  rank  points
+72     FFD           0.005699   1.0     4.0
+73    MILQ           1.142257   4.0     1.0
+74    MTMC           0.006100   2.0     3.0
+75  NoTaDS           0.268137   3.0     2.0
+Điểm cho nhóm 4 mạch, 3 qubit:
+   dataset  scheduler_latency  rank  points
+76     FFD           0.005693   2.0     3.0
+77    MILQ          17.329781   4.0     1.0
+78    MTMC           0.004503   1.0     4.0
+79  NoTaDS           0.271870   3.0     2.0
+Điểm cho nhóm 4 mạch, 4 qubit:
+   dataset  scheduler_latency  rank  points
+80     FFD           0.005936   2.0     3.0
+81    MILQ          21.137038   4.0     1.0
+82    MTMC           0.004493   1.0     4.0
+83  NoTaDS           0.243594   3.0     2.0
+Điểm cho nhóm 4 mạch, 5 qubit:
+   dataset  scheduler_latency  rank  points
+84     FFD           0.003217   1.0     4.0
+85    MILQ          12.499432   4.0     1.0
+86    MTMC           0.004831   2.0     3.0
+87  NoTaDS           0.265779   3.0     2.0
+Điểm cho nhóm 4 mạch, 6 qubit:
+   dataset  scheduler_latency  rank  points
+88     FFD           0.003726   1.0     4.0
+89    MILQ           7.239341   4.0     1.0
+90    MTMC           0.006856   2.0     3.0
+91  NoTaDS           0.272724   3.0     2.0
+Điểm cho nhóm 4 mạch, 7 qubit:
+   dataset  scheduler_latency  rank  points
+92     FFD           0.005774   1.0     4.0
+93    MILQ           0.206546   3.0     2.0
+94    MTMC           0.009654   2.0     3.0
+95  NoTaDS           0.268079   4.0     1.0
+Điểm cho nhóm 4 mạch, 8 qubit:
+   dataset  scheduler_latency  rank  points
+96     FFD           0.004774   1.0     4.0
+97    MILQ           0.217593   3.0     2.0
+98    MTMC           0.010112   2.0     3.0
+99  NoTaDS           0.278562   4.0     1.0
+Điểm cho nhóm 4 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+100     FFD           0.007524   1.0     4.0
+101    MILQ           0.367257   4.0     1.0
+102    MTMC           0.007598   2.0     3.0
+103  NoTaDS           0.213967   3.0     2.0
+Điểm cho nhóm 4 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+104     FFD           0.004131   1.0     4.0
+105    MILQ           0.257258   3.0     2.0
+106    MTMC           0.010791   2.0     3.0
+107  NoTaDS           0.263802   4.0     1.0
+Điểm cho nhóm 5 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+108     FFD           0.006733   1.0     4.0
+109    MILQ          90.017367   4.0     1.0
+110    MTMC           0.007375   2.0     3.0
+111  NoTaDS           0.293950   3.0     2.0
+Điểm cho nhóm 5 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+112     FFD           0.005628   1.0     4.0
+113    MILQ         300.013179   4.0     1.0
+114    MTMC           0.006179   2.0     3.0
+115  NoTaDS           0.327953   3.0     2.0
+Điểm cho nhóm 5 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+116     FFD           0.003557   1.0     4.0
+117    MILQ           0.379957   4.0     1.0
+118    MTMC           0.006890   2.0     3.0
+119  NoTaDS           0.329713   3.0     2.0
+Điểm cho nhóm 5 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+120     FFD           0.007174   2.0     3.0
+121    MILQ           0.150560   3.0     2.0
+122    MTMC           0.006987   1.0     4.0
+123  NoTaDS           0.339860   4.0     1.0
+Điểm cho nhóm 5 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+124     FFD           0.007424   1.0     4.0
+125    MILQ           0.322878   3.0     2.0
+126    MTMC           0.008221   2.0     3.0
+127  NoTaDS           0.324455   4.0     1.0
+Điểm cho nhóm 5 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+128     FFD           0.003108   1.0     4.0
+129    MILQ           0.308707   3.0     2.0
+130    MTMC           0.007998   2.0     3.0
+131  NoTaDS           0.336293   4.0     1.0
+Điểm cho nhóm 5 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+132     FFD           0.007357   1.0     4.0
+133    MILQ           0.473515   4.0     1.0
+134    MTMC           0.011615   2.0     3.0
+135  NoTaDS           0.330381   3.0     2.0
+Điểm cho nhóm 5 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+136     FFD           0.007562   2.0     3.0
+137    MILQ           0.389030   4.0     1.0
+138    MTMC           0.006928   1.0     4.0
+139  NoTaDS           0.340549   3.0     2.0
+Điểm cho nhóm 5 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+140     FFD           0.007158   1.0     4.0
+141    MILQ           0.314963   3.0     2.0
+142    MTMC           0.012279   2.0     3.0
+143  NoTaDS           0.343926   4.0     1.0
+Điểm cho nhóm 6 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+144     FFD           0.005071   1.0     4.0
+145    MILQ         139.326699   4.0     1.0
+146    MTMC           0.007642   2.0     3.0
+147  NoTaDS           0.380821   3.0     2.0
+Điểm cho nhóm 6 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+148     FFD           0.006439   2.0     3.0
+149    MILQ           1.835278   4.0     1.0
+150    MTMC           0.004628   1.0     4.0
+151  NoTaDS           0.393353   3.0     2.0
+Điểm cho nhóm 6 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+152     FFD           0.002084   1.0     4.0
+153    MILQ           0.350425   3.0     2.0
+154    MTMC           0.007366   2.0     3.0
+155  NoTaDS           0.393330   4.0     1.0
+Điểm cho nhóm 6 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+156     FFD           0.006840   1.0     4.0
+157    MILQ           0.140032   3.0     2.0
+158    MTMC           0.008832   2.0     3.0
+159  NoTaDS           0.389727   4.0     1.0
+Điểm cho nhóm 6 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+160     FFD           0.006801   1.0     4.0
+161    MILQ           0.414520   4.0     1.0
+162    MTMC           0.008492   2.0     3.0
+163  NoTaDS           0.388248   3.0     2.0
+Điểm cho nhóm 6 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+164     FFD           0.007830   1.0     4.0
+165    MILQ           0.770153   4.0     1.0
+166    MTMC           0.011419   2.0     3.0
+167  NoTaDS           0.404866   3.0     2.0
+Điểm cho nhóm 6 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+168     FFD           0.005615   1.0     4.0
+169    MILQ           0.529602   4.0     1.0
+170    MTMC           0.012958   2.0     3.0
+171  NoTaDS           0.404133   3.0     2.0
+Điểm cho nhóm 6 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+172     FFD           0.007823   1.0     4.0
+173    MILQ           0.703433   4.0     1.0
+174    MTMC           0.012617   2.0     3.0
+175  NoTaDS           0.367556   3.0     2.0
+Điểm cho nhóm 6 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+176     FFD           0.007097   1.0     4.0
+177    MILQ           0.452479   4.0     1.0
+178    MTMC           0.015160   2.0     3.0
+179  NoTaDS           0.413108   3.0     2.0
+Điểm cho nhóm 7 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+180     FFD           0.001621   1.0     4.0
+181    MILQ         300.045141   4.0     1.0
+182    MTMC           0.008085   2.0     3.0
+183  NoTaDS           0.467037   3.0     2.0
+Điểm cho nhóm 7 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+184     FFD           0.005701   1.0     4.0
+185    MILQ           0.677660   4.0     1.0
+186    MTMC           0.009066   2.0     3.0
+187  NoTaDS           0.465493   3.0     2.0
+Điểm cho nhóm 7 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+188     FFD           0.005781   1.0     4.0
+189    MILQ           0.243212   3.0     2.0
+190    MTMC           0.006170   2.0     3.0
+191  NoTaDS           0.463746   4.0     1.0
+Điểm cho nhóm 7 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+192     FFD           0.004416   1.0     4.0
+193    MILQ           0.172338   3.0     2.0
+194    MTMC           0.008141   2.0     3.0
+195  NoTaDS           0.454828   4.0     1.0
+Điểm cho nhóm 7 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+196     FFD           0.007188   1.0     4.0
+197    MILQ           0.941299   4.0     1.0
+198    MTMC           0.011404   2.0     3.0
+199  NoTaDS           0.445469   3.0     2.0
+Điểm cho nhóm 7 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+200     FFD           0.007766   1.0     4.0
+201    MILQ           0.987186   4.0     1.0
+202    MTMC           0.012499   2.0     3.0
+203  NoTaDS           0.462045   3.0     2.0
+Điểm cho nhóm 7 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+204     FFD           0.005857   1.0     4.0
+205    MILQ           1.074450   4.0     1.0
+206    MTMC           0.014753   2.0     3.0
+207  NoTaDS           0.492278   3.0     2.0
+Điểm cho nhóm 7 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+208     FFD           0.008173   1.0     4.0
+209    MILQ           0.947818   4.0     1.0
+210    MTMC           0.014961   2.0     3.0
+211  NoTaDS           0.520172   3.0     2.0
+Điểm cho nhóm 7 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+212     FFD           0.007585   1.0     4.0
+213    MILQ           1.616396   4.0     1.0
+214    MTMC           0.011530   2.0     3.0
+215  NoTaDS           0.481623   3.0     2.0
+Điểm cho nhóm 8 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+216     FFD           0.006631   1.0     4.0
+217    MILQ         299.981249   4.0     1.0
+218    MTMC           0.007414   2.0     3.0
+219  NoTaDS           0.537198   3.0     2.0
+Điểm cho nhóm 8 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+220     FFD           0.006218   2.0     3.0
+221    MILQ           0.898072   4.0     1.0
+222    MTMC           0.004606   1.0     4.0
+223  NoTaDS           0.518328   3.0     2.0
+Điểm cho nhóm 8 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+224     FFD           0.007037   1.0     4.0
+225    MILQ           0.214829   3.0     2.0
+226    MTMC           0.009629   2.0     3.0
+227  NoTaDS           0.542161   4.0     1.0
+Điểm cho nhóm 8 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+228     FFD           0.004705   1.0     4.0
+229    MILQ           0.239259   3.0     2.0
+230    MTMC           0.010140   2.0     3.0
+231  NoTaDS           0.660156   4.0     1.0
+Điểm cho nhóm 8 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+232     FFD           0.008919   1.0     4.0
+233    MILQ           1.322293   4.0     1.0
+234    MTMC           0.009466   2.0     3.0
+235  NoTaDS           0.541869   3.0     2.0
+Điểm cho nhóm 8 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+236     FFD           0.006467   1.0     4.0
+237    MILQ           1.454303   4.0     1.0
+238    MTMC           0.014423   2.0     3.0
+239  NoTaDS           0.541119   3.0     2.0
+Điểm cho nhóm 8 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+240     FFD           0.003843   1.0     4.0
+241    MILQ           1.350793   4.0     1.0
+242    MTMC           0.016329   2.0     3.0
+243  NoTaDS           0.699935   3.0     2.0
+Điểm cho nhóm 8 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+244     FFD           0.010631   1.0     4.0
+245    MILQ           1.670292   4.0     1.0
+246    MTMC           0.014936   2.0     3.0
+247  NoTaDS           0.554563   3.0     2.0
+Điểm cho nhóm 8 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+248     FFD           0.010135   1.0     4.0
+249    MILQ           1.255977   4.0     1.0
+250    MTMC           0.018176   2.0     3.0
+251  NoTaDS           0.555587   3.0     2.0
+Điểm cho nhóm 9 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+252     FFD           0.005614   1.0     4.0
+253    MILQ         300.017717   4.0     1.0
+254    MTMC           0.007684   2.0     3.0
+255  NoTaDS           0.603061   3.0     2.0
+Điểm cho nhóm 9 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+256     FFD           0.003454   1.0     4.0
+257    MILQ           0.943603   4.0     1.0
+258    MTMC           0.007108   2.0     3.0
+259  NoTaDS           0.610121   3.0     2.0
+Điểm cho nhóm 9 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+260     FFD           0.007418   1.0     4.0
+261    MILQ           0.258067   3.0     2.0
+262    MTMC           0.008696   2.0     3.0
+263  NoTaDS           0.726438   4.0     1.0
+Điểm cho nhóm 9 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+264     FFD           0.004176   1.0     4.0
+265    MILQ           0.245412   3.0     2.0
+266    MTMC           0.011842   2.0     3.0
+267  NoTaDS           0.595913   4.0     1.0
+Điểm cho nhóm 9 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+268     FFD           0.009845   1.0     4.0
+269    MILQ           2.892603   4.0     1.0
+270    MTMC           0.011775   2.0     3.0
+271  NoTaDS           0.628484   3.0     2.0
+Điểm cho nhóm 9 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+272     FFD           0.009392   1.0     4.0
+273    MILQ           1.571221   4.0     1.0
+274    MTMC           0.014772   2.0     3.0
+275  NoTaDS           0.597075   3.0     2.0
+Điểm cho nhóm 9 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+276     FFD           0.009402   1.0     4.0
+277    MILQ           2.617144   4.0     1.0
+278    MTMC           0.018984   2.0     3.0
+279  NoTaDS           0.617031   3.0     2.0
+Điểm cho nhóm 9 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+280     FFD           0.010193   1.0     4.0
+281    MILQ           1.800166   4.0     1.0
+282    MTMC           0.021931   2.0     3.0
+283  NoTaDS           0.602223   3.0     2.0
+Điểm cho nhóm 9 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+284     FFD           0.010368   1.0     4.0
+285    MILQ           2.707556   4.0     1.0
+286    MTMC           0.022211   2.0     3.0
+287  NoTaDS           0.698473   3.0     2.0
+Điểm cho nhóm 10 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+288     FFD           0.007799   2.0     3.0
+289    MILQ         299.964781   4.0     1.0
+290    MTMC           0.003733   1.0     4.0
+291  NoTaDS           0.797843   3.0     2.0
+Điểm cho nhóm 10 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+292     FFD           0.004461   1.0     4.0
+293    MILQ           0.311492   3.0     2.0
+294    MTMC           0.009944   2.0     3.0
+295  NoTaDS           0.693438   4.0     1.0
+Điểm cho nhóm 10 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+296     FFD           0.007385   1.0     4.0
+297    MILQ           0.417403   3.0     2.0
+298    MTMC           0.012100   2.0     3.0
+299  NoTaDS           0.657704   4.0     1.0
+Điểm cho nhóm 10 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+300     FFD           0.007750   1.0     4.0
+301    MILQ           0.305250   3.0     2.0
+302    MTMC           0.013216   2.0     3.0
+303  NoTaDS           0.670676   4.0     1.0
+Điểm cho nhóm 10 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+304     FFD           0.009898   1.0     4.0
+305    MILQ           2.773772   4.0     1.0
+306    MTMC           0.012644   2.0     3.0
+307  NoTaDS           0.672388   3.0     2.0
+Điểm cho nhóm 10 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+308     FFD           0.009373   1.0     4.0
+309    MILQ           2.350519   4.0     1.0
+310    MTMC           0.016226   2.0     3.0
+311  NoTaDS           0.704929   3.0     2.0
+Điểm cho nhóm 10 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+312     FFD           0.010885   1.0     4.0
+313    MILQ           2.637332   4.0     1.0
+314    MTMC           0.022138   2.0     3.0
+315  NoTaDS           0.667421   3.0     2.0
+Điểm cho nhóm 10 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+316     FFD           0.007041   1.0     4.0
+317    MILQ           4.005681   4.0     1.0
+318    MTMC           0.022770   2.0     3.0
+319  NoTaDS           0.695406   3.0     2.0
+Điểm cho nhóm 10 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+320     FFD           0.007984   1.0     4.0
+321    MILQ           2.812911   4.0     1.0
+322    MTMC           0.022127   2.0     3.0
+323  NoTaDS           0.748092   3.0     2.0
+Điểm cho nhóm 11 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+324     FFD           0.006673   1.0     4.0
+325    MILQ         299.956816   4.0     1.0
+326    MTMC           0.008196   2.0     3.0
+327  NoTaDS           0.725992   3.0     2.0
+Điểm cho nhóm 11 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+328     FFD           0.007496   1.0     4.0
+329    MILQ           0.618738   3.0     2.0
+330    MTMC           0.009640   2.0     3.0
+331  NoTaDS           0.746519   4.0     1.0
+Điểm cho nhóm 11 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+332     FFD           0.006527   1.0     4.0
+333    MILQ           0.480268   3.0     2.0
+334    MTMC           0.012057   2.0     3.0
+335  NoTaDS           0.726024   4.0     1.0
+Điểm cho nhóm 11 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+336     FFD           0.003836   1.0     4.0
+337    MILQ           0.341400   3.0     2.0
+338    MTMC           0.011545   2.0     3.0
+339  NoTaDS           0.740609   4.0     1.0
+Điểm cho nhóm 11 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+340     FFD           0.010600   1.0     4.0
+341    MILQ           3.381889   4.0     1.0
+342    MTMC           0.018226   2.0     3.0
+343  NoTaDS           0.759085   3.0     2.0
+Điểm cho nhóm 11 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+344     FFD           0.011507   1.0     4.0
+345    MILQ           3.168457   4.0     1.0
+346    MTMC           0.018765   2.0     3.0
+347  NoTaDS           0.757883   3.0     2.0
+Điểm cho nhóm 11 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+348     FFD           0.012820   1.0     4.0
+349    MILQ           3.252117   4.0     1.0
+350    MTMC           0.023505   2.0     3.0
+351  NoTaDS           0.745066   3.0     2.0
+Điểm cho nhóm 11 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+352     FFD           0.013217   1.0     4.0
+353    MILQ           4.799623   4.0     1.0
+354    MTMC           0.025725   2.0     3.0
+355  NoTaDS           0.760404   3.0     2.0
+Điểm cho nhóm 11 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+356     FFD           0.013850   1.0     4.0
+357    MILQ           2.249879   4.0     1.0
+358    MTMC           0.025077   2.0     3.0
+359  NoTaDS           0.781308   3.0     2.0
+Điểm cho nhóm 12 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+360     FFD           0.007557   1.0     4.0
+361    MILQ         299.805039   4.0     1.0
+362    MTMC           0.009062   2.0     3.0
+363  NoTaDS           0.739133   3.0     2.0
+Điểm cho nhóm 12 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+364     FFD           0.007197   1.0     4.0
+365    MILQ           0.426463   3.0     2.0
+366    MTMC           0.010548   2.0     3.0
+367  NoTaDS           0.785287   4.0     1.0
+Điểm cho nhóm 12 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+368     FFD           0.004769   1.0     4.0
+369    MILQ           0.912348   4.0     1.0
+370    MTMC           0.013721   2.0     3.0
+371  NoTaDS           0.815685   3.0     2.0
+Điểm cho nhóm 12 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+372     FFD           0.007622   1.0     4.0
+373    MILQ           0.482230   3.0     2.0
+374    MTMC           0.013721   2.0     3.0
+375  NoTaDS           0.789403   4.0     1.0
+Điểm cho nhóm 12 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+376     FFD           0.012687   1.0     4.0
+377    MILQ           3.590121   4.0     1.0
+378    MTMC           0.017162   2.0     3.0
+379  NoTaDS           0.788142   3.0     2.0
+Điểm cho nhóm 12 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+380     FFD           0.012208   1.0     4.0
+381    MILQ           3.958790   4.0     1.0
+382    MTMC           0.022221   2.0     3.0
+383  NoTaDS           0.780291   3.0     2.0
+Điểm cho nhóm 12 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+384     FFD           0.009258   1.0     4.0
+385    MILQ           5.694316   4.0     1.0
+386    MTMC           0.025267   2.0     3.0
+387  NoTaDS           0.827128   3.0     2.0
+Điểm cho nhóm 12 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+388     FFD           0.014350   1.0     4.0
+389    MILQ           5.379714   4.0     1.0
+390    MTMC           0.028215   2.0     3.0
+391  NoTaDS           0.837180   3.0     2.0
+Điểm cho nhóm 12 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+392     FFD           0.015126   1.0     4.0
+393    MILQ          14.892415   4.0     1.0
+394    MTMC           0.030581   2.0     3.0
+395  NoTaDS           0.836612   3.0     2.0
+Điểm cho nhóm 13 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+396     FFD           0.006748   1.0     4.0
+397    MILQ           8.649774   4.0     1.0
+398    MTMC           0.008596   2.0     3.0
+399  NoTaDS           0.852031   3.0     2.0
+Điểm cho nhóm 13 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+400     FFD           0.007345   1.0     4.0
+401    MILQ           0.719563   3.0     2.0
+402    MTMC           0.008010   2.0     3.0
+403  NoTaDS           0.799857   4.0     1.0
+Điểm cho nhóm 13 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+404     FFD           0.004879   1.0     4.0
+405    MILQ           0.709374   3.0     2.0
+406    MTMC           0.013695   2.0     3.0
+407  NoTaDS           0.887168   4.0     1.0
+Điểm cho nhóm 13 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+408     FFD           0.007127   1.0     4.0
+409    MILQ           0.698833   3.0     2.0
+410    MTMC           0.014733   2.0     3.0
+411  NoTaDS           0.922322   4.0     1.0
+Điểm cho nhóm 13 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+412     FFD           0.013142   1.0     4.0
+413    MILQ           4.870052   4.0     1.0
+414    MTMC           0.021612   2.0     3.0
+415  NoTaDS           0.882599   3.0     2.0
+Điểm cho nhóm 13 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+416     FFD           0.015497   1.0     4.0
+417    MILQ           5.687832   4.0     1.0
+418    MTMC           0.023924   2.0     3.0
+419  NoTaDS           0.865488   3.0     2.0
+Điểm cho nhóm 13 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+420     FFD           0.015193   1.0     4.0
+421    MILQ           5.613625   4.0     1.0
+422    MTMC           0.029857   2.0     3.0
+423  NoTaDS           0.863903   3.0     2.0
+Điểm cho nhóm 13 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+424     FFD           0.016959   1.0     4.0
+425    MILQ           4.682635   4.0     1.0
+426    MTMC           0.030610   2.0     3.0
+427  NoTaDS           0.910727   3.0     2.0
+Điểm cho nhóm 13 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+428     FFD           0.017060   1.0     4.0
+429    MILQ         230.962219   4.0     1.0
+430    MTMC           0.032143   2.0     3.0
+431  NoTaDS           0.917833   3.0     2.0
+Điểm cho nhóm 14 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+432     FFD           0.007288   1.0     4.0
+433    MILQ          16.521620   4.0     1.0
+434    MTMC           0.007604   2.0     3.0
+435  NoTaDS           0.890361   3.0     2.0
+Điểm cho nhóm 14 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+436     FFD           0.007279   1.0     4.0
+437    MILQ           0.932197   3.0     2.0
+438    MTMC           0.013508   2.0     3.0
+439  NoTaDS           0.959278   4.0     1.0
+Điểm cho nhóm 14 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+440     FFD           0.009115   1.0     4.0
+441    MILQ           0.868073   3.0     2.0
+442    MTMC           0.015852   2.0     3.0
+443  NoTaDS           0.941196   4.0     1.0
+Điểm cho nhóm 14 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+444     FFD           0.004617   1.0     4.0
+445    MILQ           0.835744   3.0     2.0
+446    MTMC           0.016526   2.0     3.0
+447  NoTaDS           0.918175   4.0     1.0
+Điểm cho nhóm 14 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+448     FFD           0.015617   1.0     4.0
+449    MILQ           6.021157   4.0     1.0
+450    MTMC           0.021070   2.0     3.0
+451  NoTaDS           0.960989   3.0     2.0
+Điểm cho nhóm 14 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+452     FFD           0.016432   1.0     4.0
+453    MILQ          20.915010   4.0     1.0
+454    MTMC           0.025928   2.0     3.0
+455  NoTaDS           0.958590   3.0     2.0
+Điểm cho nhóm 14 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+456     FFD           0.016851   1.0     4.0
+457    MILQ         403.207363   4.0     1.0
+458    MTMC           0.033070   2.0     3.0
+459  NoTaDS           0.955961   3.0     2.0
+Điểm cho nhóm 14 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+460     FFD           0.018465   1.0     4.0
+461    MILQ           6.614014   4.0     1.0
+462    MTMC           0.036279   2.0     3.0
+463  NoTaDS           0.950687   3.0     2.0
+Điểm cho nhóm 14 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+464     FFD           0.018212   1.0     4.0
+465    MILQ          16.321113   4.0     1.0
+466    MTMC           0.035757   2.0     3.0
+467  NoTaDS           0.955907   3.0     2.0
+Điểm cho nhóm 15 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+468     FFD           0.006613   1.0     4.0
+469    MILQ          27.633684   4.0     1.0
+470    MTMC           0.009222   2.0     3.0
+471  NoTaDS           0.968637   3.0     2.0
+Điểm cho nhóm 15 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+472     FFD           0.007644   1.0     4.0
+473    MILQ           1.535846   4.0     1.0
+474    MTMC           0.013854   2.0     3.0
+475  NoTaDS           0.993919   3.0     2.0
+Điểm cho nhóm 15 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+476     FFD           0.008385   1.0     4.0
+477    MILQ           0.836726   3.0     2.0
+478    MTMC           0.011348   2.0     3.0
+479  NoTaDS           0.958597   4.0     1.0
+Điểm cho nhóm 15 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+480     FFD           0.008581   1.0     4.0
+481    MILQ           0.806936   3.0     2.0
+482    MTMC           0.017294   2.0     3.0
+483  NoTaDS           0.962526   4.0     1.0
+Điểm cho nhóm 15 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+484     FFD           0.014371   1.0     4.0
+485    MILQ          10.139855   4.0     1.0
+486    MTMC           0.024617   2.0     3.0
+487  NoTaDS           0.971747   3.0     2.0
+Điểm cho nhóm 15 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+488     FFD           0.017514   1.0     4.0
+489    MILQ           8.201062   4.0     1.0
+490    MTMC           0.027757   2.0     3.0
+491  NoTaDS           1.103844   3.0     2.0
+Điểm cho nhóm 15 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+492     FFD           0.021017   1.0     4.0
+493    MILQ          17.190711   4.0     1.0
+494    MTMC           0.036086   2.0     3.0
+495  NoTaDS           0.962941   3.0     2.0
+Điểm cho nhóm 15 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+496     FFD           0.019711   1.0     4.0
+497    MILQ           6.727953   4.0     1.0
+498    MTMC           0.041579   2.0     3.0
+499  NoTaDS           0.974798   3.0     2.0
+Điểm cho nhóm 15 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+500     FFD           0.020363   1.0     4.0
+501    MILQ           6.896660   4.0     1.0
+502    MTMC           0.045245   2.0     3.0
+503  NoTaDS           1.013761   3.0     2.0
+Điểm cho nhóm 16 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+504     FFD           0.007015   1.0     4.0
+505    MILQ           1.262209   4.0     1.0
+506    MTMC           0.009338   2.0     3.0
+507  NoTaDS           1.054476   3.0     2.0
+Điểm cho nhóm 16 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+508     FFD           0.008823   1.0     4.0
+509    MILQ           1.204252   4.0     1.0
+510    MTMC           0.013626   2.0     3.0
+511  NoTaDS           1.046016   3.0     2.0
+Điểm cho nhóm 16 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+512     FFD           0.008607   1.0     4.0
+513    MILQ           1.031282   3.0     2.0
+514    MTMC           0.012433   2.0     3.0
+515  NoTaDS           1.064080   4.0     1.0
+Điểm cho nhóm 16 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+516     FFD           0.008898   1.0     4.0
+517    MILQ           1.769731   4.0     1.0
+518    MTMC           0.017707   2.0     3.0
+519  NoTaDS           1.046693   3.0     2.0
+Điểm cho nhóm 16 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+520     FFD           0.018944   1.0     4.0
+521    MILQ          11.893935   4.0     1.0
+522    MTMC           0.027456   2.0     3.0
+523  NoTaDS           1.102798   3.0     2.0
+Điểm cho nhóm 16 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+524     FFD           0.019777   1.0     4.0
+525    MILQ          13.959554   4.0     1.0
+526    MTMC           0.031209   2.0     3.0
+527  NoTaDS           1.037771   3.0     2.0
+Điểm cho nhóm 16 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+528     FFD           0.023096   1.0     4.0
+529    MILQ          12.183572   4.0     1.0
+530    MTMC           0.039946   2.0     3.0
+531  NoTaDS           1.121952   3.0     2.0
+Điểm cho nhóm 16 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+532     FFD           0.023034   1.0     4.0
+533    MILQ          38.135076   4.0     1.0
+534    MTMC           0.042800   2.0     3.0
+535  NoTaDS           1.087576   3.0     2.0
+Điểm cho nhóm 16 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+536     FFD           0.024015   1.0     4.0
+537    MILQ         349.921574   4.0     1.0
+538    MTMC           0.047644   2.0     3.0
+539  NoTaDS           1.160038   3.0     2.0
+Điểm cho nhóm 17 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+540     FFD           0.006836   1.0     4.0
+541    MILQ           1.473374   4.0     1.0
+542    MTMC           0.011012   2.0     3.0
+543  NoTaDS           1.128605   3.0     2.0
+Điểm cho nhóm 17 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+544     FFD           0.009208   1.0     4.0
+545    MILQ           1.212306   4.0     1.0
+546    MTMC           0.015454   2.0     3.0
+547  NoTaDS           1.147868   3.0     2.0
+Điểm cho nhóm 17 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+548     FFD           0.009711   1.0     4.0
+549    MILQ           5.719800   4.0     1.0
+550    MTMC           0.015118   2.0     3.0
+551  NoTaDS           1.170717   3.0     2.0
+Điểm cho nhóm 17 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+552     FFD           0.010387   1.0     4.0
+553    MILQ           1.572363   4.0     1.0
+554    MTMC           0.019015   2.0     3.0
+555  NoTaDS           1.116988   3.0     2.0
+Điểm cho nhóm 17 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+556     FFD           0.020422   1.0     4.0
+557    MILQ          13.973522   4.0     1.0
+558    MTMC           0.029034   2.0     3.0
+559  NoTaDS           1.096896   3.0     2.0
+Điểm cho nhóm 17 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+560     FFD           0.022924   1.0     4.0
+561    MILQ           9.785449   4.0     1.0
+562    MTMC           0.033293   2.0     3.0
+563  NoTaDS           1.158407   3.0     2.0
+Điểm cho nhóm 17 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+564     FFD           0.025235   1.0     4.0
+565    MILQ        1680.439612   4.0     1.0
+566    MTMC           0.042311   2.0     3.0
+567  NoTaDS           1.138779   3.0     2.0
+Điểm cho nhóm 17 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+568     FFD           0.025750   1.0     4.0
+569    MILQ          11.950233   4.0     1.0
+570    MTMC           0.045516   2.0     3.0
+571  NoTaDS           1.195217   3.0     2.0
+Điểm cho nhóm 17 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+572     FFD           0.028342   1.0     4.0
+573    MILQ          13.676049   4.0     1.0
+574    MTMC           0.049191   2.0     3.0
+575  NoTaDS           1.196305   3.0     2.0
+Điểm cho nhóm 18 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+576     FFD           0.006178   1.0     4.0
+577    MILQ           1.781624   4.0     1.0
+578    MTMC           0.010585   2.0     3.0
+579  NoTaDS           1.133166   3.0     2.0
+Điểm cho nhóm 18 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+580     FFD           0.008661   1.0     4.0
+581    MILQ           6.077595   4.0     1.0
+582    MTMC           0.016743   2.0     3.0
+583  NoTaDS           1.131278   3.0     2.0
+Điểm cho nhóm 18 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+584     FFD           0.008526   1.0     4.0
+585    MILQ           3.478373   4.0     1.0
+586    MTMC           0.017561   2.0     3.0
+587  NoTaDS           1.204566   3.0     2.0
+Điểm cho nhóm 18 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+588     FFD           0.010441   1.0     4.0
+589    MILQ           3.191027   4.0     1.0
+590    MTMC           0.017827   2.0     3.0
+591  NoTaDS           1.205689   3.0     2.0
+Điểm cho nhóm 18 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+592     FFD           0.023439   1.0     4.0
+593    MILQ          28.797233   4.0     1.0
+594    MTMC           0.031892   2.0     3.0
+595  NoTaDS           1.222061   3.0     2.0
+Điểm cho nhóm 18 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+596     FFD           0.024907   1.0     4.0
+597    MILQ          27.278771   4.0     1.0
+598    MTMC           0.038020   2.0     3.0
+599  NoTaDS           1.193573   3.0     2.0
+Điểm cho nhóm 18 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+600     FFD           0.028342   1.0     4.0
+601    MILQ          33.532014   4.0     1.0
+602    MTMC           0.043012   2.0     3.0
+603  NoTaDS           1.198895   3.0     2.0
+Điểm cho nhóm 18 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+604     FFD           0.032153   1.0     4.0
+605    MILQ          41.632553   4.0     1.0
+606    MTMC           0.048786   2.0     3.0
+607  NoTaDS           1.208513   3.0     2.0
+Điểm cho nhóm 18 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+608     FFD           0.030466   1.0     4.0
+609    MILQ          24.836910   4.0     1.0
+610    MTMC           0.050908   2.0     3.0
+611  NoTaDS           1.224056   3.0     2.0
+Điểm cho nhóm 19 mạch, 2 qubit:
+    dataset  scheduler_latency  rank  points
+612     FFD           0.006413   1.0     4.0
+613    MILQ           2.254749   4.0     1.0
+614    MTMC           0.012446   2.0     3.0
+615  NoTaDS           1.265284   3.0     2.0
+Điểm cho nhóm 19 mạch, 3 qubit:
+    dataset  scheduler_latency  rank  points
+616     FFD           0.008007   1.0     4.0
+617    MILQ           1.946803   4.0     1.0
+618    MTMC           0.015909   2.0     3.0
+619  NoTaDS           1.268350   3.0     2.0
+Điểm cho nhóm 19 mạch, 4 qubit:
+    dataset  scheduler_latency  rank  points
+620     FFD           0.009757   1.0     4.0
+621    MILQ           2.067488   4.0     1.0
+622    MTMC           0.018978   2.0     3.0
+623  NoTaDS           1.267231   3.0     2.0
+Điểm cho nhóm 19 mạch, 5 qubit:
+    dataset  scheduler_latency  rank  points
+624     FFD           0.011685   1.0     4.0
+625    MILQ           2.820407   4.0     1.0
+626    MTMC           0.019676   2.0     3.0
+627  NoTaDS           1.263811   3.0     2.0
+Điểm cho nhóm 19 mạch, 6 qubit:
+    dataset  scheduler_latency  rank  points
+628     FFD           0.027325   1.0     4.0
+629    MILQ          21.101751   4.0     1.0
+630    MTMC           0.031183   2.0     3.0
+631  NoTaDS           1.249423   3.0     2.0
+Điểm cho nhóm 19 mạch, 7 qubit:
+    dataset  scheduler_latency  rank  points
+632     FFD           0.026310   1.0     4.0
+633    MILQ          24.446816   4.0     1.0
+634    MTMC           0.038684   2.0     3.0
+635  NoTaDS           1.247451   3.0     2.0
+Điểm cho nhóm 19 mạch, 8 qubit:
+    dataset  scheduler_latency  rank  points
+636     FFD           0.030775   1.0     4.0
+637    MILQ          12.865408   4.0     1.0
+638    MTMC           0.048244   2.0     3.0
+639  NoTaDS           1.254908   3.0     2.0
+Điểm cho nhóm 19 mạch, 9 qubit:
+    dataset  scheduler_latency  rank  points
+640     FFD           0.034672   1.0     4.0
+641    MILQ          17.600178   4.0     1.0
+642    MTMC           0.053829   2.0     3.0
+643  NoTaDS           1.251544   3.0     2.0
+Điểm cho nhóm 19 mạch, 10 qubit:
+    dataset  scheduler_latency  rank  points
+644     FFD           0.036640   1.0     4.0
+645    MILQ          40.879344   4.0     1.0
+646    MTMC           0.057397   2.0     3.0
+647  NoTaDS           1.220119   3.0     2.0
+BỎ QUA nhóm 20 mạch, 2 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 3 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 4 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 5 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 6 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 7 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 8 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 9 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 10 qubit vì thiếu thuật toán.
+Tổng điểm từng thuật toán:
+  dataset  points
+0     FFD   635.0
+1    MILQ   197.0
+2    MTMC   499.0
+3  NoTaDS   289.0
+
+Chuẩn hóa điểm (points/min):
+  dataset  points  normalized_score
+0     FFD   635.0          3.223350
+1    MILQ   197.0          1.000000
+2    MTMC   499.0          2.532995
+3  NoTaDS   289.0          1.467005
+
+Xếp hạng thuật toán (tốt nhất là 4, tệ nhất là 1):
+  dataset  points  final_rank
+0     FFD   635.0         4.0
+1    MILQ   197.0         1.0
+2    MTMC   499.0         3.0
+3  NoTaDS   289.0         2.0

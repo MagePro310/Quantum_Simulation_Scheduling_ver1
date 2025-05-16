@@ -1,0 +1,1001 @@
+Điểm cho nhóm 2 mạch, 2 qubit:
+  dataset  sampling_overhead  rank  points
+0     FFD                0.0   1.0     4.0
+1    MILQ                0.0   1.0     4.0
+2    MTMC                0.0   1.0     4.0
+3  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 3 qubit:
+  dataset  sampling_overhead  rank  points
+4     FFD                0.0   1.0     4.0
+5    MILQ                0.0   1.0     4.0
+6    MTMC                0.0   1.0     4.0
+7  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 4 qubit:
+   dataset  sampling_overhead  rank  points
+8      FFD                0.0   1.0     4.0
+9     MILQ                0.0   1.0     4.0
+10    MTMC                0.0   1.0     4.0
+11  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 5 qubit:
+   dataset  sampling_overhead  rank  points
+12     FFD                0.0   1.0     4.0
+13    MILQ                0.0   1.0     4.0
+14    MTMC                0.0   1.0     4.0
+15  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 6 qubit:
+   dataset  sampling_overhead  rank  points
+16     FFD               18.0   2.0     3.0
+17    MILQ               18.0   2.0     3.0
+18    MTMC               18.0   2.0     3.0
+19  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 7 qubit:
+   dataset  sampling_overhead  rank  points
+20     FFD               18.0   2.0     3.0
+21    MILQ               18.0   2.0     3.0
+22    MTMC               18.0   2.0     3.0
+23  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 8 qubit:
+   dataset  sampling_overhead  rank  points
+24     FFD               18.0   2.0     3.0
+25    MILQ               18.0   2.0     3.0
+26    MTMC               18.0   2.0     3.0
+27  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 9 qubit:
+   dataset  sampling_overhead  rank  points
+28     FFD               18.0   2.0     3.0
+29    MILQ               18.0   2.0     3.0
+30    MTMC               18.0   2.0     3.0
+31  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 10 qubit:
+   dataset  sampling_overhead  rank  points
+32     FFD               18.0   2.0     3.0
+33    MILQ               18.0   2.0     3.0
+34    MTMC               18.0   2.0     3.0
+35  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 2 qubit:
+   dataset  sampling_overhead  rank  points
+36     FFD                0.0   1.0     4.0
+37    MILQ                0.0   1.0     4.0
+38    MTMC                0.0   1.0     4.0
+39  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 3 qubit:
+   dataset  sampling_overhead  rank  points
+40     FFD                0.0   1.0     4.0
+41    MILQ                0.0   1.0     4.0
+42    MTMC                0.0   1.0     4.0
+43  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 4 qubit:
+   dataset  sampling_overhead  rank  points
+44     FFD                0.0   1.0     4.0
+45    MILQ                0.0   1.0     4.0
+46    MTMC                0.0   1.0     4.0
+47  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 5 qubit:
+   dataset  sampling_overhead  rank  points
+48     FFD                0.0   1.0     4.0
+49    MILQ                0.0   1.0     4.0
+50    MTMC                0.0   1.0     4.0
+51  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 6 qubit:
+   dataset  sampling_overhead  rank  points
+52     FFD               27.0   2.0     3.0
+53    MILQ               27.0   2.0     3.0
+54    MTMC               27.0   2.0     3.0
+55  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 7 qubit:
+   dataset  sampling_overhead  rank  points
+56     FFD               27.0   2.0     3.0
+57    MILQ               27.0   2.0     3.0
+58    MTMC               27.0   2.0     3.0
+59  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 8 qubit:
+   dataset  sampling_overhead  rank  points
+60     FFD               27.0   2.0     3.0
+61    MILQ               27.0   2.0     3.0
+62    MTMC               27.0   2.0     3.0
+63  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 9 qubit:
+   dataset  sampling_overhead  rank  points
+64     FFD               27.0   2.0     3.0
+65    MILQ               27.0   2.0     3.0
+66    MTMC               27.0   2.0     3.0
+67  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 10 qubit:
+   dataset  sampling_overhead  rank  points
+68     FFD               27.0   2.0     3.0
+69    MILQ               27.0   2.0     3.0
+70    MTMC               27.0   2.0     3.0
+71  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 2 qubit:
+   dataset  sampling_overhead  rank  points
+72     FFD                0.0   1.0     4.0
+73    MILQ                0.0   1.0     4.0
+74    MTMC                0.0   1.0     4.0
+75  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 3 qubit:
+   dataset  sampling_overhead  rank  points
+76     FFD                0.0   1.0     4.0
+77    MILQ                0.0   1.0     4.0
+78    MTMC                0.0   1.0     4.0
+79  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 4 qubit:
+   dataset  sampling_overhead  rank  points
+80     FFD                0.0   1.0     4.0
+81    MILQ                0.0   1.0     4.0
+82    MTMC                0.0   1.0     4.0
+83  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 5 qubit:
+   dataset  sampling_overhead  rank  points
+84     FFD                0.0   1.0     4.0
+85    MILQ                0.0   1.0     4.0
+86    MTMC                0.0   1.0     4.0
+87  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 6 qubit:
+   dataset  sampling_overhead  rank  points
+88     FFD               36.0   2.0     3.0
+89    MILQ               36.0   2.0     3.0
+90    MTMC               36.0   2.0     3.0
+91  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 7 qubit:
+   dataset  sampling_overhead  rank  points
+92     FFD               36.0   2.0     3.0
+93    MILQ               36.0   2.0     3.0
+94    MTMC               36.0   2.0     3.0
+95  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 8 qubit:
+   dataset  sampling_overhead  rank  points
+96     FFD               36.0   2.0     3.0
+97    MILQ               36.0   2.0     3.0
+98    MTMC               36.0   2.0     3.0
+99  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+100     FFD               36.0   2.0     3.0
+101    MILQ               36.0   2.0     3.0
+102    MTMC               36.0   2.0     3.0
+103  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+104     FFD               36.0   2.0     3.0
+105    MILQ               36.0   2.0     3.0
+106    MTMC               36.0   2.0     3.0
+107  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+108     FFD                0.0   1.0     4.0
+109    MILQ                0.0   1.0     4.0
+110    MTMC                0.0   1.0     4.0
+111  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+112     FFD                0.0   1.0     4.0
+113    MILQ                0.0   1.0     4.0
+114    MTMC                0.0   1.0     4.0
+115  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+116     FFD                0.0   1.0     4.0
+117    MILQ                0.0   1.0     4.0
+118    MTMC                0.0   1.0     4.0
+119  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+120     FFD                0.0   1.0     4.0
+121    MILQ                0.0   1.0     4.0
+122    MTMC                0.0   1.0     4.0
+123  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+124     FFD               45.0   2.0     3.0
+125    MILQ               45.0   2.0     3.0
+126    MTMC               45.0   2.0     3.0
+127  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+128     FFD               45.0   2.0     3.0
+129    MILQ               45.0   2.0     3.0
+130    MTMC               45.0   2.0     3.0
+131  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+132     FFD               45.0   2.0     3.0
+133    MILQ               45.0   2.0     3.0
+134    MTMC               45.0   2.0     3.0
+135  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+136     FFD               45.0   2.0     3.0
+137    MILQ               45.0   2.0     3.0
+138    MTMC               45.0   2.0     3.0
+139  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+140     FFD               45.0   2.0     3.0
+141    MILQ               45.0   2.0     3.0
+142    MTMC               45.0   2.0     3.0
+143  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 6 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+144     FFD                0.0   1.0     4.0
+145    MILQ                0.0   1.0     4.0
+146    MTMC                0.0   1.0     4.0
+147  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 6 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+148     FFD                0.0   1.0     4.0
+149    MILQ                0.0   1.0     4.0
+150    MTMC                0.0   1.0     4.0
+151  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 6 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+152     FFD                0.0   1.0     4.0
+153    MILQ                0.0   1.0     4.0
+154    MTMC                0.0   1.0     4.0
+155  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 6 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+156     FFD                0.0   1.0     4.0
+157    MILQ                0.0   1.0     4.0
+158    MTMC                0.0   1.0     4.0
+159  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 6 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+160     FFD               54.0   2.0     3.0
+161    MILQ               54.0   2.0     3.0
+162    MTMC               54.0   2.0     3.0
+163  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 6 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+164     FFD               54.0   2.0     3.0
+165    MILQ               54.0   2.0     3.0
+166    MTMC               54.0   2.0     3.0
+167  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 6 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+168     FFD               54.0   2.0     3.0
+169    MILQ               54.0   2.0     3.0
+170    MTMC               54.0   2.0     3.0
+171  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 6 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+172     FFD               54.0   2.0     3.0
+173    MILQ               54.0   2.0     3.0
+174    MTMC               54.0   2.0     3.0
+175  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 6 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+176     FFD               54.0   2.0     3.0
+177    MILQ               54.0   2.0     3.0
+178    MTMC               54.0   2.0     3.0
+179  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 7 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+180     FFD                0.0   1.0     4.0
+181    MILQ                0.0   1.0     4.0
+182    MTMC                0.0   1.0     4.0
+183  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 7 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+184     FFD                0.0   1.0     4.0
+185    MILQ                0.0   1.0     4.0
+186    MTMC                0.0   1.0     4.0
+187  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 7 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+188     FFD                0.0   1.0     4.0
+189    MILQ                0.0   1.0     4.0
+190    MTMC                0.0   1.0     4.0
+191  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 7 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+192     FFD                0.0   1.0     4.0
+193    MILQ                0.0   1.0     4.0
+194    MTMC                0.0   1.0     4.0
+195  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 7 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+196     FFD               63.0   2.0     3.0
+197    MILQ               63.0   2.0     3.0
+198    MTMC               63.0   2.0     3.0
+199  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 7 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+200     FFD               63.0   2.0     3.0
+201    MILQ               63.0   2.0     3.0
+202    MTMC               63.0   2.0     3.0
+203  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 7 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+204     FFD               63.0   2.0     3.0
+205    MILQ               63.0   2.0     3.0
+206    MTMC               63.0   2.0     3.0
+207  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 7 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+208     FFD               63.0   2.0     3.0
+209    MILQ               63.0   2.0     3.0
+210    MTMC               63.0   2.0     3.0
+211  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 7 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+212     FFD               63.0   2.0     3.0
+213    MILQ               63.0   2.0     3.0
+214    MTMC               63.0   2.0     3.0
+215  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 8 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+216     FFD                0.0   1.0     4.0
+217    MILQ                0.0   1.0     4.0
+218    MTMC                0.0   1.0     4.0
+219  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 8 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+220     FFD                0.0   1.0     4.0
+221    MILQ                0.0   1.0     4.0
+222    MTMC                0.0   1.0     4.0
+223  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 8 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+224     FFD                0.0   1.0     4.0
+225    MILQ                0.0   1.0     4.0
+226    MTMC                0.0   1.0     4.0
+227  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 8 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+228     FFD                0.0   1.0     4.0
+229    MILQ                0.0   1.0     4.0
+230    MTMC                0.0   1.0     4.0
+231  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 8 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+232     FFD               72.0   2.0     3.0
+233    MILQ               72.0   2.0     3.0
+234    MTMC               72.0   2.0     3.0
+235  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 8 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+236     FFD               72.0   2.0     3.0
+237    MILQ               72.0   2.0     3.0
+238    MTMC               72.0   2.0     3.0
+239  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 8 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+240     FFD               72.0   2.0     3.0
+241    MILQ               72.0   2.0     3.0
+242    MTMC               72.0   2.0     3.0
+243  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 8 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+244     FFD               72.0   2.0     3.0
+245    MILQ               72.0   2.0     3.0
+246    MTMC               72.0   2.0     3.0
+247  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 8 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+248     FFD               72.0   2.0     3.0
+249    MILQ               72.0   2.0     3.0
+250    MTMC               72.0   2.0     3.0
+251  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 9 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+252     FFD                0.0   1.0     4.0
+253    MILQ                0.0   1.0     4.0
+254    MTMC                0.0   1.0     4.0
+255  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 9 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+256     FFD                0.0   1.0     4.0
+257    MILQ                0.0   1.0     4.0
+258    MTMC                0.0   1.0     4.0
+259  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 9 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+260     FFD                0.0   1.0     4.0
+261    MILQ                0.0   1.0     4.0
+262    MTMC                0.0   1.0     4.0
+263  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 9 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+264     FFD                0.0   1.0     4.0
+265    MILQ                0.0   1.0     4.0
+266    MTMC                0.0   1.0     4.0
+267  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 9 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+268     FFD               81.0   2.0     3.0
+269    MILQ               81.0   2.0     3.0
+270    MTMC               81.0   2.0     3.0
+271  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 9 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+272     FFD               81.0   2.0     3.0
+273    MILQ               81.0   2.0     3.0
+274    MTMC               81.0   2.0     3.0
+275  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 9 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+276     FFD               81.0   2.0     3.0
+277    MILQ               81.0   2.0     3.0
+278    MTMC               81.0   2.0     3.0
+279  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 9 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+280     FFD               81.0   2.0     3.0
+281    MILQ               81.0   2.0     3.0
+282    MTMC               81.0   2.0     3.0
+283  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 9 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+284     FFD               81.0   2.0     3.0
+285    MILQ               81.0   2.0     3.0
+286    MTMC               81.0   2.0     3.0
+287  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 10 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+288     FFD                0.0   1.0     4.0
+289    MILQ                0.0   1.0     4.0
+290    MTMC                0.0   1.0     4.0
+291  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 10 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+292     FFD                0.0   1.0     4.0
+293    MILQ                0.0   1.0     4.0
+294    MTMC                0.0   1.0     4.0
+295  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 10 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+296     FFD                0.0   1.0     4.0
+297    MILQ                0.0   1.0     4.0
+298    MTMC                0.0   1.0     4.0
+299  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 10 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+300     FFD                0.0   1.0     4.0
+301    MILQ                0.0   1.0     4.0
+302    MTMC                0.0   1.0     4.0
+303  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 10 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+304     FFD               90.0   2.0     3.0
+305    MILQ               90.0   2.0     3.0
+306    MTMC               90.0   2.0     3.0
+307  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 10 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+308     FFD               90.0   2.0     3.0
+309    MILQ               90.0   2.0     3.0
+310    MTMC               90.0   2.0     3.0
+311  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 10 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+312     FFD               90.0   2.0     3.0
+313    MILQ               90.0   2.0     3.0
+314    MTMC               90.0   2.0     3.0
+315  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 10 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+316     FFD               90.0   2.0     3.0
+317    MILQ               90.0   2.0     3.0
+318    MTMC               90.0   2.0     3.0
+319  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 10 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+320     FFD               90.0   2.0     3.0
+321    MILQ               90.0   2.0     3.0
+322    MTMC               90.0   2.0     3.0
+323  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 11 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+324     FFD                0.0   1.0     4.0
+325    MILQ                0.0   1.0     4.0
+326    MTMC                0.0   1.0     4.0
+327  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 11 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+328     FFD                0.0   1.0     4.0
+329    MILQ                0.0   1.0     4.0
+330    MTMC                0.0   1.0     4.0
+331  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 11 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+332     FFD                0.0   1.0     4.0
+333    MILQ                0.0   1.0     4.0
+334    MTMC                0.0   1.0     4.0
+335  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 11 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+336     FFD                0.0   1.0     4.0
+337    MILQ                0.0   1.0     4.0
+338    MTMC                0.0   1.0     4.0
+339  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 11 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+340     FFD               99.0   2.0     3.0
+341    MILQ               99.0   2.0     3.0
+342    MTMC               99.0   2.0     3.0
+343  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 11 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+344     FFD               99.0   2.0     3.0
+345    MILQ               99.0   2.0     3.0
+346    MTMC               99.0   2.0     3.0
+347  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 11 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+348     FFD               99.0   2.0     3.0
+349    MILQ               99.0   2.0     3.0
+350    MTMC               99.0   2.0     3.0
+351  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 11 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+352     FFD               99.0   2.0     3.0
+353    MILQ               99.0   2.0     3.0
+354    MTMC               99.0   2.0     3.0
+355  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 11 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+356     FFD               99.0   2.0     3.0
+357    MILQ               99.0   2.0     3.0
+358    MTMC               99.0   2.0     3.0
+359  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 12 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+360     FFD                0.0   1.0     4.0
+361    MILQ                0.0   1.0     4.0
+362    MTMC                0.0   1.0     4.0
+363  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 12 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+364     FFD                0.0   1.0     4.0
+365    MILQ                0.0   1.0     4.0
+366    MTMC                0.0   1.0     4.0
+367  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 12 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+368     FFD                0.0   1.0     4.0
+369    MILQ                0.0   1.0     4.0
+370    MTMC                0.0   1.0     4.0
+371  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 12 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+372     FFD                0.0   1.0     4.0
+373    MILQ                0.0   1.0     4.0
+374    MTMC                0.0   1.0     4.0
+375  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 12 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+376     FFD              108.0   2.0     3.0
+377    MILQ              108.0   2.0     3.0
+378    MTMC              108.0   2.0     3.0
+379  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 12 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+380     FFD              108.0   2.0     3.0
+381    MILQ              108.0   2.0     3.0
+382    MTMC              108.0   2.0     3.0
+383  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 12 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+384     FFD              108.0   2.0     3.0
+385    MILQ              108.0   2.0     3.0
+386    MTMC              108.0   2.0     3.0
+387  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 12 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+388     FFD              108.0   2.0     3.0
+389    MILQ              108.0   2.0     3.0
+390    MTMC              108.0   2.0     3.0
+391  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 12 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+392     FFD              108.0   2.0     3.0
+393    MILQ              108.0   2.0     3.0
+394    MTMC              108.0   2.0     3.0
+395  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 13 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+396     FFD                0.0   1.0     4.0
+397    MILQ                0.0   1.0     4.0
+398    MTMC                0.0   1.0     4.0
+399  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 13 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+400     FFD                0.0   1.0     4.0
+401    MILQ                0.0   1.0     4.0
+402    MTMC                0.0   1.0     4.0
+403  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 13 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+404     FFD                0.0   1.0     4.0
+405    MILQ                0.0   1.0     4.0
+406    MTMC                0.0   1.0     4.0
+407  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 13 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+408     FFD                0.0   1.0     4.0
+409    MILQ                0.0   1.0     4.0
+410    MTMC                0.0   1.0     4.0
+411  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 13 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+412     FFD              117.0   2.0     3.0
+413    MILQ              117.0   2.0     3.0
+414    MTMC              117.0   2.0     3.0
+415  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 13 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+416     FFD              117.0   2.0     3.0
+417    MILQ              117.0   2.0     3.0
+418    MTMC              117.0   2.0     3.0
+419  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 13 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+420     FFD              117.0   2.0     3.0
+421    MILQ              117.0   2.0     3.0
+422    MTMC              117.0   2.0     3.0
+423  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 13 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+424     FFD              117.0   2.0     3.0
+425    MILQ              117.0   2.0     3.0
+426    MTMC              117.0   2.0     3.0
+427  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 13 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+428     FFD              117.0   2.0     3.0
+429    MILQ              117.0   2.0     3.0
+430    MTMC              117.0   2.0     3.0
+431  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 14 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+432     FFD                0.0   1.0     4.0
+433    MILQ                0.0   1.0     4.0
+434    MTMC                0.0   1.0     4.0
+435  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 14 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+436     FFD                0.0   1.0     4.0
+437    MILQ                0.0   1.0     4.0
+438    MTMC                0.0   1.0     4.0
+439  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 14 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+440     FFD                0.0   1.0     4.0
+441    MILQ                0.0   1.0     4.0
+442    MTMC                0.0   1.0     4.0
+443  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 14 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+444     FFD                0.0   1.0     4.0
+445    MILQ                0.0   1.0     4.0
+446    MTMC                0.0   1.0     4.0
+447  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 14 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+448     FFD              126.0   2.0     3.0
+449    MILQ              126.0   2.0     3.0
+450    MTMC              126.0   2.0     3.0
+451  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 14 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+452     FFD              126.0   2.0     3.0
+453    MILQ              126.0   2.0     3.0
+454    MTMC              126.0   2.0     3.0
+455  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 14 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+456     FFD              126.0   2.0     3.0
+457    MILQ              126.0   2.0     3.0
+458    MTMC              126.0   2.0     3.0
+459  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 14 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+460     FFD              126.0   2.0     3.0
+461    MILQ              126.0   2.0     3.0
+462    MTMC              126.0   2.0     3.0
+463  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 14 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+464     FFD              126.0   2.0     3.0
+465    MILQ              126.0   2.0     3.0
+466    MTMC              126.0   2.0     3.0
+467  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 15 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+468     FFD                0.0   1.0     4.0
+469    MILQ                0.0   1.0     4.0
+470    MTMC                0.0   1.0     4.0
+471  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 15 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+472     FFD                0.0   1.0     4.0
+473    MILQ                0.0   1.0     4.0
+474    MTMC                0.0   1.0     4.0
+475  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 15 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+476     FFD                0.0   1.0     4.0
+477    MILQ                0.0   1.0     4.0
+478    MTMC                0.0   1.0     4.0
+479  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 15 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+480     FFD                0.0   1.0     4.0
+481    MILQ                0.0   1.0     4.0
+482    MTMC                0.0   1.0     4.0
+483  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 15 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+484     FFD              135.0   2.0     3.0
+485    MILQ              135.0   2.0     3.0
+486    MTMC              135.0   2.0     3.0
+487  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 15 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+488     FFD              135.0   2.0     3.0
+489    MILQ              135.0   2.0     3.0
+490    MTMC              135.0   2.0     3.0
+491  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 15 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+492     FFD              135.0   2.0     3.0
+493    MILQ              135.0   2.0     3.0
+494    MTMC              135.0   2.0     3.0
+495  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 15 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+496     FFD              135.0   2.0     3.0
+497    MILQ              135.0   2.0     3.0
+498    MTMC              135.0   2.0     3.0
+499  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 15 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+500     FFD              135.0   2.0     3.0
+501    MILQ              135.0   2.0     3.0
+502    MTMC              135.0   2.0     3.0
+503  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+504     FFD                0.0   1.0     4.0
+505    MILQ                0.0   1.0     4.0
+506    MTMC                0.0   1.0     4.0
+507  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+508     FFD                0.0   1.0     4.0
+509    MILQ                0.0   1.0     4.0
+510    MTMC                0.0   1.0     4.0
+511  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+512     FFD                0.0   1.0     4.0
+513    MILQ                0.0   1.0     4.0
+514    MTMC                0.0   1.0     4.0
+515  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+516     FFD                0.0   1.0     4.0
+517    MILQ                0.0   1.0     4.0
+518    MTMC                0.0   1.0     4.0
+519  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+520     FFD              144.0   2.0     3.0
+521    MILQ              144.0   2.0     3.0
+522    MTMC              144.0   2.0     3.0
+523  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+524     FFD              144.0   2.0     3.0
+525    MILQ              144.0   2.0     3.0
+526    MTMC              144.0   2.0     3.0
+527  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+528     FFD              144.0   2.0     3.0
+529    MILQ              144.0   2.0     3.0
+530    MTMC              144.0   2.0     3.0
+531  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+532     FFD              144.0   2.0     3.0
+533    MILQ              144.0   2.0     3.0
+534    MTMC              144.0   2.0     3.0
+535  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+536     FFD              144.0   2.0     3.0
+537    MILQ              144.0   2.0     3.0
+538    MTMC              144.0   2.0     3.0
+539  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 17 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+540     FFD                0.0   1.0     4.0
+541    MILQ                0.0   1.0     4.0
+542    MTMC                0.0   1.0     4.0
+543  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 17 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+544     FFD                0.0   1.0     4.0
+545    MILQ                0.0   1.0     4.0
+546    MTMC                0.0   1.0     4.0
+547  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 17 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+548     FFD                0.0   1.0     4.0
+549    MILQ                0.0   1.0     4.0
+550    MTMC                0.0   1.0     4.0
+551  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 17 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+552     FFD                0.0   1.0     4.0
+553    MILQ                0.0   1.0     4.0
+554    MTMC                0.0   1.0     4.0
+555  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 17 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+556     FFD              153.0   2.0     3.0
+557    MILQ              153.0   2.0     3.0
+558    MTMC              153.0   2.0     3.0
+559  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 17 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+560     FFD              153.0   2.0     3.0
+561    MILQ              153.0   2.0     3.0
+562    MTMC              153.0   2.0     3.0
+563  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 17 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+564     FFD              153.0   2.0     3.0
+565    MILQ              153.0   2.0     3.0
+566    MTMC              153.0   2.0     3.0
+567  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 17 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+568     FFD              153.0   2.0     3.0
+569    MILQ              153.0   2.0     3.0
+570    MTMC              153.0   2.0     3.0
+571  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 17 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+572     FFD              153.0   2.0     3.0
+573    MILQ              153.0   2.0     3.0
+574    MTMC              153.0   2.0     3.0
+575  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 18 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+576     FFD                0.0   1.0     4.0
+577    MILQ                0.0   1.0     4.0
+578    MTMC                0.0   1.0     4.0
+579  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 18 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+580     FFD                0.0   1.0     4.0
+581    MILQ                0.0   1.0     4.0
+582    MTMC                0.0   1.0     4.0
+583  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 18 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+584     FFD                0.0   1.0     4.0
+585    MILQ                0.0   1.0     4.0
+586    MTMC                0.0   1.0     4.0
+587  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 18 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+588     FFD                0.0   1.0     4.0
+589    MILQ                0.0   1.0     4.0
+590    MTMC                0.0   1.0     4.0
+591  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 18 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+592     FFD              162.0   2.0     3.0
+593    MILQ              162.0   2.0     3.0
+594    MTMC              162.0   2.0     3.0
+595  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 18 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+596     FFD              162.0   2.0     3.0
+597    MILQ              162.0   2.0     3.0
+598    MTMC              162.0   2.0     3.0
+599  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 18 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+600     FFD              162.0   2.0     3.0
+601    MILQ              162.0   2.0     3.0
+602    MTMC              162.0   2.0     3.0
+603  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 18 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+604     FFD              162.0   2.0     3.0
+605    MILQ              162.0   2.0     3.0
+606    MTMC              162.0   2.0     3.0
+607  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 18 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+608     FFD              162.0   2.0     3.0
+609    MILQ              162.0   2.0     3.0
+610    MTMC              162.0   2.0     3.0
+611  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 19 mạch, 2 qubit:
+    dataset  sampling_overhead  rank  points
+612     FFD                0.0   1.0     4.0
+613    MILQ                0.0   1.0     4.0
+614    MTMC                0.0   1.0     4.0
+615  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 19 mạch, 3 qubit:
+    dataset  sampling_overhead  rank  points
+616     FFD                0.0   1.0     4.0
+617    MILQ                0.0   1.0     4.0
+618    MTMC                0.0   1.0     4.0
+619  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 19 mạch, 4 qubit:
+    dataset  sampling_overhead  rank  points
+620     FFD                0.0   1.0     4.0
+621    MILQ                0.0   1.0     4.0
+622    MTMC                0.0   1.0     4.0
+623  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 19 mạch, 5 qubit:
+    dataset  sampling_overhead  rank  points
+624     FFD                0.0   1.0     4.0
+625    MILQ                0.0   1.0     4.0
+626    MTMC                0.0   1.0     4.0
+627  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 19 mạch, 6 qubit:
+    dataset  sampling_overhead  rank  points
+628     FFD              171.0   2.0     3.0
+629    MILQ              171.0   2.0     3.0
+630    MTMC              171.0   2.0     3.0
+631  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 19 mạch, 7 qubit:
+    dataset  sampling_overhead  rank  points
+632     FFD              171.0   2.0     3.0
+633    MILQ              171.0   2.0     3.0
+634    MTMC              171.0   2.0     3.0
+635  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 19 mạch, 8 qubit:
+    dataset  sampling_overhead  rank  points
+636     FFD              171.0   2.0     3.0
+637    MILQ              171.0   2.0     3.0
+638    MTMC              171.0   2.0     3.0
+639  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 19 mạch, 9 qubit:
+    dataset  sampling_overhead  rank  points
+640     FFD              171.0   2.0     3.0
+641    MILQ              171.0   2.0     3.0
+642    MTMC              171.0   2.0     3.0
+643  NoTaDS                0.0   1.0     4.0
+Điểm cho nhóm 19 mạch, 10 qubit:
+    dataset  sampling_overhead  rank  points
+644     FFD              171.0   2.0     3.0
+645    MILQ              171.0   2.0     3.0
+646    MTMC              171.0   2.0     3.0
+647  NoTaDS                0.0   1.0     4.0
+BỎ QUA nhóm 20 mạch, 2 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 3 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 4 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 5 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 6 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 7 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 8 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 9 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 10 qubit vì thiếu thuật toán.
+Tổng điểm từng thuật toán:
+  dataset  points
+0     FFD   558.0
+1    MILQ   558.0
+2    MTMC   558.0
+3  NoTaDS   648.0
+
+Chuẩn hóa điểm (points/min):
+  dataset  points  normalized_score
+0     FFD   558.0           1.00000
+1    MILQ   558.0           1.00000
+2    MTMC   558.0           1.00000
+3  NoTaDS   648.0           1.16129
+
+Xếp hạng thuật toán (tốt nhất là 4, tệ nhất là 1):
+  dataset  points  final_rank
+0     FFD   558.0         3.0
+1    MILQ   558.0         3.0
+2    MTMC   558.0         3.0
+3  NoTaDS   648.0         4.0

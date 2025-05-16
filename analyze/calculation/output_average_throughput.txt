@@ -1,0 +1,1001 @@
+Điểm cho nhóm 2 mạch, 2 qubit:
+  dataset  average_throughput  rank  points
+0     FFD             1824.00   2.0     3.0
+1    MILQ             1824.00   2.0     3.0
+2    MTMC             1824.00   2.0     3.0
+3  NoTaDS               40.25   1.0     4.0
+Điểm cho nhóm 2 mạch, 3 qubit:
+  dataset  average_throughput  rank  points
+4     FFD             2752.00   2.0     3.0
+5    MILQ             2752.00   2.0     3.0
+6    MTMC             2752.00   2.0     3.0
+7  NoTaDS              352.75   1.0     4.0
+Điểm cho nhóm 2 mạch, 4 qubit:
+   dataset  average_throughput  rank  points
+8      FFD              7600.0   2.0     3.0
+9     MILQ              7600.0   2.0     3.0
+10    MTMC             11088.0   4.0     1.0
+11  NoTaDS               784.5   1.0     4.0
+Điểm cho nhóm 2 mạch, 5 qubit:
+   dataset  average_throughput  rank  points
+12     FFD             11088.0   3.0     2.0
+13    MILQ             11088.0   3.0     2.0
+14    MTMC              7600.0   2.0     3.0
+15  NoTaDS              1840.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 6 qubit:
+   dataset  average_throughput  rank  points
+16     FFD              3840.0   2.0     3.0
+17    MILQ              5544.0   3.0     2.0
+18    MTMC              5544.0   3.0     2.0
+19  NoTaDS              3760.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 7 qubit:
+   dataset  average_throughput  rank  points
+20     FFD              6456.0   4.0     1.0
+21    MILQ              4712.0   2.0     3.0
+22    MTMC              5544.0   3.0     2.0
+23  NoTaDS              4640.0   1.0     4.0
+Điểm cho nhóm 2 mạch, 8 qubit:
+   dataset  average_throughput  rank  points
+24     FFD              5176.0   1.0     4.0
+25    MILQ              5176.0   1.0     4.0
+26    MTMC              5176.0   1.0     4.0
+27  NoTaDS              5520.0   4.0     1.0
+Điểm cho nhóm 2 mạch, 9 qubit:
+   dataset  average_throughput  rank  points
+28     FFD             11088.0   3.0     2.0
+29    MILQ             11088.0   3.0     2.0
+30    MTMC              7600.0   1.0     4.0
+31  NoTaDS              9344.0   2.0     3.0
+Điểm cho nhóm 2 mạch, 10 qubit:
+   dataset  average_throughput  rank  points
+32     FFD              9344.0   2.0     3.0
+33    MILQ              7600.0   1.0     4.0
+34    MTMC              9344.0   2.0     3.0
+35  NoTaDS             18688.0   4.0     1.0
+Điểm cho nhóm 3 mạch, 2 qubit:
+   dataset  average_throughput  rank  points
+36     FFD              1216.0   2.0     3.0
+37    MILQ              1216.0   2.0     3.0
+38    MTMC              1216.0   2.0     3.0
+39  NoTaDS                27.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 3 qubit:
+   dataset  average_throughput  rank  points
+40     FFD         3669.333333   2.0     3.0
+41    MILQ         3669.333333   2.0     3.0
+42    MTMC         3669.333333   2.0     3.0
+43  NoTaDS          469.333333   1.0     4.0
+Điểm cho nhóm 3 mạch, 4 qubit:
+   dataset  average_throughput  rank  points
+44     FFD        12458.666667   2.0     3.0
+45    MILQ        14784.000000   3.0     2.0
+46    MTMC        14784.000000   3.0     2.0
+47  NoTaDS          784.333333   1.0     4.0
+Điểm cho nhóm 3 mạch, 5 qubit:
+   dataset  average_throughput  rank  points
+48     FFD        12458.666667   2.0     3.0
+49    MILQ        14784.000000   4.0     1.0
+50    MTMC        12458.666667   2.0     3.0
+51  NoTaDS         1840.000000   1.0     4.0
+Điểm cho nhóm 3 mạch, 6 qubit:
+   dataset  average_throughput  rank  points
+52     FFD              7392.0   3.0     2.0
+53    MILQ              3696.0   1.0     4.0
+54    MTMC              7392.0   3.0     2.0
+55  NoTaDS              3760.0   2.0     3.0
+Điểm cho nhóm 3 mạch, 7 qubit:
+   dataset  average_throughput  rank  points
+56     FFD         6229.333333   2.0     3.0
+57    MILQ         6837.333333   4.0     1.0
+58    MTMC         6229.333333   2.0     3.0
+59  NoTaDS         4640.000000   1.0     4.0
+Điểm cho nhóm 3 mạch, 8 qubit:
+   dataset  average_throughput  rank  points
+60     FFD        7.146667e+03   2.0     3.0
+61    MILQ        1.473041e+07   4.0     1.0
+62    MTMC        8.309333e+03   3.0     2.0
+63  NoTaDS        5.520000e+03   1.0     4.0
+Điểm cho nhóm 3 mạch, 9 qubit:
+   dataset  average_throughput  rank  points
+64     FFD         7600.000000   1.0     4.0
+65    MILQ        44243.791667   4.0     1.0
+66    MTMC         9925.333333   3.0     2.0
+67  NoTaDS         8762.666667   2.0     3.0
+Điểm cho nhóm 3 mạch, 10 qubit:
+   dataset  average_throughput  rank  points
+68     FFD         7600.000000   1.0     4.0
+69    MILQ         8762.666667   2.0     3.0
+70    MTMC         8762.666667   2.0     3.0
+71  NoTaDS        17525.333333   4.0     1.0
+Điểm cho nhóm 4 mạch, 2 qubit:
+   dataset  average_throughput  rank  points
+72     FFD             912.000   2.0     3.0
+73    MILQ             912.000   2.0     3.0
+74    MTMC             912.000   2.0     3.0
+75  NoTaDS              20.375   1.0     4.0
+Điểm cho nhóm 4 mạch, 3 qubit:
+   dataset  average_throughput  rank  points
+76     FFD            2752.000   2.0     3.0
+77    MILQ            2752.000   2.0     3.0
+78    MTMC            2752.000   2.0     3.0
+79  NoTaDS             352.375   1.0     4.0
+Điểm cho nhóm 4 mạch, 4 qubit:
+   dataset  average_throughput  rank  points
+80     FFD             9344.00   2.0     3.0
+81    MILQ             9344.00   2.0     3.0
+82    MTMC             9344.00   2.0     3.0
+83  NoTaDS              784.25   1.0     4.0
+Điểm cho nhóm 4 mạch, 5 qubit:
+   dataset  average_throughput  rank  points
+84     FFD             11088.0   4.0     1.0
+85    MILQ              9344.0   2.0     3.0
+86    MTMC              9344.0   2.0     3.0
+87  NoTaDS              1840.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 6 qubit:
+   dataset  average_throughput  rank  points
+88     FFD              3820.0   2.0     3.0
+89    MILQ              4692.0   3.0     2.0
+90    MTMC              5544.0   4.0     1.0
+91  NoTaDS              3760.0   1.0     4.0
+Điểm cho nhóm 4 mạch, 7 qubit:
+   dataset  average_throughput  rank  points
+92     FFD         5128.000000   3.0     2.0
+93    MILQ         9390.031244   4.0     1.0
+94    MTMC         4672.000000   2.0     3.0
+95  NoTaDS         4640.000000   1.0     4.0
+Điểm cho nhóm 4 mạch, 8 qubit:
+   dataset  average_throughput  rank  points
+96     FFD             5176.00   1.0     4.0
+97    MILQ             5688.25   3.0     2.0
+98    MTMC             6048.00   4.0     1.0
+99  NoTaDS             5520.00   2.0     3.0
+Điểm cho nhóm 4 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+100     FFD        10216.000000   3.0     2.0
+101    MILQ        12989.874996   4.0     1.0
+102    MTMC         9344.000000   1.0     4.0
+103  NoTaDS         9344.000000   1.0     4.0
+Điểm cho nhóm 4 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+104     FFD              8472.0   1.0     4.0
+105    MILQ             12272.0   3.0     2.0
+106    MTMC             11088.0   2.0     3.0
+107  NoTaDS             19560.0   4.0     1.0
+Điểm cho nhóm 5 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+108     FFD              1459.2   2.0     3.0
+109    MILQ              1459.2   2.0     3.0
+110    MTMC              1459.2   2.0     3.0
+111  NoTaDS                16.4   1.0     4.0
+Điểm cho nhóm 5 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+112     FFD              3302.4   2.0     3.0
+113    MILQ              3840.0   4.0     1.0
+114    MTMC              3302.4   2.0     3.0
+115  NoTaDS               422.4   1.0     4.0
+Điểm cho nhóm 5 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+116     FFD             10515.2   3.0     2.0
+117    MILQ              4480.0   2.0     3.0
+118    MTMC             11910.4   4.0     1.0
+119  NoTaDS               784.2   1.0     4.0
+Điểm cho nhóm 5 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+120     FFD              9120.0   3.0     2.0
+121    MILQ              5555.2   2.0     3.0
+122    MTMC             11910.4   4.0     1.0
+123  NoTaDS              1840.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+124     FFD             4560.00   2.0     3.0
+125    MILQ           171794.56   4.0     1.0
+126    MTMC             6652.80   3.0     2.0
+127  NoTaDS             3760.00   1.0     4.0
+Điểm cho nhóm 5 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+128     FFD              5955.2   4.0     1.0
+129    MILQ              5116.3   2.0     3.0
+130    MTMC              5257.6   3.0     2.0
+131  NoTaDS              4640.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+132     FFD         6358.400000   3.0     2.0
+133    MILQ         3957.600021   1.0     4.0
+134    MTMC         7056.000000   4.0     1.0
+135  NoTaDS         5520.000000   2.0     3.0
+Điểm cho nhóm 5 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+136     FFD         8995.200000   3.0     2.0
+137    MILQ         8174.100051   1.0     4.0
+138    MTMC         8995.200000   3.0     2.0
+139  NoTaDS         8297.600000   2.0     3.0
+Điểm cho nhóm 5 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+140     FFD          9692.80000   3.0     2.0
+141    MILQ          5259.23122   1.0     4.0
+142    MTMC          8995.20000   2.0     3.0
+143  NoTaDS         20780.80000   4.0     1.0
+Điểm cho nhóm 6 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+144     FFD         1216.000000   2.0     3.0
+145    MILQ         1216.000000   2.0     3.0
+146    MTMC         1216.000000   2.0     3.0
+147  NoTaDS           26.666667   1.0     4.0
+Điểm cho nhóm 6 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+148     FFD             2752.00   3.0     2.0
+149    MILQ             2560.00   2.0     3.0
+150    MTMC             2752.00   3.0     2.0
+151  NoTaDS              352.25   1.0     4.0
+Điểm cho nhóm 6 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+152     FFD         9925.333333   3.0     2.0
+153    MILQ         7392.000000   2.0     3.0
+154    MTMC         9925.333333   3.0     2.0
+155  NoTaDS          784.166667   1.0     4.0
+Điểm cho nhóm 6 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+156     FFD        8.762667e+03   2.0     3.0
+157    MILQ        1.834438e+06   4.0     1.0
+158    MTMC        1.108800e+04   3.0     2.0
+159  NoTaDS        1.840000e+03   1.0     4.0
+Điểm cho nhóm 6 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+160     FFD        4.394667e+03   2.0     3.0
+161    MILQ        2.000624e+06   4.0     1.0
+162    MTMC        4.394667e+03   2.0     3.0
+163  NoTaDS        3.760000e+03   1.0     4.0
+Điểm cho nhóm 6 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+164     FFD        4.989333e+03   2.0     3.0
+165    MILQ        3.483747e+11   4.0     1.0
+166    MTMC        6.229333e+03   3.0     2.0
+167  NoTaDS        4.640000e+03   1.0     4.0
+Điểm cho nhóm 6 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+168     FFD        5.176000e+03   1.0     4.0
+169    MILQ        2.483898e+06   4.0     1.0
+170    MTMC        5.757333e+03   3.0     2.0
+171  NoTaDS        5.520000e+03   2.0     3.0
+Điểm cho nhóm 6 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+172     FFD         9344.000000   1.0     4.0
+173    MILQ        11773.333333   4.0     1.0
+174    MTMC         9925.333333   3.0     2.0
+175  NoTaDS         9344.000000   1.0     4.0
+Điểm cho nhóm 6 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+176     FFD        9.925333e+03   2.0     3.0
+177    MILQ        1.056669e+07   4.0     1.0
+178    MTMC        8.762667e+03   1.0     4.0
+179  NoTaDS        1.810667e+04   3.0     2.0
+Điểm cho nhóm 7 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+180     FFD         1042.285714   3.0     2.0
+181    MILQ          672.000000   2.0     3.0
+182    MTMC         1042.285714   3.0     2.0
+183  NoTaDS           22.928571   1.0     4.0
+Điểm cho nhóm 7 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+184     FFD         3145.142857   3.0     2.0
+185    MILQ         2742.857143   2.0     3.0
+186    MTMC         3145.142857   3.0     2.0
+187  NoTaDS          402.285714   1.0     4.0
+Điểm cho nhóm 7 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+188     FFD         8685.714286   2.0     3.0
+189    MILQ        11677.571498   4.0     1.0
+190    MTMC        10678.857143   3.0     2.0
+191  NoTaDS          784.142857   1.0     4.0
+Điểm cho nhóm 7 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+192     FFD        1.067886e+04   2.0     3.0
+193    MILQ        6.000940e+06   4.0     1.0
+194    MTMC        1.167543e+04   3.0     2.0
+195  NoTaDS        1.840000e+03   1.0     4.0
+Điểm cho nhóm 7 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+196     FFD         5837.714286   3.0     2.0
+197    MILQ         3801.142857   2.0     3.0
+198    MTMC         5849.142857   4.0     1.0
+199  NoTaDS         3760.000000   1.0     4.0
+Điểm cho nhóm 7 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+200     FFD         6098.285714   2.0     3.0
+201    MILQ        14754.830714   4.0     1.0
+202    MTMC         6596.571429   3.0     2.0
+203  NoTaDS         4640.000000   1.0     4.0
+Điểm cho nhóm 7 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+204     FFD        7.017143e+03   3.0     2.0
+205    MILQ        3.476322e+07   4.0     1.0
+206    MTMC        6.518857e+03   2.0     3.0
+207  NoTaDS        5.520000e+03   1.0     4.0
+Điểm cho nhóm 7 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+208     FFD        8.596571e+03   2.0     3.0
+209    MILQ        4.295180e+09   4.0     1.0
+210    MTMC        8.098286e+03   1.0     4.0
+211  NoTaDS        9.593143e+03   3.0     2.0
+Điểm cho nhóm 7 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+212     FFD        1.058971e+04   2.0     3.0
+213    MILQ        3.656964e+06   4.0     1.0
+214    MTMC        9.094857e+03   1.0     4.0
+215  NoTaDS        1.818971e+04   3.0     2.0
+Điểm cho nhóm 8 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+216     FFD             912.000   3.0     2.0
+217    MILQ             784.000   2.0     3.0
+218    MTMC             912.000   3.0     2.0
+219  NoTaDS              20.125   1.0     4.0
+Điểm cho nhóm 8 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+220     FFD           2752.0000   2.0     3.0
+221    MILQ           3440.0000   4.0     1.0
+222    MTMC           2752.0000   2.0     3.0
+223  NoTaDS            352.1875   1.0     4.0
+Điểm cho nhóm 8 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+224     FFD           10216.000   4.0     1.0
+225    MILQ            6572.000   2.0     3.0
+226    MTMC            8472.000   3.0     2.0
+227  NoTaDS             784.125   1.0     4.0
+Điểm cho nhóm 8 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+228     FFD        10216.000000   3.0     2.0
+229    MILQ         5210.500037   2.0     3.0
+230    MTMC        10216.000000   3.0     2.0
+231  NoTaDS         1840.000000   1.0     4.0
+Điểm cho nhóm 8 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+232     FFD              4682.0   4.0     1.0
+233    MILQ              2574.0   1.0     4.0
+234    MTMC              4246.0   3.0     2.0
+235  NoTaDS              3760.0   2.0     3.0
+Điểm cho nhóm 8 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+236     FFD              5564.0   4.0     1.0
+237    MILQ              3360.0   1.0     4.0
+238    MTMC              5336.0   3.0     2.0
+239  NoTaDS              4640.0   2.0     3.0
+Điểm cho nhóm 8 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+240     FFD              6920.0   3.0     2.0
+241    MILQ              8040.0   4.0     1.0
+242    MTMC              6048.0   2.0     3.0
+243  NoTaDS              5520.0   1.0     4.0
+Điểm cho nhóm 8 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+244     FFD            9344.000   1.0     4.0
+245    MILQ          142269.975   4.0     1.0
+246    MTMC            9344.000   1.0     4.0
+247  NoTaDS            9780.000   3.0     2.0
+Điểm cho nhóm 8 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+248     FFD              9344.0   2.0     3.0
+249    MILQ         562437487.5   4.0     1.0
+250    MTMC              8908.0   1.0     4.0
+251  NoTaDS             18688.0   3.0     2.0
+Điểm cho nhóm 9 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+252     FFD         1216.000000   2.0     3.0
+253    MILQ         1216.000000   2.0     3.0
+254    MTMC         1216.000000   2.0     3.0
+255  NoTaDS           17.944444   1.0     4.0
+Điểm cho nhóm 9 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+256     FFD         3057.777778   3.0     2.0
+257    MILQ         2560.000000   2.0     3.0
+258    MTMC         3057.777778   3.0     2.0
+259  NoTaDS          391.111111   1.0     4.0
+Điểm cho nhóm 9 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+260     FFD         9994.666667   4.0     1.0
+261    MILQ         7530.666667   2.0     3.0
+262    MTMC         8444.444444   3.0     2.0
+263  NoTaDS          784.111111   1.0     4.0
+Điểm cho nhóm 9 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+264     FFD        10769.777778   3.0     2.0
+265    MILQ         5401.000000   2.0     3.0
+266    MTMC        10769.777778   3.0     2.0
+267  NoTaDS         1840.000000   1.0     4.0
+Điểm cho nhóm 9 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+268     FFD        4.997333e+03   2.0     3.0
+269    MILQ        4.138583e+08   4.0     1.0
+270    MTMC        5.006222e+03   3.0     2.0
+271  NoTaDS        3.760000e+03   1.0     4.0
+Điểm cho nhóm 9 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+272     FFD         5587.555556   4.0     1.0
+273    MILQ         4304.000000   1.0     4.0
+274    MTMC         5200.000000   3.0     2.0
+275  NoTaDS         4640.000000   2.0     3.0
+Điểm cho nhóm 9 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+276     FFD        6.608000e+03   3.0     2.0
+277    MILQ        5.820889e+08   4.0     1.0
+278    MTMC        5.832889e+03   2.0     3.0
+279  NoTaDS        5.520000e+03   1.0     4.0
+Điểm cho nhóm 9 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+280     FFD        9.537778e+03   3.0     2.0
+281    MILQ        2.012445e+09   4.0     1.0
+282    MTMC        8.375111e+03   1.0     4.0
+283  NoTaDS        9.150222e+03   2.0     3.0
+Điểm cho nhóm 9 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+284     FFD        10312.888889   2.0     3.0
+285    MILQ       945282.222222   4.0     1.0
+286    MTMC         8375.111111   1.0     4.0
+287  NoTaDS        19075.555556   3.0     2.0
+Điểm cho nhóm 10 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+288     FFD              1094.4   2.0     3.0
+289    MILQ              1094.4   2.0     3.0
+290    MTMC              1094.4   2.0     3.0
+291  NoTaDS                16.2   1.0     4.0
+Điểm cho nhóm 10 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+292     FFD         2752.000000   3.0     2.0
+293    MILQ         2304.602258   2.0     3.0
+294    MTMC         2752.000000   3.0     2.0
+295  NoTaDS          352.150000   1.0     4.0
+Điểm cho nhóm 10 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+296     FFD         9692.800000   4.0     1.0
+297    MILQ         8299.732057   3.0     2.0
+298    MTMC         7600.000000   2.0     3.0
+299  NoTaDS          782.400000   1.0     4.0
+Điểm cho nhóm 10 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+300     FFD           7600.0000   2.0     3.0
+301    MILQ          13376.3831   4.0     1.0
+302    MTMC           9692.8000   3.0     2.0
+303  NoTaDS           1840.0000   1.0     4.0
+Điểm cho nhóm 10 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+304     FFD              4854.4   4.0     1.0
+305    MILQ              3753.6   1.0     4.0
+306    MTMC              4505.6   3.0     2.0
+307  NoTaDS              3760.0   2.0     3.0
+Điểm cho nhóm 10 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+308     FFD              5393.6   3.0     2.0
+309    MILQ              2993.6   1.0     4.0
+310    MTMC              6137.6   4.0     1.0
+311  NoTaDS              4640.0   2.0     3.0
+Điểm cho nhóm 10 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+312     FFD           6222.4000   2.0     3.0
+313    MILQ          17556.3855   4.0     1.0
+314    MTMC           6222.4000   2.0     3.0
+315  NoTaDS           5520.0000   1.0     4.0
+Điểm cho nhóm 10 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+316     FFD             9344.00   3.0     2.0
+317    MILQ          2098195.75   4.0     1.0
+318    MTMC             8297.60   1.0     4.0
+319  NoTaDS             8995.20   2.0     3.0
+Điểm cho nhóm 10 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+320     FFD              8297.6   1.0     4.0
+321    MILQ         481204744.2   4.0     1.0
+322    MTMC              8297.6   1.0     4.0
+323  NoTaDS             18339.2   3.0     2.0
+Điểm cho nhóm 11 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+324     FFD          994.909091   2.0     3.0
+325    MILQ          994.909091   2.0     3.0
+326    MTMC          994.909091   2.0     3.0
+327  NoTaDS           21.818182   1.0     4.0
+Điểm cho nhóm 11 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+328     FFD         3002.181818   3.0     2.0
+329    MILQ         2794.102959   2.0     3.0
+330    MTMC         3002.181818   3.0     2.0
+331  NoTaDS          384.000000   1.0     4.0
+Điểm cho nhóm 11 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+332     FFD        10193.454545   3.0     2.0
+333    MILQ         8813.090946   2.0     3.0
+334    MTMC        10827.636364   4.0     1.0
+335  NoTaDS          776.818182   1.0     4.0
+Điểm cho nhóm 11 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+336     FFD        1.019345e+04   3.0     2.0
+337    MILQ        5.196102e+06   4.0     1.0
+338    MTMC        8.290909e+03   2.0     3.0
+339  NoTaDS        1.840000e+03   1.0     4.0
+Điểm cho nhóm 11 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+340     FFD         5096.727273   4.0     1.0
+341    MILQ         2714.181818   1.0     4.0
+342    MTMC         4786.909091   3.0     2.0
+343  NoTaDS         3760.000000   2.0     3.0
+Điểm cho nhóm 11 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+344     FFD         5111.272727   3.0     2.0
+345    MILQ         3204.373953   1.0     4.0
+346    MTMC         5428.363636   4.0     1.0
+347  NoTaDS         4640.000000   2.0     3.0
+Điểm cho nhóm 11 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+348     FFD         6347.636364   4.0     1.0
+349    MILQ         3890.909091   1.0     4.0
+350    MTMC         6030.545455   3.0     2.0
+351  NoTaDS         5520.000000   2.0     3.0
+Điểm cho nhóm 11 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+352     FFD        9.185455e+03   1.0     4.0
+353    MILQ        3.071568e+07   4.0     1.0
+354    MTMC        1.013673e+04   3.0     2.0
+355  NoTaDS        9.819636e+03   2.0     3.0
+Điểm cho nhóm 11 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+356     FFD         9819.636364   3.0     2.0
+357    MILQ         6782.772726   1.0     4.0
+358    MTMC         9502.545455   2.0     3.0
+359  NoTaDS        19956.363636   4.0     1.0
+Điểm cho nhóm 12 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+360     FFD          912.000000   2.0     3.0
+361    MILQ          912.000000   2.0     3.0
+362    MTMC          912.000000   2.0     3.0
+363  NoTaDS           20.041667   1.0     4.0
+Điểm cho nhóm 12 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+364     FFD         2752.000000   3.0     2.0
+365    MILQ         2294.916698   2.0     3.0
+366    MTMC         2752.000000   3.0     2.0
+367  NoTaDS          352.125000   1.0     4.0
+Điểm cho nhóm 12 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+368     FFD        8.762667e+03   2.0     3.0
+369    MILQ        5.802023e+07   4.0     1.0
+370    MTMC        1.050667e+04   3.0     2.0
+371  NoTaDS        7.760000e+02   1.0     4.0
+Điểm cho nhóm 12 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+372     FFD         9925.333333   4.0     1.0
+373    MILQ         8658.666667   2.0     3.0
+374    MTMC         9344.000000   3.0     2.0
+375  NoTaDS         1840.000000   1.0     4.0
+Điểm cho nhóm 12 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+376     FFD         4104.000000   2.0     3.0
+377    MILQ         5900.383411   4.0     1.0
+378    MTMC         4678.666667   3.0     2.0
+379  NoTaDS         3760.000000   1.0     4.0
+Điểm cho nhóm 12 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+380     FFD         5709.333333   4.0     1.0
+381    MILQ         2950.666667   1.0     4.0
+382    MTMC         4976.000000   3.0     2.0
+383  NoTaDS         4640.000000   2.0     3.0
+Điểm cho nhóm 12 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+384     FFD         5466.666667   1.0     4.0
+385    MILQ         7773.333333   4.0     1.0
+386    MTMC         6629.333333   3.0     2.0
+387  NoTaDS         5520.000000   2.0     3.0
+Điểm cho nhóm 12 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+388     FFD         9344.000000   3.0     2.0
+389    MILQ        20900.305000   4.0     1.0
+390    MTMC         9053.333333   2.0     3.0
+391  NoTaDS         8762.666667   1.0     4.0
+Điểm cho nhóm 12 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+392     FFD         9053.333333   1.0     4.0
+393    MILQ        55509.987500   4.0     1.0
+394    MTMC         9344.000000   2.0     3.0
+395  NoTaDS        17525.333333   3.0     2.0
+Điểm cho nhóm 13 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+396     FFD         1122.461538   3.0     2.0
+397    MILQ          603.076923   2.0     3.0
+398    MTMC         1122.461538   3.0     2.0
+399  NoTaDS           18.538462   1.0     4.0
+Điểm cho nhóm 13 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+400     FFD         2963.692308   3.0     2.0
+401    MILQ         2363.076923   2.0     3.0
+402    MTMC         2963.692308   3.0     2.0
+403  NoTaDS          379.076923   1.0     4.0
+Điểm cho nhóm 13 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+404     FFD         9257.846154   3.0     2.0
+405    MILQ         4738.461538   2.0     3.0
+406    MTMC        10331.076923   4.0     1.0
+407  NoTaDS          771.769231   1.0     4.0
+Điểm cho nhóm 13 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+408     FFD        9.794462e+03   2.0     3.0
+409    MILQ        1.095273e+06   4.0     1.0
+410    MTMC        1.086769e+04   3.0     2.0
+411  NoTaDS        1.840000e+03   1.0     4.0
+Điểm cho nhóm 13 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+412     FFD         4897.230769   2.0     3.0
+413    MILQ         5506.688822   4.0     1.0
+414    MTMC         5171.692308   3.0     2.0
+415  NoTaDS         3760.000000   1.0     4.0
+Điểm cho nhóm 13 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+416     FFD         4909.538462   2.0     3.0
+417    MILQ         5726.769231   4.0     1.0
+418    MTMC         5177.846154   3.0     2.0
+419  NoTaDS         4640.000000   1.0     4.0
+Điểm cho nhóm 13 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+420     FFD         6704.000000   4.0     1.0
+421    MILQ         5955.692308   2.0     3.0
+422    MTMC         6435.692308   3.0     2.0
+423  NoTaDS         5520.000000   1.0     4.0
+Điểm cho nhóm 13 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+424     FFD         9478.153846   2.0     3.0
+425    MILQ         8088.615385   1.0     4.0
+426    MTMC         9746.461538   3.0     2.0
+427  NoTaDS        10014.769231   4.0     1.0
+Điểm cho nhóm 13 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+428     FFD        10014.769231   3.0     2.0
+429    MILQ         8356.923077   1.0     4.0
+430    MTMC         8941.538462   2.0     3.0
+431  NoTaDS        18419.692308   4.0     1.0
+Điểm cho nhóm 14 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+432     FFD         1042.285714   3.0     2.0
+433    MILQ          781.714286   2.0     3.0
+434    MTMC         1042.285714   3.0     2.0
+435  NoTaDS           17.250000   1.0     4.0
+Điểm cho nhóm 14 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+436     FFD         2752.000000   2.0     3.0
+437    MILQ         2752.000071   4.0     1.0
+438    MTMC         2752.000000   2.0     3.0
+439  NoTaDS          352.107143   1.0     4.0
+Điểm cho nhóm 14 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+440     FFD         8596.571429   3.0     2.0
+441    MILQ         8507.428571   2.0     3.0
+442    MTMC         9593.142857   4.0     1.0
+443  NoTaDS          771.428571   1.0     4.0
+Điểm cho nhóm 14 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+444     FFD         9593.142857   3.0     2.0
+445    MILQ         8009.142857   2.0     3.0
+446    MTMC        10091.428571   4.0     1.0
+447  NoTaDS         1840.000000   1.0     4.0
+Điểm cho nhóm 14 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+448     FFD         4558.857143   3.0     2.0
+449    MILQ         2445.714286   1.0     4.0
+450    MTMC         5051.428571   4.0     1.0
+451  NoTaDS         3760.000000   2.0     3.0
+Điểm cho nhóm 14 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+452     FFD         5317.714286   3.0     2.0
+453    MILQ         4406.892857   1.0     4.0
+454    MTMC         5849.142857   4.0     1.0
+455  NoTaDS         4640.000000   2.0     3.0
+Điểm cho nhóm 14 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+456     FFD         5923.428571   4.0     1.0
+457    MILQ         5878.857143   3.0     2.0
+458    MTMC         5674.285714   2.0     3.0
+459  NoTaDS         5520.000000   1.0     4.0
+Điểm cho nhóm 14 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+460     FFD         9094.857143   1.0     4.0
+461    MILQ         9842.285714   4.0     1.0
+462    MTMC         9344.000000   3.0     2.0
+463  NoTaDS         9094.857143   1.0     4.0
+Điểm cho nhóm 14 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+464     FFD        9.842286e+03   2.0     3.0
+465    MILQ        5.351280e+06   4.0     1.0
+466    MTMC        8.845714e+03   1.0     4.0
+467  NoTaDS        1.868800e+04   3.0     2.0
+Điểm cho nhóm 15 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+468     FFD          972.800000   2.0     3.0
+469    MILQ          972.800000   2.0     3.0
+470    MTMC          972.800000   2.0     3.0
+471  NoTaDS           16.133333   1.0     4.0
+Điểm cho nhóm 15 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+472     FFD         2935.466667   2.0     3.0
+473    MILQ         3303.666236   4.0     1.0
+474    MTMC         2935.466667   2.0     3.0
+475  NoTaDS          375.466667   1.0     4.0
+Điểm cho nhóm 15 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+476     FFD        9.501867e+03   2.0     3.0
+477    MILQ        4.493595e+07   4.0     1.0
+478    MTMC        1.043200e+04   3.0     2.0
+479  NoTaDS        7.680667e+02   1.0     4.0
+Điểm cho nhóm 15 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+480     FFD         9501.866667   3.0     2.0
+481    MILQ         7908.622010   2.0     3.0
+482    MTMC        11362.133333   4.0     1.0
+483  NoTaDS         1840.000000   1.0     4.0
+Điểm cho nhóm 15 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+484     FFD         4983.466667   2.0     3.0
+485    MILQ         5511.466667   4.0     1.0
+486    MTMC         4988.800000   3.0     2.0
+487  NoTaDS         3760.000000   1.0     4.0
+Điểm cho nhóm 15 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+488     FFD         4650.666667   3.0     2.0
+489    MILQ         3839.028907   1.0     4.0
+490    MTMC         5348.266667   4.0     1.0
+491  NoTaDS         4640.000000   2.0     3.0
+Điểm cho nhóm 15 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+492     FFD         6035.200000   3.0     2.0
+493    MILQ         5895.637438   2.0     3.0
+494    MTMC         6267.733333   4.0     1.0
+495  NoTaDS         5520.000000   1.0     4.0
+Điểm cho nhóm 15 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+496     FFD         9460.266667   2.0     3.0
+497    MILQ         8953.600000   1.0     4.0
+498    MTMC        10157.866667   4.0     1.0
+499  NoTaDS         9460.266667   2.0     3.0
+Điểm cho nhóm 15 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+500     FFD         9460.266667   2.0     3.0
+501    MILQ         6968.533333   1.0     4.0
+502    MTMC         9692.800000   3.0     2.0
+503  NoTaDS        18688.000000   4.0     1.0
+Điểm cho nhóm 16 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+504     FFD               912.0   2.0     3.0
+505    MILQ               912.0   2.0     3.0
+506    MTMC               912.0   2.0     3.0
+507  NoTaDS                20.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+508     FFD          2752.00000   2.0     3.0
+509    MILQ          2880.00000   4.0     1.0
+510    MTMC          2752.00000   2.0     3.0
+511  NoTaDS           352.09375   1.0     4.0
+Điểm cho nhóm 16 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+512     FFD             10216.0   4.0     1.0
+513    MILQ              7958.0   2.0     3.0
+514    MTMC              9344.0   3.0     2.0
+515  NoTaDS               768.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+516     FFD              8908.0   2.0     3.0
+517    MILQ          26560705.0   4.0     1.0
+518    MTMC              9344.0   3.0     2.0
+519  NoTaDS              1840.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+520     FFD              4682.0   4.0     1.0
+521    MILQ              3301.0   1.0     4.0
+522    MTMC              4464.0   3.0     2.0
+523  NoTaDS              3760.0   2.0     3.0
+Điểm cho nhóm 16 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+524     FFD              5346.0   4.0     1.0
+525    MILQ              3010.0   1.0     4.0
+526    MTMC              4796.0   3.0     2.0
+527  NoTaDS              4640.0   2.0     3.0
+Điểm cho nhóm 16 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+528     FFD              5394.0   1.0     4.0
+529    MILQ              5440.0   2.0     3.0
+530    MTMC              5830.0   4.0     1.0
+531  NoTaDS              5520.0   3.0     2.0
+Điểm cho nhóm 16 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+532     FFD         9780.000000   3.0     2.0
+533    MILQ        20826.703438   4.0     1.0
+534    MTMC         9344.000000   1.0     4.0
+535  NoTaDS         9344.000000   1.0     4.0
+Điểm cho nhóm 16 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+536     FFD         9344.000000   3.0     2.0
+537    MILQ         9126.030059   2.0     3.0
+538    MTMC         9126.000000   1.0     4.0
+539  NoTaDS        18252.000000   4.0     1.0
+Điểm cho nhóm 17 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+540     FFD         1072.941176   3.0     2.0
+541    MILQ          858.352941   2.0     3.0
+542    MTMC         1072.941176   3.0     2.0
+543  NoTaDS           18.852941   1.0     4.0
+Điểm cho nhóm 17 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+544     FFD         2913.882353   3.0     2.0
+545    MILQ         2484.705882   2.0     3.0
+546    MTMC         2913.882353   3.0     2.0
+547  NoTaDS          372.705882   1.0     4.0
+Điểm cho nhóm 17 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+548     FFD        10509.176471   3.0     2.0
+549    MILQ         8794.352941   2.0     3.0
+550    MTMC        10509.176471   3.0     2.0
+551  NoTaDS          765.235294   1.0     4.0
+Điểm cho nhóm 17 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+552     FFD        1.009882e+04   3.0     2.0
+553    MILQ        1.517630e+08   4.0     1.0
+554    MTMC        9.278118e+03   2.0     3.0
+555  NoTaDS        1.840000e+03   1.0     4.0
+Điểm cho nhóm 17 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+556     FFD         4433.882353   3.0     2.0
+557    MILQ         2664.470598   1.0     4.0
+558    MTMC         5469.176471   4.0     1.0
+559  NoTaDS         3760.000000   2.0     3.0
+Điểm cho nhóm 17 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+560     FFD         5166.117647   4.0     1.0
+561    MILQ         2916.668067   1.0     4.0
+562    MTMC         4550.588235   2.0     3.0
+563  NoTaDS         4640.000000   3.0     2.0
+Điểm cho nhóm 17 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+564     FFD         5523.764706   2.0     3.0
+565    MILQ         7320.470588   4.0     1.0
+566    MTMC         6344.470588   3.0     2.0
+567  NoTaDS         5520.000000   1.0     4.0
+Điểm cho nhóm 17 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+568     FFD        10062.117647   4.0     1.0
+569    MILQ         7284.705882   1.0     4.0
+570    MTMC         8831.058824   2.0     3.0
+571  NoTaDS         9036.235294   3.0     2.0
+Điểm cho nhóm 17 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+572     FFD         8831.058824   2.0     3.0
+573    MILQ         8142.117647   1.0     4.0
+574    MTMC         8831.058824   2.0     3.0
+575  NoTaDS        18893.176471   4.0     1.0
+Điểm cho nhóm 18 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+576     FFD         1013.333333   2.0     3.0
+577    MILQ         1013.333333   2.0     3.0
+578    MTMC         1013.333333   2.0     3.0
+579  NoTaDS           17.833333   1.0     4.0
+Điểm cho nhóm 18 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+580     FFD         2752.000000   3.0     2.0
+581    MILQ         2346.666667   2.0     3.0
+582    MTMC         2752.000000   3.0     2.0
+583  NoTaDS          352.083333   1.0     4.0
+Điểm cho nhóm 18 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+584     FFD        9.150222e+03   3.0     2.0
+585    MILQ        1.372715e+09   4.0     1.0
+586    MTMC        7.987556e+03   2.0     3.0
+587  NoTaDS        7.653333e+02   1.0     4.0
+Điểm cho nhóm 18 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+588     FFD        9.537778e+03   2.0     3.0
+589    MILQ        4.425798e+09   4.0     1.0
+590    MTMC        9.537778e+03   2.0     3.0
+591  NoTaDS        1.840000e+03   1.0     4.0
+Điểm cho nhóm 18 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+592     FFD         4777.777778   3.0     2.0
+593    MILQ         4403.555556   2.0     3.0
+594    MTMC         4971.555556   4.0     1.0
+595  NoTaDS         3760.000000   1.0     4.0
+Điểm cho nhóm 18 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+596     FFD         5081.777778   3.0     2.0
+597    MILQ         3520.000000   1.0     4.0
+598    MTMC         5301.333333   4.0     1.0
+599  NoTaDS         4640.000000   2.0     3.0
+Điểm cho nhóm 18 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+600     FFD         6338.666667   4.0     1.0
+601    MILQ         5951.111111   2.0     3.0
+602    MTMC         5951.111111   2.0     3.0
+603  NoTaDS         5520.000000   1.0     4.0
+Điểm cho nhóm 18 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+604     FFD         9344.000000   2.0     3.0
+605    MILQ        10188.444444   4.0     1.0
+606    MTMC         9537.777778   3.0     2.0
+607  NoTaDS         9150.222222   1.0     4.0
+Điểm cho nhóm 18 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+608     FFD        10119.111111   3.0     2.0
+609    MILQ         7883.555555   1.0     4.0
+610    MTMC         9537.777778   2.0     3.0
+611  NoTaDS        19075.555556   4.0     1.0
+Điểm cho nhóm 19 mạch, 2 qubit:
+    dataset  average_throughput  rank  points
+612     FFD          960.000000   2.0     3.0
+613    MILQ          960.000000   2.0     3.0
+614    MTMC          960.000000   2.0     3.0
+615  NoTaDS           16.921053   1.0     4.0
+Điểm cho nhóm 19 mạch, 3 qubit:
+    dataset  average_throughput  rank  points
+616     FFD         2896.842105   3.0     2.0
+617    MILQ         2607.157895   2.0     3.0
+618    MTMC         2896.842105   3.0     2.0
+619  NoTaDS          370.526316   1.0     4.0
+Điểm cho nhóm 19 mạch, 4 qubit:
+    dataset  average_throughput  rank  points
+620     FFD        9.101474e+03   2.0     3.0
+621    MILQ        5.351331e+08   4.0     1.0
+622    MTMC        1.130442e+04   3.0     2.0
+623  NoTaDS        7.630000e+02   1.0     4.0
+Điểm cho nhóm 19 mạch, 5 qubit:
+    dataset  average_throughput  rank  points
+624     FFD        1.057011e+04   3.0     2.0
+625    MILQ        1.516774e+08   4.0     1.0
+626    MTMC        9.835789e+03   2.0     3.0
+627  NoTaDS        1.840000e+03   1.0     4.0
+Điểm cho nhóm 19 mạch, 6 qubit:
+    dataset  average_throughput  rank  points
+628     FFD         5101.473684   3.0     2.0
+629    MILQ         6281.263158   4.0     1.0
+630    MTMC         4926.315789   2.0     3.0
+631  NoTaDS         3760.000000   1.0     4.0
+Điểm cho nhóm 19 mạch, 7 qubit:
+    dataset  average_throughput  rank  points
+632     FFD         4934.736842   2.0     3.0
+633    MILQ         4956.631579   3.0     2.0
+634    MTMC         5669.052632   4.0     1.0
+635  NoTaDS         4640.000000   1.0     4.0
+Điểm cho nhóm 19 mạch, 8 qubit:
+    dataset  average_throughput  rank  points
+636     FFD         6037.894737   2.0     3.0
+637    MILQ        87929.950000   4.0     1.0
+638    MTMC         6772.210526   3.0     2.0
+639  NoTaDS         5520.000000   1.0     4.0
+Điểm cho nhóm 19 mạch, 9 qubit:
+    dataset  average_throughput  rank  points
+640     FFD         9068.631579   3.0     2.0
+641    MILQ         8085.052632   1.0     4.0
+642    MTMC         8701.473684   2.0     3.0
+643  NoTaDS         9068.631579   3.0     2.0
+Điểm cho nhóm 19 mạch, 10 qubit:
+    dataset  average_throughput  rank  points
+644     FFD         9068.631579   2.0     3.0
+645    MILQ         8852.895309   1.0     4.0
+646    MTMC         9435.789474   3.0     2.0
+647  NoTaDS        19055.157895   4.0     1.0
+BỎ QUA nhóm 20 mạch, 2 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 3 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 4 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 5 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 6 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 7 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 8 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 9 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 10 qubit vì thiếu thuật toán.
+Tổng điểm từng thuật toán:
+  dataset  points
+0     FFD   395.0
+1    MILQ   389.0
+2    MTMC   384.0
+3  NoTaDS   555.0
+
+Chuẩn hóa điểm (points/min):
+  dataset  points  normalized_score
+0     FFD   395.0          1.028646
+1    MILQ   389.0          1.013021
+2    MTMC   384.0          1.000000
+3  NoTaDS   555.0          1.445312
+
+Xếp hạng thuật toán (tốt nhất là 4, tệ nhất là 1):
+  dataset  points  final_rank
+0     FFD   395.0         3.0
+1    MILQ   389.0         2.0
+2    MTMC   384.0         1.0
+3  NoTaDS   555.0         4.0

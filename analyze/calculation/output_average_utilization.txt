@@ -1,0 +1,1001 @@
+Điểm cho nhóm 2 mạch, 2 qubit:
+  dataset  average_utilization  rank  points
+0     FFD             0.800000   1.0     4.0
+1    MILQ             0.800000   1.0     4.0
+2    MTMC             0.400000   3.0     2.0
+3  NoTaDS             0.198758   4.0     1.0
+Điểm cho nhóm 2 mạch, 3 qubit:
+  dataset  average_utilization  rank  points
+4     FFD             0.600000   2.0     3.0
+5    MILQ             0.600000   2.0     3.0
+6    MTMC             0.600000   2.0     3.0
+7  NoTaDS             0.843657   1.0     4.0
+Điểm cho nhóm 2 mạch, 4 qubit:
+   dataset  average_utilization  rank  points
+8      FFD               0.8000   1.0     4.0
+9     MILQ               0.8000   1.0     4.0
+10    MTMC               0.8000   1.0     4.0
+11  NoTaDS               0.7587   4.0     1.0
+Điểm cho nhóm 2 mạch, 5 qubit:
+   dataset  average_utilization  rank  points
+12     FFD             1.000000   1.0     4.0
+13    MILQ             1.000000   1.0     4.0
+14    MTMC             1.000000   1.0     4.0
+15  NoTaDS             0.770435   4.0     1.0
+Điểm cho nhóm 2 mạch, 6 qubit:
+   dataset  average_utilization  rank  points
+16     FFD             0.996875   1.0     4.0
+17    MILQ             0.993088   2.0     3.0
+18    MTMC             0.993088   2.0     3.0
+19  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 2 mạch, 7 qubit:
+   dataset  average_utilization  rank  points
+20     FFD             0.985874   1.0     4.0
+21    MILQ             0.885614   3.0     2.0
+22    MTMC             0.981226   2.0     3.0
+23  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 2 mạch, 8 qubit:
+   dataset  average_utilization  rank  points
+24     FFD             0.874542   1.0     4.0
+25    MILQ             0.874542   1.0     4.0
+26    MTMC             0.874542   1.0     4.0
+27  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 2 mạch, 9 qubit:
+   dataset  average_utilization  rank  points
+28     FFD              0.90478   1.0     4.0
+29    MILQ              0.90478   1.0     4.0
+30    MTMC              0.90478   1.0     4.0
+31  NoTaDS              0.90000   4.0     1.0
+Điểm cho nhóm 2 mạch, 10 qubit:
+   dataset  average_utilization  rank  points
+32     FFD                  1.0   1.0     4.0
+33    MILQ                  1.0   1.0     4.0
+34    MTMC                  1.0   1.0     4.0
+35  NoTaDS                  1.0   1.0     4.0
+Điểm cho nhóm 3 mạch, 2 qubit:
+   dataset  average_utilization  rank  points
+36     FFD             0.600000   1.0     4.0
+37    MILQ             0.600000   1.0     4.0
+38    MTMC             0.600000   1.0     4.0
+39  NoTaDS             0.296296   4.0     1.0
+Điểm cho nhóm 3 mạch, 3 qubit:
+   dataset  average_utilization  rank  points
+40     FFD             0.600000   2.0     3.0
+41    MILQ             0.600000   2.0     3.0
+42    MTMC             0.600000   2.0     3.0
+43  NoTaDS             0.634091   1.0     4.0
+Điểm cho nhóm 3 mạch, 4 qubit:
+   dataset  average_utilization  rank  points
+44     FFD             0.800000   1.0     4.0
+45    MILQ             0.800000   1.0     4.0
+46    MTMC             0.800000   1.0     4.0
+47  NoTaDS             0.758861   4.0     1.0
+Điểm cho nhóm 3 mạch, 5 qubit:
+   dataset  average_utilization  rank  points
+48     FFD             1.000000   1.0     4.0
+49    MILQ             1.000000   1.0     4.0
+50    MTMC             1.000000   1.0     4.0
+51  NoTaDS             0.770435   4.0     1.0
+Điểm cho nhóm 3 mạch, 6 qubit:
+   dataset  average_utilization  rank  points
+52     FFD             0.995392   2.0     3.0
+53    MILQ             0.997669   1.0     4.0
+54    MTMC             0.995392   2.0     3.0
+55  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 3 mạch, 7 qubit:
+   dataset  average_utilization  rank  points
+56     FFD             0.936774   1.0     4.0
+57    MILQ             0.878484   3.0     2.0
+58    MTMC             0.936774   1.0     4.0
+59  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 3 mạch, 8 qubit:
+   dataset  average_utilization  rank  points
+60     FFD             0.868134   2.0     3.0
+61    MILQ             0.000213   4.0     1.0
+62    MTMC             0.871726   1.0     4.0
+63  NoTaDS             0.800000   3.0     2.0
+Điểm cho nhóm 3 mạch, 9 qubit:
+   dataset  average_utilization  rank  points
+64     FFD             0.904389   1.0     4.0
+65    MILQ             0.634864   4.0     1.0
+66    MTMC             0.900484   2.0     3.0
+67  NoTaDS             0.900000   3.0     2.0
+Điểm cho nhóm 3 mạch, 10 qubit:
+   dataset  average_utilization  rank  points
+68     FFD             1.000000   1.0     4.0
+69    MILQ             0.980306   4.0     1.0
+70    MTMC             1.000000   1.0     4.0
+71  NoTaDS             1.000000   1.0     4.0
+Điểm cho nhóm 4 mạch, 2 qubit:
+   dataset  average_utilization  rank  points
+72     FFD             0.800000   1.0     4.0
+73    MILQ             0.800000   1.0     4.0
+74    MTMC             0.800000   1.0     4.0
+75  NoTaDS             0.392638   4.0     1.0
+Điểm cho nhóm 4 mạch, 3 qubit:
+   dataset  average_utilization  rank  points
+76     FFD             0.600000   2.0     3.0
+77    MILQ             0.600000   2.0     3.0
+78    MTMC             0.600000   2.0     3.0
+79  NoTaDS             0.844555   1.0     4.0
+Điểm cho nhóm 4 mạch, 4 qubit:
+   dataset  average_utilization  rank  points
+80     FFD             0.800000   1.0     4.0
+81    MILQ             0.800000   1.0     4.0
+82    MTMC             0.800000   1.0     4.0
+83  NoTaDS             0.758942   4.0     1.0
+Điểm cho nhóm 4 mạch, 5 qubit:
+   dataset  average_utilization  rank  points
+84     FFD             1.000000   1.0     4.0
+85    MILQ             1.000000   1.0     4.0
+86    MTMC             1.000000   1.0     4.0
+87  NoTaDS             0.770435   4.0     1.0
+Điểm cho nhóm 4 mạch, 6 qubit:
+   dataset  average_utilization  rank  points
+88     FFD             0.999476   1.0     4.0
+89    MILQ             0.995964   3.0     2.0
+90    MTMC             0.998834   2.0     3.0
+91  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 4 mạch, 7 qubit:
+   dataset  average_utilization  rank  points
+92     FFD             0.980748   2.0     3.0
+93    MILQ             0.677984   4.0     1.0
+94    MTMC             0.981226   1.0     4.0
+95  NoTaDS             0.717241   3.0     2.0
+Điểm cho nhóm 4 mạch, 8 qubit:
+   dataset  average_utilization  rank  points
+96     FFD             0.874542   2.0     3.0
+97    MILQ             0.584446   4.0     1.0
+98    MTMC             0.882208   1.0     4.0
+99  NoTaDS             0.800000   3.0     2.0
+Điểm cho nhóm 4 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+100     FFD             0.909048   1.0     4.0
+101    MILQ             0.899524   4.0     1.0
+102    MTMC             0.904780   2.0     3.0
+103  NoTaDS             0.900000   3.0     2.0
+Điểm cho nhóm 4 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+104     FFD                  1.0   1.0     4.0
+105    MILQ                  1.0   1.0     4.0
+106    MTMC                  1.0   1.0     4.0
+107  NoTaDS                  1.0   1.0     4.0
+Điểm cho nhóm 5 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+108     FFD             0.700000   1.0     4.0
+109    MILQ             0.700000   1.0     4.0
+110    MTMC             0.700000   1.0     4.0
+111  NoTaDS             0.487805   4.0     1.0
+Điểm cho nhóm 5 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+112     FFD             0.600000   2.0     3.0
+113    MILQ             0.600000   2.0     3.0
+114    MTMC             0.600000   2.0     3.0
+115  NoTaDS             0.704545   1.0     4.0
+Điểm cho nhóm 5 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+116     FFD              0.80000   1.0     4.0
+117    MILQ              0.80000   1.0     4.0
+118    MTMC              0.80000   1.0     4.0
+119  NoTaDS              0.75899   4.0     1.0
+Điểm cho nhóm 5 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+120     FFD             1.000000   1.0     4.0
+121    MILQ             0.999977   3.0     2.0
+122    MTMC             1.000000   1.0     4.0
+123  NoTaDS             0.770435   4.0     1.0
+Điểm cho nhóm 5 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+124     FFD             1.000000   1.0     4.0
+125    MILQ             0.019716   4.0     1.0
+126    MTMC             1.000000   1.0     4.0
+127  NoTaDS             0.600000   3.0     2.0
+Điểm cho nhóm 5 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+128     FFD             0.957093   1.0     4.0
+129    MILQ             0.702948   4.0     1.0
+130    MTMC             0.957093   1.0     4.0
+131  NoTaDS             0.717241   3.0     2.0
+Điểm cho nhóm 5 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+132     FFD             0.873538   3.0     2.0
+133    MILQ             0.897766   1.0     4.0
+134    MTMC             0.876961   2.0     3.0
+135  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 5 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+136     FFD             0.903128   2.0     3.0
+137    MILQ             0.897647   4.0     1.0
+138    MTMC             0.910883   1.0     4.0
+139  NoTaDS             0.900000   3.0     2.0
+Điểm cho nhóm 5 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+140     FFD             1.000000   2.0     3.0
+141    MILQ             1.144341   1.0     4.0
+142    MTMC             1.000000   2.0     3.0
+143  NoTaDS             1.000000   2.0     3.0
+Điểm cho nhóm 6 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+144     FFD                  0.8   1.0     4.0
+145    MILQ                  0.6   2.0     3.0
+146    MTMC                  0.6   2.0     3.0
+147  NoTaDS                  0.3   4.0     1.0
+Điểm cho nhóm 6 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+148     FFD             0.600000   2.0     3.0
+149    MILQ             0.600000   2.0     3.0
+150    MTMC             0.600000   2.0     3.0
+151  NoTaDS             0.844855   1.0     4.0
+Điểm cho nhóm 6 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+152     FFD             0.800000   1.0     4.0
+153    MILQ             0.800000   1.0     4.0
+154    MTMC             0.800000   1.0     4.0
+155  NoTaDS             0.759022   4.0     1.0
+Điểm cho nhóm 6 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+156     FFD             1.000000   1.0     4.0
+157    MILQ             0.488950   4.0     1.0
+158    MTMC             1.000000   1.0     4.0
+159  NoTaDS             0.770435   3.0     2.0
+Điểm cho nhóm 6 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+160     FFD             0.996880   2.0     3.0
+161    MILQ             0.611217   3.0     2.0
+162    MTMC             0.998786   1.0     4.0
+163  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 6 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+164     FFD             0.980661   1.0     4.0
+165    MILQ             0.095825   4.0     1.0
+166    MTMC             0.974256   2.0     3.0
+167  NoTaDS             0.717241   3.0     2.0
+Điểm cho nhóm 6 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+168     FFD             0.874542   2.0     3.0
+169    MILQ             0.470723   4.0     1.0
+170    MTMC             0.879911   1.0     4.0
+171  NoTaDS             0.800000   3.0     2.0
+Điểm cho nhóm 6 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+172     FFD             0.901670   3.0     2.0
+173    MILQ             0.909349   1.0     4.0
+174    MTMC             0.904780   2.0     3.0
+175  NoTaDS             0.900000   4.0     1.0
+Điểm cho nhóm 6 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+176     FFD              1.00000   1.0     4.0
+177    MILQ              0.17726   4.0     1.0
+178    MTMC              1.00000   1.0     4.0
+179  NoTaDS              1.00000   1.0     4.0
+Điểm cho nhóm 7 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+180     FFD              0.70000   1.0     4.0
+181    MILQ              0.60000   3.0     2.0
+182    MTMC              0.70000   1.0     4.0
+183  NoTaDS              0.34891   4.0     1.0
+Điểm cho nhóm 7 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+184     FFD             0.600000   2.0     3.0
+185    MILQ             0.600000   2.0     3.0
+186    MTMC             0.600000   2.0     3.0
+187  NoTaDS             0.739773   1.0     4.0
+Điểm cho nhóm 7 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+188     FFD             0.800000   1.0     4.0
+189    MILQ             0.799290   3.0     2.0
+190    MTMC             0.800000   1.0     4.0
+191  NoTaDS             0.759045   4.0     1.0
+Điểm cho nhóm 7 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+192     FFD             1.000000   1.0     4.0
+193    MILQ             0.554739   4.0     1.0
+194    MTMC             1.000000   1.0     4.0
+195  NoTaDS             0.770435   3.0     2.0
+Điểm cho nhóm 7 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+196     FFD             0.997678   2.0     3.0
+197    MILQ             0.993446   3.0     2.0
+198    MTMC             0.999414   1.0     4.0
+199  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 7 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+200     FFD             0.968407   2.0     3.0
+201    MILQ             0.270712   4.0     1.0
+202    MTMC             0.969376   1.0     4.0
+203  NoTaDS             0.717241   3.0     2.0
+Điểm cho nhóm 7 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+204     FFD             0.880363   1.0     4.0
+205    MILQ             0.000116   4.0     1.0
+206    MTMC             0.877793   2.0     3.0
+207  NoTaDS             0.800000   3.0     2.0
+Điểm cho nhóm 7 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+208     FFD             0.909716   1.0     4.0
+209    MILQ             0.000002   4.0     1.0
+210    MTMC             0.907385   2.0     3.0
+211  NoTaDS             0.900000   3.0     2.0
+Điểm cho nhóm 7 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+212     FFD             1.000000   1.0     4.0
+213    MILQ             0.022473   4.0     1.0
+214    MTMC             1.000000   1.0     4.0
+215  NoTaDS             1.000000   1.0     4.0
+Điểm cho nhóm 8 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+216     FFD             0.800000   1.0     4.0
+217    MILQ             0.550000   3.0     2.0
+218    MTMC             0.800000   1.0     4.0
+219  NoTaDS             0.397516   4.0     1.0
+Điểm cho nhóm 8 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+220     FFD             0.600000   2.0     3.0
+221    MILQ             0.600000   2.0     3.0
+222    MTMC             0.600000   2.0     3.0
+223  NoTaDS             0.845004   1.0     4.0
+Điểm cho nhóm 8 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+224     FFD             0.800000   1.0     4.0
+225    MILQ             0.721257   4.0     1.0
+226    MTMC             0.800000   1.0     4.0
+227  NoTaDS             0.759063   3.0     2.0
+Điểm cho nhóm 8 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+228     FFD             1.000000   1.0     4.0
+229    MILQ             0.998664   3.0     2.0
+230    MTMC             1.000000   1.0     4.0
+231  NoTaDS             0.770435   4.0     1.0
+Điểm cho nhóm 8 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+232     FFD             0.998828   2.0     3.0
+233    MILQ             0.995300   3.0     2.0
+234    MTMC             0.999529   1.0     4.0
+235  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 8 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+236     FFD             0.981445   1.0     4.0
+237    MILQ             0.962540   3.0     2.0
+238    MTMC             0.980953   2.0     3.0
+239  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 8 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+240     FFD             0.887942   1.0     4.0
+241    MILQ             0.857141   3.0     2.0
+242    MTMC             0.882208   2.0     3.0
+243  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 8 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+244     FFD             0.904780   2.0     3.0
+245    MILQ             0.040711   4.0     1.0
+246    MTMC             0.909446   1.0     4.0
+247  NoTaDS             0.900000   3.0     2.0
+Điểm cho nhóm 8 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+248     FFD             1.000000   1.0     4.0
+249    MILQ             0.000011   4.0     1.0
+250    MTMC             1.000000   1.0     4.0
+251  NoTaDS             1.000000   1.0     4.0
+Điểm cho nhóm 9 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+252     FFD             0.733333   1.0     4.0
+253    MILQ             0.700000   3.0     2.0
+254    MTMC             0.733333   1.0     4.0
+255  NoTaDS             0.445820   4.0     1.0
+Điểm cho nhóm 9 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+256     FFD             0.600000   2.0     3.0
+257    MILQ             0.600000   2.0     3.0
+258    MTMC             0.600000   2.0     3.0
+259  NoTaDS             0.760909   1.0     4.0
+Điểm cho nhóm 9 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+260     FFD             0.800000   2.0     3.0
+261    MILQ             0.807510   1.0     4.0
+262    MTMC             0.800000   2.0     3.0
+263  NoTaDS             0.759076   4.0     1.0
+Điểm cho nhóm 9 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+264     FFD             1.000000   1.0     4.0
+265    MILQ             0.986515   3.0     2.0
+266    MTMC             1.000000   1.0     4.0
+267  NoTaDS             0.770435   4.0     1.0
+Điểm cho nhóm 9 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+268     FFD             0.999417   2.0     3.0
+269    MILQ             0.006501   4.0     1.0
+270    MTMC             0.999822   1.0     4.0
+271  NoTaDS             0.600000   3.0     2.0
+Điểm cho nhóm 9 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+272     FFD             0.968212   1.0     4.0
+273    MILQ             0.933660   3.0     2.0
+274    MTMC             0.967942   2.0     3.0
+275  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 9 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+276     FFD             0.880108   1.0     4.0
+277    MILQ             0.000517   4.0     1.0
+278    MTMC             0.875189   2.0     3.0
+279  NoTaDS             0.800000   3.0     2.0
+Điểm cho nhóm 9 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+280     FFD             0.901612   2.0     3.0
+281    MILQ             0.000003   4.0     1.0
+282    MTMC             0.904258   1.0     4.0
+283  NoTaDS             0.900000   3.0     2.0
+Điểm cho nhóm 9 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+284     FFD             1.000000   1.0     4.0
+285    MILQ             0.036783   4.0     1.0
+286    MTMC             1.000000   1.0     4.0
+287  NoTaDS             1.000000   1.0     4.0
+Điểm cho nhóm 10 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+288     FFD             0.800000   1.0     4.0
+289    MILQ             0.800000   1.0     4.0
+290    MTMC             0.666667   3.0     2.0
+291  NoTaDS             0.493827   4.0     1.0
+Điểm cho nhóm 10 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+292     FFD             0.600000   3.0     2.0
+293    MILQ             0.600782   2.0     3.0
+294    MTMC             0.600000   3.0     2.0
+295  NoTaDS             0.845094   1.0     4.0
+Điểm cho nhóm 10 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+296     FFD             0.800000   1.0     4.0
+297    MILQ             0.799883   3.0     2.0
+298    MTMC             0.800000   1.0     4.0
+299  NoTaDS             0.760736   4.0     1.0
+Điểm cho nhóm 10 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+300     FFD             1.000000   1.0     4.0
+301    MILQ             0.521442   4.0     1.0
+302    MTMC             1.000000   1.0     4.0
+303  NoTaDS             0.770435   3.0     2.0
+Điểm cho nhóm 10 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+304     FFD             1.000000   1.0     4.0
+305    MILQ             0.996807   3.0     2.0
+306    MTMC             1.000000   1.0     4.0
+307  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 10 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+308     FFD             0.981392   1.0     4.0
+309    MILQ             0.958128   3.0     2.0
+310    MTMC             0.978254   2.0     3.0
+311  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 10 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+312     FFD             0.883484   1.0     4.0
+313    MILQ             0.200743   4.0     1.0
+314    MTMC             0.883484   1.0     4.0
+315  NoTaDS             0.800000   3.0     2.0
+Điểm cho nhóm 10 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+316     FFD             0.902914   2.0     3.0
+317    MILQ             0.002548   4.0     1.0
+318    MTMC             0.908984   1.0     4.0
+319  NoTaDS             0.900000   3.0     2.0
+Điểm cho nhóm 10 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+320     FFD             1.000000   1.0     4.0
+321    MILQ             0.000014   4.0     1.0
+322    MTMC             1.000000   1.0     4.0
+323  NoTaDS             1.000000   1.0     4.0
+Điểm cho nhóm 11 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+324     FFD             0.733333   1.0     4.0
+325    MILQ             0.733333   1.0     4.0
+326    MTMC             0.733333   1.0     4.0
+327  NoTaDS             0.366667   4.0     1.0
+Điểm cho nhóm 11 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+328     FFD             0.600000   2.0     3.0
+329    MILQ             0.599542   4.0     1.0
+330    MTMC             0.600000   2.0     3.0
+331  NoTaDS             0.775000   1.0     4.0
+Điểm cho nhóm 11 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+332     FFD             0.800000   1.0     4.0
+333    MILQ             0.799672   3.0     2.0
+334    MTMC             0.800000   1.0     4.0
+335  NoTaDS             0.766202   4.0     1.0
+Điểm cho nhóm 11 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+336     FFD             1.000000   1.0     4.0
+337    MILQ             0.032515   4.0     1.0
+338    MTMC             1.000000   1.0     4.0
+339  NoTaDS             0.770435   3.0     2.0
+Điểm cho nhóm 11 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+340     FFD             0.998140   1.0     4.0
+341    MILQ             0.995968   3.0     2.0
+342    MTMC             0.998131   2.0     3.0
+343  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 11 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+344     FFD             0.971418   2.0     3.0
+345    MILQ             0.953406   3.0     2.0
+346    MTMC             0.972176   1.0     4.0
+347  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 11 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+348     FFD             0.879688   1.0     4.0
+349    MILQ             0.870576   3.0     2.0
+350    MTMC             0.877615   2.0     3.0
+351  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 11 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+352     FFD             0.909176   2.0     3.0
+353    MILQ             0.000199   4.0     1.0
+354    MTMC             0.909901   1.0     4.0
+355  NoTaDS             0.900000   3.0     2.0
+Điểm cho nhóm 11 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+356     FFD             1.000000   2.0     3.0
+357    MILQ             1.001001   1.0     4.0
+358    MTMC             1.000000   2.0     3.0
+359  NoTaDS             1.000000   2.0     3.0
+Điểm cho nhóm 12 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+360     FFD             0.800000   1.0     4.0
+361    MILQ             0.683333   3.0     2.0
+362    MTMC             0.800000   1.0     4.0
+363  NoTaDS             0.399168   4.0     1.0
+Điểm cho nhóm 12 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+364     FFD             0.600000   2.0     3.0
+365    MILQ             0.599575   4.0     1.0
+366    MTMC             0.600000   2.0     3.0
+367  NoTaDS             0.845154   1.0     4.0
+Điểm cho nhóm 12 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+368     FFD             0.800000   1.0     4.0
+369    MILQ             0.000098   4.0     1.0
+370    MTMC             0.800000   1.0     4.0
+371  NoTaDS             0.767010   3.0     2.0
+Điểm cho nhóm 12 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+372     FFD             1.000000   1.0     4.0
+373    MILQ             1.000000   1.0     4.0
+374    MTMC             1.000000   1.0     4.0
+375  NoTaDS             0.770435   4.0     1.0
+Điểm cho nhóm 12 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+376     FFD             0.999513   1.0     4.0
+377    MILQ             0.994084   3.0     2.0
+378    MTMC             0.998830   2.0     3.0
+379  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 12 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+380     FFD             0.981654   1.0     4.0
+381    MILQ             0.948752   3.0     2.0
+382    MTMC             0.980539   2.0     3.0
+383  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 12 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+384     FFD             0.877369   3.0     2.0
+385    MILQ             0.880507   2.0     3.0
+386    MTMC             0.886198   1.0     4.0
+387  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 12 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+388     FFD             0.907891   1.0     4.0
+389    MILQ             0.808491   4.0     1.0
+390    MTMC             0.906386   2.0     3.0
+391  NoTaDS             0.900000   3.0     2.0
+Điểm cho nhóm 12 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+392     FFD             1.000000   1.0     4.0
+393    MILQ             0.145604   4.0     1.0
+394    MTMC             1.000000   1.0     4.0
+395  NoTaDS             1.000000   1.0     4.0
+Điểm cho nhóm 13 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+396     FFD             0.750000   2.0     3.0
+397    MILQ             0.760000   1.0     4.0
+398    MTMC             0.750000   2.0     3.0
+399  NoTaDS             0.431535   4.0     1.0
+Điểm cho nhóm 13 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+400     FFD             0.600000   3.0     2.0
+401    MILQ             0.600209   2.0     3.0
+402    MTMC             0.600000   3.0     2.0
+403  NoTaDS             0.785065   1.0     4.0
+Điểm cho nhóm 13 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+404     FFD             0.800000   1.0     4.0
+405    MILQ             0.800000   1.0     4.0
+406    MTMC             0.800000   1.0     4.0
+407  NoTaDS             0.771215   4.0     1.0
+Điểm cho nhóm 13 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+408     FFD             1.000000   1.0     4.0
+409    MILQ             0.005935   4.0     1.0
+410    MTMC             1.000000   1.0     4.0
+411  NoTaDS             0.770435   3.0     2.0
+Điểm cho nhóm 13 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+412     FFD             0.999223   1.0     4.0
+413    MILQ             0.995386   3.0     2.0
+414    MTMC             0.999220   2.0     3.0
+415  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 13 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+416     FFD             0.971674   2.0     3.0
+417    MILQ             0.958597   3.0     2.0
+418    MTMC             0.971970   1.0     4.0
+419  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 13 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+420     FFD             0.882562   1.0     4.0
+421    MILQ             0.878434   3.0     2.0
+422    MTMC             0.880982   2.0     3.0
+423  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 13 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+424     FFD             0.905441   1.0     4.0
+425    MILQ             0.904104   2.0     3.0
+426    MTMC             0.901187   3.0     2.0
+427  NoTaDS             0.900000   4.0     1.0
+Điểm cho nhóm 13 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+428     FFD             1.000000   1.0     4.0
+429    MILQ             0.999997   4.0     1.0
+430    MTMC             1.000000   1.0     4.0
+431  NoTaDS             1.000000   1.0     4.0
+Điểm cho nhóm 14 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+432     FFD             0.800000   1.0     4.0
+433    MILQ             0.800000   1.0     4.0
+434    MTMC             0.700000   3.0     2.0
+435  NoTaDS             0.463768   4.0     1.0
+Điểm cho nhóm 14 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+436     FFD             0.600000   2.0     3.0
+437    MILQ             0.600000   4.0     1.0
+438    MTMC             0.600000   2.0     3.0
+439  NoTaDS             0.845197   1.0     4.0
+Điểm cho nhóm 14 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+440     FFD             0.800000   1.0     4.0
+441    MILQ             0.800000   1.0     4.0
+442    MTMC             0.800000   1.0     4.0
+443  NoTaDS             0.771556   4.0     1.0
+Điểm cho nhóm 14 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+444     FFD             1.000000   1.0     4.0
+445    MILQ             1.000000   1.0     4.0
+446    MTMC             1.000000   1.0     4.0
+447  NoTaDS             0.770435   4.0     1.0
+Điểm cho nhóm 14 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+448     FFD             0.999875   1.0     4.0
+449    MILQ             0.995089   3.0     2.0
+450    MTMC             0.999665   2.0     3.0
+451  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 14 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+452     FFD             0.981187   1.0     4.0
+453    MILQ             0.941427   3.0     2.0
+454    MTMC             0.979395   2.0     3.0
+455  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 14 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+456     FFD             0.881251   2.0     3.0
+457    MILQ             0.886882   1.0     4.0
+458    MTMC             0.879211   3.0     2.0
+459  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 14 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+460     FFD             0.902041   3.0     2.0
+461    MILQ             0.903515   2.0     3.0
+462    MTMC             0.906114   1.0     4.0
+463  NoTaDS             0.900000   4.0     1.0
+Điểm cho nhóm 14 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+464     FFD             1.000000   1.0     4.0
+465    MILQ             0.285682   4.0     1.0
+466    MTMC             1.000000   1.0     4.0
+467  NoTaDS             1.000000   1.0     4.0
+Điểm cho nhóm 15 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+468     FFD             0.750000   1.0     4.0
+469    MILQ             0.750000   1.0     4.0
+470    MTMC             0.750000   1.0     4.0
+471  NoTaDS             0.495868   4.0     1.0
+Điểm cho nhóm 15 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+472     FFD             0.600000   2.0     3.0
+473    MILQ             0.595407   4.0     1.0
+474    MTMC             0.600000   2.0     3.0
+475  NoTaDS             0.792614   1.0     4.0
+Điểm cho nhóm 15 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+476     FFD             0.800000   1.0     4.0
+477    MILQ             0.480113   4.0     1.0
+478    MTMC             0.800000   1.0     4.0
+479  NoTaDS             0.774933   3.0     2.0
+Điểm cho nhóm 15 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+480     FFD             1.000000   1.0     4.0
+481    MILQ             0.874267   3.0     2.0
+482    MTMC             1.000000   1.0     4.0
+483  NoTaDS             0.770435   4.0     1.0
+Điểm cho nhóm 15 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+484     FFD             1.000000   1.0     4.0
+485    MILQ             0.994364   3.0     2.0
+486    MTMC             1.000000   1.0     4.0
+487  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 15 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+488     FFD             0.972757   2.0     3.0
+489    MILQ             0.946498   3.0     2.0
+490    MTMC             0.974462   1.0     4.0
+491  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 15 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+492     FFD             0.878881   3.0     2.0
+493    MILQ             0.884339   1.0     4.0
+494    MTMC             0.880460   2.0     3.0
+495  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 15 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+496     FFD             0.909050   1.0     4.0
+497    MILQ             0.904780   3.0     2.0
+498    MTMC             0.905095   2.0     3.0
+499  NoTaDS             0.900000   4.0     1.0
+Điểm cho nhóm 15 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+500     FFD                  1.0   1.0     4.0
+501    MILQ                  1.0   1.0     4.0
+502    MTMC                  1.0   1.0     4.0
+503  NoTaDS                  1.0   1.0     4.0
+Điểm cho nhóm 16 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+504     FFD                  0.8   1.0     4.0
+505    MILQ                  0.8   1.0     4.0
+506    MTMC                  0.8   1.0     4.0
+507  NoTaDS                  0.4   4.0     1.0
+Điểm cho nhóm 16 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+508     FFD             0.600000   2.0     3.0
+509    MILQ             0.600000   2.0     3.0
+510    MTMC             0.600000   2.0     3.0
+511  NoTaDS             0.845229   1.0     4.0
+Điểm cho nhóm 16 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+512     FFD                0.800   1.0     4.0
+513    MILQ                0.800   1.0     4.0
+514    MTMC                0.800   1.0     4.0
+515  NoTaDS                0.775   4.0     1.0
+Điểm cho nhóm 16 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+516     FFD             1.000000   1.0     4.0
+517    MILQ             0.000253   4.0     1.0
+518    MTMC             1.000000   1.0     4.0
+519  NoTaDS             0.770435   3.0     2.0
+Điểm cho nhóm 16 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+520     FFD             0.998828   2.0     3.0
+521    MILQ             0.996105   3.0     2.0
+522    MTMC             0.999552   1.0     4.0
+523  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 16 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+524     FFD             0.981111   1.0     4.0
+525    MILQ             0.952435   3.0     2.0
+526    MTMC             0.980247   2.0     3.0
+527  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 16 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+528     FFD             0.876691   3.0     2.0
+529    MILQ             0.877925   2.0     3.0
+530    MTMC             0.880507   1.0     4.0
+531  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 16 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+532     FFD             0.904780   2.0     3.0
+533    MILQ             0.251230   4.0     1.0
+534    MTMC             0.907113   1.0     4.0
+535  NoTaDS             0.900000   3.0     2.0
+Điểm cho nhóm 16 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+536     FFD             1.000000   1.0     4.0
+537    MILQ             0.999998   4.0     1.0
+538    MTMC             1.000000   1.0     4.0
+539  NoTaDS             1.000000   1.0     4.0
+Điểm cho nhóm 17 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+540     FFD             0.760000   1.0     4.0
+541    MILQ             0.760000   1.0     4.0
+542    MTMC             0.760000   1.0     4.0
+543  NoTaDS             0.424337   4.0     1.0
+Điểm cho nhóm 17 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+544     FFD             0.600000   2.0     3.0
+545    MILQ             0.600000   2.0     3.0
+546    MTMC             0.600000   2.0     3.0
+547  NoTaDS             0.798485   1.0     4.0
+Điểm cho nhóm 17 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+548     FFD             0.800000   1.0     4.0
+549    MILQ             0.799992   3.0     2.0
+550    MTMC             0.800000   1.0     4.0
+551  NoTaDS             0.777800   4.0     1.0
+Điểm cho nhóm 17 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+552     FFD             1.000000   1.0     4.0
+553    MILQ             0.000046   4.0     1.0
+554    MTMC             1.000000   1.0     4.0
+555  NoTaDS             0.770435   3.0     2.0
+Điểm cho nhóm 17 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+556     FFD             0.999126   2.0     3.0
+557    MILQ             0.995699   3.0     2.0
+558    MTMC             0.999742   1.0     4.0
+559  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 17 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+560     FFD             0.974071   1.0     4.0
+561    MILQ             0.950030   3.0     2.0
+562    MTMC             0.973228   2.0     3.0
+563  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 17 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+564     FFD             0.875300   3.0     2.0
+565    MILQ             0.883474   1.0     4.0
+566    MTMC             0.881365   2.0     3.0
+567  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 17 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+568     FFD             0.904071   3.0     2.0
+569    MILQ             0.904959   1.0     4.0
+570    MTMC             0.904381   2.0     3.0
+571  NoTaDS             0.900000   4.0     1.0
+Điểm cho nhóm 17 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+572     FFD                  1.0   1.0     4.0
+573    MILQ                  1.0   1.0     4.0
+574    MTMC                  1.0   1.0     4.0
+575  NoTaDS                  1.0   1.0     4.0
+Điểm cho nhóm 18 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+576     FFD             0.800000   1.0     4.0
+577    MILQ             0.720000   2.0     3.0
+578    MTMC             0.720000   2.0     3.0
+579  NoTaDS             0.448598   4.0     1.0
+Điểm cho nhóm 18 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+580     FFD             0.600000   2.0     3.0
+581    MILQ             0.600000   2.0     3.0
+582    MTMC             0.600000   2.0     3.0
+583  NoTaDS             0.845254   1.0     4.0
+Điểm cho nhóm 18 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+584     FFD             0.800000   1.0     4.0
+585    MILQ             0.000003   4.0     1.0
+586    MTMC             0.800000   1.0     4.0
+587  NoTaDS             0.777700   3.0     2.0
+Điểm cho nhóm 18 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+588     FFD             1.000000   1.0     4.0
+589    MILQ             0.000019   4.0     1.0
+590    MTMC             1.000000   1.0     4.0
+591  NoTaDS             0.770435   3.0     2.0
+Điểm cho nhóm 18 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+592     FFD             0.999479   2.0     3.0
+593    MILQ             0.994404   3.0     2.0
+594    MTMC             0.999821   1.0     4.0
+595  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 18 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+596     FFD             0.980714   1.0     4.0
+597    MILQ             0.952686   3.0     2.0
+598    MTMC             0.979492   2.0     3.0
+599  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 18 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+600     FFD             0.884295   1.0     4.0
+601    MILQ             0.881467   2.0     3.0
+602    MTMC             0.881467   2.0     3.0
+603  NoTaDS             0.800000   4.0     1.0
+Điểm cho nhóm 18 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+604     FFD             0.905817   1.0     4.0
+605    MILQ             0.905736   2.0     3.0
+606    MTMC             0.902749   3.0     2.0
+607  NoTaDS             0.900000   4.0     1.0
+Điểm cho nhóm 18 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+608     FFD                  1.0   2.0     3.0
+609    MILQ                  1.0   1.0     4.0
+610    MTMC                  1.0   2.0     3.0
+611  NoTaDS                  1.0   2.0     3.0
+Điểm cho nhóm 19 mạch, 2 qubit:
+    dataset  average_utilization  rank  points
+612     FFD             0.760000   1.0     4.0
+613    MILQ             0.760000   1.0     4.0
+614    MTMC             0.760000   1.0     4.0
+615  NoTaDS             0.472784   4.0     1.0
+Điểm cho nhóm 19 mạch, 3 qubit:
+    dataset  average_utilization  rank  points
+616     FFD             0.600000   2.0     3.0
+617    MILQ             0.600000   2.0     3.0
+618    MTMC             0.600000   2.0     3.0
+619  NoTaDS             0.803182   1.0     4.0
+Điểm cho nhóm 19 mạch, 4 qubit:
+    dataset  average_utilization  rank  points
+620     FFD             0.800000   1.0     4.0
+621    MILQ             0.000020   4.0     1.0
+622    MTMC             0.800000   1.0     4.0
+623  NoTaDS             0.780079   3.0     2.0
+Điểm cho nhóm 19 mạch, 5 qubit:
+    dataset  average_utilization  rank  points
+624     FFD             1.000000   1.0     4.0
+625    MILQ             0.000047   4.0     1.0
+626    MTMC             1.000000   1.0     4.0
+627  NoTaDS             0.770435   3.0     2.0
+Điểm cho nhóm 19 mạch, 6 qubit:
+    dataset  average_utilization  rank  points
+628     FFD             0.999741   2.0     3.0
+629    MILQ             0.995421   3.0     2.0
+630    MTMC             0.999915   1.0     4.0
+631  NoTaDS             0.600000   4.0     1.0
+Điểm cho nhóm 19 mạch, 7 qubit:
+    dataset  average_utilization  rank  points
+632     FFD             0.974976   2.0     3.0
+633    MILQ             0.951715   3.0     2.0
+634    MTMC             0.976488   1.0     4.0
+635  NoTaDS             0.717241   4.0     1.0
+Điểm cho nhóm 19 mạch, 8 qubit:
+    dataset  average_utilization  rank  points
+636     FFD             0.879600   2.0     3.0
+637    MILQ             0.044770   4.0     1.0
+638    MTMC             0.884282   1.0     4.0
+639  NoTaDS             0.800000   3.0     2.0
+Điểm cho nhóm 19 mạch, 9 qubit:
+    dataset  average_utilization  rank  points
+640     FFD             0.906389   2.0     3.0
+641    MILQ             0.903520   3.0     2.0
+642    MTMC             0.906568   1.0     4.0
+643  NoTaDS             0.900000   4.0     1.0
+Điểm cho nhóm 19 mạch, 10 qubit:
+    dataset  average_utilization  rank  points
+644     FFD             1.000000   1.0     4.0
+645    MILQ             0.999867   4.0     1.0
+646    MTMC             1.000000   1.0     4.0
+647  NoTaDS             1.000000   1.0     4.0
+BỎ QUA nhóm 20 mạch, 2 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 3 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 4 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 5 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 6 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 7 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 8 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 9 qubit vì thiếu thuật toán.
+BỎ QUA nhóm 20 mạch, 10 qubit vì thiếu thuật toán.
+Tổng điểm từng thuật toán:
+  dataset  points
+0     FFD   580.0
+1    MILQ   379.0
+2    MTMC   576.0
+3  NoTaDS   304.0
+
+Chuẩn hóa điểm (points/min):
+  dataset  points  normalized_score
+0     FFD   580.0          1.907895
+1    MILQ   379.0          1.246711
+2    MTMC   576.0          1.894737
+3  NoTaDS   304.0          1.000000
+
+Xếp hạng thuật toán (tốt nhất là 4, tệ nhất là 1):
+  dataset  points  final_rank
+0     FFD   580.0         4.0
+1    MILQ   379.0         2.0
+2    MTMC   576.0         3.0
+3  NoTaDS   304.0         1.0
