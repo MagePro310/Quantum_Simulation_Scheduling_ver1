@@ -1,0 +1,18 @@
+{
+    "numcircuit": 2,
+    "nameAlgorithm": "ghz",
+    "averageQubits": 9.0,
+    "nameSchedule": "NoTaDS",
+    "typeMachine": {
+        "fake_belem": 5,
+        "fake_manila": 5
+    },
+    "average_turnaroundTime": 20832.0,
+    "average_responseTime": 6944.0,
+    "average_fidelity": 0.865789254421212,
+    "sampling_overhead": 0.0,
+    "average_throughput": 11088.0,
+    "average_utilization": 0.9,
+    "scheduler_latency": 0.31860876083374023,
+    "makespan": 44352.0
+}
