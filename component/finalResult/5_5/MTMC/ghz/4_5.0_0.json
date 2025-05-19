@@ -7,12 +7,12 @@
         "fake_belem": 5,
         "fake_manila": 5
     },
-    "average_turnaroundTime": 21840.0,
-    "average_responseTime": 7280.0,
-    "average_fidelity": 0.7745214055191212,
+    "average_turnaroundTime": 31520.0,
+    "average_responseTime": 11088.0,
+    "average_fidelity": 0.7756640614393951,
     "sampling_overhead": 0.0,
     "average_throughput": 11088.0,
     "average_utilization": 1.0,
-    "scheduler_latency": 0.004968404769897461,
+    "scheduler_latency": 0.0058383941650390625,
     "makespan": 44352.0
 }

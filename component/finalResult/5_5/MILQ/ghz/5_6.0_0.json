@@ -7,12 +7,12 @@
         "fake_belem": 5,
         "fake_manila": 5
     },
-    "average_turnaroundTime": 18569.745929900004,
-    "average_responseTime": 11177.7459299,
-    "average_fidelity": 0.9146131268002174,
+    "average_turnaroundTime": 23475.345929900002,
+    "average_responseTime": 14400.145929900002,
+    "average_fidelity": 0.9189701120034116,
     "sampling_overhead": 45.0,
-    "average_throughput": 5989.449165100001,
-    "average_utilization": 0.9889032090104564,
-    "scheduler_latency": 0.24920010566711426,
-    "makespan": 59894.491651000004
+    "average_throughput": 4594.2491651,
+    "average_utilization": 0.9942393297508119,
+    "scheduler_latency": 0.25577282905578613,
+    "makespan": 45942.491651000004
 }

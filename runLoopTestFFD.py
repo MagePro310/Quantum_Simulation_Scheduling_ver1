@@ -89,7 +89,7 @@ machines = {}
 backend0 = FakeBelemV2()
 backend1 = FakeManilaV2()
 machines[backend0.name] = backend0
-machines[backend1.name] = backend1
+machines[backend1.name] = backend0
 
 # Define benchmark
 jobs = {}

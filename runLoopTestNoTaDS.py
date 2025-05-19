@@ -87,7 +87,7 @@ machines = {}
 backend0 = FakeBelemV2()
 backend1 = FakeManilaV2()
 machines[backend0.name] = backend0
-machines[backend1.name] = backend1
+machines[backend1.name] = backend0
 
 # Define benchmark
 jobs = {}
@@ -161,10 +161,10 @@ for obj_name, obj in obj_dict.items():
         )
 
 print(subcircuit_dict)
-print()
+# print()
 # for job in process_job_info.values():
 #     job.print()
-# result_Schedule.sampling_overhead = sum_overhead
+result_Schedule.sampling_overhead = sum_overhead
 
 # Get the job for run scheduler
 
