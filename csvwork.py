@@ -3,14 +3,14 @@ import pandas as pd
 
 # Danh sách các file và metric tương ứng
 metrics = [
-    # ("average_fidelity_data.csv", "average_fidelity"),
-    # ("average_responseTime_data.csv", "average_responseTime"),
-    # ("average_throughput_data.csv", "average_throughput"),
-    # ("average_turnaroundTime_data.csv", "average_turnaroundTime"),
-    # ("average_utilization_data.csv", "average_utilization"),
+    ("average_fidelity_data.csv", "average_fidelity"),
+    ("average_responseTime_data.csv", "average_responseTime"),
+    ("average_throughput_data.csv", "average_throughput"),
+    ("average_turnaroundTime_data.csv", "average_turnaroundTime"),
+    ("average_utilization_data.csv", "average_utilization"),
     ("makespan_data.csv", "makespan"),
-    # ("sampling_overhead_data.csv", "sampling_overhead"),
-    # ("scheduler_latency_data.csv", "scheduler_latency"),
+    ("sampling_overhead_data.csv", "sampling_overhead"),
+    ("scheduler_latency_data.csv", "scheduler_latency"),
 ]
 
 # Các metric càng lớn càng tốt
@@ -34,11 +34,14 @@ for filename, metric in metrics:
         if metric in bigger_better:
             max_val = group[metric].max()
             group['score'] = group[metric] / max_val if max_val != 0 else 0
-            print (f"Max value for {metric} in group: {max_val}")
+            print(f"Max value for {metric} in group: {max_val}")
         else:
-            # print name of algorithm have minimum value
-            print(f"Algorithm with minimum {metric} in group: {group.loc[group[metric].idxmin(), 'dataset']}")
             min_val = group[metric].min()
+            if min_val < 0:
+                print(f"Excluded group with min {metric} < 0: {min_val}")
+                return pd.DataFrame()  # Exclude this group
+            print(f"Algorithm with minimum {metric} in group: {group.loc[group[metric].idxmin(), 'dataset']}")
+            print(f"Min value for {metric} in group: {min_val}")
             group['score'] = min_val / group[metric]
         return group
 
