@@ -140,7 +140,7 @@ num_circuit,num_qubits_each_circuit,dataset,average_responseTime
 5,9,MTMC,24064.0
 5,9,NoTaDS,22195.2
 5,10,FFD,27724.8
-5,10,MILQ,-83810.6363391
+5,10,MILQ,27724.8
 5,10,MTMC,22841.6
 5,10,NoTaDS,94908.8
 6,2,FFD,1216.0

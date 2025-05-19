@@ -140,7 +140,7 @@ num_circuit,num_qubits_each_circuit,dataset,average_utilization
 5,9,MTMC,0.9108828068565499
 5,9,NoTaDS,0.9
 5,10,FFD,1.0
-5,10,MILQ,1.1443406376847431
+5,10,MILQ,1.0
 5,10,MTMC,1.0
 5,10,NoTaDS,1.0
 6,2,FFD,0.8
