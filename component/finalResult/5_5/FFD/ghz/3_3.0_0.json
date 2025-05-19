@@ -9,10 +9,10 @@
     },
     "average_turnaroundTime": 7338.666666666667,
     "average_responseTime": 1834.6666666666667,
-    "average_fidelity": 0.8853656676406474,
+    "average_fidelity": 0.8900038474179597,
     "sampling_overhead": 0.0,
     "average_throughput": 3669.3333333333335,
     "average_utilization": 0.6,
-    "scheduler_latency": 0.004858255386352539,
+    "scheduler_latency": 0.00027179718017578125,
     "makespan": 11008.0
 }

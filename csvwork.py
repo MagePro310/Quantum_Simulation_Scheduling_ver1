@@ -23,7 +23,7 @@ os.makedirs(output_dir, exist_ok=True)
 for filename, metric in metrics:
     df = pd.read_csv(f'analyze/all/csv/{filename}')
     # Filter num_circuit from 2 to 5
-    df = df[(df['num_circuit'] >= 2) & (df['num_circuit'] <= 4)]
+    df = df[(df['num_circuit'] == 2) & (df['num_circuit'] <= 4)]
     key_cols = ['num_circuit', 'num_qubits_each_circuit']
     algorithms = df['dataset'].unique()
     num_algorithms = len(algorithms)

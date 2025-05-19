@@ -60,6 +60,9 @@ aer_simulator = AerSimulator()
 num_jobs = int(sys.argv[1])
 num_qubits_per_job = int(sys.argv[2])
 
+# num_jobs = 3
+# num_qubits_per_job = 6
+
 print(f"num_jobs: {num_jobs}, num_qubits_per_job: {num_qubits_per_job}")
 
 # Nested loop to repeat the process 10 times for each num_qubits_per_job
@@ -193,53 +196,55 @@ updated_jobs = simulate_multithread(jobs, scheduler_job)
 
 
 
-# Example: you have circuits per job_id
-job_circuits = {}
-for job_id, job_info in scheduler_job.items():
-    key = job_info.job_name
+# # Example: you have circuits per job_id
+# job_circuits = {}
+# for job_id, job_info in scheduler_job.items():
+#     key = job_info.job_name
     
-    job_circuits[key] = job_info.circuit
+#     job_circuits[key] = job_info.circuit
 
 
-# Group by (machine, start_time)
-grouped_jobs = defaultdict(list)
-for job in updated_jobs:
-    key = (job['machine'], job['start'])
-    grouped_jobs[key].append(job['job'])
+# # Group by (machine, start_time)
+# grouped_jobs = defaultdict(list)
+# for job in updated_jobs:
+#     key = (job['machine'], job['start'])
+#     grouped_jobs[key].append(job['job'])
 
-print("Grouped Jobs:")
-for key, job_ids in grouped_jobs.items():
-    print(f"{key}: {job_ids}")
+# print("Grouped Jobs:")
+# for key, job_ids in grouped_jobs.items():
+#     print(f"{key}: {job_ids}")
 
-# Merge circuits for each (machine, start_time)
-expanded_circuits = {}
-for (machine, start_time), job_ids in grouped_jobs.items():
-    print(job_ids)
-    circuits_to_merge = [job_circuits[job_id] for job_id in job_ids]
-    print("Circuit_To_Merge")
-    print(circuits_to_merge)
-    if len(circuits_to_merge) == 1:
-        merged_circuit = circuits_to_merge[0]  # no merge needed
-    else:
-        print(circuits_to_merge)
-        merged_circuit = merge_multiple_circuits(circuits_to_merge)
+# # Merge circuits for each (machine, start_time)
+# expanded_circuits = {}
+# for (machine, start_time), job_ids in grouped_jobs.items():
+#     print(job_ids)
+#     circuits_to_merge = [job_circuits[job_id] for job_id in job_ids]
+#     print("Circuit_To_Merge")
+#     print(circuits_to_merge)
+#     if len(circuits_to_merge) == 1:
+#         merged_circuit = circuits_to_merge[0]  # no merge needed
+#     else:
+#         print(circuits_to_merge)
+#         merged_circuit = merge_multiple_circuits(circuits_to_merge)
     
-    expanded_circuits[tuple(job_ids)] = merged_circuit
+#     expanded_circuits[tuple(job_ids)] = merged_circuit
 
-print("Expanded Circuits:")
-print(expanded_circuits)
+# print("Expanded Circuits:")
+# print(expanded_circuits)
 
-for keys, circuit_expand in expanded_circuits.items():
-    # print(f"Expanded Circuit for {key}:")
-    # print(circuit)
-    circuit_expand.measure_all()
-    for key in keys:
-        # print(f"Job ID: {key}")
-        scheduler_job[key].knitted_circuit = circuit_expand
+# for keys, circuit_expand in expanded_circuits.items():
+#     # print(f"Expanded Circuit for {key}:")
+#     # print(circuit)
+#     circuit_expand.measure_all()
+#     for key in keys:
+#         # print(f"Job ID: {key}")
+#         scheduler_job[key].knitted_circuit = circuit_expand
 
-for job_info, job_item in scheduler_job.items():
-    print(job_info)
-    job_item.print()
+# for job_info, job_item in scheduler_job.items():
+#     print(job_info)
+#     job_item.print()
+
+
     
 
 # Transpile circuits for all scheduled jobs
@@ -248,7 +253,8 @@ for job_id, job in scheduler_job.items():
     if backend:
         # Perform transpilation
         # job.transpiled_circuit = transpile(job.knitted_circuit, backend, scheduling_method='alap', layout_method='trivial')
-        job.transpiled_circuit_measured = transpile(job.knitted_circuit, backend, scheduling_method='alap', layout_method='trivial')
+        job.circuit.measure_all()
+        job.transpiled_circuit_measured = transpile(job.circuit, backend, scheduling_method='alap', layout_method='trivial')
     else:
         print(f"No backend found for machine {job.machine}. Skipping job {job_id}.")
     job.print()

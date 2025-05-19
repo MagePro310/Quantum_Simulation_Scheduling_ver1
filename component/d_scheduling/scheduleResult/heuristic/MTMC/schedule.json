@@ -52,41 +52,5 @@
         "start": 10.0,
         "end": 15.0,
         "duration": 5.0
-    },
-    {
-        "job": "4_1",
-        "qubits": 5,
-        "machine": "fake_belem",
-        "capacity": 5,
-        "start": 15.0,
-        "end": 20.0,
-        "duration": 5.0
-    },
-    {
-        "job": "4_2",
-        "qubits": 5,
-        "machine": "fake_manila",
-        "capacity": 5,
-        "start": 15.0,
-        "end": 20.0,
-        "duration": 5.0
-    },
-    {
-        "job": "5_1",
-        "qubits": 5,
-        "machine": "fake_belem",
-        "capacity": 5,
-        "start": 20.0,
-        "end": 25.0,
-        "duration": 5.0
-    },
-    {
-        "job": "5_2",
-        "qubits": 5,
-        "machine": "fake_manila",
-        "capacity": 5,
-        "start": 20.0,
-        "end": 25.0,
-        "duration": 5.0
     }
 ]

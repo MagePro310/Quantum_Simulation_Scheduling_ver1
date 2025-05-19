@@ -1,4 +1,6 @@
 def get_the_duration_from_transpiled_circuit(circuit):
+    print("Calculating duration from transpiled circuit...")
+    print(circuit.duration)
     return circuit.duration
 
 def simulate_scheduling(jobs, scheduler_job):

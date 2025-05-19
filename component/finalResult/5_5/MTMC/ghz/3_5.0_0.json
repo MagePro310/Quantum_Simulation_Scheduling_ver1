@@ -8,11 +8,11 @@
         "fake_manila": 5
     },
     "average_turnaroundTime": 24917.333333333332,
-    "average_responseTime": 5066.666666666667,
-    "average_fidelity": 0.7770042802807874,
+    "average_responseTime": 7392.0,
+    "average_fidelity": 0.7808452401525537,
     "sampling_overhead": 0.0,
     "average_throughput": 12458.666666666666,
     "average_utilization": 1.0,
-    "scheduler_latency": 0.005223989486694336,
+    "scheduler_latency": 0.0016303062438964844,
     "makespan": 37376.0
 }
