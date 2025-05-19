@@ -140,7 +140,7 @@ num_circuit,num_qubits_each_circuit,dataset,average_turnaroundTime
 5,9,MTMC,36096.0
 5,9,NoTaDS,33292.8
 5,10,FFD,40889.6
-5,10,MILQ,-72898.6363391
+5,10,MILQ, 115689.6
 5,10,MTMC,35308.8
 5,10,NoTaDS,115689.6
 6,2,FFD,4170.666666666667
