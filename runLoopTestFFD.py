@@ -17,7 +17,7 @@ from qiskit.visualization import plot_error_map, plot_distribution
 from qiskit_ibm_runtime import SamplerV2
 
 from component.a_backend.fake_backend import *
-from component.b_benchmark.mqt_tool import benchmark_circuit, create_circuit
+from component.b_benchmark.mqt_tool import QuantumBenchmark
 from component.sup_sys.job_info import JobInfo
 from component.c_circuit_work.cutting.width_c import *
 from component.c_circuit_work.knitting.width_k import merge_multiple_circuits
@@ -108,9 +108,7 @@ result_Schedule.averageQubits = sum(jobs.values()) / len(jobs)
 origin_job_info = {}
 
 for job_name, num_qubits in jobs.items():
-    circuit = create_circuit(num_qubits, job_name)
-    result_Schedule.nameAlgorithm = "ghz"
-    circuit.remove_final_measurements()
+    circuit, result_Schedule.nameAlgorithm = QuantumBenchmark.create_circuit(num_qubits, job_name)
     origin_job_info[job_name] = JobInfo(
         job_name=job_name,
         qubits=circuit.num_qubits,
@@ -128,12 +126,14 @@ for job_name, num_qubits in jobs.items():
 process_job_info = origin_job_info.copy()
 
 max_width = max(list(machines.values()), key=lambda x: x.num_qubits).num_qubits
+
 for job_name, job_info in process_job_info.items():
     if job_info.qubits > max_width:
         job_info.childrenJobs = []
-        cut_name, observable = gate_cut_width(job_info.circuit, max_width)
-        # print(observable)
-        result_cut = gate_to_reduce_width(job_info.circuit, cut_name, observable)
+        cutter = WidthCircuitCutter(job_info.circuit, max_width)
+        result_cut = cutter.gate_to_reduce_width()
+        # cut_name, observable = gate_cut_width(job_info.circuit, max_width)
+        # result_cut = gate_to_reduce_width(job_info.circuit, cut_name, observable)
         result_Schedule.sampling_overhead += result_cut.overhead
         for i, (subcircuit_name, subcircuit) in enumerate(result_cut.subcircuits.items()):
             job_info.childrenJobs.append(

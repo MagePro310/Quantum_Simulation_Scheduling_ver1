@@ -17,7 +17,7 @@ from qiskit.visualization import plot_error_map, plot_distribution
 from qiskit_ibm_runtime import SamplerV2
 
 from component.a_backend.fake_backend import *
-from component.b_benchmark.mqt_tool import benchmark_circuit, create_circuit
+from component.b_benchmark.mqt_tool import QuantumBenchmark
 from component.sup_sys.job_info import JobInfo
 from component.c_circuit_work.cutting.width_c import *
 from component.c_circuit_work.knitting.width_k import merge_multiple_circuits
@@ -103,9 +103,7 @@ result_Schedule.averageQubits = sum(jobs.values()) / len(jobs)
 origin_job_info = {}
 
 for job_name, num_qubits in jobs.items():
-    circuit = create_circuit(num_qubits, job_name)
-    result_Schedule.nameAlgorithm = "ghz"
-    circuit.remove_final_measurements()
+    circuit, result_Schedule.nameAlgorithm = QuantumBenchmark.create_circuit(num_qubits, job_name)
     origin_job_info[job_name] = JobInfo(
         job_name=job_name,
         qubits=circuit.num_qubits,
@@ -161,7 +159,6 @@ for obj_name, obj in obj_dict.items():
         )
 
 print(subcircuit_dict)
-# print()
 # for job in process_job_info.values():
 #     job.print()
 result_Schedule.sampling_overhead = sum_overhead
