@@ -10,7 +10,7 @@ from qiskit.providers.fake_provider import *
 from qiskit_aer.noise import NoiseModel
 from qiskit_ibm_runtime import QiskitRuntimeService, Sampler, Session, Options
 from qiskit.compiler import transpile
-from component.c_circuit_work.cutting.width_c import *
+from component.c_circuit_work.cutting.width_c import WidthCircuitCutter
 import mapomatic as mm
 
 import numpy as np
@@ -49,8 +49,8 @@ class NoTODS():
 
 
     def _cut_circuit(self) -> dict:
-        cut_name, observable = greedy_cut(self.circuit, self.max_subcircuit_width)
-        result = gate_to_reduce_width(self.circuit, cut_name, observable)
+        cutter = WidthCircuitCutter(self.circuit, self.max_subcircuit_width)
+        result = cutter.gate_to_reduce_width()
         overhead = result.overhead
         preresult = {}
         preresult['subcircuits'] = result.subcircuits

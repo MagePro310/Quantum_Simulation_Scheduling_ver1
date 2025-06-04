@@ -19,20 +19,20 @@
     },
     {
         "job": "1_2",
-        "qubits": 1,
+        "qubits": 2,
         "machine": "fake_belem",
         "capacity": 5,
         "start": 50.0,
-        "end": 60.0,
-        "duration": 10.0
+        "end": 70.0,
+        "duration": 20.0
     },
     {
         "job": "2_2",
-        "qubits": 1,
+        "qubits": 2,
         "machine": "fake_belem",
         "capacity": 5,
         "start": 50.0,
-        "end": 60.0,
-        "duration": 10.0
+        "end": 70.0,
+        "duration": 20.0
     }
 ]

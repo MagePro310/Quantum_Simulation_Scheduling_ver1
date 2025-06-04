@@ -129,7 +129,7 @@ max_width = max(list(machines.values()), key=lambda x: x.num_qubits).num_qubits
 for job_name, job_info in process_job_info.items():
     if job_info.qubits > max_width:
         job_info.childrenJobs = []
-        cut_name, observable = greedy_cut(job_info.circuit, max_width)
+        cut_name, observable = gate_cut_width(job_info.circuit, max_width)
         # print(observable)
         result_cut = gate_to_reduce_width(job_info.circuit, cut_name, observable)
         result_Schedule.sampling_overhead += result_cut.overhead
