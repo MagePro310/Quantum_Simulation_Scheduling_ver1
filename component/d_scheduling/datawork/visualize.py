@@ -142,10 +142,10 @@ def visualize_data(data, save_path="quantum_schedule.pdf"):
     
     # Simplified title
     title_line1 = 'Quantum Job Scheduling Gantt Chart'
-    title_line2 = f'{len(data)} jobs • {len(machines)} machines • {total_qubits} total qubits'
-    title_line3 = f'Makespan: {makespan:.1f}'
+    # title_line2 = f'{len(data)} jobs • {len(machines)} machines • {total_qubits} total qubits'
+    # title_line3 = f'Makespan: {makespan:.1f}'
     
-    ax.set_title(f'{title_line1}\n{title_line2}\n{title_line3}', 
+    ax.set_title(f'{title_line1}', 
                 fontweight='bold', fontsize=16, pad=25)  # Increased from 14 to 16
 
     # Simplified grid system
