@@ -19,8 +19,8 @@ def visualize_data(data, save_path="quantum_schedule.pdf"):
         job['end'] /= 10
         job['duration'] /= 10
 
-    # Sort jobs by job ID for vertical order
-    data.sort(key=lambda x: x['job'])
+    # Sort jobs by job ID for vertical order (reverse to put 1_1 at top)
+    data.sort(key=lambda x: x['job'], reverse=True)
 
     # Create enhanced figure with better proportions for larger text
     fig, ax = plt.subplots(figsize=(16, 12))  # Increased from (14, 10) to (16, 12)
