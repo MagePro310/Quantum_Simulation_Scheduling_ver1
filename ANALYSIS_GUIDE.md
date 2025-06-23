@@ -3,16 +3,19 @@
 ## 📁 Essential Files
 
 ### Main Analysis Pipeline
+
 - **`data_analyzer.py`** - Enhanced, professional analysis pipeline
   - Replaces the original `export_json_to_csv.py` and `radarplot.py`
   - Provides comprehensive data processing, visualization, and reporting
   - Ready-to-use with one command: `python data_analyzer.py`
 
 ### Original Files (Backup)
+
 - **`export_json_to_csv.py`** - Original CSV export script
 - **`radarplot.py`** - Original radar plot generation
 
 ### Core Project Files
+
 - **`quantum_scheduling_pipeline.py`** - Main scheduling pipeline
 - **`main.py`** - Project entry point
 - **`config.py`** - Project configuration
@@ -21,11 +24,13 @@
 ## 🚀 Usage
 
 ### Run Enhanced Analysis
+
 ```bash
 python data_analyzer.py
 ```
 
 This will:
+
 - Extract data from JSON experiment results
 - Create professional visualizations
 - Generate radar charts comparing algorithms
@@ -33,7 +38,8 @@ This will:
 - Create comprehensive analysis reports
 
 ### Output Structure
-```
+
+```text
 analyze/
 ├── all/
 │   ├── csv/                    # Individual metric CSV files
@@ -57,6 +63,7 @@ radarplots/                     # Algorithm comparison radar charts
 ## 📊 Analysis Results
 
 The enhanced pipeline processes your experiment data and provides:
+
 - Algorithm performance rankings for each metric
 - Overall performance summary with recommendations
 - Beautiful visualizations suitable for research publications
