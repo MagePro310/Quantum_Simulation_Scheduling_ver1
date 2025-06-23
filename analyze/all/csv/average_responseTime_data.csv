@@ -1,4 +1,4 @@
-num_circuit,num_qubits_each_circuit,dataset,average_responseTime
+num_circuits,num_qubits_per_circuit,algorithm,average_responseTime
 2,2,FFD,0.0
 2,2,MILQ,0.0
 2,2,MTMC,0.0
@@ -55,3 +55,5 @@ num_circuit,num_qubits_each_circuit,dataset,average_responseTime
 3,9,MTMC,17525.333333333332
 3,10,FFD,18688.0
 3,10,MTMC,22176.0
+5,2,MTMC,72.96000000000001
+5,2,NoTaDS,0.02

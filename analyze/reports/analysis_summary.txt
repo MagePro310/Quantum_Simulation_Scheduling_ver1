@@ -1,0 +1,152 @@
+QUANTUM SCHEDULING ALGORITHM ANALYSIS REPORT
+============================================================
+
+Experiment: 5_Circuits_5_Qubits_GHZ
+Version: v1.0
+Analysis Date: 2025-06-23 16:24:45
+Circuit Type: GHZ
+
+DATA SUMMARY
+--------------------
+Total Records: 58
+Algorithms Analyzed: FFD, MILQ, MTMC, NoTaDS
+Circuit Range: 2-5
+Qubits per Circuit Range: 2-10
+Metrics Evaluated: 8
+
+DETAILED METRIC RANKINGS
+------------------------------
+
+Average Turnaroundtime:
+  1. NoTaDS   - Score: 1.0000 (Raw: 17356.5017)
+  2. MTMC     - Score: 0.9494 (Raw: 17541.4681)
+  3. MILQ     - Score: 0.6988 (Raw: 18457.7778)
+  4. FFD      - Score: 0.0000 (Raw: 21013.3333)
+
+Average Responsetime:
+  1. MILQ     - Score: 1.0000 (Raw: 4728.0000)
+  2. MTMC     - Score: 0.8601 (Raw: 5498.5768)
+  3. FFD      - Score: 0.4127 (Raw: 7961.7778)
+  4. NoTaDS   - Score: 0.0000 (Raw: 10234.5017)
+
+Average Fidelity:
+  1. NoTaDS   - Score: 1.0000 (Raw: 0.9318)
+  2. FFD      - Score: 0.0528 (Raw: 0.8683)
+  3. MILQ     - Score: 0.0416 (Raw: 0.8676)
+  4. MTMC     - Score: 0.0000 (Raw: 0.8648)
+
+Sampling Overhead:
+  1. MILQ     - Score: 1.0000 (Raw: 10.0000)
+  2. MTMC     - Score: 0.8432 (Raw: 11.8421)
+  3. FFD      - Score: 0.7872 (Raw: 12.5000)
+  4. NoTaDS   - Score: 0.0000 (Raw: 21.7500)
+
+Average Throughput:
+  1. FFD      - Score: 1.0000 (Raw: 7360.8889)
+  2. MILQ     - Score: 0.6909 (Raw: 7151.1111)
+  3. MTMC     - Score: 0.3053 (Raw: 6889.3642)
+  4. NoTaDS   - Score: 0.0000 (Raw: 6682.1476)
+
+Average Utilization:
+  1. MILQ     - Score: 1.0000 (Raw: 0.8882)
+  2. FFD      - Score: 0.9083 (Raw: 0.8725)
+  3. MTMC     - Score: 0.7473 (Raw: 0.8450)
+  4. NoTaDS   - Score: 0.0000 (Raw: 0.7170)
+
+Scheduler Latency:
+  1. FFD      - Score: 1.0000 (Raw: 0.0003)
+  2. MTMC     - Score: 0.9999 (Raw: 0.0017)
+  3. NoTaDS   - Score: 0.9918 (Raw: 0.0913)
+  4. MILQ     - Score: 0.0000 (Raw: 11.1152)
+
+Makespan:
+  1. MILQ     - Score: 1.0000 (Raw: 22659.5556)
+  2. NoTaDS   - Score: 0.3722 (Raw: 26927.7533)
+  3. MTMC     - Score: 0.2224 (Raw: 27945.7684)
+  4. FFD      - Score: 0.0000 (Raw: 29457.7778)
+
+OVERALL PERFORMANCE RANKING
+-----------------------------------
+Average Normalized Performance (0.0 = worst, 1.0 = best):
+  1. MILQ     - Mean: 0.6789 ± 0.4276
+  2. MTMC     - Mean: 0.6160 ± 0.3813
+  3. FFD      - Mean: 0.5201 ± 0.4557
+  4. NoTaDS   - Mean: 0.4205 ± 0.4939
+
+STATISTICAL ANALYSIS
+-------------------------
+
+Average Turnaroundtime:
+           count        mean         std      min         max
+algorithm                                                    
+FFD           18  21013.3333  11139.0432  3648.00  42026.6667
+MILQ           9  18457.7778   9229.6442  3648.00  31520.0000
+MTMC          19  17541.4681  11581.8541   354.56  43189.3333
+NoTaDS        12  17356.5017  20573.3562     8.02  51952.0000
+
+Average Responsetime:
+           count        mean         std   min         max
+algorithm                                                 
+FFD           18   7961.7778   6808.4857  0.00  21013.3333
+MILQ           9   4728.0000   4643.2023  0.00  11088.0000
+MTMC          19   5498.5768   6603.9399  0.00  22176.0000
+NoTaDS        12  10234.5017  12891.9073  0.02  31520.0000
+
+Average Fidelity:
+           count    mean     std     min     max
+algorithm                                       
+FFD           18  0.8683  0.0544  0.7523  0.9294
+MILQ           9  0.8676  0.0522  0.7724  0.9267
+MTMC          19  0.8648  0.0509  0.7788  0.9242
+NoTaDS        12  0.9318  0.0558  0.8327  0.9906
+
+Sampling Overhead:
+           count     mean      std   min   max
+algorithm                                     
+FFD           18  12.5000  12.0110   0.0  27.0
+MILQ           9  10.0000   9.4868   0.0  18.0
+MTMC          19  11.8421  12.0197   0.0  27.0
+NoTaDS        12  21.7500   8.1030  18.0  45.0
+
+Average Throughput:
+           count       mean        std       min         max
+algorithm                                                   
+FFD           18  7360.8889  3849.7988  1216.000  14784.0000
+MILQ           9  7151.1111  3667.7959  1824.000  11088.0000
+MTMC          19  6889.3642  3672.3811   145.920  12458.6667
+NoTaDS        12  6682.1476  8013.1213     1.604  20432.0000
+
+Average Utilization:
+           count    mean     std     min  max
+algorithm                                    
+FFD           18  0.8725  0.1444  0.6000  1.0
+MILQ           9  0.8882  0.1345  0.6000  1.0
+MTMC          19  0.8450  0.1812  0.4000  1.0
+NoTaDS        12  0.7170  0.1790  0.3926  1.0
+
+Scheduler Latency:
+           count     mean      std     min      max
+algorithm                                          
+FFD           18   0.0003   0.0001  0.0002   0.0007
+MILQ           9  11.1152  11.5321  0.2894  32.2441
+MTMC          19   0.0017   0.0008  0.0007   0.0032
+NoTaDS        12   0.0913   0.0539  0.0575   0.2556
+
+Makespan:
+           count        mean         std      min      max
+algorithm                                                 
+FFD           18  29457.7778  18368.7812  3648.00  66528.0
+MILQ           9  22659.5556  13149.7268  3648.00  44352.0
+MTMC          19  27945.7684  18629.9040   729.60  66528.0
+NoTaDS        12  26927.7533  31908.6688    16.04  81728.0
+
+RECOMMENDATIONS
+---------------
+Algorithm Recommendations by Use Case:
+
+• For Speed: MILQ
+• For Efficiency: MILQ
+• For Quality: NoTaDS
+• For Throughput: FFD
+
+Overall Best Performing Algorithm: MILQ

@@ -1,4 +1,4 @@
-num_circuit,num_qubits_each_circuit,dataset,scheduler_latency
+num_circuits,num_qubits_per_circuit,algorithm,scheduler_latency
 2,2,FFD,0.0002071857452392578
 2,2,MILQ,0.28937339782714844
 2,2,MTMC,0.0006635189056396484
@@ -55,3 +55,5 @@ num_circuit,num_qubits_each_circuit,dataset,scheduler_latency
 3,9,MTMC,0.0031604766845703125
 3,10,FFD,0.0003781318664550781
 3,10,MTMC,0.0031325817108154297
+5,2,MTMC,0.0023419857025146484
+5,2,NoTaDS,0.25563979148864746

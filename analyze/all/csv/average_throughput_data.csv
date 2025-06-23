@@ -1,4 +1,4 @@
-num_circuit,num_qubits_each_circuit,dataset,average_throughput
+num_circuits,num_qubits_per_circuit,algorithm,average_throughput
 2,2,FFD,1824.0
 2,2,MILQ,1824.0
 2,2,MTMC,1824.0
@@ -55,3 +55,5 @@ num_circuit,num_qubits_each_circuit,dataset,average_throughput
 3,9,MTMC,8762.666666666666
 3,10,FFD,9925.333333333334
 3,10,MTMC,11088.0
+5,2,MTMC,145.92000000000002
+5,2,NoTaDS,1.6039999999999999

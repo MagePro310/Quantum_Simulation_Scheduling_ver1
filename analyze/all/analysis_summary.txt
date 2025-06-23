@@ -1,0 +1,67 @@
+QUANTUM SCHEDULING ANALYSIS SUMMARY
+==================================================
+
+Analysis Date: 2025-06-23 16:35:00
+Total Records Analyzed: 58
+Algorithms Compared: FFD, MILQ, NoTaDS, MTMC
+Metrics Evaluated: 8
+
+ALGORITHM RANKING BY METRIC:
+------------------------------
+
+Average Turnaroundtime:
+  1. NoTaDS: 1.0000
+  2. MTMC: 0.9494
+  3. MILQ: 0.6988
+  4. FFD: 0.0000
+
+Average Responsetime:
+  1. MILQ: 1.0000
+  2. MTMC: 0.8601
+  3. FFD: 0.4127
+  4. NoTaDS: 0.0000
+
+Average Fidelity:
+  1. NoTaDS: 1.0000
+  2. FFD: 0.0528
+  3. MILQ: 0.0416
+  4. MTMC: 0.0000
+
+Sampling Overhead:
+  1. MILQ: 1.0000
+  2. MTMC: 0.8432
+  3. FFD: 0.7872
+  4. NoTaDS: 0.0000
+
+Average Throughput:
+  1. FFD: 1.0000
+  2. MILQ: 0.6909
+  3. MTMC: 0.3053
+  4. NoTaDS: 0.0000
+
+Average Utilization:
+  1. MILQ: 1.0000
+  2. FFD: 0.9083
+  3. MTMC: 0.7473
+  4. NoTaDS: 0.0000
+
+Scheduler Latency:
+  1. FFD: 1.0000
+  2. MTMC: 0.9999
+  3. NoTaDS: 0.9918
+  4. MILQ: 0.0000
+
+Makespan:
+  1. MILQ: 1.0000
+  2. NoTaDS: 0.3722
+  3. MTMC: 0.2224
+  4. FFD: 0.0000
+
+
+OVERALL PERFORMANCE SUMMARY:
+------------------------------
+Average Performance Ranking:
+  1. MILQ: 0.6789
+  2. MTMC: 0.6160
+  3. FFD: 0.5201
+  4. NoTaDS: 0.4205

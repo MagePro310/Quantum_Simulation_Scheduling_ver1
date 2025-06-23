@@ -1,4 +1,4 @@
-num_circuit,num_qubits_each_circuit,dataset,average_utilization
+num_circuits,num_qubits_per_circuit,algorithm,average_utilization
 2,2,FFD,0.8
 2,2,MILQ,0.8
 2,2,MTMC,0.4
@@ -55,3 +55,5 @@ num_circuit,num_qubits_each_circuit,dataset,average_utilization
 3,9,MTMC,0.9
 3,10,FFD,1.0
 3,10,MTMC,1.0
+5,2,MTMC,0.7
+5,2,NoTaDS,0.4987531172069827

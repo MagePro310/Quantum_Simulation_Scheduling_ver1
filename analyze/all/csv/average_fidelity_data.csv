@@ -1,4 +1,4 @@
-num_circuit,num_qubits_each_circuit,dataset,average_fidelity
+num_circuits,num_qubits_per_circuit,algorithm,average_fidelity
 2,2,FFD,0.9294129974142196
 2,2,MILQ,0.9201695901824317
 2,2,MTMC,0.9204000150580991
@@ -55,3 +55,5 @@ num_circuit,num_qubits_each_circuit,dataset,average_fidelity
 3,9,MTMC,0.8509703564006933
 3,10,FFD,0.8350947441909882
 3,10,MTMC,0.843579254065663
+5,2,MTMC,0.8397070892829674
+5,2,NoTaDS,0.9877428969639187
