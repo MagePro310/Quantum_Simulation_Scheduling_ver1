@@ -3,7 +3,7 @@ import matplotlib.patches as mpatches
 from pathlib import Path
 import numpy as np
 
-def visualize_data(data, save_path="quantum_schedule.pdf"):
+def visualize_data(data, save_path="quantum_schedule.pdf", show_plot=False):
     """
     Enhanced visualization of job schedule as a Gantt chart with detailed information.
 
@@ -12,6 +12,7 @@ def visualize_data(data, save_path="quantum_schedule.pdf"):
                      Each dictionary should have keys: 'job', 'qubits', 'machine',
                      'capacity', 'start', 'end', and 'duration'.
         save_path (str): Path to save the PDF file (default: "quantum_schedule.pdf").
+        show_plot (bool): Whether to display the plot (default: False).
     """
     # Normalize time for better visualization
     for job in data:
@@ -167,11 +168,16 @@ def visualize_data(data, save_path="quantum_schedule.pdf"):
         save_path = save_path.with_suffix('.pdf')
     save_path.parent.mkdir(parents=True, exist_ok=True)
     
-    # fig.savefig(save_path, dpi=300, bbox_inches='tight', format='pdf', 
-    #             facecolor='white', edgecolor='none')
-    print(f"📊 Minimal Gantt chart saved to {save_path}")
+    # Save the figure
+    fig.savefig(save_path, dpi=300, bbox_inches='tight', format='pdf', 
+                facecolor='white', edgecolor='none')
+    print(f"📊 Gantt chart saved to {save_path}")
     print(f"   ✓ {len(data)} jobs visualized across {len(machines)} machines")
     print(f"   ✓ Total qubits: {total_qubits}, Makespan: {makespan:.1f}")
 
-    # Show the plot
-    plt.show()
+    # Show the plot only if requested
+    if show_plot:
+        plt.show()
+    else:
+        # Close the plot to free memory
+        plt.close(fig)
