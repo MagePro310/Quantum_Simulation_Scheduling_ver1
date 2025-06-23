@@ -84,10 +84,10 @@ result_Schedule.nameSchedule = "NoTaDS"
 
 # Define the machines
 machines = {}
-backend0 = FakeBelemV2()
-backend1 = FakeManilaV2()
+backend0 = get_backend_by_name("belem")()
+backend1 = get_backend_by_name("manila")()
 machines[backend0.name] = backend0
-machines[backend1.name] = backend0
+machines[backend1.name] = backend1
 
 # Define benchmark
 jobs = {}

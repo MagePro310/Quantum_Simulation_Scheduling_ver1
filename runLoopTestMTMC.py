@@ -16,7 +16,7 @@ from qiskit.visualization import plot_error_map, plot_distribution
 
 from qiskit_ibm_runtime import SamplerV2
 
-from component.a_backend.fake_backend import *
+from component.a_backend.fake_backend import get_backend_by_name, get_available_backends
 from component.b_benchmark.mqt_tool import QuantumBenchmark
 from component.sup_sys.job_info import JobInfo
 from component.c_circuit_work.cutting.width_c import *
@@ -84,10 +84,10 @@ result_Schedule.nameSchedule = "MTMC"
 
 # Define the machines
 machines = {}
-backend0 = FakeBelemV2()
-backend1 = FakeManilaV2()
+backend0 = get_backend_by_name("belem")()
+backend1 = get_backend_by_name("manila")()
 machines[backend0.name] = backend0
-machines[backend1.name] = backend0
+machines[backend1.name] = backend1
 
 # Define benchmark
 jobs = {}
