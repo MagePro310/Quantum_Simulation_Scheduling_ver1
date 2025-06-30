@@ -1,4 +1,4 @@
-num_circuits,num_qubits_per_circuit,algorithm,average_turnaroundTime
+num_circuit,num_qubits_each_circuit,dataset,average_turnaroundTime
 2,2,FFD,3648.0
 2,2,MILQ,3648.0
 2,2,MTMC,3648.0
@@ -55,5 +55,3 @@ num_circuits,num_qubits_per_circuit,algorithm,average_turnaroundTime
 3,9,MTMC,35050.666666666664
 3,10,FFD,37376.0
 3,10,MTMC,43189.333333333336
-5,2,MTMC,354.56000000000006
-5,2,NoTaDS,8.020000000000001

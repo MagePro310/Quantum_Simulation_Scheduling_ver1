@@ -1,4 +1,4 @@
-num_circuits,num_qubits_per_circuit,algorithm,sampling_overhead
+num_circuit,num_qubits_each_circuit,dataset,sampling_overhead
 2,2,FFD,0.0
 2,2,MILQ,0.0
 2,2,MTMC,0.0
@@ -55,5 +55,3 @@ num_circuits,num_qubits_per_circuit,algorithm,sampling_overhead
 3,9,MTMC,27.0
 3,10,FFD,27.0
 3,10,MTMC,27.0
-5,2,MTMC,0.0
-5,2,NoTaDS,45.0
