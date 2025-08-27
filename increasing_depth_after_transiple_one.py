@@ -60,7 +60,6 @@ benchmark_keys = [
 
 # Initialize backend and pass manager
 backend0 = FakeAlgiers()
-pm = generate_preset_pass_manager(backend=backend0, optimization_level=0)
 
 # Successful creation of quantum algorithm benchmarks
 print("=== Successful Quantum Algorithm Creation ===")
@@ -87,7 +86,7 @@ for benchmark_name in benchmark_keys:
         
         # Apply transpilation
         try:
-            isa_circuit = pm.run(qc)
+            isa_circuit = transpile(qc, backend=backend0, optimization_level=0)
             transpiled_depth = isa_circuit.depth()
         except Exception as transpile_error:
             print(f"Transpilation failed for {benchmark_name}: {transpile_error}")
