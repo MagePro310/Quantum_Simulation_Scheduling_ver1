@@ -117,4 +117,3 @@ print(f"\n=== Results saved to {csv_filename} ===")
 print(f"Total algorithms processed: {len(results_data)}")
 print(f"Successfully created circuits: {len([r for r in results_data if r['original_depth'] is not None])}")
 print(f"Successfully transpiled circuits: {len([r for r in results_data if r['transpiled_depth'] is not None])}")
-
