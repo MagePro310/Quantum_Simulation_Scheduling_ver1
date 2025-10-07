@@ -1,53 +1,89 @@
 {
     "params": {
         "jobs": [
-            "1_1",
-            "1_2",
-            "2_1",
-            "2_2"
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
         ],
         "machines": [
-            "fake_belem",
-            "fake_manila"
+            "fake_manila",
+            "fake_belem"
         ],
         "job_capcities": {
-            "1_1": 5,
-            "1_2": 2,
-            "2_1": 5,
-            "2_2": 2
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 3,
+            "7": 3,
+            "8": 3
         },
         "machine_capacities": {
-            "fake_belem": 5,
-            "fake_manila": 5
+            "fake_manila": 5,
+            "fake_belem": 5
         },
         "timesteps": 32,
         "processing_times": [
             [
-                0,
-                0
+                1,
+                1
             ],
             [
-                11,
-                12
+                2,
+                2
             ],
             [
-                7,
-                9
+                3,
+                3
             ],
             [
-                12,
-                9
+                4,
+                4
             ],
             [
-                7,
-                7
+                5,
+                5
+            ],
+            [
+                3,
+                3
+            ],
+            [
+                3,
+                3
+            ],
+            [
+                3,
+                3
             ]
         ],
         "setup_times": [
             [
                 [
-                    50,
-                    50
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
                 ],
                 [
                     0,
@@ -68,116 +104,348 @@
             ],
             [
                 [
-                    50,
-                    50
+                    0,
+                    0
                 ],
                 [
-                    50,
-                    50
+                    0,
+                    0
                 ],
                 [
-                    8,
-                    10
+                    0,
+                    0
                 ],
                 [
-                    11,
-                    10
+                    0,
+                    0
                 ],
                 [
-                    10,
-                    7
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
                 ]
             ],
             [
                 [
-                    50,
-                    50
+                    0,
+                    0
                 ],
                 [
-                    9,
-                    7
+                    0,
+                    0
                 ],
                 [
-                    50,
-                    50
+                    0,
+                    0
                 ],
                 [
-                    9,
-                    10
+                    0,
+                    0
                 ],
                 [
-                    5,
-                    8
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
                 ]
             ],
             [
                 [
-                    50,
-                    50
+                    0,
+                    0
                 ],
                 [
-                    9,
-                    12
+                    0,
+                    0
                 ],
                 [
-                    9,
-                    6
+                    0,
+                    0
                 ],
                 [
-                    50,
-                    50
+                    0,
+                    0
                 ],
                 [
-                    6,
-                    8
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
                 ]
             ],
             [
                 [
-                    50,
-                    50
+                    0,
+                    0
                 ],
                 [
-                    8,
-                    7
+                    0,
+                    0
                 ],
                 [
-                    8,
-                    8
+                    0,
+                    0
                 ],
                 [
-                    8,
-                    9
+                    0,
+                    0
                 ],
                 [
-                    50,
-                    50
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ],
+            [
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
                 ]
             ]
         ]
     },
     "variables": {
         "c_j_0": 0.0,
-        "c_j_1": 11.0,
-        "c_j_2": 25.0,
-        "c_j_3": 9.0,
-        "c_j_4": 25.0,
+        "c_j_1": 1.0,
+        "c_j_2": 6.0,
+        "c_j_3": 3.0,
+        "c_j_4": 4.0,
+        "c_j_5": 8.0,
+        "c_j_6": 7.0,
+        "c_j_7": 10.0,
+        "c_j_8": 10.0,
         "s_j_1": 0.0,
-        "s_j_2": 10.0,
+        "s_j_2": 4.0,
         "s_j_3": 0.0,
-        "s_j_4": 10.0,
-        "x_ik_1_fake_belem": 1.0,
-        "x_ik_1_fake_manila": 0.0,
-        "x_ik_2_fake_belem": 0.0,
-        "x_ik_2_fake_manila": 1.0,
+        "s_j_4": 0.0,
+        "s_j_5": 3.0,
+        "s_j_6": 4.0,
+        "s_j_7": 7.0,
+        "s_j_8": 7.0,
+        "x_ik_1_fake_belem": 0.0,
+        "x_ik_1_fake_manila": 1.0,
+        "x_ik_2_fake_belem": 1.0,
+        "x_ik_2_fake_manila": 0.0,
         "x_ik_3_fake_belem": 0.0,
         "x_ik_3_fake_manila": 1.0,
-        "x_ik_4_fake_belem": 0.0,
-        "x_ik_4_fake_manila": 1.0,
-        "z_ikt_1_fake_belem_0": 1.0,
-        "z_ikt_1_fake_belem_1": 1.0,
-        "z_ikt_1_fake_belem_10": 1.0,
-        "z_ikt_1_fake_belem_11": 1.0,
+        "x_ik_4_fake_belem": 1.0,
+        "x_ik_4_fake_manila": 0.0,
+        "x_ik_5_fake_belem": 0.0,
+        "x_ik_5_fake_manila": 1.0,
+        "x_ik_6_fake_belem": 1.0,
+        "x_ik_6_fake_manila": 0.0,
+        "x_ik_7_fake_belem": 1.0,
+        "x_ik_7_fake_manila": 0.0,
+        "x_ik_8_fake_belem": 0.0,
+        "x_ik_8_fake_manila": 1.0,
+        "z_ikt_1_fake_belem_0": 0.0,
+        "z_ikt_1_fake_belem_1": 0.0,
+        "z_ikt_1_fake_belem_10": 0.0,
+        "z_ikt_1_fake_belem_11": 0.0,
         "z_ikt_1_fake_belem_12": 0.0,
         "z_ikt_1_fake_belem_13": 0.0,
         "z_ikt_1_fake_belem_14": 0.0,
@@ -186,7 +454,7 @@
         "z_ikt_1_fake_belem_17": 0.0,
         "z_ikt_1_fake_belem_18": 0.0,
         "z_ikt_1_fake_belem_19": 0.0,
-        "z_ikt_1_fake_belem_2": 1.0,
+        "z_ikt_1_fake_belem_2": 0.0,
         "z_ikt_1_fake_belem_20": 0.0,
         "z_ikt_1_fake_belem_21": 0.0,
         "z_ikt_1_fake_belem_22": 0.0,
@@ -197,16 +465,16 @@
         "z_ikt_1_fake_belem_27": 0.0,
         "z_ikt_1_fake_belem_28": 0.0,
         "z_ikt_1_fake_belem_29": 0.0,
-        "z_ikt_1_fake_belem_3": 1.0,
+        "z_ikt_1_fake_belem_3": 0.0,
         "z_ikt_1_fake_belem_30": 0.0,
         "z_ikt_1_fake_belem_31": 0.0,
-        "z_ikt_1_fake_belem_4": 1.0,
-        "z_ikt_1_fake_belem_5": 1.0,
-        "z_ikt_1_fake_belem_6": 1.0,
-        "z_ikt_1_fake_belem_7": 1.0,
-        "z_ikt_1_fake_belem_8": 1.0,
-        "z_ikt_1_fake_belem_9": 1.0,
-        "z_ikt_1_fake_manila_0": 0.0,
+        "z_ikt_1_fake_belem_4": 0.0,
+        "z_ikt_1_fake_belem_5": 0.0,
+        "z_ikt_1_fake_belem_6": 0.0,
+        "z_ikt_1_fake_belem_7": 0.0,
+        "z_ikt_1_fake_belem_8": 0.0,
+        "z_ikt_1_fake_belem_9": 0.0,
+        "z_ikt_1_fake_manila_0": 1.0,
         "z_ikt_1_fake_manila_1": 0.0,
         "z_ikt_1_fake_manila_10": 0.0,
         "z_ikt_1_fake_manila_11": 0.0,
@@ -264,31 +532,31 @@
         "z_ikt_2_fake_belem_3": 0.0,
         "z_ikt_2_fake_belem_30": 0.0,
         "z_ikt_2_fake_belem_31": 0.0,
-        "z_ikt_2_fake_belem_4": 0.0,
-        "z_ikt_2_fake_belem_5": 0.0,
+        "z_ikt_2_fake_belem_4": 1.0,
+        "z_ikt_2_fake_belem_5": 1.0,
         "z_ikt_2_fake_belem_6": 0.0,
         "z_ikt_2_fake_belem_7": 0.0,
         "z_ikt_2_fake_belem_8": 0.0,
         "z_ikt_2_fake_belem_9": 0.0,
         "z_ikt_2_fake_manila_0": 0.0,
         "z_ikt_2_fake_manila_1": 0.0,
-        "z_ikt_2_fake_manila_10": 1.0,
-        "z_ikt_2_fake_manila_11": 1.0,
-        "z_ikt_2_fake_manila_12": 1.0,
-        "z_ikt_2_fake_manila_13": 1.0,
-        "z_ikt_2_fake_manila_14": 1.0,
-        "z_ikt_2_fake_manila_15": 1.0,
-        "z_ikt_2_fake_manila_16": 1.0,
-        "z_ikt_2_fake_manila_17": 1.0,
-        "z_ikt_2_fake_manila_18": 1.0,
-        "z_ikt_2_fake_manila_19": 1.0,
+        "z_ikt_2_fake_manila_10": 0.0,
+        "z_ikt_2_fake_manila_11": 0.0,
+        "z_ikt_2_fake_manila_12": 0.0,
+        "z_ikt_2_fake_manila_13": 0.0,
+        "z_ikt_2_fake_manila_14": 0.0,
+        "z_ikt_2_fake_manila_15": 0.0,
+        "z_ikt_2_fake_manila_16": 0.0,
+        "z_ikt_2_fake_manila_17": 0.0,
+        "z_ikt_2_fake_manila_18": 0.0,
+        "z_ikt_2_fake_manila_19": 0.0,
         "z_ikt_2_fake_manila_2": 0.0,
-        "z_ikt_2_fake_manila_20": 1.0,
-        "z_ikt_2_fake_manila_21": 1.0,
-        "z_ikt_2_fake_manila_22": 1.0,
-        "z_ikt_2_fake_manila_23": 1.0,
-        "z_ikt_2_fake_manila_24": 1.0,
-        "z_ikt_2_fake_manila_25": 1.0,
+        "z_ikt_2_fake_manila_20": 0.0,
+        "z_ikt_2_fake_manila_21": 0.0,
+        "z_ikt_2_fake_manila_22": 0.0,
+        "z_ikt_2_fake_manila_23": 0.0,
+        "z_ikt_2_fake_manila_24": 0.0,
+        "z_ikt_2_fake_manila_25": 0.0,
         "z_ikt_2_fake_manila_26": 0.0,
         "z_ikt_2_fake_manila_27": 0.0,
         "z_ikt_2_fake_manila_28": 0.0,
@@ -357,17 +625,17 @@
         "z_ikt_3_fake_manila_27": 0.0,
         "z_ikt_3_fake_manila_28": 0.0,
         "z_ikt_3_fake_manila_29": 0.0,
-        "z_ikt_3_fake_manila_3": 1.0,
+        "z_ikt_3_fake_manila_3": 0.0,
         "z_ikt_3_fake_manila_30": 0.0,
         "z_ikt_3_fake_manila_31": 0.0,
-        "z_ikt_3_fake_manila_4": 1.0,
-        "z_ikt_3_fake_manila_5": 1.0,
-        "z_ikt_3_fake_manila_6": 1.0,
-        "z_ikt_3_fake_manila_7": 1.0,
-        "z_ikt_3_fake_manila_8": 1.0,
-        "z_ikt_3_fake_manila_9": 1.0,
-        "z_ikt_4_fake_belem_0": 0.0,
-        "z_ikt_4_fake_belem_1": 0.0,
+        "z_ikt_3_fake_manila_4": 0.0,
+        "z_ikt_3_fake_manila_5": 0.0,
+        "z_ikt_3_fake_manila_6": 0.0,
+        "z_ikt_3_fake_manila_7": 0.0,
+        "z_ikt_3_fake_manila_8": 0.0,
+        "z_ikt_3_fake_manila_9": 0.0,
+        "z_ikt_4_fake_belem_0": 1.0,
+        "z_ikt_4_fake_belem_1": 1.0,
         "z_ikt_4_fake_belem_10": 0.0,
         "z_ikt_4_fake_belem_11": 0.0,
         "z_ikt_4_fake_belem_12": 0.0,
@@ -378,7 +646,7 @@
         "z_ikt_4_fake_belem_17": 0.0,
         "z_ikt_4_fake_belem_18": 0.0,
         "z_ikt_4_fake_belem_19": 0.0,
-        "z_ikt_4_fake_belem_2": 0.0,
+        "z_ikt_4_fake_belem_2": 1.0,
         "z_ikt_4_fake_belem_20": 0.0,
         "z_ikt_4_fake_belem_21": 0.0,
         "z_ikt_4_fake_belem_22": 0.0,
@@ -389,7 +657,7 @@
         "z_ikt_4_fake_belem_27": 0.0,
         "z_ikt_4_fake_belem_28": 0.0,
         "z_ikt_4_fake_belem_29": 0.0,
-        "z_ikt_4_fake_belem_3": 0.0,
+        "z_ikt_4_fake_belem_3": 1.0,
         "z_ikt_4_fake_belem_30": 0.0,
         "z_ikt_4_fake_belem_31": 0.0,
         "z_ikt_4_fake_belem_4": 0.0,
@@ -400,23 +668,23 @@
         "z_ikt_4_fake_belem_9": 0.0,
         "z_ikt_4_fake_manila_0": 0.0,
         "z_ikt_4_fake_manila_1": 0.0,
-        "z_ikt_4_fake_manila_10": 1.0,
-        "z_ikt_4_fake_manila_11": 1.0,
-        "z_ikt_4_fake_manila_12": 1.0,
-        "z_ikt_4_fake_manila_13": 1.0,
-        "z_ikt_4_fake_manila_14": 1.0,
-        "z_ikt_4_fake_manila_15": 1.0,
-        "z_ikt_4_fake_manila_16": 1.0,
-        "z_ikt_4_fake_manila_17": 1.0,
-        "z_ikt_4_fake_manila_18": 1.0,
-        "z_ikt_4_fake_manila_19": 1.0,
+        "z_ikt_4_fake_manila_10": 0.0,
+        "z_ikt_4_fake_manila_11": 0.0,
+        "z_ikt_4_fake_manila_12": 0.0,
+        "z_ikt_4_fake_manila_13": 0.0,
+        "z_ikt_4_fake_manila_14": 0.0,
+        "z_ikt_4_fake_manila_15": 0.0,
+        "z_ikt_4_fake_manila_16": 0.0,
+        "z_ikt_4_fake_manila_17": 0.0,
+        "z_ikt_4_fake_manila_18": 0.0,
+        "z_ikt_4_fake_manila_19": 0.0,
         "z_ikt_4_fake_manila_2": 0.0,
-        "z_ikt_4_fake_manila_20": 1.0,
-        "z_ikt_4_fake_manila_21": 1.0,
-        "z_ikt_4_fake_manila_22": 1.0,
-        "z_ikt_4_fake_manila_23": 1.0,
-        "z_ikt_4_fake_manila_24": 1.0,
-        "z_ikt_4_fake_manila_25": 1.0,
+        "z_ikt_4_fake_manila_20": 0.0,
+        "z_ikt_4_fake_manila_21": 0.0,
+        "z_ikt_4_fake_manila_22": 0.0,
+        "z_ikt_4_fake_manila_23": 0.0,
+        "z_ikt_4_fake_manila_24": 0.0,
+        "z_ikt_4_fake_manila_25": 0.0,
         "z_ikt_4_fake_manila_26": 0.0,
         "z_ikt_4_fake_manila_27": 0.0,
         "z_ikt_4_fake_manila_28": 0.0,
@@ -429,6 +697,262 @@
         "z_ikt_4_fake_manila_6": 0.0,
         "z_ikt_4_fake_manila_7": 0.0,
         "z_ikt_4_fake_manila_8": 0.0,
-        "z_ikt_4_fake_manila_9": 0.0
+        "z_ikt_4_fake_manila_9": 0.0,
+        "z_ikt_5_fake_belem_0": 0.0,
+        "z_ikt_5_fake_belem_1": 0.0,
+        "z_ikt_5_fake_belem_10": 0.0,
+        "z_ikt_5_fake_belem_11": 0.0,
+        "z_ikt_5_fake_belem_12": 0.0,
+        "z_ikt_5_fake_belem_13": 0.0,
+        "z_ikt_5_fake_belem_14": 0.0,
+        "z_ikt_5_fake_belem_15": 0.0,
+        "z_ikt_5_fake_belem_16": 0.0,
+        "z_ikt_5_fake_belem_17": 0.0,
+        "z_ikt_5_fake_belem_18": 0.0,
+        "z_ikt_5_fake_belem_19": 0.0,
+        "z_ikt_5_fake_belem_2": 0.0,
+        "z_ikt_5_fake_belem_20": 0.0,
+        "z_ikt_5_fake_belem_21": 0.0,
+        "z_ikt_5_fake_belem_22": 0.0,
+        "z_ikt_5_fake_belem_23": 0.0,
+        "z_ikt_5_fake_belem_24": 0.0,
+        "z_ikt_5_fake_belem_25": 0.0,
+        "z_ikt_5_fake_belem_26": 0.0,
+        "z_ikt_5_fake_belem_27": 0.0,
+        "z_ikt_5_fake_belem_28": 0.0,
+        "z_ikt_5_fake_belem_29": 0.0,
+        "z_ikt_5_fake_belem_3": 0.0,
+        "z_ikt_5_fake_belem_30": 0.0,
+        "z_ikt_5_fake_belem_31": 0.0,
+        "z_ikt_5_fake_belem_4": 0.0,
+        "z_ikt_5_fake_belem_5": 0.0,
+        "z_ikt_5_fake_belem_6": 0.0,
+        "z_ikt_5_fake_belem_7": 0.0,
+        "z_ikt_5_fake_belem_8": 0.0,
+        "z_ikt_5_fake_belem_9": 0.0,
+        "z_ikt_5_fake_manila_0": 0.0,
+        "z_ikt_5_fake_manila_1": 0.0,
+        "z_ikt_5_fake_manila_10": 0.0,
+        "z_ikt_5_fake_manila_11": 0.0,
+        "z_ikt_5_fake_manila_12": 0.0,
+        "z_ikt_5_fake_manila_13": 0.0,
+        "z_ikt_5_fake_manila_14": 0.0,
+        "z_ikt_5_fake_manila_15": 0.0,
+        "z_ikt_5_fake_manila_16": 0.0,
+        "z_ikt_5_fake_manila_17": 0.0,
+        "z_ikt_5_fake_manila_18": 0.0,
+        "z_ikt_5_fake_manila_19": 0.0,
+        "z_ikt_5_fake_manila_2": 0.0,
+        "z_ikt_5_fake_manila_20": 0.0,
+        "z_ikt_5_fake_manila_21": 0.0,
+        "z_ikt_5_fake_manila_22": 0.0,
+        "z_ikt_5_fake_manila_23": 0.0,
+        "z_ikt_5_fake_manila_24": 0.0,
+        "z_ikt_5_fake_manila_25": 0.0,
+        "z_ikt_5_fake_manila_26": 0.0,
+        "z_ikt_5_fake_manila_27": 0.0,
+        "z_ikt_5_fake_manila_28": 0.0,
+        "z_ikt_5_fake_manila_29": 0.0,
+        "z_ikt_5_fake_manila_3": 1.0,
+        "z_ikt_5_fake_manila_30": 0.0,
+        "z_ikt_5_fake_manila_31": 0.0,
+        "z_ikt_5_fake_manila_4": 1.0,
+        "z_ikt_5_fake_manila_5": 1.0,
+        "z_ikt_5_fake_manila_6": 1.0,
+        "z_ikt_5_fake_manila_7": 1.0,
+        "z_ikt_5_fake_manila_8": 0.0,
+        "z_ikt_5_fake_manila_9": 0.0,
+        "z_ikt_6_fake_belem_0": 0.0,
+        "z_ikt_6_fake_belem_1": 0.0,
+        "z_ikt_6_fake_belem_10": 0.0,
+        "z_ikt_6_fake_belem_11": 0.0,
+        "z_ikt_6_fake_belem_12": 0.0,
+        "z_ikt_6_fake_belem_13": 0.0,
+        "z_ikt_6_fake_belem_14": 0.0,
+        "z_ikt_6_fake_belem_15": 0.0,
+        "z_ikt_6_fake_belem_16": 0.0,
+        "z_ikt_6_fake_belem_17": 0.0,
+        "z_ikt_6_fake_belem_18": 0.0,
+        "z_ikt_6_fake_belem_19": 0.0,
+        "z_ikt_6_fake_belem_2": 0.0,
+        "z_ikt_6_fake_belem_20": 0.0,
+        "z_ikt_6_fake_belem_21": 0.0,
+        "z_ikt_6_fake_belem_22": 0.0,
+        "z_ikt_6_fake_belem_23": 0.0,
+        "z_ikt_6_fake_belem_24": 0.0,
+        "z_ikt_6_fake_belem_25": 0.0,
+        "z_ikt_6_fake_belem_26": 0.0,
+        "z_ikt_6_fake_belem_27": 0.0,
+        "z_ikt_6_fake_belem_28": 0.0,
+        "z_ikt_6_fake_belem_29": 0.0,
+        "z_ikt_6_fake_belem_3": 0.0,
+        "z_ikt_6_fake_belem_30": 0.0,
+        "z_ikt_6_fake_belem_31": 0.0,
+        "z_ikt_6_fake_belem_4": 1.0,
+        "z_ikt_6_fake_belem_5": 1.0,
+        "z_ikt_6_fake_belem_6": 1.0,
+        "z_ikt_6_fake_belem_7": 0.0,
+        "z_ikt_6_fake_belem_8": 0.0,
+        "z_ikt_6_fake_belem_9": 0.0,
+        "z_ikt_6_fake_manila_0": 0.0,
+        "z_ikt_6_fake_manila_1": 0.0,
+        "z_ikt_6_fake_manila_10": 0.0,
+        "z_ikt_6_fake_manila_11": 0.0,
+        "z_ikt_6_fake_manila_12": 0.0,
+        "z_ikt_6_fake_manila_13": 0.0,
+        "z_ikt_6_fake_manila_14": 0.0,
+        "z_ikt_6_fake_manila_15": 0.0,
+        "z_ikt_6_fake_manila_16": 0.0,
+        "z_ikt_6_fake_manila_17": 0.0,
+        "z_ikt_6_fake_manila_18": 0.0,
+        "z_ikt_6_fake_manila_19": 0.0,
+        "z_ikt_6_fake_manila_2": 0.0,
+        "z_ikt_6_fake_manila_20": 0.0,
+        "z_ikt_6_fake_manila_21": 0.0,
+        "z_ikt_6_fake_manila_22": 0.0,
+        "z_ikt_6_fake_manila_23": 0.0,
+        "z_ikt_6_fake_manila_24": 0.0,
+        "z_ikt_6_fake_manila_25": 0.0,
+        "z_ikt_6_fake_manila_26": 0.0,
+        "z_ikt_6_fake_manila_27": 0.0,
+        "z_ikt_6_fake_manila_28": 0.0,
+        "z_ikt_6_fake_manila_29": 0.0,
+        "z_ikt_6_fake_manila_3": 0.0,
+        "z_ikt_6_fake_manila_30": 0.0,
+        "z_ikt_6_fake_manila_31": 0.0,
+        "z_ikt_6_fake_manila_4": 0.0,
+        "z_ikt_6_fake_manila_5": 0.0,
+        "z_ikt_6_fake_manila_6": 0.0,
+        "z_ikt_6_fake_manila_7": 0.0,
+        "z_ikt_6_fake_manila_8": 0.0,
+        "z_ikt_6_fake_manila_9": 0.0,
+        "z_ikt_7_fake_belem_0": 0.0,
+        "z_ikt_7_fake_belem_1": 0.0,
+        "z_ikt_7_fake_belem_10": 0.0,
+        "z_ikt_7_fake_belem_11": 0.0,
+        "z_ikt_7_fake_belem_12": 0.0,
+        "z_ikt_7_fake_belem_13": 0.0,
+        "z_ikt_7_fake_belem_14": 0.0,
+        "z_ikt_7_fake_belem_15": 0.0,
+        "z_ikt_7_fake_belem_16": 0.0,
+        "z_ikt_7_fake_belem_17": 0.0,
+        "z_ikt_7_fake_belem_18": 0.0,
+        "z_ikt_7_fake_belem_19": 0.0,
+        "z_ikt_7_fake_belem_2": 0.0,
+        "z_ikt_7_fake_belem_20": 0.0,
+        "z_ikt_7_fake_belem_21": 0.0,
+        "z_ikt_7_fake_belem_22": 0.0,
+        "z_ikt_7_fake_belem_23": 0.0,
+        "z_ikt_7_fake_belem_24": 0.0,
+        "z_ikt_7_fake_belem_25": 0.0,
+        "z_ikt_7_fake_belem_26": 0.0,
+        "z_ikt_7_fake_belem_27": 0.0,
+        "z_ikt_7_fake_belem_28": 0.0,
+        "z_ikt_7_fake_belem_29": 0.0,
+        "z_ikt_7_fake_belem_3": 0.0,
+        "z_ikt_7_fake_belem_30": 0.0,
+        "z_ikt_7_fake_belem_31": 0.0,
+        "z_ikt_7_fake_belem_4": 0.0,
+        "z_ikt_7_fake_belem_5": 0.0,
+        "z_ikt_7_fake_belem_6": 0.0,
+        "z_ikt_7_fake_belem_7": 1.0,
+        "z_ikt_7_fake_belem_8": 1.0,
+        "z_ikt_7_fake_belem_9": 1.0,
+        "z_ikt_7_fake_manila_0": 0.0,
+        "z_ikt_7_fake_manila_1": 0.0,
+        "z_ikt_7_fake_manila_10": 0.0,
+        "z_ikt_7_fake_manila_11": 0.0,
+        "z_ikt_7_fake_manila_12": 0.0,
+        "z_ikt_7_fake_manila_13": 0.0,
+        "z_ikt_7_fake_manila_14": 0.0,
+        "z_ikt_7_fake_manila_15": 0.0,
+        "z_ikt_7_fake_manila_16": 0.0,
+        "z_ikt_7_fake_manila_17": 0.0,
+        "z_ikt_7_fake_manila_18": 0.0,
+        "z_ikt_7_fake_manila_19": 0.0,
+        "z_ikt_7_fake_manila_2": 0.0,
+        "z_ikt_7_fake_manila_20": 0.0,
+        "z_ikt_7_fake_manila_21": 0.0,
+        "z_ikt_7_fake_manila_22": 0.0,
+        "z_ikt_7_fake_manila_23": 0.0,
+        "z_ikt_7_fake_manila_24": 0.0,
+        "z_ikt_7_fake_manila_25": 0.0,
+        "z_ikt_7_fake_manila_26": 0.0,
+        "z_ikt_7_fake_manila_27": 0.0,
+        "z_ikt_7_fake_manila_28": 0.0,
+        "z_ikt_7_fake_manila_29": 0.0,
+        "z_ikt_7_fake_manila_3": 0.0,
+        "z_ikt_7_fake_manila_30": 0.0,
+        "z_ikt_7_fake_manila_31": 0.0,
+        "z_ikt_7_fake_manila_4": 0.0,
+        "z_ikt_7_fake_manila_5": 0.0,
+        "z_ikt_7_fake_manila_6": 0.0,
+        "z_ikt_7_fake_manila_7": 0.0,
+        "z_ikt_7_fake_manila_8": 0.0,
+        "z_ikt_7_fake_manila_9": 0.0,
+        "z_ikt_8_fake_belem_0": 0.0,
+        "z_ikt_8_fake_belem_1": 0.0,
+        "z_ikt_8_fake_belem_10": 0.0,
+        "z_ikt_8_fake_belem_11": 0.0,
+        "z_ikt_8_fake_belem_12": 0.0,
+        "z_ikt_8_fake_belem_13": 0.0,
+        "z_ikt_8_fake_belem_14": 0.0,
+        "z_ikt_8_fake_belem_15": 0.0,
+        "z_ikt_8_fake_belem_16": 0.0,
+        "z_ikt_8_fake_belem_17": 0.0,
+        "z_ikt_8_fake_belem_18": 0.0,
+        "z_ikt_8_fake_belem_19": 0.0,
+        "z_ikt_8_fake_belem_2": 0.0,
+        "z_ikt_8_fake_belem_20": 0.0,
+        "z_ikt_8_fake_belem_21": 0.0,
+        "z_ikt_8_fake_belem_22": 0.0,
+        "z_ikt_8_fake_belem_23": 0.0,
+        "z_ikt_8_fake_belem_24": 0.0,
+        "z_ikt_8_fake_belem_25": 0.0,
+        "z_ikt_8_fake_belem_26": 0.0,
+        "z_ikt_8_fake_belem_27": 0.0,
+        "z_ikt_8_fake_belem_28": 0.0,
+        "z_ikt_8_fake_belem_29": 0.0,
+        "z_ikt_8_fake_belem_3": 0.0,
+        "z_ikt_8_fake_belem_30": 0.0,
+        "z_ikt_8_fake_belem_31": 0.0,
+        "z_ikt_8_fake_belem_4": 0.0,
+        "z_ikt_8_fake_belem_5": 0.0,
+        "z_ikt_8_fake_belem_6": 0.0,
+        "z_ikt_8_fake_belem_7": 0.0,
+        "z_ikt_8_fake_belem_8": 0.0,
+        "z_ikt_8_fake_belem_9": 0.0,
+        "z_ikt_8_fake_manila_0": 0.0,
+        "z_ikt_8_fake_manila_1": 0.0,
+        "z_ikt_8_fake_manila_10": 1.0,
+        "z_ikt_8_fake_manila_11": 0.0,
+        "z_ikt_8_fake_manila_12": 0.0,
+        "z_ikt_8_fake_manila_13": 0.0,
+        "z_ikt_8_fake_manila_14": 0.0,
+        "z_ikt_8_fake_manila_15": 0.0,
+        "z_ikt_8_fake_manila_16": 0.0,
+        "z_ikt_8_fake_manila_17": 0.0,
+        "z_ikt_8_fake_manila_18": 0.0,
+        "z_ikt_8_fake_manila_19": 0.0,
+        "z_ikt_8_fake_manila_2": 0.0,
+        "z_ikt_8_fake_manila_20": 0.0,
+        "z_ikt_8_fake_manila_21": 0.0,
+        "z_ikt_8_fake_manila_22": 0.0,
+        "z_ikt_8_fake_manila_23": 0.0,
+        "z_ikt_8_fake_manila_24": 0.0,
+        "z_ikt_8_fake_manila_25": 0.0,
+        "z_ikt_8_fake_manila_26": 0.0,
+        "z_ikt_8_fake_manila_27": 0.0,
+        "z_ikt_8_fake_manila_28": 0.0,
+        "z_ikt_8_fake_manila_29": 0.0,
+        "z_ikt_8_fake_manila_3": 0.0,
+        "z_ikt_8_fake_manila_30": 0.0,
+        "z_ikt_8_fake_manila_31": 0.0,
+        "z_ikt_8_fake_manila_4": 0.0,
+        "z_ikt_8_fake_manila_5": 0.0,
+        "z_ikt_8_fake_manila_6": 0.0,
+        "z_ikt_8_fake_manila_7": 0.0,
+        "z_ikt_8_fake_manila_8": 1.0,
+        "z_ikt_8_fake_manila_9": 1.0
     }
 }

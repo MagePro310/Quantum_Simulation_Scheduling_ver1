@@ -43,17 +43,31 @@ def visualize_data(data):
     # Reverse the y-axis
     ax.invert_yaxis()
 
-    # Add legend
-    ax.legend(handles=patches, loc='upper right')
+    # Add legend with larger font
+    ax.legend(handles=patches, loc='upper right', fontsize=12)
 
-    # Labels and title
-    ax.set_xlabel("Time")
-    ax.set_ylabel("Jobs (Qubits)")
-    ax.set_title("Gantt Chart of Jobs on Quantum Machines")
+    # Labels and title with larger fonts
+    ax.set_xlabel("Time", fontsize=14)
+    ax.set_ylabel("Jobs (Qubits)", fontsize=14)
+    ax.set_title("Gantt Chart of Jobs on Quantum Machines", fontsize=16)
+
+    # Increase tick label font size
+    ax.tick_params(axis='both', which='major', labelsize=12)
 
     # Grid and layout adjustments
     ax.grid(axis='x', linestyle='--', alpha=0.7)
     plt.tight_layout()
 
     # Show plot
+    # print("Gantt chart saved as img/FFD_schedule_estimated.pdf")
+    # plt.savefig("img/FFD_schedule_estimated.pdf")
+
+    print("Gantt chart saved as img/FFD_schedule_simulation.pdf")
+    plt.savefig("img/FFD_schedule_simulation.pdf")
+
+    # print("Gantt chart saved as img/MILQ_schedule_simulation.pdf")
+    # plt.savefig("img/MILQ_schedule_simulation.pdf")
+
+    # print("Gantt chart saved as img/MILQ_schedule_estimated.pdf")
+    # plt.savefig("img/MILQ_schedule_estimated.pdf")
     plt.show()

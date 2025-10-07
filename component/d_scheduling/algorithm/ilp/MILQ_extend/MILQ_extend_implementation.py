@@ -172,7 +172,7 @@ def _define_lp(
         problem += c_j[job] <= c_max                                                    # (C1)
         problem += pulp.lpSum(x_ik[job][machine] for machine in machines) == 1          # (C3)
         
-        problem += c_j[job] - s_j[job] + 1 == pulp.lpSum(                               # (C7)
+        problem += c_j[job] - s_j[job] == pulp.lpSum(                               # (C7)
             z_ikt[job][machine][timestep]
             for timestep in timesteps
             for machine in machines
@@ -194,18 +194,94 @@ def _define_lp(
             )
             problem += s_j[job] <= pulp.lpSum(                                          # (C10)
                 z_ikt[job][machine][timestep] for machine in machines
-            ) * timestep + big_m * (
+            ) * timestep + big_m * (  # Start time dùng timestep gốc (không +1)
                 1 - pulp.lpSum(z_ikt[job][machine][timestep] for machine in machines)
             )
     for timestep in timesteps:
         for machine in machines:
-            problem += (                                                                # (C11)
+            problem += (                                                                # (C11) - ENHANCED
                 pulp.lpSum(
                     z_ikt[job][machine][timestep] * job_capacities[job]
                     for job in jobs[1:]
                 )
                 <= machine_capacities[machine]
             )
+    
+    # Add continuous scheduling constraint - no gaps allowed
+    for job in jobs[1:]:  # Skip job "0"
+        for machine in machines:
+            for timestep in range(len(timesteps) - 2):
+                # If job is running at timestep t and t+2, it must also run at t+1
+                problem += (
+                    z_ikt[job][machine][timestep] + z_ikt[job][machine][timestep+2]
+                    <= 1 + z_ikt[job][machine][timestep+1]
+                    , f"NoGaps_{job}_{machine}_{timestep}"
+                )
+    
+    # Add simultaneous start constraint - jobs can only run together if they start at the same time
+    # Create binary variables to indicate if a job starts at a specific timestep on a machine
+    job_start = {}
+    for job in jobs[1:]:  # Skip job "0"
+        job_start[job] = {}
+        for machine in machines:
+            job_start[job][machine] = {}
+            for timestep in timesteps:
+                job_start[job][machine][timestep] = pulp.LpVariable(
+                    f"start_{job}_{machine}_{timestep}", cat='Binary'
+                )
+    
+    # Link start variables with z_ikt: job starts at timestep t if it runs at t but not at t-1
+    for job in jobs[1:]:
+        for machine in machines:
+            for timestep in timesteps:
+                if timestep == 0:
+                    # At timestep 0, job starts if it runs at timestep 0
+                    problem += job_start[job][machine][timestep] == z_ikt[job][machine][timestep]
+                else:
+                    # At timestep t > 0, job starts if it runs at t but not at t-1
+                    problem += (
+                        job_start[job][machine][timestep] >= 
+                        z_ikt[job][machine][timestep] - z_ikt[job][machine][timestep-1]
+                    )
+                    problem += (
+                        job_start[job][machine][timestep] <= z_ikt[job][machine][timestep]
+                    )
+                    problem += (
+                        job_start[job][machine][timestep] <= 
+                        1 - z_ikt[job][machine][timestep-1]
+                    )
+    
+    # Each job can start at most once on each machine
+    for job in jobs[1:]:
+        for machine in machines:
+            problem += (
+                pulp.lpSum(job_start[job][machine][timestep] for timestep in timesteps) <= 1
+                , f"SingleStart_{job}_{machine}"
+            )
+    
+    # Simultaneous start constraint: if two jobs overlap on a machine, they must start at the same time
+    for machine in machines:
+        for job1 in jobs[1:]:
+            for job2 in jobs[1:]:
+                if job1 < job2:  # Avoid duplicate constraints
+                    for t in timesteps:
+                        # If both jobs are running at time t, then they must have the same start time
+                        start_diff = pulp.lpSum(
+                            job_start[job1][machine][s] * s for s in timesteps
+                        ) - pulp.lpSum(
+                            job_start[job2][machine][s] * s for s in timesteps
+                        )
+                        
+                        # If both jobs run at time t, their start times must be equal
+                        problem += (
+                            start_diff <= big_m * (2 - z_ikt[job1][machine][t] - z_ikt[job2][machine][t])
+                            , f"SameStart1_{machine}_{job1}_{job2}_{t}"
+                        )
+                        problem += (
+                            start_diff >= -big_m * (2 - z_ikt[job1][machine][t] - z_ikt[job2][machine][t])
+                            , f"SameStart2_{machine}_{job1}_{job2}_{t}"
+                        )
+    
     return LPInstance(
         problem=problem,
         jobs=jobs,
@@ -249,12 +325,13 @@ def _generate_schedule_info(
         )
 
     lp_instance = solve_lp(lp_instance)
-    _, jobs = extract_info_schedule(lp_instance)
-    makespan = calculate_makespan(
-        lp_instance, jobs, problem.process_times, problem.setup_times
-    )
+    makespan_lp, jobs = extract_info_schedule(lp_instance)
+    # Sử dụng makespan từ LP solution thay vì tính lại
+    # makespan = calculate_makespan(
+    #     lp_instance, jobs, problem.process_times, problem.setup_times
+    # )
 
-    return makespan, jobs, lp_instance
+    return makespan_lp, jobs, lp_instance
 
 def calculate_makespan(
     lp_instance: LPInstance,
@@ -298,7 +375,7 @@ def _calc_makespan(
     )
     p_times = pulp.makeDict(
         [job_names[1:], machines],
-        process_times,
+        process_times,  # Bây giờ process_times đã bỏ job "0" rồi
         0,
     )
 
@@ -363,12 +440,10 @@ def _find_last_completed(
 def _calculate_exmaple_process_times(job_i, machine_k) -> float:
     if job_i == 0:
         return 0
-    return job_i + np.random.randint(-2, 3) + machine_k
+    return job_i
 
 def _calculate_example_setup_times(job_i, job_j_, machine_k) -> float:
-    if job_j_ == 0:
-        return 0
-    return (job_i + job_j_) // 2 + np.random.randint(-2, 3) + machine_k
+    return 0  # Setup time = 0
 
 def _generate_problem(big_m: int, timesteps: int, jobs: list, job_capacities: dict, machines: list, machine_capacities: dict) -> tuple[InfoProblem, dict[str, int]]:
     # Inputs
@@ -379,18 +454,12 @@ def _generate_problem(big_m: int, timesteps: int, jobs: list, job_capacities: di
             )
             for machine in machines
         ]
-        for job in jobs
+        for job in jobs[1:]  # Chỉ tính cho các job thực, bỏ job "0"
     ]
     setup_times = [
         [
             [
-                50  # BIG!
-                if job_i in [job_j, "0"]
-                else _calculate_example_setup_times(
-                    job_capacities[job_i],
-                    job_capacities[job_j],
-                    machine_capacities[machine],
-                )
+                0  # Setup time = 0 for all cases
                 for machine in machines
             ]
             for job_i in jobs
@@ -450,7 +519,7 @@ def set_up_extended_lp(
     # print(process_times)
     p_times = pulp.makeDict(
         [lp_instance.jobs[1:], lp_instance.machines],
-        process_times[1:],
+        process_times,  # Bây giờ process_times đã bỏ job "0" rồi
         0,
     )
     # Print the process times
@@ -496,9 +565,9 @@ def set_up_extended_lp(
                 for machine in lp_instance.machines
                 for job_j in lp_instance.jobs
             )
-            >= 1  # each job has a predecessor
+            >= 1  # each job has a predecessor (có thể là job "0" để chạy song song)
         )
-        lp_instance.problem += lp_instance.c_j[job] >= lp_instance.s_j[  # (Constrait 5)
+        lp_instance.problem += lp_instance.c_j[job] == lp_instance.s_j[  # (Constrait 5) - sử dụng == thay vì >=
             job
         ] + pulp.lpSum(
             lp_instance.x_ik[job][machine] * p_times[job][machine]
@@ -568,23 +637,71 @@ def set_up_extended_lp(
                         - 3
                     )
 
-    for job in lp_instance.jobs[1:]:
-        for job_j in lp_instance.jobs[1:]:
-            for machine in lp_instance.machines:
-                lp_instance.problem += (                            # (Constraint 20)
-                    y_ijk[job][job_j][machine]
-                    >= a_ij[job][job_j]
-                    + (
-                        pulp.lpSum(
-                            e_ijlk[job][job_j][job_l][machine]
-                            for job_l in lp_instance.jobs[1:]
-                        )
-                        / big_m
-                    )
-                    + d_ijk[job][job_j][machine]
-                    - 2
-                )
+    # Tạm thời disable constraint 20 để test
+    # for job in lp_instance.jobs[1:]:
+    #     for job_j in lp_instance.jobs[1:]:
+    #         for machine in lp_instance.machines:
+    #             lp_instance.problem += (                            # (Constraint 20)
+    #                 y_ijk[job][job_j][machine]
+    #                 >= a_ij[job][job_j]
+    #                 + (
+    #                     pulp.lpSum(
+    #                         e_ijlk[job][job_j][job_l][machine]
+    #                         for job_l in lp_instance.jobs[1:]
+    #                     )
+    #                     / big_m
+    #                 )
+    #                 + d_ijk[job][job_j][machine]
+    #                 - 2
+    #             )
     return lp_instance
+
+def _validate_capacity_constraints(lp_instance: LPInstance) -> None:
+    """Validate that the solution respects capacity constraints."""
+    print("=== CAPACITY CONSTRAINT VALIDATION ===")
+    
+    # Get variables
+    z_ikt = lp_instance.z_ikt
+    jobs = lp_instance.jobs[1:]  # Skip job "0"
+    machines = lp_instance.machines
+    
+    # Extract job capacities and machine capacities from problem name or assume
+    job_capacities = {"1": 1, "2": 2, "3": 3, "4": 4, "5": 5}
+    machine_capacities = {"fake_manila": 5, "fake_belem": 5}
+    
+    violations = []
+    
+    # Check each timestep and machine
+    for timestep in range(32):  # Assume 32 timesteps
+        for machine in machines:
+            total_capacity = 0
+            active_jobs = []
+            
+            for job in jobs:
+                if job in z_ikt and machine in z_ikt[job] and timestep in z_ikt[job][machine]:
+                    if z_ikt[job][machine][timestep].varValue == 1.0:
+                        total_capacity += job_capacities.get(job, 0)
+                        active_jobs.append(job)
+            
+            if total_capacity > machine_capacities.get(machine, 0):
+                violations.append({
+                    'timestep': timestep,
+                    'machine': machine,
+                    'total_capacity': total_capacity,
+                    'machine_capacity': machine_capacities.get(machine, 0),
+                    'active_jobs': active_jobs
+                })
+                print(f"VIOLATION: Timestep {timestep}, Machine {machine}")
+                print(f"  Total capacity used: {total_capacity}")
+                print(f"  Machine capacity: {machine_capacities.get(machine, 0)}")
+                print(f"  Active jobs: {active_jobs}")
+    
+    if not violations:
+        print("No capacity constraint violations found!")
+    else:
+        print(f"Found {len(violations)} capacity constraint violations!")
+    
+    print("=== END VALIDATION ===")
 
 def solve_lp(lp_instance: LPInstance) -> LPInstance:
     """Solves a LP using gurobi.
@@ -603,6 +720,11 @@ def solve_lp(lp_instance: LPInstance) -> LPInstance:
     # else:
     time_limit_in_seconds = 300
     lp_instance.problem.solve(PULP_CBC_CMD(msg=1, timeLimit=time_limit_in_seconds))
+    print(f"Solver status: {pulp.LpStatus[lp_instance.problem.status]}")
+    
+    # Validate capacity constraints
+    _validate_capacity_constraints(lp_instance)
+    
     return lp_instance
 
 def extract_info_schedule(
