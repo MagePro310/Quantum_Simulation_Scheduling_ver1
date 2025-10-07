@@ -11,10 +11,6 @@ def visualize_data(data):
                      'capacity', 'start', 'end', and 'duration'.
     """
     # Normalize time for better visualization
-    for job in data:
-        job['start'] /= 10
-        job['end'] /= 10
-        job['duration'] /= 10
 
     # Sort jobs by job ID for vertical order
     data.sort(key=lambda x: x['job'])
@@ -51,7 +47,7 @@ def visualize_data(data):
     ax.legend(handles=patches, loc='upper right')
 
     # Labels and title
-    ax.set_xlabel("Time (normalized)")
+    ax.set_xlabel("Time")
     ax.set_ylabel("Jobs (Qubits)")
     ax.set_title("Gantt Chart of Jobs on Quantum Machines")
 
