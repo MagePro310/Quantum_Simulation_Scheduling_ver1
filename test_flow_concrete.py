@@ -9,14 +9,20 @@ from flow.schedule.phase_schedule import ConcreteSchedulePhase
 from flow.transpile.phase_transpile import ConcreteTranspilePhase
 from flow.execution.execution_phase import ConcreteExecutionPhase
 from flow.result.result_phase import ConcreteResultPhase
+from flow.information.result_schedule import ResultOfSchedule
+from component.a_backend.fake_backend import FakeBelemV2, FakeManilaV2
 
 def test_concrete_flow():
-    num_jobs = 2
-    num_qubits_per_job = 4
+
+    # Initialize result_Schedule
+    result_Schedule = ResultOfSchedule()
+
+
     
     print("Starting Input Phase...")
     input_phase = ConcreteInputPhase()
-    origin_job_info, machines, result_Schedule = input_phase.execute(num_jobs, num_qubits_per_job)
+    
+    origin_job_info, machines, result_Schedule = input_phase.execute(result_Schedule)
     print("Input Phase Complete.")
     
     print("Starting Schedule Phase...")

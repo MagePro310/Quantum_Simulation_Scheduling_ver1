@@ -1,34 +1,14 @@
 from abc import ABC, abstractmethod
 from typing import List, Tuple, Any, Dict
-from dataclasses import dataclass, asdict
 import sys
 
 # Add the project root to sys.path if not already there
 sys.path.append('./')
 
-from component.a_backend.fake_backend import FakeBelemV2, FakeManilaV2
+
 from component.b_benchmark.mqt_tool import QuantumBenchmark
 from component.sup_sys.job_info import JobInfo
-from component.c_circuit_work.cutting.width_c import WidthCircuitCutter
-
-@dataclass
-class ResultOfSchedule:
-    # Proxy information
-    numcircuit: int
-    nameAlgorithm: str
-    averageQubits: float
-    nameSchedule: str
-    typeMachine: dict
-    
-    # Calculate metrics
-    average_turnaroundTime: float
-    average_responseTime: float
-    average_fidelity: float
-    sampling_overhead: float
-    average_throughput: float
-    average_utilization: float
-    scheduler_latency: float
-    makespan: float
+from component.a_backend.fake_backend import FakeBelemV2, FakeManilaV2
 
 class InputPhase(ABC):
     """
@@ -39,48 +19,35 @@ class InputPhase(ABC):
     """
     
     @abstractmethod
-    def execute(self, num_jobs: int, num_qubits_per_job: int) -> Tuple[Dict[str, JobInfo], Dict[str, Any], ResultOfSchedule]:
+    def execute(self, result_Schedule: Any) -> Tuple[Dict[str, JobInfo], Dict[str, Any], Any]:
         """
         Executes the input phase.
 
         Args:
             num_jobs: Number of jobs.
             num_qubits_per_job: Number of qubits per job.
+            result_Schedule: ResultOfSchedule object.
 
         Returns:
             A tuple containing:
             - origin_job_info: Dictionary of original jobs.
-            - machines: Dictionary of available machines.
-            - result_Schedule: Initialized ResultOfSchedule object.
+            - machines: Dictionary of machines.
+            - result_Schedule: Updated ResultOfSchedule object.
         """
         pass
 
 class ConcreteInputPhase(InputPhase):
-    def execute(self, num_jobs: int, num_qubits_per_job: int) -> Tuple[Dict[str, JobInfo], Dict[str, Any], ResultOfSchedule]:
+    def execute(self, result_Schedule: Any) -> Tuple[Dict[str, JobInfo], Dict[str, Any], Any]:
         # Initialize result_Schedule
-        result_Schedule = ResultOfSchedule(
-            numcircuit=0,
-            nameAlgorithm="",
-            averageQubits=0.0,
-            nameSchedule="",
-            typeMachine={},
-            average_turnaroundTime=0.0,
-            average_responseTime=0.0,
-            average_fidelity=0.0,
-            sampling_overhead=0.0,
-            average_throughput=0.0,
-            average_utilization=0.0,
-            scheduler_latency=0.0,
-            makespan=0.0
-        )
         result_Schedule.nameSchedule = "FFD"
 
-        # Define the machines
+        num_jobs = 2
+        num_qubits_per_job = 4
         machines = {}
         backend0 = FakeBelemV2()
         backend1 = FakeManilaV2()
         machines[backend0.name] = backend0
-        machines[backend1.name] = backend0 # Note: In original script backend1 is mapped to backend0 object, keeping as is for fidelity
+        machines[backend1.name] = backend1
 
         # Define benchmark
         jobs = {}
