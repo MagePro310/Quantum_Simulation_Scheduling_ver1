@@ -81,7 +81,10 @@ class TestCircuitMeasurement:
         
         assert qc.num_clbits == 0
         
-        # Add measurements
+        # Add classical bits and measurements
+        from qiskit.circuit import ClassicalRegister
+        cr = ClassicalRegister(3, 'meas')
+        qc.add_register(cr)
         qc.measure(range(3), range(3))
         
         assert qc.num_clbits == 3
