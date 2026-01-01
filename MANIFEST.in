@@ -1,0 +1,12 @@
+include README.md
+include LICENSE
+include requirements.txt
+recursive-include benchmarks *.py *.md *.json *.txt
+recursive-include component *.py
+recursive-include flow *.py
+recursive-include img *.png *.pdf
+recursive-exclude tests *
+recursive-exclude .archive *
+recursive-exclude results *
+global-exclude __pycache__
+global-exclude *.py[co]

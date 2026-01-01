@@ -1,0 +1,57 @@
+{
+  "benchmark_info": {
+    "name": "Quantum Scheduling Algorithm Comparison",
+    "version": "1.0",
+    "description": "Comprehensive benchmarking framework for comparing scheduling algorithms",
+    "date_created": "2025-12-31"
+  },
+  "algorithms": {
+    "FFD": {
+      "name": "First Fit Decreasing",
+      "type": "heuristic",
+      "description": "First Fit Decreasing scheduling algorithm",
+      "test_file": "test_algorithm_FFD.ipynb",
+      "run_file": "runLoopTestFFD.py"
+    },
+    "MTMC": {
+      "name": "Multi-Task Multi-Core",
+      "type": "heuristic",
+      "description": "Multi-Task Multi-Core scheduling algorithm",
+      "test_file": "test_algorithm_MTMC.ipynb",
+      "run_file": "runLoopTestMTMC.py"
+    },
+    "MILQ_extend": {
+      "name": "Mixed Integer Linear Programming Extended",
+      "type": "ilp",
+      "description": "ILP-based scheduling with extensions",
+      "test_file": "test_algorithm_MILQ.ipynb",
+      "run_file": "runLoopTestMILQ.py"
+    },
+    "NoTaDS": {
+      "name": "No Task Decomposition Scheduling",
+      "type": "ilp",
+      "description": "ILP-based scheduling without task decomposition",
+      "test_file": "test_algorithm_NoTaDS.ipynb",
+      "run_file": "runLoopTestNoTaDS.py"
+    }
+  },
+  "metrics": {
+    "execution_time": "Thời gian thực thi (seconds)",
+    "memory_usage": "Sử dụng bộ nhớ (MB)",
+    "solution_quality": "Chất lượng giải pháp",
+    "approximation_ratio": "Tỉ số xấp xỉ",
+    "convergence_speed": "Tốc độ hội tụ"
+  },
+  "benchmark_parameters": {
+    "circuit_sizes": ["small", "medium", "large"],
+    "num_qubits": [5, 10, 15, 20],
+    "depth_range": [10, 50, 100],
+    "num_runs": 10,
+    "timeout_seconds": 300
+  },
+  "output_directories": {
+    "results": "results/",
+    "analysis": "analysis/",
+    "reports": "../reports/"
+  }
+}

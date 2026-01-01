@@ -1,0 +1,38 @@
+[
+    {
+        "job": "1_1",
+        "qubits": 4,
+        "machine": "fake_manila",
+        "capacity": 5,
+        "start": 0.0,
+        "end": 4.0,
+        "duration": 4
+    },
+    {
+        "job": "1_2",
+        "qubits": 3,
+        "machine": "fake_manila",
+        "capacity": 5,
+        "start": 4.0,
+        "end": 7.0,
+        "duration": 3
+    },
+    {
+        "job": "2_1",
+        "qubits": 4,
+        "machine": "fake_manila",
+        "capacity": 5,
+        "start": 7.0,
+        "end": 11.0,
+        "duration": 4
+    },
+    {
+        "job": "2_2",
+        "qubits": 3,
+        "machine": "fake_manila",
+        "capacity": 5,
+        "start": 11.0,
+        "end": 14.0,
+        "duration": 3
+    }
+]

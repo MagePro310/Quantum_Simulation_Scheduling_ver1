@@ -1,0 +1,48 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║         Quantum Scheduling Algorithms - Benchmarking Framework             ║
+║                           QUICK START GUIDE                                ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+📂 CẤUTRÚC:
+   benchmarks/
+   ├── comparison/          [So sánh giải thuật]
+   │   ├── config/         [Cấu hình & test scripts]
+   │   ├── results/        [Kết quả từng giải thuật]
+   │   └── analysis/       [Công cụ phân tích]
+   ├── algorithms/         [Thực hiện giải thuật]
+   └── reports/            [Báo cáo tổng hợp]
+
+🚀 CHẠY NGAY:
+
+   0️⃣  Kích hoạt conda environment (BẮT BUỘC):
+       $ conda activate squan
+
+   1️⃣  Chạy TẤT CẢ giải thuật:
+       $ python comparison_runner.py
+
+   2️⃣  Phân tích kết quả:
+       $ cd analysis && python comparison_analysis.py
+
+   3️⃣  Xem kết quả:
+       $ cat ../../reports/comparison_results.json
+
+�� HƯỚNG DẪN CHI TIẾT:
+   - Xem: README.md (trong folder này)
+   - Xem: ../USAGE_GUIDE.md
+
+🎯 4 GIẢI THUẬT:
+   ✓ FFD          - Heuristic (nhanh)
+   ✓ MTMC         - Heuristic (cân bằng tải)
+   ✓ MILQ_extend  - ILP (tối ưu)
+   ✓ NoTaDS       - ILP (tối ưu toàn cục)
+
+📊 CHỈ SỐ SO SÁNH:
+   - Thời gian thực thi (s)
+   - Sử dụng bộ nhớ (MB)
+   - Chất lượng giải pháp
+   - Tỉ số xấp xỉ
+   - Tốc độ hội tụ
+
+═══════════════════════════════════════════════════════════════════════════════
+Hệ thống sẵn sàng! Chạy `python comparison_runner.py` để bắt đầu.
+═══════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,188 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║          ALGORITHM COMPARISON VISUALIZATION - QUICK GUIDE            ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 QUICK START (3 SIMPLE STEPS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Run Benchmarks:
+   ────────────────
+   cd benchmarks/comparison/config
+   python runLoopTestFFD.py 5 8
+   python runLoopTestMTMC.py 5 8
+   python runLoopTestMILQ.py 5 8
+   python runLoopTestNoTaDS.py 5 8
+
+2. Generate Visualizations:
+   ─────────────────────────
+   cd ..
+   python visualize_results.py
+
+3. View Results:
+   ─────────────
+   cd reports/
+   ls -lh
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 GENERATED CHARTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. metrics_comparison_<timestamp>.png
+   → Bar charts for all 8 metrics
+   → Side-by-side comparison
+   → Value labels included
+
+2. makespan_comparison_<timestamp>.png
+   → Absolute makespan values
+   → Percentage difference from best
+   → Highlights winner
+
+3. utilization_fidelity_<timestamp>.png
+   → Scatter plot showing trade-offs
+   → Resource usage vs quantum quality
+   → Algorithm labels
+
+4. radar_chart_<timestamp>.png
+   → Spider/radar plot
+   → 5 key metrics normalized
+   → Easy visual comparison
+
+5. gantt_chart_<timestamp>.png
+   → Job scheduling timeline
+   → Machine utilization
+   → Color-coded by qubit count
+
+6. summary_report_<timestamp>.txt
+   → Text report with all metrics
+   → Best performers highlighted
+   → Machine usage statistics
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔧 COMMAND REFERENCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+From Project Root:
+  ./run.sh visualize                    # Generate all charts
+  ./run.sh visualize-chart radar        # Generate specific chart
+
+From benchmarks/comparison:
+  python visualize_results.py           # Generate all
+  
+From benchmarks/comparison/analysis:
+  python visualize_comparison.py --chart all        # All charts
+  python visualize_comparison.py --chart metrics    # Metrics only
+  python visualize_comparison.py --chart makespan   # Makespan only
+  python visualize_comparison.py --chart scatter    # Scatter only
+  python visualize_comparison.py --chart radar      # Radar only
+  python visualize_comparison.py --chart gantt      # Gantt only
+  python visualize_comparison.py --chart report     # Text report only
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📈 METRICS EXPLAINED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LOWER IS BETTER:
+  • Makespan              → Total completion time
+  • Turnaround Time       → Job completion latency
+  • Response Time         → Scheduling delay
+  • Sampling Overhead     → Circuit cutting cost
+  • Scheduler Latency     → Algorithm computation time
+
+HIGHER IS BETTER:
+  • Utilization           → Resource efficiency (%)
+  • Throughput            → Jobs per time unit
+  • Fidelity              → Quantum state accuracy
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 ALGORITHM COMPARISON
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FFD (First Fit Decreasing):
+  Type: Heuristic
+  Strategy: Sort by size, fit to first available machine
+  Pros: Fast, simple, good makespan
+  Best for: Quick scheduling, small-medium workloads
+
+MTMC (Multi-Tenancy Multi-Cloud):
+  Type: Heuristic  
+  Strategy: Balance load across multiple machines
+  Pros: High utilization, good load balancing
+  Best for: Multi-machine environments
+
+MILQ_extend (MILP-based ILQ Extended):
+  Type: ILP (Integer Linear Programming)
+  Strategy: Optimal task decomposition with cutting
+  Pros: Handles large circuits, optimal throughput
+  Best for: Complex circuits needing decomposition
+
+NoTaDS (No Task Decomposition Scheduling):
+  Type: ILP
+  Strategy: Schedule whole circuits without cutting
+  Pros: No cutting overhead, simpler execution
+  Best for: Circuits fitting machine constraints
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔍 INTERPRETING RESULTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Best Overall Performance:
+  → Lowest makespan
+  → Highest utilization
+  → Balanced metrics in radar chart
+
+Best for Production:
+  → Consider fidelity + makespan
+  → Check utilization vs fidelity scatter
+  → Balance efficiency and quality
+
+Best for Research:
+  → MILQ_extend for flexibility
+  → NoTaDS for baseline comparison
+  → FFD/MTMC for practical deployment
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 FILE LOCATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Input:  benchmarks/comparison/results/<algorithm>/schedule.json
+Output: benchmarks/comparison/reports/<chart>_<timestamp>.png
+Code:   benchmarks/comparison/analysis/visualize_comparison.py
+Script: benchmarks/comparison/visualize_results.py
+Docs:   benchmarks/comparison/analysis/README.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💡 TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Run visualizations after every benchmark session
+2. Compare same workload sizes (jobs & qubits) across algorithms
+3. Check Gantt chart to understand scheduling behavior
+4. Use radar chart for quick overall comparison
+5. Review text report for detailed metrics
+6. Look at utilization-fidelity scatter for trade-offs
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🆘 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: "No schedule data available"
+Solution: Run benchmarks first (step 1 above)
+
+Problem: Missing charts
+Solution: Check matplotlib is installed: pip install matplotlib
+
+Problem: Import errors
+Solution: Run from project root or use ./run.sh visualize
+
+Problem: Charts look wrong
+Solution: Ensure all algorithms have schedule.json in results/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+For detailed documentation, see:
+  benchmarks/comparison/analysis/README.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

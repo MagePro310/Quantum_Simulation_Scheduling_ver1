@@ -1,0 +1,89 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-simulation-scheduling"
+version = "1.0.0"
+description = "Quantum circuit scheduling and benchmarking framework"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Quantum Scheduling Team", email = "your.email@example.com"}
+]
+keywords = ["quantum", "scheduling", "qiskit", "optimization"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Physics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "qiskit>=1.0.0",
+    "qiskit-aer>=0.13.0",
+    "qiskit-ibm-runtime>=0.17.0",
+    "qiskit-addon-cutting>=0.5.0",
+    "pulp>=2.7.0",
+    "mqt.bench>=1.1.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.5.0",
+]
+docs = [
+    "sphinx>=7.0.0",
+    "sphinx-rtd-theme>=1.3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/MagePro310/Quantum_Simulation_Scheduling_ver1"
+Documentation = "https://github.com/MagePro310/Quantum_Simulation_Scheduling_ver1#readme"
+Repository = "https://github.com/MagePro310/Quantum_Simulation_Scheduling_ver1"
+Issues = "https://github.com/MagePro310/Quantum_Simulation_Scheduling_ver1/issues"
+
+[project.scripts]
+quantum-bench = "benchmarks.comparison.comparison_runner:main"
+
+[tool.black]
+line-length = 120
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | \.pytest_cache
+  | __pycache__
+  | build
+  | dist
+)/
+'''
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short --strict-markers"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true

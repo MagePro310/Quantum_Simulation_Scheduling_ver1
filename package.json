@@ -1,0 +1,34 @@
+{
+  "name": "quantum-simulation-scheduling",
+  "version": "1.0.0",
+  "description": "Quantum circuit scheduling and benchmarking framework",
+  "main": "setup.py",
+  "directories": {
+    "test": "tests",
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "pytest tests/",
+    "test:coverage": "pytest tests/ --cov=component --cov=flow --cov=benchmarks",
+    "lint": "flake8 component flow benchmarks tests",
+    "format": "black component flow benchmarks tests",
+    "type-check": "mypy component flow benchmarks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagePro310/Quantum_Simulation_Scheduling_ver1.git"
+  },
+  "keywords": [
+    "quantum",
+    "scheduling",
+    "qiskit",
+    "optimization",
+    "simulation"
+  ],
+  "author": "Quantum Scheduling Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MagePro310/Quantum_Simulation_Scheduling_ver1/issues"
+  },
+  "homepage": "https://github.com/MagePro310/Quantum_Simulation_Scheduling_ver1#readme"
+}

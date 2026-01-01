@@ -1,0 +1,225 @@
+#!/bin/bash
+# CICD_SETUP_GUIDE.md - CI/CD Pipeline Setup & Usage Guide
+
+cat << 'EOF'
+
+╔════════════════════════════════════════════════════════════════════════╗
+║                                                                        ║
+║               CI/CD PIPELINE SETUP & USAGE GUIDE                       ║
+║                                                                        ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 WHAT WAS CREATED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ 5 GitHub Actions Workflows (300 lines of configuration):
+
+1. tests.yml               - Run tests across Python 3.9, 3.10, 3.11
+2. code-quality.yml        - Lint, format, type check, static analysis
+3. docs.yml                - Build & deploy documentation
+4. benchmarks.yml          - Run algorithm benchmarks
+5. release.yml             - Publish releases to PyPI
+
+✅ 1 Detailed README documenting all workflows
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 QUICK START (3 STEPS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: Commit workflows
+$ git add .github/workflows/
+$ git commit -m "Add CI/CD pipeline with GitHub Actions"
+
+STEP 2: Push to repository
+$ git push origin main
+
+STEP 3: View results
+→ Go to: https://github.com/MagePro310/Quantum_Simulation_Scheduling_ver1/actions
+→ Watch workflows run automatically! ✨
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 WORKFLOW AUTOMATION (AUTOMATIC)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ TESTS - Every push & pull request
+   Runs: pytest across 3 Python versions
+   Duration: ~5-10 minutes
+   Coverage: Auto-uploaded to Codecov
+   Artifacts: HTML coverage reports
+
+✅ CODE QUALITY - Every push & pull request
+   Checks: black, flake8, mypy, pylint
+   Duration: ~2-3 minutes
+   Report: TODO/FIXME count displayed
+   Status: Informational (doesn't block merge)
+
+✅ DOCUMENTATION - Every push to main
+   Builds: Sphinx documentation
+   Deploys: GitHub Pages (auto)
+   Duration: ~3-5 minutes
+   URL: https://MagePro310.github.io/Quantum_Simulation_Scheduling_ver1/
+
+✅ BENCHMARKS - Weekly + every push to main
+   Runs: All 4 algorithms
+   Duration: ~15-20 minutes
+   Output: Visualization charts
+   Schedule: Every Monday at 00:00 UTC
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 MANUAL ACTIONS (WHEN READY)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CREATE A RELEASE:
+$ git tag v1.0.0
+$ git push origin v1.0.0
+
+The release workflow automatically:
+✓ Builds Python packages
+✓ Creates GitHub Release
+✓ Publishes to PyPI (requires token setup)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⚙️ OPTIONAL SETUP (For extra features)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. ENABLE PYPI PUBLISHING (For releases)
+   
+   a) Get token from PyPI:
+      → Visit: https://pypi.org/account/
+      → Go to API Tokens
+      → Create new token
+   
+   b) Add to GitHub:
+      → Settings → Secrets and variables → Actions
+      → New repository secret
+      → Name: PYPI_API_TOKEN
+      → Value: <paste your token>
+      → Click "Add secret"
+   
+   Now releases will auto-publish to PyPI!
+
+2. ENABLE GITHUB PAGES (For documentation)
+   
+   a) Setup in GitHub:
+      → Settings → Pages
+      → Source: gh-pages branch
+      → Save
+   
+   Documentation auto-deploys on each push to main!
+
+3. ENABLE CODECOV (For coverage badges)
+   
+   a) Visit: https://codecov.io
+   b) Sign in with GitHub
+   c) Select your repository
+   d) Copy coverage badge code to README.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 VIEW RESULTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+IN GITHUB UI:
+→ Actions tab: See all workflow runs
+→ Pull Request: See workflow status
+→ Artifacts: Download coverage reports, benchmark results
+
+IN GITHUB CLI (if installed):
+$ gh run list              # List workflow runs
+$ gh run view <id>         # View specific run
+$ gh run rerun <id>        # Rerun workflow
+
+IN LOCAL GIT:
+$ git log --oneline        # See commit history
+$ git show <commit>        # See what changed
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔧 CUSTOMIZATION (If needed)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CHANGE TEST PYTHON VERSIONS:
+Edit: .github/workflows/tests.yml
+Find: python-version: ['3.9', '3.10', '3.11']
+Change to: python-version: ['3.9', '3.10', '3.11', '3.12']
+
+CHANGE BENCHMARK SCHEDULE:
+Edit: .github/workflows/benchmarks.yml
+Find: cron: '0 0 * * 1'
+Change to: cron: '0 0 * * *'  # Daily instead of weekly
+
+MODIFY LINT RULES:
+Edit: .github/workflows/code-quality.yml
+Find: --max-line-length=120
+Change to: --max-line-length=100
+
+ADD NEW WORKFLOW:
+Create: .github/workflows/<name>.yml
+Copy structure from existing workflow
+Customize as needed
+Push to activate!
+
+See: .github/workflows/README.md for full details
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❌ TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WORKFLOW NOT RUNNING:
+→ Check: Actions tab in GitHub UI
+→ Look for: Yellow dot (in progress) or red X (failed)
+→ Click workflow: See detailed logs
+→ Common fixes:
+  - Ensure .github/workflows/*.yml files are valid YAML
+  - Check trigger conditions (push, PR, schedule)
+  - Verify branch names match (main vs develop)
+
+TESTS FAILING:
+→ Check: Test output in GitHub Actions
+→ Run locally: pytest tests/ -v
+→ Compare: Local vs CI environment
+→ Common fixes:
+  - Install missing dependencies
+  - Check Python version compatibility
+  - Update test assertions
+
+CODE QUALITY ISSUES:
+→ Not critical (doesn't block merge)
+→ Check: Code quality report in Actions
+→ Local fix: Run `./run.sh format` then `./run.sh lint`
+→ Commit fixes and push again
+
+BENCHMARK TIMEOUT:
+→ Reduce job count in config
+→ Run fewer algorithms
+→ Increase timeout in workflow
+
+RELEASE NOT PUBLISHING:
+→ Verify: PYPI_API_TOKEN secret is set
+→ Check: Token hasn't expired
+→ Verify: Tag format matches v*.*.* (e.g., v1.0.0)
+→ Test locally: python -m twine check dist/*
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 MORE INFO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+See detailed documentation:
+→ .github/workflows/README.md (in your repo)
+
+GitHub Actions docs:
+→ https://docs.github.com/actions
+
+Action marketplace:
+→ https://github.com/marketplace?type=actions
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✨ THAT'S IT!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Your CI/CD pipeline is ready!
+
+Just push to main and let GitHub Actions handle the testing,
+quality checks, documentation, benchmarks, and releases! 🚀
+
+EOF
+

@@ -1,0 +1,87 @@
+name: Performance Benchmarks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run benchmarks weekly on Monday at 00:00 UTC
+    - cron: '0 0 * * 1'
+
+jobs:
+  benchmarks:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Cache pip packages
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-bench-${{ hashFiles('**/requirements.txt') }}
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -e .
+    
+    - name: Run algorithm benchmarks
+      run: |
+        cd benchmarks/comparison/config
+        python runLoopTestFFD.py 3 8 2>&1 | tee ../results/FFD/benchmark.log
+        python runLoopTestMTMC.py 3 8 2>&1 | tee ../results/MTMC/benchmark.log
+        python runLoopTestMILQ.py 3 8 2>&1 | tee ../results/MILQ_extend/benchmark.log
+        python runLoopTestNoTaDS.py 3 8 2>&1 | tee ../results/NoTaDS/benchmark.log
+      continue-on-error: true
+    
+    - name: Generate visualizations
+      run: |
+        cd benchmarks/comparison
+        python visualize_results.py
+      continue-on-error: true
+    
+    - name: Archive benchmark results
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: benchmark-results-${{ github.run_number }}
+        path: |
+          benchmarks/comparison/results/
+          benchmarks/comparison/reports/
+        retention-days: 30
+    
+    - name: Comment benchmark results on PR
+      if: github.event_name == 'pull_request' && always()
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const fs = require('fs');
+          let comment = '## 📊 Benchmark Results\n\n';
+          
+          try {
+            const dirs = ['FFD', 'MTMC', 'MILQ_extend', 'NoTaDS'];
+            for (const dir of dirs) {
+              const path = `benchmarks/comparison/results/${dir}/schedule.json`;
+              if (fs.existsSync(path)) {
+                const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+                comment += `### ${dir}\n`;
+                comment += `- Jobs scheduled: ${data.length}\n`;
+              }
+            }
+          } catch (e) {
+            comment += 'Benchmark data not available\n';
+          }
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });

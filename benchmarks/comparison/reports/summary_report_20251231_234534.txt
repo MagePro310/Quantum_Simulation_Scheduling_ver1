@@ -1,0 +1,86 @@
+================================================================================
+QUANTUM SCHEDULING ALGORITHM COMPARISON REPORT
+================================================================================
+
+Generated: 2025-12-31 23:45:38
+Results Directory: /home/trieu/D/Quantum_Repo/Quantum_Simulation_Scheduling/benchmarks/comparison/results
+
+--------------------------------------------------------------------------------
+
+FFD Algorithm:
+----------------------------------------
+  Jobs Scheduled: 2
+  Machines Used: 2
+  Machine List: fake_belem, fake_manila
+
+  Metrics:
+    Makespan (time units)........................ 4.0000
+    Avg Turnaround Time.......................... 4.0000
+    Avg Response Time............................ 0.0000
+    Avg Utilization (%).......................... 80.0000
+    Avg Throughput............................... 0.5000
+    Avg Fidelity................................. 0.9500
+    Sampling Overhead............................ 1.0000
+    Scheduler Latency (s)........................ 0.0000
+
+MTMC Algorithm:
+----------------------------------------
+  Jobs Scheduled: 4
+  Machines Used: 2
+  Machine List: fake_belem, fake_manila
+
+  Metrics:
+    Makespan (time units)........................ 7.0000
+    Avg Turnaround Time.......................... 4.0000
+    Avg Response Time............................ 0.5000
+    Avg Utilization (%).......................... 82.8571
+    Avg Throughput............................... 0.5714
+    Avg Fidelity................................. 0.9500
+    Sampling Overhead............................ 1.0000
+    Scheduler Latency (s)........................ 0.0000
+
+MILQ_extend Algorithm:
+----------------------------------------
+  Jobs Scheduled: 8
+  Machines Used: 2
+  Machine List: fake_belem, fake_manila
+
+  Metrics:
+    Makespan (time units)........................ 11.0000
+    Avg Turnaround Time.......................... 6.2500
+    Avg Response Time............................ 3.2500
+    Avg Utilization (%).......................... 74.5455
+    Avg Throughput............................... 0.7273
+    Avg Fidelity................................. 0.9500
+    Sampling Overhead............................ 1.0000
+    Scheduler Latency (s)........................ 0.0000
+
+NoTaDS Algorithm:
+----------------------------------------
+  Jobs Scheduled: 4
+  Machines Used: 1
+  Machine List: fake_manila
+
+  Metrics:
+    Makespan (time units)........................ 14.0000
+    Avg Turnaround Time.......................... 9.0000
+    Avg Response Time............................ 5.5000
+    Avg Utilization (%).......................... 71.4286
+    Avg Throughput............................... 0.2857
+    Avg Fidelity................................. 0.9500
+    Sampling Overhead............................ 1.0000
+    Scheduler Latency (s)........................ 0.0000
+
+================================================================================
+BEST PERFORMERS BY METRIC
+================================================================================
+  Makespan (time units)........................ FFD (4.0000)
+  Avg Turnaround Time.......................... FFD (4.0000)
+  Avg Response Time............................ FFD (0.0000)
+  Avg Utilization (%).......................... MTMC (82.8571)
+  Avg Throughput............................... MILQ_extend (0.7273)
+  Avg Fidelity................................. FFD (0.9500)
+  Sampling Overhead............................ FFD (1.0000)
+  Scheduler Latency (s)........................ FFD (0.0000)
+
+================================================================================
